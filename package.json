@@ -27,7 +27,7 @@
 	"homepage": "https://david-way.github.io",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/David-Way/david-way.git"
+		"url": "git://github.com/David-Way/david-way.github.io.git"
 	},
 	"author": {
 		"name": "David Way",
@@ -35,7 +35,7 @@
 		"url": "https://david-way.github.io"
 	},
 	"bugs": {
-		"url": "https://github.com/David-Way/david-way/issues"
+		"url": "https://github.com/David-Way/david-way.github.io/issues"
 	},
 	"license": "MIT",
 	"engines": {
