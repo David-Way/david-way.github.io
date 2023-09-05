@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "git://github.com/David-Way/david-way.git"
 	},
 	"author": {
 		"name": "David Way",
@@ -31,7 +31,7 @@
 		]
 	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/David-Way/david-way/issues"
 	},
 	"homepage": "https://david-way.github.io",
 	"devDependencies": {
