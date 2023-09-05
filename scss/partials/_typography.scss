@@ -96,7 +96,6 @@ li {
 
 a[href] {
 	color: var(--text-color-link);
-
   box-sizing: border-box;
   padding: 0;
   border: 0;
@@ -104,7 +103,6 @@ a[href] {
   font-family: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  display: inline-flex;
   outline: none;
   text-decoration: underline;
   transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);

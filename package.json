@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy && npm run build:css",
 		"build:css": "npx sass scss/:public/css",
-		"build:ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+		"build:ghpages": "npx @11ty/eleventy --pathprefix=/david-way/",
 		"start": "npx @11ty/eleventy --serve --quiet & npm run watch:sass",
 		"watch:sass": "npx sass scss/:public/css --watch",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
@@ -25,6 +25,11 @@
 	"engines": {
 		"node": "v18.16.0"
 	},
+	"sass": {
+		"includePaths": [
+			"./node_modules"
+		]
+	},
 	"bugs": {
 		"url": "https://github.com/11ty/eleventy-base-blog/issues"
 	},
@@ -40,6 +45,7 @@
 		"markdown-it-anchor": "^8.6.7"
 	},
 	"dependencies": {
+		"@primer/primitives": "^7.12.0",
 		"sass": "^1.66.1"
 	}
 }
