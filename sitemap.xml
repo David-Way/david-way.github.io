@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://example.com/david-way/blog/firstpost/</loc>
+		<lastmod>2018-05-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/blog/secondpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/blog/thirdpost/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/blog/fourthpost/</loc>
+		<lastmod>2018-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/about/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/blog/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/tags/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/tags/another-tag/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/tags/number-2/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/tags/second-tag/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/david-way/tags/posts-with-two-tags/</loc>
+		<lastmod>2023-09-05</lastmod>
+	</url>
+</urlset>
