@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy && npm run build:css",
 		"build:css": "npx sass scss/:public/css",
-		"build:ghpages": "npx @11ty/eleventy --pathprefix=/david-way/",
+		"build:ghpages": "ELEVENTY_ENV=production npx @11ty/eleventy --pathprefix=/david-way/",
 		"start": "npx @11ty/eleventy --serve --quiet & npm run watch:sass",
 		"watch:sass": "npx sass scss/:public/css --watch",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
