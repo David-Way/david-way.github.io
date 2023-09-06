@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
-        "ghpages"
+        "ghpages",
+        "xlarge",
+        "xsmall"
     ],
     "files.exclude": {
         "**/node_modules": false
