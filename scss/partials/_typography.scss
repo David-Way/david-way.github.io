@@ -95,7 +95,7 @@ li {
 }
 
 a[href] {
-	color: var(--text-color-link);
+	color: var(--color-accent-fg);
   box-sizing: border-box;
   padding: 0;
   border: 0;
@@ -104,20 +104,11 @@ a[href] {
   font-size: 100%;
   vertical-align: baseline;
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
-
-  // &--inline {
-  //   display: inline;
-  //   text-decoration: underline;
-  // }
-
-  &:visited {
-    color: var(--text-color-link-visited);
-  }
 
   &:hover,
   &:active {
-    color: var(--text-color-link-active);
+    text-decoration: underline;
   }
 }

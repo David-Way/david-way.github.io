@@ -1,7 +1,9 @@
 @use "../../node_modules/@primer/primitives/dist/scss/colors/dark";
+@use "../../node_modules/@primer/primitives/dist/scss/colors/light";
 
 :root {
 	@include dark.primer-colors-dark();
+	
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
@@ -22,8 +24,10 @@
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
+		@include light.primer-colors-light();
+
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;

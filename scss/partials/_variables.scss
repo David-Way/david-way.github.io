@@ -4,45 +4,23 @@
 $spacing: (
   "auto": auto,
   "00": 0px,
-  "02": 2px,
-  "04": 4px,
-  "08": 8px,
-  "12": 12px,
-  "16": 16px,
-  "24": 24px,
-  "32": 32px,
-  "48": 48px,
-  "64": 64px,
-  "72": 72px,
-);
-
-$rem-spacing: (
-  // 0.125rem
-  "01": var(--cds-spacing-01),
-  // 0.25rem
-  "02": var(--cds-spacing-02),
-  // 0.5rem
-  "03": var(--cds-spacing-03),
-  // 0.75rem
-  "04": var(--cds-spacing-04),
-  // 1rem
-  "05": var(--cds-spacing-05),
-  // 1.5rem
-  "06": var(--cds-spacing-06),
-  // 2rem
-  "07": var(--cds-spacing-07),
-  // 2.5rem
-  "08": var(--cds-spacing-08),
-  // 3rem
-  "09": var(--cds-spacing-09),
-  // 4rem
-  "10": var(--cds-spacing-10),
-  // 5rem
-  "11": var(--cds-spacing-11),
-  // 6rem
-  "12": var(--cds-spacing-12),
-  // 10rem
-  "13": var(--cds-spacing-13)
+  "04": var(--base-size-4),
+  "08": var(--base-size-8),
+  "12": var(--base-size-12),
+  "16": var(--base-size-16),
+  "20": var(--base-size-20),
+  "24": var(--base-size-24),
+  "28": var(--base-size-28),
+  "32": var(--base-size-32),
+  "36": var(--base-size-36),
+  "40": var(--base-size-40),
+  "44": var(--base-size-44),
+  "48": var(--base-size-48),
+  "64": var(--base-size-64),
+  "80": var(--base-size-80),
+  "96": var(--base-size-96),
+  "112": var(--base-size-112),
+  "128": var(--base-size-128)
 );
 
 $break-points: (
@@ -83,9 +61,16 @@ $animation-timing-func-small: cubic-bezier(0.16, 1, 0.3, 1);
 // 🕶️ Layering
 //--------------------
 $layer-shadows: (
-  0: none,
-  1: 0 2px 6px var(--cds-shadow, rgba(0, 0, 0, 0.3)),
-  2: 0 4px 12px 0 var(--cds-shadow, rgba(0, 0, 0, 0.3)),
+  'none': none,
+  'resting-xsmall': var(--shadow-resting-xsmall),
+  'resting-small': var(--shadow-resting-small),
+  'resting-medium': var(--shadow-resting-medium),
+  'floating-small': var(--shadow-floating-small),
+  'floating-medium': var(--shadow-floating-medium),
+  'floating-large': var(--shadow-floating-large),
+  'floating-xlarge': var(--shadow-floating-xlarge),
+  'inset': var(--shadow-inset),
+  'highlight': var(--shadow-highlight),
 );
 
 $z-index: (

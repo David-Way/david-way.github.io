@@ -7,7 +7,7 @@
 @use "./partials/theme";
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	box-shadow: inset 0 calc(var(--borderWidth-thin, 1px)*-1) var(--color-border-default);
 }
 header:after {
 	content: "";
@@ -17,7 +17,7 @@ header:after {
 
 .links-nextprev {
 	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
+	box-shadow: 0 calc(var(--borderWidth-thin, 1px)*-1) var(--color-border-default);
 	padding: 1em 0;
 }
 
@@ -112,7 +112,7 @@ header {
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-90);
+	color: var(--fgColor-muted);
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -173,7 +173,7 @@ a[href].header-anchor:hover {
 }
 a[href].header-anchor:focus,
 :hover > a[href].header-anchor {
-	color: #aaa;
+	color: var(--fgColor-muted);
 }
 
 h2 + .header-anchor {

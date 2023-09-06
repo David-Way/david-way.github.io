@@ -147,68 +147,6 @@
   }
 }
 
-@each $key, $value in variables.$rem-spacing {
-  .u-m-rem\:#{$key} {
-    margin: $value !important;
-  }
-
-  .u-mt-rem\:#{$key} {
-    margin-top: $value !important;
-  }
-
-  .u-mr-rem\:#{$key} {
-    margin-right: $value !important;
-  }
-
-  .u-mb-rem\:#{$key} {
-    margin-bottom: $value !important;
-  }
-
-  .u-ml-rem\:#{$key} {
-    margin-left: $value !important;
-  }
-
-  .u-mh-rem\:#{$key} {
-    margin-left: $value !important;
-    margin-right: $value !important;
-  }
-
-  .u-mv-rem\:#{$key} {
-    margin-top: $value !important;
-    margin-bottom: $value !important;
-  }
-
-  .u-p-rem\:#{$key} {
-    padding: $value !important;
-  }
-
-  .u-pt-rem\:#{$key} {
-    padding-top: $value !important;
-  }
-
-  .u-pr-rem\:#{$key} {
-    padding-right: $value !important;
-  }
-
-  .u-pb-rem\:#{$key} {
-    padding-bottom: $value !important;
-  }
-
-  .u-pl-rem\:#{$key} {
-    padding-left: $value !important;
-  }
-
-  .u-ph-rem\:#{$key} {
-    padding-left: $value !important;
-    padding-right: $value !important;
-  }
-
-  .u-pv-rem\:#{$key} {
-    padding-top: $value !important;
-    padding-bottom: $value !important;
-  }
-}
-
 //--------------------
 // 📲 Flexbox & Grid
 //--------------------
