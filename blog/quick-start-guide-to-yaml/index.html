@@ -3,12 +3,478 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tagged “second tag”</title>
-		<meta name="description" content="I am writing about my not important experiences.">
+		<title>Quick-start guide to using Yaml</title>
+		<meta name="description" content="Learn the basics of writing serialisable data into Yaml files">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.postlist { counter-reset: start-from 2 }
+		<style>/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+pre[class*=language-],
+code[class*=language-] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::selection,
+code[class*=language-]::selection,
+pre[class*=language-] *::selection,
+code[class*=language-] *::selection {
+  text-shadow: none;
+  background: #264F78;
+}
+
+@media print {
+  pre[class*=language-],
+  code[class*=language-] {
+    text-shadow: none;
+  }
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.doctype .token.doctype-tag {
+  color: #569CD6;
+}
+
+.token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.token.comment,
+.token.prolog {
+  color: #6a9955;
+}
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+  color: #ce9178;
+}
+
+.language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.token.operator,
+.token.entity {
+  color: #d4d4d4;
+}
+
+.token.operator.arrow {
+  color: #569CD6;
+}
+
+.token.atrule {
+  color: #ce9178;
+}
+
+.token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.keyword {
+  color: #569CD6;
+}
+
+.token.keyword.module,
+.token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.token.function,
+.token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.token.regex {
+  color: #d16969;
+}
+
+.token.important {
+  color: #569cd6;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.constant {
+  color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.token.console {
+  color: #9cdcfe;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.token.boolean {
+  color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.token.selector {
+  color: #d7ba7d;
+}
+
+.token.escape {
+  color: #d7ba7d;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+  color: #808080;
+}
+
+.token.cdata {
+  color: #808080;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.token.entity {
+  color: #569cd6;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+
+/*********************************************************
+* Language Specific
+*/
+pre[class*=language-javascript],
+code[class*=language-javascript],
+pre[class*=language-jsx],
+code[class*=language-jsx],
+pre[class*=language-typescript],
+code[class*=language-typescript],
+pre[class*=language-tsx],
+code[class*=language-tsx] {
+  color: #9cdcfe;
+}
+
+pre[class*=language-css],
+code[class*=language-css] {
+  color: #ce9178;
+}
+
+pre[class*=language-html],
+code[class*=language-html] {
+  color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+}
+
+/*********************************************************
+* Line highlighting
+*/
+pre[class*=language-] > code[class*=language-] {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=prism-vsc-dark-plus.css.map */
+/*
+ * New diff- syntax
+ */
+pre[class*=language-diff-] {
+  --eleventy-code-padding: 1.25em;
+  padding-left: var(--eleventy-code-padding);
+  padding-right: var(--eleventy-code-padding);
+}
+
+.token.deleted {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: inherit;
+}
+
+.token.inserted {
+  background-color: #690;
+  color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.token.prefix.inserted,
+.token.prefix.deleted {
+  width: var(--eleventy-code-padding);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+  display: block;
+  margin-left: calc(-1 * var(--eleventy-code-padding));
+  margin-right: calc(-1 * var(--eleventy-code-padding));
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/*# sourceMappingURL=prism-diff.css.map */
 * { box-sizing: border-box; }
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -2834,31 +3300,129 @@ h2 + .header-anchor {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
+<h1>Quick-start guide to using Yaml</h1>
 
-<!-- Stop deleting -->
+<ul class="post-metadata">
+	<li><time datetime="2021-04-07">07 April 2021</time></li>
+	<li><a href="/tags/guide/" class="post-tag">guide</a>, </li>
+	<li><a href="/tags/data-storage/" class="post-tag">data-storage</a>, </li>
+	<li><a href="/tags/yaml/" class="post-tag">yaml</a></li>
+</ul>
 
-<h1>Tagged “second tag”</h1>
+<h2 id="definitions" tabindex="-1">Definitions <a class="header-anchor" href="#definitions">#</a></h2>
+<details>
+  <summary>A <strong>file</strong> is and object on a computer that is used to store data or information. </summary>
+<p>There are many types of files, recognisable by their extension (ie. <code>.doc</code>, <code>.pdf</code>,  <code>.jpg</code>).
+Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).</p>
+</details>
+<details>
+  <summary>A <strong>markup up language</strong> is a system of writing content so that it’s structure conveys meaning.</summary>
+<p>Yaml is a data serialization language and not technically a markup language though it functions a lot like one.</p>
+<p>Other markup languages you might be familiar with are HTML, XML and JSON.</p>
+<p>When you compare Yaml structure to other similar systems Yaml requires considerably less content or &quot;decoration&quot; to carry the same amount of information, but is less resilient regarding spacing and formatting as a result.</p>
+  <table>
+  <thead>
+    <tr>
+      <th align="left">Yaml</th>
+      <th align="left">XML</th>
+      <th align="left">JSON</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align:top">
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token key atrule">People</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Bob
+    <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">30</span>
+    <span class="token key atrule">address</span><span class="token punctuation">:</span> Wicklow<span class="token punctuation">,</span> Ireland</code></pre>
+<p></td>
+<td style="vertical-align:top"></p>
+<pre class="language-xml" tabindex="0"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>People</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Person</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">></span></span>Bob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>age</span><span class="token punctuation">></span></span>30<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>age</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>address</span><span class="token punctuation">></span></span>Wicklow, Ireland<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>address</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Person</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>People</span><span class="token punctuation">></span></span></code></pre>
+<p></td>
+<td style="vertical-align:top"></p>
+<pre class="language-json" tabindex="0"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"People"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span>
+      <span class="token property">"age"</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+      <span class="token property">"address"</span><span class="token operator">:</span> "Wicklow<span class="token punctuation">,</span> Ireland
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<p></td>
+</tr></p>
+  </tbody>
+</table>
+</details>
+<h2 id="yaml" tabindex="-1">Yaml <a class="header-anchor" href="#yaml">#</a></h2>
+<p>Yaml is a markup like language (used in the <code>.yaml</code> file type) that aims to make data portable in a way that is easy to read, write and edit by humans <em>and</em> computers.</p>
+<p>A Yaml document contains fields to store different types of data and aims to use compact formats to describe more complex data structures (eg. lists of items and maps).</p>
+<h2 id="yaml-structure" tabindex="-1">Yaml structure <a class="header-anchor" href="#yaml-structure">#</a></h2>
+<p>The three dashes <code>---</code> are used to signal the start and end of a Yaml document.</p>
+<p>You structure a YAML document with white-spaces. This means indentation (spaces) and new lines are crucial to a correctly structured Yaml document (always use spaces not tabs). Unless otherwise indicated, newlines indicate the end of a field.</p>
+<h2 id="key-value-pairs" tabindex="-1">Key value pairs <a class="header-anchor" href="#key-value-pairs">#</a></h2>
+<p>The simplest and most common field you’ll see in a <code>.yaml</code> file is a key-value pair.</p>
+<p>Key-value pairs are used for labelling (the key) single pieces of data (the value), like a piece of text or a number.</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token punctuation">---</span>
+<span class="token comment"># Example of `key: value` pair</span>
+<span class="token comment"># Note that a space after the colon is mandatory</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> Joan smith
+<span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">32</span>
+<span class="token punctuation">---</span></code></pre>
+<details>
+  <summary markdown="span">What is the value data of writing like this?</summary>
+  <br/>
+  A computer can read and use structured data written like this a lot easier than the following:
+<pre class="language-txt" tabindex="0"><code class="language-txt">It's Joan Smiths 32nd birthday today.</code></pre>
+<p>Again, the key aim of Yaml is to be portable, meaning that it can be easily imported, understood by multiple programs and in programming languages.</p>
+</details> 
+<h2 id="blocks-of-text" tabindex="-1">Blocks of text <a class="header-anchor" href="#blocks-of-text">#</a></h2>
+<p>To store a literal block of text using the pipe (<code>|</code>) character. New lines are preserved within the block.</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token key atrule">literal_block</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+    This entire block of text will be the value of the 'literal_block' key,
+    with line breaks being preserved.</span>
 
+    The literal continues until de<span class="token punctuation">-</span>dented<span class="token punctuation">,</span> and the leading indentation is
+    stripped.</code></pre>
+<h2 id="comments" tabindex="-1">Comments <a class="header-anchor" href="#comments">#</a></h2>
+<p>Comments begin with a pound or hash sign (<code>#</code>). A comment is a programmer-readable explanation or annotation of data. It is ignored by the application.</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is a full line comment, humans only... 🤖</span>
+<span class="token key atrule">key</span><span class="token punctuation">:</span> value</code></pre>
+<h2 id="lists" tabindex="-1">Lists <a class="header-anchor" href="#lists">#</a></h2>
+<p>List or arrays are lines that begin at the same indentation level, starting with a dash followed by a space. A list groups multiple values into the same field.</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># Here is a list of names grouped into a "name" field</span>
+<span class="token key atrule">names</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token string">"Jane"</span>
+  <span class="token punctuation">-</span> <span class="token string">"John"</span>
+  <span class="token punctuation">-</span> <span class="token string">"Jill"</span></code></pre>
+<p>or</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is an alternative format to achieve the same thing. </span>
+<span class="token comment"># Arrays are often represented using square brackets []</span>
+<span class="token key atrule">names</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"Jane"</span><span class="token punctuation">,</span> <span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token string">"Jill"</span> <span class="token punctuation">]</span></code></pre>
+<h2 id="dictionary-list" tabindex="-1">Dictionary List <a class="header-anchor" href="#dictionary-list">#</a></h2>
+<p>A dictionary groups more complex values into a single field.</p>
+<pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is a collection of two link fields</span>
+<span class="token comment"># Each associated with its own label and url fields</span>
+<span class="token key atrule">links</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">'Home'</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">'./home'</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">'About'</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">'/about'</span></code></pre>
 
-
-<ol reversed class="postlist">
-
-	<li class="postlist-item">
-		<a href="/blog/thirdpost/" class="postlist-link">This is my third post.</a>
-		<time class="postlist-date" datetime="2018-08-24">August 2018</time>
-	</li>
-
-</ol>
-
-
-<p>See <a href="/tags/">all tags</a>.</p>
-
+<ul class="links-nextprev"><li>Previous: <a href="/blog/thirdpost/">This is my third post.</a></li><li>Next: <a href="/blog/how-cpus-are-made/">How CPUs are made</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /tags/second-tag/ -->
+		<!-- Current page: /blog/quick-start-guide-to-yaml/ -->
 	</body>
 </html>

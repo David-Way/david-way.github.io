@@ -2,36 +2,204 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
 	<title>!important</title>
 	<subtitle>I am writing about my not important experiences.</subtitle>
-	<link href="https://example.com/feed/feed.xml" rel="self"/>
-	<link href="https://example.com/"/>
-	<updated>2018-09-30T00:00:00Z</updated>
-	<id>https://example.com/</id>
+	<link href="https://david-way.github.io/feed/feed.xml" rel="self"/>
+	<link href="https://david-way.github.io/"/>
+	<updated>2021-10-11T00:00:00Z</updated>
+	<id>https://david-way.github.io/</id>
 	<author>
 		<name>David Way</name>
 		<email>david_way@live.ie</email>
 	</author>
 	
 	<entry>
-		<title>This is my fourth post.</title>
-		<link href="https://example.com/blog/fourthpost/"/>
-		<updated>2018-09-30T00:00:00Z</updated>
-		<id>https://example.com/blog/fourthpost/</id>
-		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.avif 350w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.webp 350w&quot;&gt;&lt;img alt=&quot;A possum parent and two possum kids hanging from the iconic red balloon&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/IdthKOzqFA-350.png&quot; width=&quot;350&quot; height=&quot;685&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+		<title>The User Experience of Disabled Buttons</title>
+		<link href="https://david-way.github.io/blog/ux-of-a-disabled-button/"/>
+		<updated>2021-10-11T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/ux-of-a-disabled-button/</id>
+		<content type="html">&lt;h2 id=&quot;should-you-use-disabled-buttons&quot; tabindex=&quot;-1&quot;&gt;Should you use disabled buttons? &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are two reasons why disabling a button is best avoided.&lt;/p&gt;
+&lt;h3 id=&quot;1-state-identification&quot; tabindex=&quot;-1&quot;&gt;1. State Identification &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The difference between a disabled button and a regular button is usually very subtle&lt;sup&gt;*&lt;/sup&gt;, meaning it’s a weak indicator of state that may be missed by many of your users.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;* Designing something to look both disabled and identifiable as a button while achieving adequate contrast is tricky.&lt;/i&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective&quot; tabindex=&quot;-1&quot;&gt;1.1 What does it mean to disable a button from a Screen Readers perspective? &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;details&gt;
+  &lt;summary&gt;ℹ️ What is a &lt;i&gt;Screen Reader&lt;/i&gt;?&lt;/summary&gt;
+&lt;p&gt;A screen reader is assistive software, primarily used by people with low or no vision. It converts the semantic elements on a web page (for example text, buttons, images and links) into audible speech or braille.&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;A disabled button is non-existent to a Screen Reader user, meaning they don’t even get the weak indicator afforded to fully sighted users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;According to the &lt;a href=&quot;https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment&quot;&gt;World Health Organization&lt;/a&gt;, there are an estimated 285 million people in the world who suffer from some level of visual impairment (including anyone from legally blind, to those with less than 20/20 vision).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;2-unnecessary-cognitive-load&quot; tabindex=&quot;-1&quot;&gt;2. Unnecessary Cognitive Load &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;When a disabled button is intended to act as a visual indicator that something on the page or form needs to be fixed/changed before your user can continue.
+To those who can identify them, this usage of a disabled button simply tells them “something” is wrong and provides no more information on exactly what needs to be corrected (the user may assume that something is wrong with the application and it that needs to be reloaded).&lt;/p&gt;
+&lt;p&gt;The change required to re-enable a disabled control may be appear to be a simple puzzle for your user but this is an assumption we shouldn&#39;t make for all our users.
+Introducing this, potentially, small frustration for users with or without cognitive disabilities or  even familiarity with our product is best avoided in keeping with the &amp;quot;Don&#39;t make me think&amp;quot; principle.&lt;/p&gt;
+&lt;p&gt;Due to the contrast issues mentioned before, you can&#39;t rely on the contents of the buttons label to aid your user here as they may not be able to read it.&lt;/p&gt;
+&lt;h2 id=&quot;is-there-another-way&quot; tabindex=&quot;-1&quot;&gt;Is there another way? &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are more suitable patterns and approaches available that can help us avoid using disabled buttons.
+For example let&#39;s look at the commonly approach of using a disabled button to prevent progress on an in-complete form.&lt;/p&gt;
+&lt;p&gt;❌ Don&#39;t&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable the submit button (hoping your user understands that you mean for them to fully complete the form before continuing)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;✅ Do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark all required fields (unless all fields are required or there are more optional fields than required)&lt;/li&gt;
+&lt;li&gt;Let the user interact with and traverse the form, and identify the enabled submit/continue button (both by its label and location)&lt;/li&gt;
+&lt;li&gt;Let them attempt to submit the form&lt;/li&gt;
+&lt;li&gt;Inform the user exactly what issue is preventing them from continuing. This can be inline error message or something like the Toast alert pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In other words, allow and use the users premature interaction with the control as an opportunity to inform or guide them how to continue.
+This principle can be applied to many instances in which disabled buttons are commonly used.&lt;/p&gt;
+&lt;!-- ## When should a disabled button be used
+
+![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) --&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>How CPUs are made</title>
+		<link href="https://david-way.github.io/blog/how-cpus-are-made/"/>
+		<updated>2021-07-07T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/how-cpus-are-made/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Or&lt;/em&gt;, how we trick rocks into doing math for us.&lt;/p&gt;
+&lt;h3 id=&quot;computer-aided-design-cad&quot; tabindex=&quot;-1&quot;&gt;Computer-Aided Design (CAD) &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/how-cpus-are-made/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The first step of designing a CPU is to select an instruction set and execution paradigm (referred to as the micro-architecture of the CPU). The micro-architecture for a specific application (for example, general-purpose consumer use, enterprise-grade, scientific computing, or embedded system) and a suitable performance level.&lt;/p&gt;
+&lt;p&gt;The implementation logic of the CPU is constructed by abstract specification of desired circuit behavior
+through the selection of appropriate components e.g. Arithmetic Logic Units (ALU), registers, and cache memory and clocks.
+The CAD software translates these specifications into the required circuits, logic devices, and logic gates and ultimately the transistors that make them. These elements are printed, in layers, to the silicone. The design is also analyzed and simulated to assess manufacturability and design integrity.&lt;/p&gt;
+&lt;h3 id=&quot;masking-and-fabrication&quot; tabindex=&quot;-1&quot;&gt;Masking and Fabrication &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/how-cpus-are-made/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Manufacturing transistors, at the required scale and precision the achieve the modern CPU performance levels, is not possible with typical manufacturing processes. Even the most precise 3D printers are not suitable for the nano-metre scale of today’s chips. Photolithography is a multi-step process of using light to print or etch the design of many chips onto a thin silicon wafer.&lt;/p&gt;
+&lt;p&gt;The printing process begins in a sterile environment by applying hydrogen peroxide to a substrate to remove any contaminants. A thin layer of silicon is deposited on the substrate and spun to uniformly cover it in another layer of photo-resistant chemical which is then baked into place. This layer is less than 2 micro-metres thick. A photo mask of the chip design is placed above the wafer and an extreme intensity UV light source is focused through it. This projects an image of the design that exposes and chemically alters the photoresist where the light reaches it. The photoresist is then treated to develop the exposed regions, preventing further light-induced alteration, and washed away from the unexposed regions. A chemical is used to remove the uppermost layer of the substrate not covered by the photoresist mask, etching the design into the wafer. The photoresist is removed, the surface is polished, and the process is repeated in as many layers as needed to complete the chip design.&lt;/p&gt;
+&lt;h2 id=&quot;packaging&quot; tabindex=&quot;-1&quot;&gt;Packaging &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/how-cpus-are-made/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The delicate silicone die added to a carrier is attached to the printed circuit board (PCB) allowing it to connect, via a pin and socket, to the rest of the computer system. A heat-spreading component is mounted on top to transfer heat away from the circuits.&lt;/p&gt;
+&lt;h2 id=&quot;testing-and-binning&quot; tabindex=&quot;-1&quot;&gt;Testing and Binning &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/how-cpus-are-made/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;CPUs are very complex and rely on an incredible level of precision on a microscopic scale. A lot of effort is put into avoiding defects but when they do occur, binning is used to mitigate waste. If the defect occurs in a redundant or non-essential component of the CPU like a core, that component is disabled and the CPU is sold as a lower-end part.&lt;/p&gt;
+&lt;p&gt;The CPUs are then packaged for retail to customers or sold to OEMs for inclusion in their products.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Quick-start guide to using Yaml</title>
+		<link href="https://david-way.github.io/blog/quick-start-guide-to-yaml/"/>
+		<updated>2021-04-07T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/quick-start-guide-to-yaml/</id>
+		<content type="html">&lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;details&gt;
+  &lt;summary&gt;A &lt;strong&gt;file&lt;/strong&gt; is and object on a computer that is used to store data or information. &lt;/summary&gt;
+&lt;p&gt;There are many types of files, recognisable by their extension (ie. &lt;code&gt;.doc&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt;,  &lt;code&gt;.jpg&lt;/code&gt;).
+Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;A &lt;strong&gt;markup up language&lt;/strong&gt; is a system of writing content so that it’s structure conveys meaning.&lt;/summary&gt;
+&lt;p&gt;Yaml is a data serialization language and not technically a markup language though it functions a lot like one.&lt;/p&gt;
+&lt;p&gt;Other markup languages you might be familiar with are HTML, XML and JSON.&lt;/p&gt;
+&lt;p&gt;When you compare Yaml structure to other similar systems Yaml requires considerably less content or &amp;quot;decoration&amp;quot; to carry the same amount of information, but is less resilient regarding spacing and formatting as a result.&lt;/p&gt;
+  &lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th align=&quot;left&quot;&gt;Yaml&lt;/th&gt;
+      &lt;th align=&quot;left&quot;&gt;XML&lt;/th&gt;
+      &lt;th align=&quot;left&quot;&gt;JSON&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;vertical-align:top&quot;&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;People&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Bob
+    &lt;span class=&quot;token key atrule&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Wicklow&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Ireland&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-xml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;People&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Bob&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;30&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;address&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Wicklow, Ireland&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;address&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;People&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot;vertical-align:top&quot;&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre class=&quot;language-json&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;People&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Bob&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;address&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &quot;Wicklow&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Ireland
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/details&gt;
+&lt;h2 id=&quot;yaml&quot; tabindex=&quot;-1&quot;&gt;Yaml &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Yaml is a markup like language (used in the &lt;code&gt;.yaml&lt;/code&gt; file type) that aims to make data portable in a way that is easy to read, write and edit by humans &lt;em&gt;and&lt;/em&gt; computers.&lt;/p&gt;
+&lt;p&gt;A Yaml document contains fields to store different types of data and aims to use compact formats to describe more complex data structures (eg. lists of items and maps).&lt;/p&gt;
+&lt;h2 id=&quot;yaml-structure&quot; tabindex=&quot;-1&quot;&gt;Yaml structure &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The three dashes &lt;code&gt;---&lt;/code&gt; are used to signal the start and end of a Yaml document.&lt;/p&gt;
+&lt;p&gt;You structure a YAML document with white-spaces. This means indentation (spaces) and new lines are crucial to a correctly structured Yaml document (always use spaces not tabs). Unless otherwise indicated, newlines indicate the end of a field.&lt;/p&gt;
+&lt;h2 id=&quot;key-value-pairs&quot; tabindex=&quot;-1&quot;&gt;Key value pairs &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The simplest and most common field you’ll see in a &lt;code&gt;.yaml&lt;/code&gt; file is a key-value pair.&lt;/p&gt;
+&lt;p&gt;Key-value pairs are used for labelling (the key) single pieces of data (the value), like a piece of text or a number.&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Example of `key: value` pair&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Note that a space after the colon is mandatory&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Joan smith
+&lt;span class=&quot;token key atrule&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;32&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;details&gt;
+  &lt;summary markdown=&quot;span&quot;&gt;What is the value data of writing like this?&lt;/summary&gt;
+  &lt;br&gt;
+  A computer can read and use structured data written like this a lot easier than the following:
+&lt;pre class=&quot;language-txt&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;It&#39;s Joan Smiths 32nd birthday today.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Again, the key aim of Yaml is to be portable, meaning that it can be easily imported, understood by multiple programs and in programming languages.&lt;/p&gt;
+&lt;/details&gt; 
+&lt;h2 id=&quot;blocks-of-text&quot; tabindex=&quot;-1&quot;&gt;Blocks of text &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To store a literal block of text using the pipe (&lt;code&gt;|&lt;/code&gt;) character. New lines are preserved within the block.&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;literal_block&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token scalar string&quot;&gt;
+    This entire block of text will be the value of the &#39;literal_block&#39; key,
+    with line breaks being preserved.&lt;/span&gt;
+
+    The literal continues until de&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;dented&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; and the leading indentation is
+    stripped.&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;comments&quot; tabindex=&quot;-1&quot;&gt;Comments &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Comments begin with a pound or hash sign (&lt;code&gt;#&lt;/code&gt;). A comment is a programmer-readable explanation or annotation of data. It is ignored by the application.&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# This is a full line comment, humans only... 🤖&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; value&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;lists&quot; tabindex=&quot;-1&quot;&gt;Lists &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;List or arrays are lines that begin at the same indentation level, starting with a dash followed by a space. A list groups multiple values into the same field.&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Here is a list of names grouped into a &quot;name&quot; field&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jane&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;John&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jill&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# This is an alternative format to achieve the same thing. &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Arrays are often represented using square brackets []&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jane&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;John&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jill&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;dictionary-list&quot; tabindex=&quot;-1&quot;&gt;Dictionary List &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A dictionary groups more complex values into a single field.&lt;/p&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# This is a collection of two link fields&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Each associated with its own label and url fields&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;links&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Home&#39;&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;./home&#39;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;About&#39;&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;/about&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>This is my third post.</title>
-		<link href="https://example.com/blog/thirdpost/"/>
+		<link href="https://david-way.github.io/blog/thirdpost/"/>
 		<updated>2018-08-24T00:00:00Z</updated>
-		<id>https://example.com/blog/thirdpost/</id>
+		<id>https://david-way.github.io/blog/thirdpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;styled-with-syntax&quot; tabindex=&quot;-1&quot;&gt;Styled (with Syntax) &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;styled-with-syntax&quot; tabindex=&quot;-1&quot;&gt;Styled (with Syntax) &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -41,7 +209,7 @@
 
 &lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;unstyled&quot; tabindex=&quot;-1&quot;&gt;Unstyled &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;unstyled&quot; tabindex=&quot;-1&quot;&gt;Unstyled &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;// this is a command
 function myCommand() {
@@ -52,44 +220,22 @@ function myCommand() {
 // Test with a line break above this line.
 console.log(&#39;Test&#39;);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>This is my second post with a much longer title.</title>
-		<link href="https://example.com/blog/secondpost/"/>
+		<link href="https://david-way.github.io/blog/secondpost/"/>
 		<updated>2018-07-04T00:00:00Z</updated>
-		<id>https://example.com/blog/secondpost/</id>
+		<id>https://david-way.github.io/blog/secondpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://example.com/blog/firstpost/&quot;&gt;First post&lt;/a&gt;
-&lt;a href=&quot;https://example.com/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://david-way.github.io/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://david-way.github.io/blog/firstpost/&quot;&gt;First post&lt;/a&gt;
+&lt;a href=&quot;https://david-way.github.io/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>This is my first post.</title>
-		<link href="https://example.com/blog/firstpost/"/>
-		<updated>2018-05-01T00:00:00Z</updated>
-		<id>https://example.com/blog/firstpost/</id>
-		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token inserted-sign inserted language-js&quot;&gt;&lt;span class=&quot;token prefix inserted&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token deleted-sign deleted language-js&quot;&gt;&lt;span class=&quot;token prefix deleted&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;  counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/span&gt;
-&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
 	</entry>
 </feed>

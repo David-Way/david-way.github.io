@@ -3,12 +3,478 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tagged “second tag”</title>
-		<meta name="description" content="I am writing about my not important experiences.">
+		<title>The User Experience of Disabled Buttons</title>
+		<meta name="description" content="The button that wasn&#39;t there… When should you use a disabled button?">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.postlist { counter-reset: start-from 2 }
+		<style>/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+pre[class*=language-],
+code[class*=language-] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::selection,
+code[class*=language-]::selection,
+pre[class*=language-] *::selection,
+code[class*=language-] *::selection {
+  text-shadow: none;
+  background: #264F78;
+}
+
+@media print {
+  pre[class*=language-],
+  code[class*=language-] {
+    text-shadow: none;
+  }
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.doctype .token.doctype-tag {
+  color: #569CD6;
+}
+
+.token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.token.comment,
+.token.prolog {
+  color: #6a9955;
+}
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+  color: #ce9178;
+}
+
+.language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.token.operator,
+.token.entity {
+  color: #d4d4d4;
+}
+
+.token.operator.arrow {
+  color: #569CD6;
+}
+
+.token.atrule {
+  color: #ce9178;
+}
+
+.token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.keyword {
+  color: #569CD6;
+}
+
+.token.keyword.module,
+.token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.token.function,
+.token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.token.regex {
+  color: #d16969;
+}
+
+.token.important {
+  color: #569cd6;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.constant {
+  color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.token.console {
+  color: #9cdcfe;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.token.boolean {
+  color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.token.selector {
+  color: #d7ba7d;
+}
+
+.token.escape {
+  color: #d7ba7d;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+  color: #808080;
+}
+
+.token.cdata {
+  color: #808080;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.token.entity {
+  color: #569cd6;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+
+/*********************************************************
+* Language Specific
+*/
+pre[class*=language-javascript],
+code[class*=language-javascript],
+pre[class*=language-jsx],
+code[class*=language-jsx],
+pre[class*=language-typescript],
+code[class*=language-typescript],
+pre[class*=language-tsx],
+code[class*=language-tsx] {
+  color: #9cdcfe;
+}
+
+pre[class*=language-css],
+code[class*=language-css] {
+  color: #ce9178;
+}
+
+pre[class*=language-html],
+code[class*=language-html] {
+  color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+}
+
+/*********************************************************
+* Line highlighting
+*/
+pre[class*=language-] > code[class*=language-] {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=prism-vsc-dark-plus.css.map */
+/*
+ * New diff- syntax
+ */
+pre[class*=language-diff-] {
+  --eleventy-code-padding: 1.25em;
+  padding-left: var(--eleventy-code-padding);
+  padding-right: var(--eleventy-code-padding);
+}
+
+.token.deleted {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: inherit;
+}
+
+.token.inserted {
+  background-color: #690;
+  color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.token.prefix.inserted,
+.token.prefix.deleted {
+  width: var(--eleventy-code-padding);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+  display: block;
+  margin-left: calc(-1 * var(--eleventy-code-padding));
+  margin-right: calc(-1 * var(--eleventy-code-padding));
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/*# sourceMappingURL=prism-diff.css.map */
 * { box-sizing: border-box; }
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -2834,31 +3300,63 @@ h2 + .header-anchor {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
+<h1>The User Experience of Disabled Buttons</h1>
 
-<!-- Stop deleting -->
+<ul class="post-metadata">
+	<li><time datetime="2021-10-11">11 October 2021</time></li>
+	<li><a href="/tags/ux/" class="post-tag">ux</a>, </li>
+	<li><a href="/tags/design-pattern/" class="post-tag">design pattern</a>, </li>
+	<li><a href="/tags/a11y/" class="post-tag">a11y</a>, </li>
+	<li><a href="/tags/html/" class="post-tag">html</a></li>
+</ul>
 
-<h1>Tagged “second tag”</h1>
+<h2 id="should-you-use-disabled-buttons" tabindex="-1">Should you use disabled buttons? <a class="header-anchor" href="#should-you-use-disabled-buttons">#</a></h2>
+<p>There are two reasons why disabling a button is best avoided.</p>
+<h3 id="1-state-identification" tabindex="-1">1. State Identification <a class="header-anchor" href="#1-state-identification">#</a></h3>
+<p>The difference between a disabled button and a regular button is usually very subtle<sup>*</sup>, meaning it’s a weak indicator of state that may be missed by many of your users.</p>
+<p><i>* Designing something to look both disabled and identifiable as a button while achieving adequate contrast is tricky.</i></p>
+<h4 id="1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective" tabindex="-1">1.1 What does it mean to disable a button from a Screen Readers perspective? <a class="header-anchor" href="#1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective">#</a></h4>
+<details>
+  <summary>ℹ️ What is a <i>Screen Reader</i>?</summary>
+<p>A screen reader is assistive software, primarily used by people with low or no vision. It converts the semantic elements on a web page (for example text, buttons, images and links) into audible speech or braille.</p>
+</details>
+<p>A disabled button is non-existent to a Screen Reader user, meaning they don’t even get the weak indicator afforded to fully sighted users.</p>
+<blockquote>
+<p>According to the <a href="https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment">World Health Organization</a>, there are an estimated 285 million people in the world who suffer from some level of visual impairment (including anyone from legally blind, to those with less than 20/20 vision).</p>
+</blockquote>
+<h3 id="2-unnecessary-cognitive-load" tabindex="-1">2. Unnecessary Cognitive Load <a class="header-anchor" href="#2-unnecessary-cognitive-load">#</a></h3>
+<p>When a disabled button is intended to act as a visual indicator that something on the page or form needs to be fixed/changed before your user can continue.
+To those who can identify them, this usage of a disabled button simply tells them “something” is wrong and provides no more information on exactly what needs to be corrected (the user may assume that something is wrong with the application and it that needs to be reloaded).</p>
+<p>The change required to re-enable a disabled control may be appear to be a simple puzzle for your user but this is an assumption we shouldn't make for all our users.
+Introducing this, potentially, small frustration for users with or without cognitive disabilities or  even familiarity with our product is best avoided in keeping with the &quot;Don't make me think&quot; principle.</p>
+<p>Due to the contrast issues mentioned before, you can't rely on the contents of the buttons label to aid your user here as they may not be able to read it.</p>
+<h2 id="is-there-another-way" tabindex="-1">Is there another way? <a class="header-anchor" href="#is-there-another-way">#</a></h2>
+<p>There are more suitable patterns and approaches available that can help us avoid using disabled buttons.
+For example let's look at the commonly approach of using a disabled button to prevent progress on an in-complete form.</p>
+<p>❌ Don't</p>
+<ul>
+<li>Disable the submit button (hoping your user understands that you mean for them to fully complete the form before continuing)</li>
+</ul>
+<p>✅ Do</p>
+<ul>
+<li>Mark all required fields (unless all fields are required or there are more optional fields than required)</li>
+<li>Let the user interact with and traverse the form, and identify the enabled submit/continue button (both by its label and location)</li>
+<li>Let them attempt to submit the form</li>
+<li>Inform the user exactly what issue is preventing them from continuing. This can be inline error message or something like the Toast alert pattern</li>
+</ul>
+<p>In other words, allow and use the users premature interaction with the control as an opportunity to inform or guide them how to continue.
+This principle can be applied to many instances in which disabled buttons are commonly used.</p>
+<!-- ## When should a disabled button be used
 
-
-
-<ol reversed class="postlist">
-
-	<li class="postlist-item">
-		<a href="/blog/thirdpost/" class="postlist-link">This is my third post.</a>
-		<time class="postlist-date" datetime="2018-08-24">August 2018</time>
-	</li>
-
-</ol>
-
-
-<p>See <a href="/tags/">all tags</a>.</p>
-
+![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) -->
+<ul class="links-nextprev"><li>Previous: <a href="/blog/how-cpus-are-made/">How CPUs are made</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /tags/second-tag/ -->
+		<!-- Current page: /blog/ux-of-a-disabled-button/ -->
 	</body>
 </html>
