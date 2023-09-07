@@ -3225,7 +3225,8 @@ code {
   content: "" counter(start-from, decimal-leading-zero) ". ";
   line-height: 100%;
   text-align: right;
-  margin-left: -1.5rem;
+  margin-left: calc(var(--base-size-16) * -1 - var(--base-size-4));
+  margin-right: var(--base-size-4);
 }
 .c-post-list__item > .c-post-tag {
   align-self: center;
@@ -3253,6 +3254,10 @@ code {
   text-underline-position: from-font;
   text-underline-offset: 0;
   text-decoration-thickness: 1px;
+}
+.c-post-list__link:focus-visible {
+  outline-offset: 1px;
+  outline: var(--color-checks-input-focus-text) auto 1px;
 }
 
 /* Tags */
