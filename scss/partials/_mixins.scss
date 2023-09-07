@@ -5,122 +5,122 @@
 // 📖 Typography
 //--------------------
 @mixin type-h1() {
-  font-size: var(--font-size-xxxl, 3.05rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xxxl, 3.05rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-h2() {
-  font-size: var(--font-size-xxl, 2.4rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xxl, 2.4rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-h3() {
-  font-size: var(--font-size-xl, 1.95rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xl, 1.95rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-h4() {
-  font-size: var(--font-size-lg, 1.56rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-lg, 1.56rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-body-lead() {
-  font-size: var(--font-size-md, 1.25rem);
-  font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-md, 1.25rem);
+	font-weight: variables.$font-weight-regular;
 }
 
 @mixin type-body() {
-  font-size: var(--font-size-base, 1rem);
-  font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-base, 1rem);
+	font-weight: variables.$font-weight-regular;
 }
 
 @mixin type-small() {
-  font-size: var(--font-size-sm, 0.8rem);
-  font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-sm, 0.8rem);
+	font-weight: variables.$font-weight-regular;
 }
 
 @mixin type-x-small() {
-  font-size: var(--font-size-x-sm, 0.64rem);
-  font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-x-sm, 0.64rem);
+	font-weight: variables.$font-weight-regular;
 }
 
 @mixin type-button() {
-  font-size: var(--font-size-base, 1rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-base, 1rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-button-small() {
-  font-size: var(--font-size-sm, 0.8rem);
-  font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-sm, 0.8rem);
+	font-weight: variables.$font-weight-bold;
 }
 
 @mixin type-no-select() {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 //--------------------
 // 🏗️ Layer
 //--------------------
 @mixin layer($layer) {
-  @if map-has-key(variables.$layer-shadows, $layer) {
-    box-shadow: #{map.get(variables.$layer-shadows, $layer)};
-  }
-  else {
-    @warn '#{$layer} is not a valid layer.';
-  }
+	@if map-has-key(variables.$layer-shadows, $layer) {
+		box-shadow: #{map.get(variables.$layer-shadows, $layer)};
+	}
+	else {
+		@warn '#{$layer} is not a valid layer.';
+	}
 }
 
 @mixin getZIndexFor($index-for) {
-  @if map-has-key(variables.$z-index, $index-for) {
-    z-index: #{map.get(variables.$z-index, $index-for)};
-  }
-  else {
-    @warn '#{$index-for} does not have a valid z-index.';
-  }
+	@if map-has-key(variables.$z-index, $index-for) {
+		z-index: #{map.get(variables.$z-index, $index-for)};
+	}
+	else {
+		@warn '#{$index-for} does not have a valid z-index.';
+	}
 }
 
 //--------------------
 // 🫧 Reset
 //--------------------
 @mixin unstyled-list() {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 
-  /**
+	/**
     * @bugfix Prevent webkit from removing list semantics
     * https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
     * 1. Add a non-breaking space
     * 2. Make sure it doesn't mess up the DOM flow
     */
-  & > li:before {
-    content: "\200B"; /* 1 */
-    position: absolute; /* 2 */
-  }
+	& > li:before {
+		content: "\200B"; /* 1 */
+		position: absolute; /* 2 */
+	}
 }
 
 @mixin unstyled-button() {
-  align-items: center;
-  appearance: button;
-  backface-visibility: hidden;
-  border-width: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 0;
-  outline: none;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  user-select: none;
-  vertical-align: top;
-  webkit-user-select: none;
-  width: max-content;
+	align-items: center;
+	appearance: button;
+	backface-visibility: hidden;
+	border-width: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 0;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	touch-action: manipulation;
+	transform: translateZ(0);
+	user-select: none;
+	vertical-align: top;
+	webkit-user-select: none;
+	width: max-content;
 }
 
 //--------------------
@@ -128,8 +128,9 @@
 //--------------------
 
 @mixin focus() {
-  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
-    rgba(50, 50, 93, 0.2) 0 6px 15px 0,
-    var(--cds-border-subtle-selected-01) 0 2px 2px 0,
-    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+	box-shadow:
+		rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+		rgba(50, 50, 93, 0.2) 0 6px 15px 0,
+		var(--cds-border-subtle-selected-01) 0 2px 2px 0,
+		rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }

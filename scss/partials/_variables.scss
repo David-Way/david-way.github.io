@@ -2,32 +2,48 @@
 // 📏 Spacing
 //--------------------
 $spacing: (
-  "auto": auto,
-  "00": 0px,
-  "04": var(--base-size-4),
-  "08": var(--base-size-8),
-  "12": var(--base-size-12),
-  "16": var(--base-size-16),
-  "20": var(--base-size-20),
-  "24": var(--base-size-24),
-  "28": var(--base-size-28),
-  "32": var(--base-size-32),
-  "36": var(--base-size-36),
-  "40": var(--base-size-40),
-  "44": var(--base-size-44),
-  "48": var(--base-size-48),
-  "64": var(--base-size-64),
-  "80": var(--base-size-80),
-  "96": var(--base-size-96),
-  "112": var(--base-size-112),
-  "128": var(--base-size-128)
+	"auto": auto,
+	"00": 0px,
+	"04": var(--base-size-4),
+	// 0.25rem
+	"08": var(--base-size-8),
+	// 0.5rem
+	"12": var(--base-size-12),
+	// 0.75rem
+	"16": var(--base-size-16),
+	// 1rem
+	"20": var(--base-size-20),
+	// 1.25rem
+	"24": var(--base-size-24),
+	// 1.5rem
+	"28": var(--base-size-28),
+	// 1.75rem
+	"32": var(--base-size-32),
+	// 2rem
+	"36": var(--base-size-36),
+	// 2.25rem
+	"40": var(--base-size-40),
+	// 2.5rem
+	"44": var(--base-size-44),
+	// 2.75rem
+	"48": var(--base-size-48),
+	// 3rem
+	"64": var(--base-size-64),
+	// 4rem
+	"80": var(--base-size-80),
+	// 5rem
+	"96": var(--base-size-96),
+	// 6rem
+	"112": var(--base-size-112),
+	// 7rem
+	"128": var(--base-size-128) // 8rem,
 );
 
 $break-points: (
-  "x-small": 320px,
-  "small": 640px,
-  "medium": 1440px,
-  "large": 2440px,
+	"x-small": 320px,
+	"small": 640px,
+	"medium": 1440px,
+	"large": 2440px,
 );
 
 //--------------------
@@ -35,19 +51,29 @@ $break-points: (
 //--------------------
 
 $input-sizes: (
-  "x-small": 4rem,
-  "small": 8rem,
-  "medium": 16rem,
-  "large": 24rem,
-  "x-large": 32rem,
+	"x-small": 4rem,
+	"small": 8rem,
+	"medium": 16rem,
+	"large": 24rem,
+	"x-large": 32rem,
 );
 
 //--------------------
 // 📖 Typography
 //--------------------
-$font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", sans-serif;
+$font-family:
+	"Source Sans Pro",
+	-apple-system,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	Roboto,
+	Helvetica,
+	Arial,
+	sans-serif,
+	"Apple Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol",
+	sans-serif;
 $font-weight-bold: 600;
 $font-weight-regular: 400;
 
@@ -61,23 +87,23 @@ $animation-timing-func-small: cubic-bezier(0.16, 1, 0.3, 1);
 // 🕶️ Layering
 //--------------------
 $layer-shadows: (
-  'none': none,
-  'resting-xsmall': var(--shadow-resting-xsmall),
-  'resting-small': var(--shadow-resting-small),
-  'resting-medium': var(--shadow-resting-medium),
-  'floating-small': var(--shadow-floating-small),
-  'floating-medium': var(--shadow-floating-medium),
-  'floating-large': var(--shadow-floating-large),
-  'floating-xlarge': var(--shadow-floating-xlarge),
-  'inset': var(--shadow-inset),
-  'highlight': var(--shadow-highlight),
+	"none": none,
+	"resting-xsmall": var(--shadow-resting-xsmall),
+	"resting-small": var(--shadow-resting-small),
+	"resting-medium": var(--shadow-resting-medium),
+	"floating-small": var(--shadow-floating-small),
+	"floating-medium": var(--shadow-floating-medium),
+	"floating-large": var(--shadow-floating-large),
+	"floating-xlarge": var(--shadow-floating-xlarge),
+	"inset": var(--shadow-inset),
+	"highlight": var(--shadow-highlight),
 );
 
 $z-index: (
-  "base": 0,
-  "side-panel-container": "100",
-  "side-panel": "101",
-  "overflow-menu-content-container": "200",
-  "dialog-overlay": "300",
-  "dialog-container": "301",
+	"base": 0,
+	"side-panel-container": "100",
+	"side-panel": "101",
+	"overflow-menu-content-container": "200",
+	"dialog-overlay": "300",
+	"dialog-container": "301",
 );

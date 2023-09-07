@@ -7,83 +7,83 @@
 
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
-  :root {
-    --font-size-x-sm: clamp(0.64rem, -0.01vw + 0.64rem, 0.63rem);
-    --font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
-    --font-size-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
-    --font-size-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
-    --font-size-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
-    --font-size-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
-    --font-size-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
-    --font-size-xxxl: clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem);
-  }
+	:root {
+		--font-size-x-sm: clamp(0.64rem, -0.01vw + 0.64rem, 0.63rem);
+		--font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
+		--font-size-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+		--font-size-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
+		--font-size-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
+		--font-size-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
+		--font-size-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
+		--font-size-xxxl: clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem);
+	}
 }
 
 /* Fallback variables for browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
-  :root {
-    --font-size-x-sm: 0.64rem;
-    --font-size-sm: 0.8rem;
-    --font-size-base: 1rem;
-    --font-size-md: 1.25rem;
-    --font-size-lg: 1.56rem;
-    --font-size-xl: 1.95rem;
-    --font-size-xxl: 2.44rem;
-    --font-size-xxxl: 3.05rem;
-  }
+	:root {
+		--font-size-x-sm: 0.64rem;
+		--font-size-sm: 0.8rem;
+		--font-size-base: 1rem;
+		--font-size-md: 1.25rem;
+		--font-size-lg: 1.56rem;
+		--font-size-xl: 1.95rem;
+		--font-size-xxl: 2.44rem;
+		--font-size-xxxl: 3.05rem;
+	}
 
-  @media screen and (min-width: 1280px) {
-    :root {
-      --font-size-x-sm: 0.63rem;
-      --font-size-sm: 0.84rem;
-      --font-size-base: 1.13rem;
-      --font-size-md: 1.5rem;
-      --font-size-lg: 2rem;
-      --font-size-xl: 2.66rem;
-      --font-size-xxl: 3.55rem;
-      --font-size-xxxl: 4.73rem;
-    }
-  }
+	@media screen and (min-width: 1280px) {
+		:root {
+			--font-size-x-sm: 0.63rem;
+			--font-size-sm: 0.84rem;
+			--font-size-base: 1.13rem;
+			--font-size-md: 1.5rem;
+			--font-size-lg: 2rem;
+			--font-size-xl: 2.66rem;
+			--font-size-xxl: 3.55rem;
+			--font-size-xxxl: 4.73rem;
+		}
+	}
 }
 
 html {
-  font-family: variables.$font-family;
-  font-size: var(--font-size-base, 16px);
-  font-weight: variables.$font-weight-regular;
-  color: var(--cds-text-primary);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: variables.$font-family;
+	font-size: var(--font-size-base, 16px);
+	font-weight: variables.$font-weight-regular;
+	color: var(--cds-text-primary);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  @include mixins.type-h1();
-  max-width: 60ch;
+	@include mixins.type-h1();
+	max-width: 60ch;
 }
 
 h2 {
-  @include mixins.type-h2();
-  max-width: 60ch;
+	@include mixins.type-h2();
+	max-width: 60ch;
 }
 
 h3 {
-  @include mixins.type-h3();
-  max-width: 60ch;
+	@include mixins.type-h3();
+	max-width: 60ch;
 }
 
 h4,
 h5,
 h6 {
-  @include mixins.type-h4();
-  max-width: 60ch;
+	@include mixins.type-h4();
+	max-width: 60ch;
 }
 
 p {
-  @include mixins.type-body();
-  max-width: 60ch;
+	@include mixins.type-body();
+	max-width: 60ch;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 p {
@@ -96,19 +96,19 @@ li {
 
 a[href] {
 	color: var(--color-accent-fg);
-  box-sizing: border-box;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-  outline: none;
-  text-decoration: none;
-  transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: none;
+	text-decoration: none;
+	transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
 
-  &:hover,
-  &:active {
-    text-decoration: underline;
-  }
+	&:hover,
+	&:active {
+		text-decoration: underline;
+	}
 }

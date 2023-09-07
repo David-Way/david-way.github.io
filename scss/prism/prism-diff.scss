@@ -2,13 +2,13 @@
  * New diff- syntax
  */
 
- pre[class*="language-diff-"] {
+pre[class*="language-diff-"] {
 	--eleventy-code-padding: 1.25em;
 	padding-left: var(--eleventy-code-padding);
 	padding-right: var(--eleventy-code-padding);
 }
 .token.deleted {
-	background-color: rgba(255, 0, 0, .1);
+	background-color: rgba(255, 0, 0, 0.1);
 	color: inherit;
 }
 .token.inserted {
@@ -31,7 +31,7 @@
 .token.prefix.inserted,
 .token.prefix.deleted {
 	width: var(--eleventy-code-padding);
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Optional: full-width background color */
