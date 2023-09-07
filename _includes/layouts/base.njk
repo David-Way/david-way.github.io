@@ -33,15 +33,15 @@
 	<body>
 		<a href="#skip" class="u-visually-hidden">Skip to main content</a>
 
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+		<header class="c-header">
+			<a href="/" class="c-header__home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
+			<nav class="c-nav">
 				<h2 class="u-visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
+				<ul class="c-nav__list">
 				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
 			</nav>

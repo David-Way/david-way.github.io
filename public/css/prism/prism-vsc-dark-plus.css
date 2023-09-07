@@ -24,7 +24,7 @@ code[class*=language-]::selection,
 pre[class*=language-] *::selection,
 code[class*=language-] *::selection {
   text-shadow: none;
-  background: #264F78;
+  background: #264f78;
 }
 
 @media print {
@@ -55,7 +55,7 @@ pre[class*=language-] {
 }
 
 .token.doctype .token.doctype-tag {
-  color: #569CD6;
+  color: #569cd6;
 }
 
 .token.doctype .token.name {
@@ -103,7 +103,7 @@ pre[class*=language-] {
 }
 
 .token.operator.arrow {
-  color: #569CD6;
+  color: #569cd6;
 }
 
 .token.atrule {
@@ -127,7 +127,7 @@ pre[class*=language-] {
 }
 
 .token.keyword {
-  color: #569CD6;
+  color: #569cd6;
 }
 
 .token.keyword.module,

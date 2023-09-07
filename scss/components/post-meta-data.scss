@@ -1,0 +1,12 @@
+.c-post-meta-data {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__item--time {
+		margin-right: var(--base-size-16);
+	}
+}

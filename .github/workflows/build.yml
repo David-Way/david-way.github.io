@@ -1,20 +1,20 @@
 name: Build on Pull Prequest to Main
 on:
   pull_request:
-    branches: ['main']
+    branches: ["main"]
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['18.16.0']
+        node-version: ["18.16.0"]
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
       - name: Install packages
         run: npm ci
       - name: Run npm build

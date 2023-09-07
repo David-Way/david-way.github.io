@@ -6,6 +6,6 @@ module.exports = {
 	author: {
 		name: "David Way",
 		email: "david_way@live.ie",
-		url: "https://david-way.github.io/about-me/"
-	}
-}
+		url: "https://david-way.github.io/about-me/",
+	},
+};

@@ -1,0 +1,26 @@
+.c-nav {
+	padding: 0;
+
+	&__list {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__list-item {
+		display: inline-block;
+
+		a[href]:not(:hover) {
+			text-decoration: none;
+		}
+
+		a[href][aria-current="page"] {
+			text-decoration: underline;
+		}
+
+		& + & {
+			margin-left: var(--base-size-16);
+		}
+	}
+}
