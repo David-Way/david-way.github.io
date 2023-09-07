@@ -1,0 +1,7 @@
+.c-iterator-links {
+  list-style: none;
+  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
+  padding: var(--base-size-16) 0;
+}
+
+/*# sourceMappingURL=iterator-links.css.map */

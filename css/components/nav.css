@@ -1,0 +1,23 @@
+.c-nav {
+  padding: 0;
+}
+.c-nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.c-nav__list-item {
+  display: inline-block;
+}
+.c-nav__list-item a[href]:not(:hover) {
+  text-decoration: none;
+}
+.c-nav__list-item a[href][aria-current=page] {
+  text-decoration: underline;
+}
+.c-nav__list-item + .c-nav__list-item {
+  margin-left: var(--base-size-16);
+}
+
+/*# sourceMappingURL=nav.css.map */
