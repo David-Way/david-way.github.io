@@ -1,4 +1,7 @@
+@use "../partials/mixins";
+
 .c-header {
+	@include mixins.contain-site-content();
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;

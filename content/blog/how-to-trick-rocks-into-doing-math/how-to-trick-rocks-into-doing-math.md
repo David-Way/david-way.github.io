@@ -1,6 +1,6 @@
 ---
-title: How CPUs are made
-description: This is a post on My Blog about agile frameworks.
+title: How to trick rocks into doing math
+description: This is a post on My Blog about product design.
 date: 2021-07-07
 tags:
   - writing exercise
@@ -8,7 +8,7 @@ tags:
   - product design
 ---
 
-_Or_, how we trick rocks into doing math for us.
+_Or_, how CPUs are made.
 
 ### Computer-Aided Design (CAD)
 

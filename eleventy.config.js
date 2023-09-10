@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
 		mdLib.use(markdownItAnchor, {
 			permalink: markdownItAnchor.permalink.ariaHidden({
 				placement: "after",
-				class: "header-anchor",
+				class: "c-header-anchor",
 				symbol: "#",
 				ariaHidden: false,
 			}),
