@@ -39,20 +39,20 @@
 &lt;p&gt;We&#39;re all familiar with affordances in design. An affordance is a compelling indicator as to how an item on a page operates and includes both its perceived and actual functions. Essentially they are features that teach you how to use the functions, or make them more intuitive.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.&lt;/li&gt;
-&lt;li&gt;The underline of a link, is an example of a convention based affordances/.&lt;/li&gt;
+&lt;li&gt;The underline of a link, is an example of a convention based affordance.&lt;/li&gt;
 &lt;li&gt;Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.&lt;/li&gt;
-&lt;li&gt;Making buttons look 3D or clickable through copy, shape and/or color is a crucial affordance.
-We use these visually available affordances to make our UI&#39;s intuitive to non screen reader users.&lt;/li&gt;
+&lt;li&gt;Making buttons look 3D or clickable through copy, shape and/or color is a crucial affordance.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;We rely heavily on visually available affordances to make our UI&#39;s intuitive to non screen reader users. These clues are not available to visually impaired users however so we need to be sure to provide equivalent information in non-visual methods.&lt;/p&gt;
 &lt;h2 id=&quot;non-visual-affordances&quot; tabindex=&quot;-1&quot;&gt;Non-visual affordances &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Semantic non-visual affordances required by Voice Over are supplied by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
+&lt;p&gt;Semantic non-visual affordances required by Screen Readers are provided by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
 &lt;p&gt;Semantic or meaning is given to content in a document through&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Location in the DOM tree, for example is parent, child or sibling&lt;/li&gt;
 &lt;li&gt;Labelling, using headings, aria-labels or related label elements&lt;/li&gt;
 &lt;li&gt;Tag type or tag roles, is it a list a button, the sidebar of our site&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;how-to-use-a-screen-reader-to&quot; tabindex=&quot;-1&quot;&gt;How to use a screen reader to &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;how-to-use-a-screen-reader&quot; tabindex=&quot;-1&quot;&gt;How to use a screen reader &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;System Settings &amp;gt; Accessibility &amp;gt; Voice Over &amp;gt; Voice Over training (recommend 20 mins)&lt;/p&gt;
 &lt;p&gt;How to:&lt;/p&gt;
 &lt;ul&gt;
