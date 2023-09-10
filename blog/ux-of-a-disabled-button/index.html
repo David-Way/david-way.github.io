@@ -8,147 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-@media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #999;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #9a6e3a;
-	/* This background color was intended by the author of this theme. */
-	background: hsla(0, 0%, 100%, .5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-.token.function,
-.token.class-name {
-	color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-pre[class*=language-],
+		<style>pre[class*=language-],
 code[class*=language-] {
   color: #d4d4d4;
   font-size: 13px;
@@ -185,7 +45,7 @@ code[class*=language-] *::selection {
 }
 pre[class*=language-] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin-block: 0.5em;
   overflow: auto;
   background: #1e1e1e;
 }
@@ -475,7 +335,6 @@ pre[class*=language-diff-] {
 }
 
 /*# sourceMappingURL=prism-diff.css.map */
-* { box-sizing: border-box; }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -810,6 +669,10 @@ template {
   --base-size-128: 8rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -824,12 +687,20 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  max-width: 40em;
+main > *:not(img):not(video):not(picture) {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -915,6 +786,32 @@ main:first-child {
 
 .u-w\:full {
   width: 100% !important;
+}
+
+[class^=u-bleed-container],
+[class*=u-bleed-container] {
+  margin-left: auto;
+  margin-right: auto;
+}
+[class^=u-bleed-container] > *,
+[class*=u-bleed-container] > * {
+  width: 100%;
+}
+
+.u-bleed-container\:small {
+  max-width: 48rem !important;
+}
+
+.u-bleed-container\:medium {
+  max-width: 56rem !important;
+}
+
+.u-bleed-container\:large {
+  max-width: 64rem !important;
+}
+
+.u-bleed-container\:full {
+  max-width: 100% !important;
 }
 
 .u-list\:unstyled {
@@ -2119,7 +2016,7 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: var(--font-size-base, 16px);
   font-weight: 400;
-  color: var(--cds-text-primary);
+  color: var(--color-fg-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2182,6 +2079,46 @@ a[href] {
 }
 a[href]:hover, a[href]:active {
   text-decoration: underline;
+}
+
+table {
+  margin: 1em 0;
+}
+
+table td,
+table th {
+  padding-right: 1em;
+}
+
+figure {
+  font-size: var(--font-size-sm, 0.8rem);
+  font-weight: 400;
+  color: var(--color-fg-muted);
+}
+
+pre,
+code {
+  font-family: var(--font-family-monospace);
+}
+
+code {
+  word-break: break-all;
+}
+
+pre:not([class*=language-]) {
+  margin-block: 0.5em;
+  line-height: 1.375; /* 22px /16 */
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
 }
 
 :root {
@@ -3115,6 +3052,9 @@ a[href]:hover, a[href]:active {
 }
 /** 🧱 Components */
 .c-header {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3155,58 +3095,17 @@ a[href]:hover, a[href]:active {
 }
 
 .c-post-meta-data {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
 }
 .c-post-meta-data__item--time {
   margin-right: var(--base-size-16);
 }
 
-.c-iterator-links {
-  list-style: none;
-  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
-  padding: var(--base-size-16) 0;
-}
-
-table {
-  margin: 1em 0;
-}
-
-table td,
-table th {
-  padding-right: 1em;
-}
-
-pre,
-code {
-  font-family: var(--font-family-monospace);
-}
-
-pre:not([class*=language-]) {
-  margin: 0.5em 0;
-  line-height: 1.375; /* 22px /16 */
-  -moz-tab-size: var(--syntax-tab-size);
-  -o-tab-size: var(--syntax-tab-size);
-  tab-size: var(--syntax-tab-size);
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-}
-
-code {
-  word-break: break-all;
-}
-
-/* Posts list */
 .c-post-list {
   list-style: none;
   padding: 0;
@@ -3234,11 +3133,12 @@ code {
 .c-post-list__item--active .c-post-list__link {
   font-weight: bold;
 }
-
-.c-post-list__date,
-.c-post-list__item:before {
+.c-post-list__date, .c-post-list__reading-time, .c-post-list__item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--fgColor-muted);
+}
+.c-post-list__separator {
+  margin-inline: var(--base-size-4);
 }
 
 .c-post-list__date {
@@ -3260,7 +3160,6 @@ code {
   outline: var(--color-checks-input-focus-text) auto 1px;
 }
 
-/* Tags */
 .c-post-tag {
   display: inline-flex;
   align-items: center;
@@ -3270,30 +3169,36 @@ code {
 }
 
 /* Direct Links / Markdown Headers */
-.header-anchor {
+.c-header-anchor {
   text-decoration: none;
   font-style: normal;
   font-size: 1em;
   margin-left: 0.1em;
 }
 
-a[href].header-anchor,
-a[href].header-anchor:visited {
+a[href].c-header-anchor,
+a[href].c-header-anchor:visited {
   color: transparent;
 }
 
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
+a[href].c-header-anchor:focus,
+a[href].c-header-anchor:hover {
   text-decoration: underline;
 }
 
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+a[href].c-header-anchor:focus,
+:hover > a[href].c-header-anchor {
   color: var(--fgColor-muted);
 }
 
-h2 + .header-anchor {
+h2 + .c-header-anchor {
   font-size: 1.5em;
+}
+
+.c-iterator-links {
+  list-style: none;
+  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
+  padding: var(--base-size-16) 0;
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -3315,6 +3220,7 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
+
 <h1>The User Experience of Disabled Buttons</h1>
 
 <ul class="c-post-meta-data">
@@ -3325,12 +3231,12 @@ h2 + .header-anchor {
 	<li class="c-post-meta-data__item"><a href="/tags/html/" class="c-post-tag">html</a></li>
 </ul>
 
-<h2 id="should-you-use-disabled-buttons" tabindex="-1">Should you use disabled buttons? <a class="header-anchor" href="#should-you-use-disabled-buttons">#</a></h2>
+<h2 id="should-you-use-disabled-buttons" tabindex="-1">Should you use disabled buttons? <a class="c-header-anchor" href="#should-you-use-disabled-buttons">#</a></h2>
 <p>There are two reasons why disabling a button is best avoided.</p>
-<h3 id="1-state-identification" tabindex="-1">1. State Identification <a class="header-anchor" href="#1-state-identification">#</a></h3>
+<h3 id="1-state-identification" tabindex="-1">1. State Identification <a class="c-header-anchor" href="#1-state-identification">#</a></h3>
 <p>The difference between a disabled button and a regular button is usually very subtle<sup>*</sup>, meaning it’s a weak indicator of state that may be missed by many of your users.</p>
 <p><i>* Designing something to look both disabled and identifiable as a button while achieving adequate contrast is tricky.</i></p>
-<h4 id="1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective" tabindex="-1">1.1 What does it mean to disable a button from a Screen Readers perspective? <a class="header-anchor" href="#1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective">#</a></h4>
+<h4 id="1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective" tabindex="-1">1.1 What does it mean to disable a button from a Screen Readers perspective? <a class="c-header-anchor" href="#1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective">#</a></h4>
 <details>
   <summary>ℹ️ What is a <i>Screen Reader</i>?</summary>
 <p>A screen reader is assistive software, primarily used by people with low or no vision. It converts the semantic elements on a web page (for example text, buttons, images and links) into audible speech or braille.</p>
@@ -3339,13 +3245,13 @@ h2 + .header-anchor {
 <blockquote>
 <p>According to the <a href="https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment">World Health Organization</a>, there are an estimated 285 million people in the world who suffer from some level of visual impairment (including anyone from legally blind, to those with less than 20/20 vision).</p>
 </blockquote>
-<h3 id="2-unnecessary-cognitive-load" tabindex="-1">2. Unnecessary Cognitive Load <a class="header-anchor" href="#2-unnecessary-cognitive-load">#</a></h3>
+<h3 id="2-unnecessary-cognitive-load" tabindex="-1">2. Unnecessary Cognitive Load <a class="c-header-anchor" href="#2-unnecessary-cognitive-load">#</a></h3>
 <p>When a disabled button is intended to act as a visual indicator that something on the page or form needs to be fixed/changed before your user can continue.
 To those who can identify them, this usage of a disabled button simply tells them “something” is wrong and provides no more information on exactly what needs to be corrected (the user may assume that something is wrong with the application and it that needs to be reloaded).</p>
 <p>The change required to re-enable a disabled control may be appear to be a simple puzzle for your user but this is an assumption we shouldn't make for all our users.
 Introducing this, potentially, small frustration for users with or without cognitive disabilities or even familiarity with our product is best avoided in keeping with the &quot;Don't make me think&quot; principle.</p>
 <p>Due to the contrast issues mentioned before, you can't rely on the contents of the buttons label to aid your user here as they may not be able to read it.</p>
-<h2 id="is-there-another-way" tabindex="-1">Is there another way? <a class="header-anchor" href="#is-there-another-way">#</a></h2>
+<h2 id="is-there-another-way" tabindex="-1">Is there another way? <a class="c-header-anchor" href="#is-there-another-way">#</a></h2>
 <p>There are more suitable patterns and approaches available that can help us avoid using disabled buttons.
 For example let's look at the commonly approach of using a disabled button to prevent progress on an in-complete form.</p>
 <p>❌ Don't</p>
@@ -3365,7 +3271,7 @@ This principle can be applied to many instances in which disabled buttons are co
 
 ![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) -->
 
-<ul class="c-iterator-links"><li>Previous: <a href="/blog/how-cpus-are-made/">How CPUs are made</a></li>
+<ul class="c-iterator-links"><li>Previous: <a href="/blog/how-to-trick-rocks-into-doing-math/">How to trick rocks into doing math</a></li><li>Next: <a href="/blog/why-designers-should-learn-voice-over/">Why designers should learn VoiceOver</a></li>
 </ul>
 
 		</main>

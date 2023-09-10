@@ -8,8 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>* { box-sizing: border-box; }
-@charset "UTF-8";
+		<style>@charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -343,6 +342,10 @@ template {
   --base-size-128: 8rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -357,12 +360,20 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  max-width: 40em;
+main > *:not(img):not(video):not(picture) {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -448,6 +459,32 @@ main:first-child {
 
 .u-w\:full {
   width: 100% !important;
+}
+
+[class^=u-bleed-container],
+[class*=u-bleed-container] {
+  margin-left: auto;
+  margin-right: auto;
+}
+[class^=u-bleed-container] > *,
+[class*=u-bleed-container] > * {
+  width: 100%;
+}
+
+.u-bleed-container\:small {
+  max-width: 48rem !important;
+}
+
+.u-bleed-container\:medium {
+  max-width: 56rem !important;
+}
+
+.u-bleed-container\:large {
+  max-width: 64rem !important;
+}
+
+.u-bleed-container\:full {
+  max-width: 100% !important;
 }
 
 .u-list\:unstyled {
@@ -1652,7 +1689,7 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: var(--font-size-base, 16px);
   font-weight: 400;
-  color: var(--cds-text-primary);
+  color: var(--color-fg-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1715,6 +1752,46 @@ a[href] {
 }
 a[href]:hover, a[href]:active {
   text-decoration: underline;
+}
+
+table {
+  margin: 1em 0;
+}
+
+table td,
+table th {
+  padding-right: 1em;
+}
+
+figure {
+  font-size: var(--font-size-sm, 0.8rem);
+  font-weight: 400;
+  color: var(--color-fg-muted);
+}
+
+pre,
+code {
+  font-family: var(--font-family-monospace);
+}
+
+code {
+  word-break: break-all;
+}
+
+pre:not([class*=language-]) {
+  margin-block: 0.5em;
+  line-height: 1.375; /* 22px /16 */
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
 }
 
 :root {
@@ -2648,6 +2725,9 @@ a[href]:hover, a[href]:active {
 }
 /** 🧱 Components */
 .c-header {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2688,58 +2768,17 @@ a[href]:hover, a[href]:active {
 }
 
 .c-post-meta-data {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
 }
 .c-post-meta-data__item--time {
   margin-right: var(--base-size-16);
 }
 
-.c-iterator-links {
-  list-style: none;
-  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
-  padding: var(--base-size-16) 0;
-}
-
-table {
-  margin: 1em 0;
-}
-
-table td,
-table th {
-  padding-right: 1em;
-}
-
-pre,
-code {
-  font-family: var(--font-family-monospace);
-}
-
-pre:not([class*=language-]) {
-  margin: 0.5em 0;
-  line-height: 1.375; /* 22px /16 */
-  -moz-tab-size: var(--syntax-tab-size);
-  -o-tab-size: var(--syntax-tab-size);
-  tab-size: var(--syntax-tab-size);
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-}
-
-code {
-  word-break: break-all;
-}
-
-/* Posts list */
 .c-post-list {
   list-style: none;
   padding: 0;
@@ -2767,11 +2806,12 @@ code {
 .c-post-list__item--active .c-post-list__link {
   font-weight: bold;
 }
-
-.c-post-list__date,
-.c-post-list__item:before {
+.c-post-list__date, .c-post-list__reading-time, .c-post-list__item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--fgColor-muted);
+}
+.c-post-list__separator {
+  margin-inline: var(--base-size-4);
 }
 
 .c-post-list__date {
@@ -2793,7 +2833,6 @@ code {
   outline: var(--color-checks-input-focus-text) auto 1px;
 }
 
-/* Tags */
 .c-post-tag {
   display: inline-flex;
   align-items: center;
@@ -2803,30 +2842,36 @@ code {
 }
 
 /* Direct Links / Markdown Headers */
-.header-anchor {
+.c-header-anchor {
   text-decoration: none;
   font-style: normal;
   font-size: 1em;
   margin-left: 0.1em;
 }
 
-a[href].header-anchor,
-a[href].header-anchor:visited {
+a[href].c-header-anchor,
+a[href].c-header-anchor:visited {
   color: transparent;
 }
 
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
+a[href].c-header-anchor:focus,
+a[href].c-header-anchor:hover {
   text-decoration: underline;
 }
 
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+a[href].c-header-anchor:focus,
+:hover > a[href].c-header-anchor {
   color: var(--fgColor-muted);
 }
 
-h2 + .header-anchor {
+h2 + .c-header-anchor {
   font-size: 1.5em;
+}
+
+.c-iterator-links {
+  list-style: none;
+  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
+  padding: var(--base-size-16) 0;
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -2851,7 +2896,7 @@ h2 + .header-anchor {
 
 <!-- Stop deleting -->
 
-<h1 id="content-not-found" tabindex="-1">Content not found. <a class="header-anchor" href="#content-not-found">#</a></h1>
+<h1 id="content-not-found" tabindex="-1">Content not found. <a class="c-header-anchor" href="#content-not-found">#</a></h1>
 <p>Go <a href="/">home</a>.</p>
 <!--
 

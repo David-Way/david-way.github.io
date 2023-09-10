@@ -8,147 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-@media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #999;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #9a6e3a;
-	/* This background color was intended by the author of this theme. */
-	background: hsla(0, 0%, 100%, .5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-.token.function,
-.token.class-name {
-	color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-pre[class*=language-],
+		<style>pre[class*=language-],
 code[class*=language-] {
   color: #d4d4d4;
   font-size: 13px;
@@ -185,7 +45,7 @@ code[class*=language-] *::selection {
 }
 pre[class*=language-] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin-block: 0.5em;
   overflow: auto;
   background: #1e1e1e;
 }
@@ -475,7 +335,6 @@ pre[class*=language-diff-] {
 }
 
 /*# sourceMappingURL=prism-diff.css.map */
-* { box-sizing: border-box; }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -810,6 +669,10 @@ template {
   --base-size-128: 8rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -824,12 +687,20 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  max-width: 40em;
+main > *:not(img):not(video):not(picture) {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -915,6 +786,32 @@ main:first-child {
 
 .u-w\:full {
   width: 100% !important;
+}
+
+[class^=u-bleed-container],
+[class*=u-bleed-container] {
+  margin-left: auto;
+  margin-right: auto;
+}
+[class^=u-bleed-container] > *,
+[class*=u-bleed-container] > * {
+  width: 100%;
+}
+
+.u-bleed-container\:small {
+  max-width: 48rem !important;
+}
+
+.u-bleed-container\:medium {
+  max-width: 56rem !important;
+}
+
+.u-bleed-container\:large {
+  max-width: 64rem !important;
+}
+
+.u-bleed-container\:full {
+  max-width: 100% !important;
 }
 
 .u-list\:unstyled {
@@ -2119,7 +2016,7 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: var(--font-size-base, 16px);
   font-weight: 400;
-  color: var(--cds-text-primary);
+  color: var(--color-fg-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2182,6 +2079,46 @@ a[href] {
 }
 a[href]:hover, a[href]:active {
   text-decoration: underline;
+}
+
+table {
+  margin: 1em 0;
+}
+
+table td,
+table th {
+  padding-right: 1em;
+}
+
+figure {
+  font-size: var(--font-size-sm, 0.8rem);
+  font-weight: 400;
+  color: var(--color-fg-muted);
+}
+
+pre,
+code {
+  font-family: var(--font-family-monospace);
+}
+
+code {
+  word-break: break-all;
+}
+
+pre:not([class*=language-]) {
+  margin-block: 0.5em;
+  line-height: 1.375; /* 22px /16 */
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
 }
 
 :root {
@@ -3115,6 +3052,9 @@ a[href]:hover, a[href]:active {
 }
 /** 🧱 Components */
 .c-header {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3155,58 +3095,17 @@ a[href]:hover, a[href]:active {
 }
 
 .c-post-meta-data {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
 }
 .c-post-meta-data__item--time {
   margin-right: var(--base-size-16);
 }
 
-.c-iterator-links {
-  list-style: none;
-  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
-  padding: var(--base-size-16) 0;
-}
-
-table {
-  margin: 1em 0;
-}
-
-table td,
-table th {
-  padding-right: 1em;
-}
-
-pre,
-code {
-  font-family: var(--font-family-monospace);
-}
-
-pre:not([class*=language-]) {
-  margin: 0.5em 0;
-  line-height: 1.375; /* 22px /16 */
-  -moz-tab-size: var(--syntax-tab-size);
-  -o-tab-size: var(--syntax-tab-size);
-  tab-size: var(--syntax-tab-size);
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-}
-
-code {
-  word-break: break-all;
-}
-
-/* Posts list */
 .c-post-list {
   list-style: none;
   padding: 0;
@@ -3234,11 +3133,12 @@ code {
 .c-post-list__item--active .c-post-list__link {
   font-weight: bold;
 }
-
-.c-post-list__date,
-.c-post-list__item:before {
+.c-post-list__date, .c-post-list__reading-time, .c-post-list__item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--fgColor-muted);
+}
+.c-post-list__separator {
+  margin-inline: var(--base-size-4);
 }
 
 .c-post-list__date {
@@ -3260,7 +3160,6 @@ code {
   outline: var(--color-checks-input-focus-text) auto 1px;
 }
 
-/* Tags */
 .c-post-tag {
   display: inline-flex;
   align-items: center;
@@ -3270,30 +3169,36 @@ code {
 }
 
 /* Direct Links / Markdown Headers */
-.header-anchor {
+.c-header-anchor {
   text-decoration: none;
   font-style: normal;
   font-size: 1em;
   margin-left: 0.1em;
 }
 
-a[href].header-anchor,
-a[href].header-anchor:visited {
+a[href].c-header-anchor,
+a[href].c-header-anchor:visited {
   color: transparent;
 }
 
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
+a[href].c-header-anchor:focus,
+a[href].c-header-anchor:hover {
   text-decoration: underline;
 }
 
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+a[href].c-header-anchor:focus,
+:hover > a[href].c-header-anchor {
   color: var(--fgColor-muted);
 }
 
-h2 + .header-anchor {
+h2 + .c-header-anchor {
   font-size: 1.5em;
+}
+
+.c-iterator-links {
+  list-style: none;
+  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
+  padding: var(--base-size-16) 0;
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -3315,6 +3220,7 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
+
 <h1>Quick-start guide to using Yaml</h1>
 
 <ul class="c-post-meta-data">
@@ -3324,7 +3230,7 @@ h2 + .header-anchor {
 	<li class="c-post-meta-data__item"><a href="/tags/yaml/" class="c-post-tag">yaml</a></li>
 </ul>
 
-<h2 id="definitions" tabindex="-1">Definitions <a class="header-anchor" href="#definitions">#</a></h2>
+<h2 id="definitions" tabindex="-1">Definitions <a class="c-header-anchor" href="#definitions">#</a></h2>
 <details>
   <summary>A <strong>file</strong> is and object on a computer that is used to store data or information. </summary>
 <p>There are many types of files, recognisable by their extension (ie. <code>.doc</code>, <code>.pdf</code>, <code>.jpg</code>).
@@ -3375,13 +3281,13 @@ Different file types are optimised for different tasks, like storing video, audi
   </tbody>
 </table>
 </details>
-<h2 id="yaml" tabindex="-1">Yaml <a class="header-anchor" href="#yaml">#</a></h2>
+<h2 id="yaml" tabindex="-1">Yaml <a class="c-header-anchor" href="#yaml">#</a></h2>
 <p>Yaml is a markup like language (used in the <code>.yaml</code> file type) that aims to make data portable in a way that is easy to read, write and edit by humans <em>and</em> computers.</p>
 <p>A Yaml document contains fields to store different types of data and aims to use compact formats to describe more complex data structures (eg. lists of items and maps).</p>
-<h2 id="yaml-structure" tabindex="-1">Yaml structure <a class="header-anchor" href="#yaml-structure">#</a></h2>
+<h2 id="yaml-structure" tabindex="-1">Yaml structure <a class="c-header-anchor" href="#yaml-structure">#</a></h2>
 <p>The three dashes <code>---</code> are used to signal the start and end of a Yaml document.</p>
 <p>You structure a YAML document with white-spaces. This means indentation (spaces) and new lines are crucial to a correctly structured Yaml document (always use spaces not tabs). Unless otherwise indicated, newlines indicate the end of a field.</p>
-<h2 id="key-value-pairs" tabindex="-1">Key value pairs <a class="header-anchor" href="#key-value-pairs">#</a></h2>
+<h2 id="key-value-pairs" tabindex="-1">Key value pairs <a class="c-header-anchor" href="#key-value-pairs">#</a></h2>
 <p>The simplest and most common field you’ll see in a <code>.yaml</code> file is a key-value pair.</p>
 <p>Key-value pairs are used for labelling (the key) single pieces of data (the value), like a piece of text or a number.</p>
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token punctuation">---</span>
@@ -3397,7 +3303,7 @@ Different file types are optimised for different tasks, like storing video, audi
 <pre class="language-txt" tabindex="0"><code class="language-txt">It's Joan Smiths 32nd birthday today.</code></pre>
 <p>Again, the key aim of Yaml is to be portable, meaning that it can be easily imported, understood by multiple programs and in programming languages.</p>
 </details>
-<h2 id="blocks-of-text" tabindex="-1">Blocks of text <a class="header-anchor" href="#blocks-of-text">#</a></h2>
+<h2 id="blocks-of-text" tabindex="-1">Blocks of text <a class="c-header-anchor" href="#blocks-of-text">#</a></h2>
 <p>To store a literal block of text using the pipe (<code>|</code>) character. New lines are preserved within the block.</p>
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token key atrule">literal_block</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
   This entire block of text will be the value of the 'literal_block' key,
@@ -3405,11 +3311,11 @@ Different file types are optimised for different tasks, like storing video, audi
 
   The literal continues until de<span class="token punctuation">-</span>dented<span class="token punctuation">,</span> and the leading indentation is
   stripped.</code></pre>
-<h2 id="comments" tabindex="-1">Comments <a class="header-anchor" href="#comments">#</a></h2>
+<h2 id="comments" tabindex="-1">Comments <a class="c-header-anchor" href="#comments">#</a></h2>
 <p>Comments begin with a pound or hash sign (<code>#</code>). A comment is a programmer-readable explanation or annotation of data. It is ignored by the application.</p>
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is a full line comment, humans only... 🤖</span>
 <span class="token key atrule">key</span><span class="token punctuation">:</span> value</code></pre>
-<h2 id="lists" tabindex="-1">Lists <a class="header-anchor" href="#lists">#</a></h2>
+<h2 id="lists" tabindex="-1">Lists <a class="c-header-anchor" href="#lists">#</a></h2>
 <p>List or arrays are lines that begin at the same indentation level, starting with a dash followed by a space. A list groups multiple values into the same field.</p>
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># Here is a list of names grouped into a "name" field</span>
 <span class="token key atrule">names</span><span class="token punctuation">:</span>
@@ -3420,7 +3326,7 @@ Different file types are optimised for different tasks, like storing video, audi
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is an alternative format to achieve the same thing.</span>
 <span class="token comment"># Arrays are often represented using square brackets []</span>
 <span class="token key atrule">names</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"Jane"</span><span class="token punctuation">,</span> <span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token string">"Jill"</span><span class="token punctuation">]</span></code></pre>
-<h2 id="dictionary-list" tabindex="-1">Dictionary List <a class="header-anchor" href="#dictionary-list">#</a></h2>
+<h2 id="dictionary-list" tabindex="-1">Dictionary List <a class="c-header-anchor" href="#dictionary-list">#</a></h2>
 <p>A dictionary groups more complex values into a single field.</p>
 <pre class="language-yml" tabindex="0"><code class="language-yml"><span class="token comment"># This is a collection of two link fields</span>
 <span class="token comment"># Each associated with its own label and url fields</span>
@@ -3430,7 +3336,7 @@ Different file types are optimised for different tasks, like storing video, audi
   <span class="token punctuation">-</span> <span class="token key atrule">label</span><span class="token punctuation">:</span> <span class="token string">"About"</span>
     <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"/about"</span></code></pre>
 
-<ul class="c-iterator-links"><li>Previous: <a href="/blog/thirdpost/">This is my third post.</a></li><li>Next: <a href="/blog/how-cpus-are-made/">How CPUs are made</a></li>
+<ul class="c-iterator-links"><li>Next: <a href="/blog/how-to-trick-rocks-into-doing-math/">How to trick rocks into doing math</a></li>
 </ul>
 
 		</main>

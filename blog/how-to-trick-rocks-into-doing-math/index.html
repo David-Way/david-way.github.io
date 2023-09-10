@@ -3,13 +3,338 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tagged “posts with two tags”</title>
-		<meta name="description" content="I am writing about my not important experiences.">
+		<title>How to trick rocks into doing math</title>
+		<meta name="description" content="This is a post on My Blog about product design.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.c-post-list { counter-reset: start-from 2 }
-* { box-sizing: border-box; }
+		<style>pre[class*=language-],
+code[class*=language-] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::selection,
+code[class*=language-]::selection,
+pre[class*=language-] *::selection,
+code[class*=language-] *::selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+@media print {
+  pre[class*=language-],
+  code[class*=language-] {
+    text-shadow: none;
+  }
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin-block: 0.5em;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+.token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.token.comment,
+.token.prolog {
+  color: #6a9955;
+}
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+  color: #ce9178;
+}
+
+.language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.token.operator,
+.token.entity {
+  color: #d4d4d4;
+}
+
+.token.operator.arrow {
+  color: #569cd6;
+}
+
+.token.atrule {
+  color: #ce9178;
+}
+
+.token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.keyword.module,
+.token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.token.function,
+.token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.token.regex {
+  color: #d16969;
+}
+
+.token.important {
+  color: #569cd6;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.constant {
+  color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.token.console {
+  color: #9cdcfe;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.token.boolean {
+  color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.token.selector {
+  color: #d7ba7d;
+}
+
+.token.escape {
+  color: #d7ba7d;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+  color: #808080;
+}
+
+.token.cdata {
+  color: #808080;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.token.entity {
+  color: #569cd6;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+
+/*********************************************************
+* Language Specific
+*/
+pre[class*=language-javascript],
+code[class*=language-javascript],
+pre[class*=language-jsx],
+code[class*=language-jsx],
+pre[class*=language-typescript],
+code[class*=language-typescript],
+pre[class*=language-tsx],
+code[class*=language-tsx] {
+  color: #9cdcfe;
+}
+
+pre[class*=language-css],
+code[class*=language-css] {
+  color: #ce9178;
+}
+
+pre[class*=language-html],
+code[class*=language-html] {
+  color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+}
+
+/*********************************************************
+* Line highlighting
+*/
+pre[class*=language-] > code[class*=language-] {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=prism-vsc-dark-plus.css.map */
+/*
+ * New diff- syntax
+ */
+pre[class*=language-diff-] {
+  --eleventy-code-padding: 1.25em;
+  padding-left: var(--eleventy-code-padding);
+  padding-right: var(--eleventy-code-padding);
+}
+
+.token.deleted {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: inherit;
+}
+
+.token.inserted {
+  background-color: #690;
+  color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.token.prefix.inserted,
+.token.prefix.deleted {
+  width: var(--eleventy-code-padding);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+  display: block;
+  margin-left: calc(-1 * var(--eleventy-code-padding));
+  margin-right: calc(-1 * var(--eleventy-code-padding));
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/*# sourceMappingURL=prism-diff.css.map */
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -344,6 +669,10 @@ template {
   --base-size-128: 8rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -358,12 +687,20 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  max-width: 40em;
+main > *:not(img):not(video):not(picture) {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -449,6 +786,32 @@ main:first-child {
 
 .u-w\:full {
   width: 100% !important;
+}
+
+[class^=u-bleed-container],
+[class*=u-bleed-container] {
+  margin-left: auto;
+  margin-right: auto;
+}
+[class^=u-bleed-container] > *,
+[class*=u-bleed-container] > * {
+  width: 100%;
+}
+
+.u-bleed-container\:small {
+  max-width: 48rem !important;
+}
+
+.u-bleed-container\:medium {
+  max-width: 56rem !important;
+}
+
+.u-bleed-container\:large {
+  max-width: 64rem !important;
+}
+
+.u-bleed-container\:full {
+  max-width: 100% !important;
 }
 
 .u-list\:unstyled {
@@ -1653,7 +2016,7 @@ html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: var(--font-size-base, 16px);
   font-weight: 400;
-  color: var(--cds-text-primary);
+  color: var(--color-fg-default);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1716,6 +2079,46 @@ a[href] {
 }
 a[href]:hover, a[href]:active {
   text-decoration: underline;
+}
+
+table {
+  margin: 1em 0;
+}
+
+table td,
+table th {
+  padding-right: 1em;
+}
+
+figure {
+  font-size: var(--font-size-sm, 0.8rem);
+  font-weight: 400;
+  color: var(--color-fg-muted);
+}
+
+pre,
+code {
+  font-family: var(--font-family-monospace);
+}
+
+code {
+  word-break: break-all;
+}
+
+pre:not([class*=language-]) {
+  margin-block: 0.5em;
+  line-height: 1.375; /* 22px /16 */
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
 }
 
 :root {
@@ -2649,6 +3052,9 @@ a[href]:hover, a[href]:active {
 }
 /** 🧱 Components */
 .c-header {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2689,58 +3095,17 @@ a[href]:hover, a[href]:active {
 }
 
 .c-post-meta-data {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
 }
 .c-post-meta-data__item--time {
   margin-right: var(--base-size-16);
 }
 
-.c-iterator-links {
-  list-style: none;
-  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
-  padding: var(--base-size-16) 0;
-}
-
-table {
-  margin: 1em 0;
-}
-
-table td,
-table th {
-  padding-right: 1em;
-}
-
-pre,
-code {
-  font-family: var(--font-family-monospace);
-}
-
-pre:not([class*=language-]) {
-  margin: 0.5em 0;
-  line-height: 1.375; /* 22px /16 */
-  -moz-tab-size: var(--syntax-tab-size);
-  -o-tab-size: var(--syntax-tab-size);
-  tab-size: var(--syntax-tab-size);
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-}
-
-code {
-  word-break: break-all;
-}
-
-/* Posts list */
 .c-post-list {
   list-style: none;
   padding: 0;
@@ -2768,11 +3133,12 @@ code {
 .c-post-list__item--active .c-post-list__link {
   font-weight: bold;
 }
-
-.c-post-list__date,
-.c-post-list__item:before {
+.c-post-list__date, .c-post-list__reading-time, .c-post-list__item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--fgColor-muted);
+}
+.c-post-list__separator {
+  margin-inline: var(--base-size-4);
 }
 
 .c-post-list__date {
@@ -2794,7 +3160,6 @@ code {
   outline: var(--color-checks-input-focus-text) auto 1px;
 }
 
-/* Tags */
 .c-post-tag {
   display: inline-flex;
   align-items: center;
@@ -2804,30 +3169,36 @@ code {
 }
 
 /* Direct Links / Markdown Headers */
-.header-anchor {
+.c-header-anchor {
   text-decoration: none;
   font-style: normal;
   font-size: 1em;
   margin-left: 0.1em;
 }
 
-a[href].header-anchor,
-a[href].header-anchor:visited {
+a[href].c-header-anchor,
+a[href].c-header-anchor:visited {
   color: transparent;
 }
 
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
+a[href].c-header-anchor:focus,
+a[href].c-header-anchor:hover {
   text-decoration: underline;
 }
 
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
+a[href].c-header-anchor:focus,
+:hover > a[href].c-header-anchor {
   color: var(--fgColor-muted);
 }
 
-h2 + .header-anchor {
+h2 + .c-header-anchor {
   font-size: 1.5em;
+}
+
+.c-iterator-links {
+  list-style: none;
+  box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
+  padding: var(--base-size-16) 0;
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -2848,31 +3219,39 @@ h2 + .header-anchor {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
 
-<!-- Stop deleting -->
+<h1>How to trick rocks into doing math</h1>
 
-<h1>Tagged “posts with two tags”</h1>
+<ul class="c-post-meta-data">
+	<li class="c-post-meta-data__item--time"><time datetime="2021-07-07">07 July 2021</time></li>
+	<li class="c-post-meta-data__item"><a href="/tags/writing-exercise/" class="c-post-tag">writing exercise</a>, </li>
+	<li class="c-post-meta-data__item"><a href="/tags/cpu/" class="c-post-tag">cpu</a>, </li>
+	<li class="c-post-meta-data__item"><a href="/tags/product-design/" class="c-post-tag">product design</a></li>
+</ul>
 
+<p><em>Or</em>, how CPUs are made.</p>
+<h3 id="computer-aided-design-cad" tabindex="-1">Computer-Aided Design (CAD) <a class="c-header-anchor" href="#computer-aided-design-cad">#</a></h3>
+<p>The first step of designing a CPU is to select an instruction set and execution paradigm (referred to as the micro-architecture of the CPU). The micro-architecture for a specific application (for example, general-purpose consumer use, enterprise-grade, scientific computing, or embedded system) and a suitable performance level.</p>
+<p>The implementation logic of the CPU is constructed by abstract specification of desired circuit behavior
+through the selection of appropriate components e.g. Arithmetic Logic Units (ALU), registers, and cache memory and clocks.
+The CAD software translates these specifications into the required circuits, logic devices, and logic gates and ultimately the transistors that make them. These elements are printed, in layers, to the silicone. The design is also analyzed and simulated to assess manufacturability and design integrity.</p>
+<h3 id="masking-and-fabrication" tabindex="-1">Masking and Fabrication <a class="c-header-anchor" href="#masking-and-fabrication">#</a></h3>
+<p>Manufacturing transistors, at the required scale and precision the achieve the modern CPU performance levels, is not possible with typical manufacturing processes. Even the most precise 3D printers are not suitable for the nano-metre scale of today’s chips. Photolithography is a multi-step process of using light to print or etch the design of many chips onto a thin silicon wafer.</p>
+<p>The printing process begins in a sterile environment by applying hydrogen peroxide to a substrate to remove any contaminants. A thin layer of silicon is deposited on the substrate and spun to uniformly cover it in another layer of photo-resistant chemical which is then baked into place. This layer is less than 2 micro-metres thick. A photo mask of the chip design is placed above the wafer and an extreme intensity UV light source is focused through it. This projects an image of the design that exposes and chemically alters the photoresist where the light reaches it. The photoresist is then treated to develop the exposed regions, preventing further light-induced alteration, and washed away from the unexposed regions. A chemical is used to remove the uppermost layer of the substrate not covered by the photoresist mask, etching the design into the wafer. The photoresist is removed, the surface is polished, and the process is repeated in as many layers as needed to complete the chip design.</p>
+<h2 id="packaging" tabindex="-1">Packaging <a class="c-header-anchor" href="#packaging">#</a></h2>
+<p>The delicate silicone die added to a carrier is attached to the printed circuit board (PCB) allowing it to connect, via a pin and socket, to the rest of the computer system. A heat-spreading component is mounted on top to transfer heat away from the circuits.</p>
+<h2 id="testing-and-binning" tabindex="-1">Testing and Binning <a class="c-header-anchor" href="#testing-and-binning">#</a></h2>
+<p>CPUs are very complex and rely on an incredible level of precision on a microscopic scale. A lot of effort is put into avoiding defects but when they do occur, binning is used to mitigate waste. If the defect occurs in a redundant or non-essential component of the CPU like a core, that component is disabled and the CPU is sold as a lower-end part.</p>
+<p>The CPUs are then packaged for retail to customers or sold to OEMs for inclusion in their products.</p>
 
-
-<ol reversed class="c-post-list">
-
-	<li class="c-post-list__item">
-		<a href="/blog/thirdpost/" class="c-post-list__link">This is my third post.</a>
-		<time class="c-post-list__date" datetime="2018-08-24">August 2018</time>
-	</li>
-
-</ol>
-
-
-<p>See <a href="/tags/">all tags</a>.</p>
-
+<ul class="c-iterator-links"><li>Previous: <a href="/blog/quick-start-guide-to-yaml/">Quick-start guide to using Yaml</a></li><li>Next: <a href="/blog/ux-of-a-disabled-button/">The User Experience of Disabled Buttons</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /tags/posts-with-two-tags/ -->
+		<!-- Current page: /blog/how-to-trick-rocks-into-doing-math/ -->
 	</body>
 </html>
