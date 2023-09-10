@@ -131,3 +131,9 @@
 	outline-offset: 1px;
 	outline: var(--color-checks-input-focus-text) auto 1px;
 }
+
+@mixin contain-site-content {
+	max-width: 42rem;
+	margin-left: auto;
+	margin-right: auto;
+}

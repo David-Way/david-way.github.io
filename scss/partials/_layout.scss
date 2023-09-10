@@ -1,3 +1,9 @@
+@use "./mixins";
+
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	height: 100%;
@@ -12,12 +18,18 @@ html {
 	overflow-y: scroll;
 }
 
-body {
-	max-width: 40em;
+main > *:not(img):not(video):not(picture) {
+	@include mixins.contain-site-content();
 }
 
-* {
-	box-sizing: border-box;
+img,
+video,
+picture {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 main {
