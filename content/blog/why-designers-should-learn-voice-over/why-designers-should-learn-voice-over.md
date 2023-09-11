@@ -73,7 +73,7 @@ Being aware of and using the appropriate HTML tags (along with their [implicit r
 Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.
 
 The following code illustrates how two solution to the icon button pattern.
-In **Option A.** the inner `svg`` element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing this elements as "Menu button". Note we didn't need to include the word "button", the screen reader appends that content because of the implicit role of the `button` element.
+In **Option A.* the inner `svg` element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing this elements as "Menu button". Note we didn't need to include the word "button", the screen reader appends that content because of the implicit role of the `button` element.
 
 ```html
 <!-- Option A. -->
@@ -87,7 +87,7 @@ In **Option A.** the inner `svg`` element is hidden from the accessibility tree 
 </button>
 ```
 
-An alternative technique, **Option B.** delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using `CSS`. The content of the `button` is still available to the screen reader.
+An alternative technique, *Option B.* delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using a `CSS` class. The content of the `button` is still available to the screen reader.
 
 ```html
 <!-- Option B. -->

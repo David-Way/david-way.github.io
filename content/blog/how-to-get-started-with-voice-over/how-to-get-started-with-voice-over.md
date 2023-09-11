@@ -38,6 +38,6 @@ Demo task:
 
 ### Intermediate commands
 <figure class="u-bleed-container:medium">
-{% image "./images/shortcuts-intermediate.svg", A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings" %}
+{% image "./images/shortcuts-intermediate.svg", "A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings" %}
 <figcaption>A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings.</figcaption>
 </figure>
