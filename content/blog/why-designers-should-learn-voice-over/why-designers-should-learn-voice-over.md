@@ -44,14 +44,15 @@ The HTML tags, the attributes we append to them, and how we nest and combine the
 
 We're all familiar with affordances in design. An affordance is a compelling indicator as to how an item on a page operates and includes both its perceived and actual functions. Essentially they are features that teach you how to use the functions, or make them more intuitive.
 - A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.
-- The underline of a link, is an example of a convention based affordances/.
+- The underline of a link, is an example of a convention based affordance.
 - Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.
 - Making buttons look 3D or clickable through copy, shape and/or color is a crucial affordance.
-We use these visually available affordances to make our UI's intuitive to non screen reader users.
+
+We rely heavily on visually available affordances to make our UI's intuitive to non screen reader users. These clues are not available to visually impaired users however so we need to be sure to provide equivalent information in non-visual methods.
 
 ### Non-visual affordances
 
-Semantic non-visual affordances required by VoiceOver are supplied by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
+Semantic non-visual affordances required by Screen Readers are provided by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
 
 Semantics or meaning is given to content in a document through:
 - Location in the DOM tree, for example is parent, child or sibling.
@@ -71,12 +72,11 @@ Being aware of and using the appropriate HTML tags (along with their [implicit r
 
 Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.
 
-The following code illustrates how 
-The inner svg element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute.
+The following code illustrates how two solution to the icon button pattern.
+In **Option A.** the inner `svg`` element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing this elements as "Menu button". Note we didn't need to include the word "button", the screen reader appends that content because of the implicit role of the `button` element.
 
 ```html
 <!-- Option A. -->
-
 <button aria-label="Menu">
   <svg 
     focusable="false" 
@@ -87,7 +87,7 @@ The inner svg element is hidden from the accessibility tree due to the `aria-hid
 </button>
 ```
 
-An alternative technique with the same outcome 
+An alternative technique, **Option B.** delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using `CSS`. The content of the `button` is still available to the screen reader.
 
 ```html
 <!-- Option B. -->
