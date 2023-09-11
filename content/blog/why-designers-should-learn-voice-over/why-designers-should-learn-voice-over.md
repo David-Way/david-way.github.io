@@ -19,11 +19,13 @@ Weary of the lengthy back and forth required to understand and resolve any issue
 
 I'm very glad I did, as learning a how to use these tools, how they worked and the value they provide to a significant subset of our users has helped me to assess designs through a new lense. 
 
-## What is Voice over?
+## What is VoiceOver?
 
 Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.
 
-It's important to note that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all. - [source](https://webaim.org/projects/screenreadersurvey8/))
+It's important to not that that's [more than the number of people currently using the Fire Fox web browser](https://www.browserstack.com/guide/understanding-browser-market-share).
+
+ note that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all. ([source](https://webaim.org/projects/screenreadersurvey8/)))
 
 The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users. 
 
@@ -33,10 +35,10 @@ The HTML tags, the attributes we append to them, and how we nest and combine the
 1. GUI, rendered by browser
 2. Accessibility Tree, read by a Screen Reader
 
-<div class="u-bleed-container:small">
-{% image "./images/a11y-tree.svg", "A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name and state." %}
-<figure>A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader such, as the elements locations, input type, name and state.</figure>
-</div>
+<figure class="u-bleed-container:medium">
+  {% image "./images/a11y-tree.svg", "A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name and state." %}
+  <figcaption>A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name and state.</figcaption>
+</figure> 
 
 ### Visual affordances
 
@@ -47,35 +49,73 @@ We're all familiar with affordances in design. An affordance is a compelling ind
 - Making buttons look 3D or clickable through copy, shape and/or color is a crucial affordance.
 We use these visually available affordances to make our UI's intuitive to non screen reader users.
 
-## Non-visual affordances
+### Non-visual affordances
 
-Semantic non-visual affordances required by Voice Over are supplied by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
+Semantic non-visual affordances required by VoiceOver are supplied by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
 
-Semantic or meaning is given to content in a document through
-- Location in the DOM tree, for example is parent, child or sibling
-- Labelling, using headings, aria-labels or related label elements
-- Tag type or tag roles, is it a list a button, the sidebar of our site
+Semantics or meaning is given to content in a document through:
+- Location in the DOM tree, for example is parent, child or sibling.
+- Labelling, using headings, [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) or related label elements.
+- Tag type or tag roles, is it a list a button, the sidebar of our site.
 
-## How to use a screen reader to 
+### Working *with* the screen reader
 
-System Settings > Accessibility > Voice Over > Voice Over training (recommend 20 mins)
+The following image illustrates two implementations of a page that could be styled to render with a visually identical result that would provide a very different experience for a sighted vs a screen reader user.
 
-How to:
-- Turn if on/off: command + F5 (or on expanded keyboard, fn + command + F5)
-- Issue Voice Over command: control + option (also referred to as the VO key, use middle and ring finger)
-- Move around:
-  - Next/Previous: VO + left/right arrow key
-  - Go into/Exit out of collection: VO + SHIFT + up/down arrow key (out of a table, into a panel like web page view)
-  - Simulate mouse click: (double) VO + SPACE
-- Heading skip:  VO + Command + H
-- Interrupt Voice Over: control key
-- Rotor/Uber key: VO + U
-- Change rate in Voice Over Settings: Shift + control + option + command + arrow up/down (press and hold)
+<figure class="u-bleed-container:medium">
+  {% image "./images/clear-use-of-semantic-markup.svg", "A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags and the other achieves the same visual result but with only `div` tags." %}
+  <figcaption>A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags and the other achieves the same visual result but with only <code>div</code> tags.</figcaption>
+</figure>
 
-Demo task:
-- Using wikipedia, find out how many people were on the titanic
+Being aware of and using the appropriate HTML tags (along with their [implicit roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)) goes a long way to ensuring the content of your page is providing a usable experience for your screen reader users.
 
-<div class="u-bleed-container:medium">
-{% image "./images/shortcuts-basic.svg", "A diagram displaying a list of 5 basic commands for VoiceOver, 1. Command + F5 to toggle VoiceOver on/off, 2. Command + Option, this combination is referred to as the VO key, 3. VO key + arrow left/right to navigate next/previous 4. VO key + Space to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to Go into/Exit out of a region." %}
-<figure>A diagram displaying a list of 5 basic commands for VoiceOver, 1. Command + F5 to toggle VoiceOver on/off, 2. Command + Option, this combination is referred to as the VO key, 3. VO key + arrow left/right to navigate next/previous 4. VO key + Space to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to Go into/Exit out of a region.</figure>
-</div>
+Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.
+
+The following code illustrates how 
+The inner svg element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute.
+
+```html
+<!-- Option A. -->
+
+<button aria-label="Menu">
+  <svg 
+    focusable="false" 
+    aria-hidden="true"
+  >
+    <path d="m1..."/>
+  </svg>
+</button>
+```
+
+An alternative technique with the same outcome 
+
+```html
+<!-- Option B. -->
+<button type="button">
+    <svg
+        role="img"
+        aria-hidden="true"
+        focusable="false"
+    >
+        <path d="m1..."/>
+    </svg>
+    <span class="visually-hidden">
+        Menu
+    </span>
+</button>
+```
+
+## Testing designs for screen reader experience
+
+There are 
+
+I've created a previous post as an introduction getting started with VoiceOver the Screen Reader built into MacOs.
+
+There are a number of tools to help assess an web page for accessibility issues
+
+### Other Tools
+- [axe DevTools browser extension](https://www.deque.com/axe/devtools/chrome-browser-extension/)
+- [IBM Equal Access Checker](https://www.ibm.com/able/toolkit/tools)
+- Your browsers accessibility inspector, for [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/) or [Chrome](https://developer.chrome.com/docs/devtools/accessibility/reference/#pane)
+
+

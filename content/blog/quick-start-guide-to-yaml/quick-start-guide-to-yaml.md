@@ -89,7 +89,7 @@ A Yaml document contains fields to store different types of data and aims to use
 
 ## Yaml structure
 
-The three dashes `---` are used to signal the start and end of a Yaml document.
+The three dashes <code>---</code> are used to signal the start and end of a Yaml document.
 
 You structure a YAML document with white-spaces. This means indentation (spaces) and new lines are crucial to a correctly structured Yaml document (always use spaces not tabs). Unless otherwise indicated, newlines indicate the end of a field.
 
