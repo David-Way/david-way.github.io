@@ -2090,10 +2090,15 @@ table th {
   padding-right: 1em;
 }
 
-figure {
+figcaption {
   font-size: var(--font-size-sm, 0.8rem);
   font-weight: 400;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-fg-muted);
+  text-align: center;
+  margin-block-start: var(--base-size-8);
 }
 
 pre,
@@ -2103,6 +2108,15 @@ code {
 
 code {
   word-break: break-all;
+}
+
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+  border-radius: 6px;
 }
 
 pre:not([class*=language-]) {
@@ -3188,7 +3202,7 @@ a[href].c-header-anchor:hover {
 
 a[href].c-header-anchor:focus,
 :hover > a[href].c-header-anchor {
-  color: var(--fgColor-muted);
+  color: var(--color-accent-fg);
 }
 
 h2 + .c-header-anchor {
@@ -3199,6 +3213,7 @@ h2 + .c-header-anchor {
   list-style: none;
   box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
   padding: var(--base-size-16) 0;
+  margin-block-start: var(--base-size-36);
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -3234,26 +3249,26 @@ h2 + .c-header-anchor {
 <h2 id="should-you-use-disabled-buttons" tabindex="-1">Should you use disabled buttons? <a class="c-header-anchor" href="#should-you-use-disabled-buttons">#</a></h2>
 <p>There are two reasons why disabling a button is best avoided.</p>
 <h3 id="1-state-identification" tabindex="-1">1. State Identification <a class="c-header-anchor" href="#1-state-identification">#</a></h3>
-<p>The difference between a disabled button and a regular button is usually very subtle<sup>*</sup>, meaning it’s a weak indicator of state that may be missed by many of your users.</p>
+<p>The difference between a disabled button and a regular button is usually very subtle<sup>*</sup>, meaning it's a weak indicator of state that may be missed by many of your users.</p>
 <p><i>* Designing something to look both disabled and identifiable as a button while achieving adequate contrast is tricky.</i></p>
-<h4 id="1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective" tabindex="-1">1.1 What does it mean to disable a button from a Screen Readers perspective? <a class="c-header-anchor" href="#1-1-what-does-it-mean-to-disable-a-button-from-a-screen-readers-perspective">#</a></h4>
+<h4 id="1-1-what-does-disabling-a-button-from-a-screen-readers-perspective-mean" tabindex="-1">1.1 What does disabling a button from a Screen Readers perspective mean? <a class="c-header-anchor" href="#1-1-what-does-disabling-a-button-from-a-screen-readers-perspective-mean">#</a></h4>
 <details>
   <summary>ℹ️ What is a <i>Screen Reader</i>?</summary>
-<p>A screen reader is assistive software, primarily used by people with low or no vision. It converts the semantic elements on a web page (for example text, buttons, images and links) into audible speech or braille.</p>
+<p>A screen reader is assistive software primarily used by people with low or no vision. It converts the semantic elements on a web page (for example, text, buttons, images, and links) into audible speech or braille.</p>
 </details>
-<p>A disabled button is non-existent to a Screen Reader user, meaning they don’t even get the weak indicator afforded to fully sighted users.</p>
+<p>A disabled button is non-existent to a Screen Reader user, meaning they don't even get the weak indicator afforded to fully sighted users.</p>
 <blockquote>
 <p>According to the <a href="https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment">World Health Organization</a>, there are an estimated 285 million people in the world who suffer from some level of visual impairment (including anyone from legally blind, to those with less than 20/20 vision).</p>
 </blockquote>
 <h3 id="2-unnecessary-cognitive-load" tabindex="-1">2. Unnecessary Cognitive Load <a class="c-header-anchor" href="#2-unnecessary-cognitive-load">#</a></h3>
 <p>When a disabled button is intended to act as a visual indicator that something on the page or form needs to be fixed/changed before your user can continue.
-To those who can identify them, this usage of a disabled button simply tells them “something” is wrong and provides no more information on exactly what needs to be corrected (the user may assume that something is wrong with the application and it that needs to be reloaded).</p>
+To those who can identify them, this usage of a disabled button tells them &quot;something&quot; is wrong and provides no more information on what needs to be corrected (the user may assume that something is wrong with the application and that it needs to be reloaded).</p>
 <p>The change required to re-enable a disabled control may be appear to be a simple puzzle for your user but this is an assumption we shouldn't make for all our users.
-Introducing this, potentially, small frustration for users with or without cognitive disabilities or even familiarity with our product is best avoided in keeping with the &quot;Don't make me think&quot; principle.</p>
-<p>Due to the contrast issues mentioned before, you can't rely on the contents of the buttons label to aid your user here as they may not be able to read it.</p>
+Introducing this, potentially, minor frustration for users with or without cognitive disabilities or even familiarity with our product is best avoided in keeping with the &quot;Don't make me think&quot; principle.</p>
+<p>Due to the contrast issues mentioned before, you can't rely on the contents of the buttons label to aid your user here, as they may not be able to read it.</p>
 <h2 id="is-there-another-way" tabindex="-1">Is there another way? <a class="c-header-anchor" href="#is-there-another-way">#</a></h2>
 <p>There are more suitable patterns and approaches available that can help us avoid using disabled buttons.
-For example let's look at the commonly approach of using a disabled button to prevent progress on an in-complete form.</p>
+For example, let's look at the typical approach of using a disabled button to prevent progress on an incomplete form.</p>
 <p>❌ Don't</p>
 <ul>
 <li>Disable the submit button (hoping your user understands that you mean for them to fully complete the form before continuing)</li>
@@ -3261,17 +3276,17 @@ For example let's look at the commonly approach of using a disabled button to pr
 <p>✅ Do</p>
 <ul>
 <li>Mark all required fields (unless all fields are required or there are more optional fields than required)</li>
-<li>Let the user interact with and traverse the form, and identify the enabled submit/continue button (both by its label and location)</li>
+<li>Let the user interact with and traverse the form and identify the enabled submit/continue button (both by its label and location)</li>
 <li>Let them attempt to submit the form</li>
-<li>Inform the user exactly what issue is preventing them from continuing. This can be inline error message or something like the Toast alert pattern</li>
+<li>Inform the user precisely what issue is preventing them from continuing. This can be an inline error message or something like the Toast alert pattern</li>
 </ul>
-<p>In other words, allow and use the users premature interaction with the control as an opportunity to inform or guide them how to continue.
-This principle can be applied to many instances in which disabled buttons are commonly used.</p>
+<p>In other words, allow and use the user's premature interaction with the control as an opportunity to inform or guide them on how to continue.
+This principle can be applied to many instances where disabled buttons are commonly used.</p>
 <!-- ## When should a disabled button be used
 
 ![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) -->
 
-<ul class="c-iterator-links"><li>Previous: <a href="/blog/how-to-trick-rocks-into-doing-math/">How to trick rocks into doing math</a></li><li>Next: <a href="/blog/why-designers-should-learn-voice-over/">Why designers should learn VoiceOver</a></li>
+<ul class="c-iterator-links"><li>Previous: <a href="/blog/how-to-trick-rocks-into-doing-math/">How to trick rocks into doing math</a></li><li>Next: <a href="/blog/how-to-get-started-with-voice-over/">How to get started with VoiceOver</a></li>
 </ul>
 
 		</main>

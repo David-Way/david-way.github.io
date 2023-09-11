@@ -8,7 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.c-post-list { counter-reset: start-from 3 }
+		<style>.c-post-list { counter-reset: start-from 4 }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -1764,10 +1764,15 @@ table th {
   padding-right: 1em;
 }
 
-figure {
+figcaption {
   font-size: var(--font-size-sm, 0.8rem);
   font-weight: 400;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-fg-muted);
+  text-align: center;
+  margin-block-start: var(--base-size-8);
 }
 
 pre,
@@ -1777,6 +1782,15 @@ code {
 
 code {
   word-break: break-all;
+}
+
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+  border-radius: 6px;
 }
 
 pre:not([class*=language-]) {
@@ -2862,7 +2876,7 @@ a[href].c-header-anchor:hover {
 
 a[href].c-header-anchor:focus,
 :hover > a[href].c-header-anchor {
-  color: var(--fgColor-muted);
+  color: var(--color-accent-fg);
 }
 
 h2 + .c-header-anchor {
@@ -2873,6 +2887,7 @@ h2 + .c-header-anchor {
   list-style: none;
   box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
   padding: var(--base-size-16) 0;
+  margin-block-start: var(--base-size-36);
 }
 
 /*# sourceMappingURL=index.css.map */</style>
@@ -2908,7 +2923,15 @@ h2 + .c-header-anchor {
 		
 		<time class="c-post-list__date" datetime="2022-08-12">August 2022</time>
 		<span class="c-post-list__separator" aria-hidden="true">·</span>
-		<span class="c-post-list__reading-time">3 min read</span>
+		<span class="c-post-list__reading-time">4 min read</span>
+	</li>
+
+	<li class="c-post-list__item">
+		<a href="/blog/how-to-get-started-with-voice-over/" class="c-post-list__link">How to get started with VoiceOver</a>
+		
+		<time class="c-post-list__date" datetime="2022-08-12">August 2022</time>
+		<span class="c-post-list__separator" aria-hidden="true">·</span>
+		<span class="c-post-list__reading-time">1 min read</span>
 	</li>
 
 	<li class="c-post-list__item">

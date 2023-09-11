@@ -3,12 +3,338 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tagged “data-storage”</title>
-		<meta name="description" content="I am writing about my not important experiences.">
+		<title>Journey mapping in the Design Thinking Process</title>
+		<meta name="description" content="Learn where journey maps fit into the design thinking process.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.c-post-list { counter-reset: start-from 2 }
+		<style>pre[class*=language-],
+code[class*=language-] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::selection,
+code[class*=language-]::selection,
+pre[class*=language-] *::selection,
+code[class*=language-] *::selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+@media print {
+  pre[class*=language-],
+  code[class*=language-] {
+    text-shadow: none;
+  }
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin-block: 0.5em;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+.token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.token.comment,
+.token.prolog {
+  color: #6a9955;
+}
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+  color: #ce9178;
+}
+
+.language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.token.operator,
+.token.entity {
+  color: #d4d4d4;
+}
+
+.token.operator.arrow {
+  color: #569cd6;
+}
+
+.token.atrule {
+  color: #ce9178;
+}
+
+.token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.keyword.module,
+.token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.token.function,
+.token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.token.regex {
+  color: #d16969;
+}
+
+.token.important {
+  color: #569cd6;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.constant {
+  color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.token.console {
+  color: #9cdcfe;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.token.boolean {
+  color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.token.selector {
+  color: #d7ba7d;
+}
+
+.token.escape {
+  color: #d7ba7d;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+  color: #808080;
+}
+
+.token.cdata {
+  color: #808080;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.token.entity {
+  color: #569cd6;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+
+/*********************************************************
+* Language Specific
+*/
+pre[class*=language-javascript],
+code[class*=language-javascript],
+pre[class*=language-jsx],
+code[class*=language-jsx],
+pre[class*=language-typescript],
+code[class*=language-typescript],
+pre[class*=language-tsx],
+code[class*=language-tsx] {
+  color: #9cdcfe;
+}
+
+pre[class*=language-css],
+code[class*=language-css] {
+  color: #ce9178;
+}
+
+pre[class*=language-html],
+code[class*=language-html] {
+  color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+}
+
+/*********************************************************
+* Line highlighting
+*/
+pre[class*=language-] > code[class*=language-] {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=prism-vsc-dark-plus.css.map */
+/*
+ * New diff- syntax
+ */
+pre[class*=language-diff-] {
+  --eleventy-code-padding: 1.25em;
+  padding-left: var(--eleventy-code-padding);
+  padding-right: var(--eleventy-code-padding);
+}
+
+.token.deleted {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: inherit;
+}
+
+.token.inserted {
+  background-color: #690;
+  color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.token.prefix.inserted,
+.token.prefix.deleted {
+  width: var(--eleventy-code-padding);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+  display: block;
+  margin-left: calc(-1 * var(--eleventy-code-padding));
+  margin-right: calc(-1 * var(--eleventy-code-padding));
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/*# sourceMappingURL=prism-diff.css.map */
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -2908,34 +3234,52 @@ h2 + .c-header-anchor {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
 
-<!-- Stop deleting -->
+<h1>Journey mapping in the Design Thinking Process</h1>
 
-<h1>Tagged “data-storage”</h1>
+<ul class="c-post-meta-data">
+	<li class="c-post-meta-data__item--time"><time datetime="2021-03-31">31 March 2021</time></li>
+	<li class="c-post-meta-data__item"><a href="/tags/design-thinking/" class="c-post-tag">design thinking</a></li>
+</ul>
 
+<h2 id="journey-mapping" tabindex="-1">Journey mapping <a class="c-header-anchor" href="#journey-mapping">#</a></h2>
+<p>The goal of journey mapping is to get a holistic view of a customer's experience, understand the tasks and responsibilities currently assigned, and uncover moments of frustration and delight.
+Successfully journey mapping highlights opportunities to address customers' pain points, alleviate disconnected areas of the service you provide, create a better experience for your users, and aligns your team.</p>
+<h3 id="requirements" tabindex="-1">Requirements <a class="c-header-anchor" href="#requirements">#</a></h3>
+<p>Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you're actually willing to work on.
+List of potential users: Which personas do you need to include?</p>
+<h3 id="steps" tabindex="-1">Steps <a class="c-header-anchor" href="#steps">#</a></h3>
+<ul>
+<li>Define a scope, choose an entry and exit to an end-to-end customer experience.</li>
+<li>Develop a persona or personas for the actor(s) involved in the experience by analyzing all available information, then conduct contextual inquiries (interviews) with users or Subject Matter Experts (SMEs), direct observation of product/service use, or collect data through surveys from users or potential users.</li>
+<li>Develop empathy maps for each identified persona to synthesize your team's knowledge about your users as a group.</li>
+<li>Identify journey phases - chunks of meaningful behavior that provide high-level organization of actions, thoughts, and emotions your user experiences.</li>
+<li>Sketch a journey in a format of step-by-step interaction.</li>
+<li>Identify touch points, the users interactions with the actual product and the business (support, sales, etc.). Who performs what?</li>
+<li>Match each touchpoint to each users actions, mindsets/emotions, intents, motivations, and pain points - the behaviours, thoughts, and feelings the actor has throughout the journey.</li>
+<li>Insights - Look for opportunities (along with additional context, such as ownership and metrics) for optimizing the experience.</li>
+<li>Validate your journey map, empathy maps, personas with more research.</li>
+</ul>
+<h2 id="where-journey-maps-fit-into-the-design-thinking-process" tabindex="-1">Where journey maps fit into the design thinking process <a class="c-header-anchor" href="#where-journey-maps-fit-into-the-design-thinking-process">#</a></h2>
+<p>A journey map helps identify your users, and their pain points and aligns your team's understanding of both.
+Pain points and Empathy Maps help you and your team step into your users' shoes, and inform your user Need Statements.
+Need statements help to guide your team's ideation sessions.
+Ideation leads to storyboarding, a new To-Be experience to be prototyped and validated with your users.</p>
+<h2 id="additional-references" tabindex="-1">Additional References <a class="c-header-anchor" href="#additional-references">#</a></h2>
+<ul>
+<li><a href="https://www.nngroup.com/articles/customer-journey-mapping/">When and How to Create Customer Journey Maps - Nielsen Norman Group</a></li>
+<li><a href="https://www.nngroup.com/articles/journey-mapping-101/">Journey Mapping 101 - Nielsen Norman Group</a></li>
+<li><a href="https://www.ibm.com/design/thinking/page/toolkit/activity/empathy-map">Empathy Map toolkit - IBM Design</a></li>
+</ul>
 
-
-<ol reversed class="c-post-list">
-
-	<li class="c-post-list__item">
-		<a href="/blog/quick-start-guide-to-yaml/" class="c-post-list__link">Quick-start guide to using Yaml</a>
-		
-		<time class="c-post-list__date" datetime="2021-04-07">April 2021</time>
-		<span class="c-post-list__separator" aria-hidden="true">·</span>
-		<span class="c-post-list__reading-time">3 min read</span>
-	</li>
-
-</ol>
-
-
-<p>See <a href="/tags/">all tags</a>.</p>
-
+<ul class="c-iterator-links"><li>Next: <a href="/blog/quick-start-guide-to-yaml/">Quick-start guide to using Yaml</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /tags/data-storage/ -->
+		<!-- Current page: /blog/journey-mapping-in-design-thinking/ -->
 	</body>
 </html>

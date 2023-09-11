@@ -2090,10 +2090,15 @@ table th {
   padding-right: 1em;
 }
 
-figure {
+figcaption {
   font-size: var(--font-size-sm, 0.8rem);
   font-weight: 400;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-fg-muted);
+  text-align: center;
+  margin-block-start: var(--base-size-8);
 }
 
 pre,
@@ -2103,6 +2108,15 @@ code {
 
 code {
   word-break: break-all;
+}
+
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+  border-radius: 6px;
 }
 
 pre:not([class*=language-]) {
@@ -3188,7 +3202,7 @@ a[href].c-header-anchor:hover {
 
 a[href].c-header-anchor:focus,
 :hover > a[href].c-header-anchor {
-  color: var(--fgColor-muted);
+  color: var(--color-accent-fg);
 }
 
 h2 + .c-header-anchor {
@@ -3199,6 +3213,7 @@ h2 + .c-header-anchor {
   list-style: none;
   box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1) var(--color-border-default);
   padding: var(--base-size-16) 0;
+  margin-block-start: var(--base-size-36);
 }
 
 /*# sourceMappingURL=index.css.map */</style>

@@ -18,7 +18,7 @@ a[href].c-header-anchor:hover {
 
 a[href].c-header-anchor:focus,
 :hover > a[href].c-header-anchor {
-  color: var(--fgColor-muted);
+  color: var(--color-accent-fg);
 }
 
 h2 + .c-header-anchor {
