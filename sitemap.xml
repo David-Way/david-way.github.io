@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://david-way.github.io/blog/group-time-management/</loc>
+		<lastmod>2021-02-15</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/blog/journey-mapping-in-design-thinking/</loc>
 		<lastmod>2021-03-31</lastmod>
 	</url>
@@ -33,86 +38,111 @@
 	
 	<url>
 		<loc>https://david-way.github.io/about/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/blog/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/ux/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<loc>https://david-way.github.io/tags/prototype/</loc>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/a11y/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<loc>https://david-way.github.io/tags/side-project/</loc>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/voice-over/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<loc>https://david-way.github.io/tags/interaction-design/</loc>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/screen-reader/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<loc>https://david-way.github.io/tags/design-sprint/</loc>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/writing-exercise/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/cpu/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/product-design/</loc>
-		<lastmod>2023-09-11</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-thinking/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/guide/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/data-storage/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/yaml/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/design-thinking/</loc>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/ux/</loc>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/a11y/</loc>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/voice-over/</loc>
+		<lastmod>2023-09-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/screen-reader/</loc>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/design-pattern/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/html/</loc>
-		<lastmod>2023-09-11</lastmod>
+		<lastmod>2023-09-12</lastmod>
 	</url>
 </urlset>

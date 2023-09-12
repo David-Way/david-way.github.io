@@ -8,7 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.c-post-list { counter-reset: start-from 7 }
+		<style>.c-post-list { counter-reset: start-from 8 }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -472,6 +472,10 @@ main:first-child {
   width: 100%;
 }
 
+.u-bleed-container\:x-small {
+  max-width: 24rem !important;
+}
+
 .u-bleed-container\:small {
   max-width: 48rem !important;
 }
@@ -502,6 +506,16 @@ main:first-child {
 .u-list\:unstyled > li:before {
   content: "​"; /* 1 */
   position: absolute; /* 2 */
+}
+
+.u-border\:device {
+  display: table-cell;
+  border: 16px solid var(--color-primer-border-contrast);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.u-border\:device > * {
+  margin: 0;
 }
 
 .u-m\:auto {
@@ -2966,7 +2980,7 @@ h2 + .c-header-anchor {
 
 
 
-<p>1 more post can be found in <a href="/blog/">the archive</a>.</p>
+<p>2 more posts can be found in <a href="/blog/">the archive</a>.</p>
 
 
 

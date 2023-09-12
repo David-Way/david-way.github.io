@@ -8,7 +8,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>.c-post-list { counter-reset: start-from 7 }
+		<style>.c-post-list { counter-reset: start-from 8 }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -472,6 +472,10 @@ main:first-child {
   width: 100%;
 }
 
+.u-bleed-container\:x-small {
+  max-width: 24rem !important;
+}
+
 .u-bleed-container\:small {
   max-width: 48rem !important;
 }
@@ -502,6 +506,16 @@ main:first-child {
 .u-list\:unstyled > li:before {
   content: "​"; /* 1 */
   position: absolute; /* 2 */
+}
+
+.u-border\:device {
+  display: table-cell;
+  border: 16px solid var(--color-primer-border-contrast);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.u-border\:device > * {
+  margin: 0;
 }
 
 .u-m\:auto {
@@ -2962,6 +2976,14 @@ h2 + .c-header-anchor {
 		<a href="/blog/journey-mapping-in-design-thinking/" class="c-post-list__link">Journey mapping in the Design Thinking Process</a>
 		
 		<time class="c-post-list__date" datetime="2021-03-31">March 2021</time>
+		<span class="c-post-list__separator" aria-hidden="true">·</span>
+		<span class="c-post-list__reading-time">2 min read</span>
+	</li>
+
+	<li class="c-post-list__item">
+		<a href="/blog/group-time-management/" class="c-post-list__link">A management tool to keep groups on time</a>
+		
+		<time class="c-post-list__date" datetime="2021-02-15">February 2021</time>
 		<span class="c-post-list__separator" aria-hidden="true">·</span>
 		<span class="c-post-list__reading-time">2 min read</span>
 	</li>

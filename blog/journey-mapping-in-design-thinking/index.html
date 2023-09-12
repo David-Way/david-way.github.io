@@ -798,6 +798,10 @@ main:first-child {
   width: 100%;
 }
 
+.u-bleed-container\:x-small {
+  max-width: 24rem !important;
+}
+
 .u-bleed-container\:small {
   max-width: 48rem !important;
 }
@@ -828,6 +832,16 @@ main:first-child {
 .u-list\:unstyled > li:before {
   content: "​"; /* 1 */
   position: absolute; /* 2 */
+}
+
+.u-border\:device {
+  display: table-cell;
+  border: 16px solid var(--color-primer-border-contrast);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.u-border\:device > * {
+  margin: 0;
 }
 
 .u-m\:auto {
@@ -3273,7 +3287,7 @@ Ideation leads to storyboarding, a new To-Be experience to be prototyped and val
 <li><a href="https://www.ibm.com/design/thinking/page/toolkit/activity/empathy-map">Empathy Map toolkit - IBM Design</a></li>
 </ul>
 
-<ul class="c-iterator-links"><li>Next: <a href="/blog/quick-start-guide-to-yaml/">Quick-start guide to using Yaml</a></li>
+<ul class="c-iterator-links"><li>Previous: <a href="/blog/group-time-management/">A management tool to keep groups on time</a></li><li>Next: <a href="/blog/quick-start-guide-to-yaml/">Quick-start guide to using Yaml</a></li>
 </ul>
 
 		</main>

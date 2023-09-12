@@ -3,338 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>How to get started with VoiceOver</title>
-		<meta name="description" content="A guide to evaluating the accessibility of your designs.">
+		<title>Tagged “side project”</title>
+		<meta name="description" content="I am writing about my not important experiences.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
 		
-		<style>pre[class*=language-],
-code[class*=language-] {
-  color: #d4d4d4;
-  font-size: 13px;
-  text-shadow: none;
-  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-pre[class*=language-]::selection,
-code[class*=language-]::selection,
-pre[class*=language-] *::selection,
-code[class*=language-] *::selection {
-  text-shadow: none;
-  background: #264f78;
-}
-
-@media print {
-  pre[class*=language-],
-  code[class*=language-] {
-    text-shadow: none;
-  }
-}
-pre[class*=language-] {
-  padding: 1em;
-  margin-block: 0.5em;
-  overflow: auto;
-  background: #1e1e1e;
-}
-
-:not(pre) > code[class*=language-] {
-  padding: 0.1em 0.3em;
-  border-radius: 0.3em;
-  color: #db4c69;
-  background: #1e1e1e;
-}
-
-/*********************************************************
-* Tokens
-*/
-.namespace {
-  opacity: 0.7;
-}
-
-.token.doctype .token.doctype-tag {
-  color: #569cd6;
-}
-
-.token.doctype .token.name {
-  color: #9cdcfe;
-}
-
-.token.comment,
-.token.prolog {
-  color: #6a9955;
-}
-
-.token.punctuation,
-.language-html .language-css .token.punctuation,
-.language-html .language-javascript .token.punctuation {
-  color: #d4d4d4;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.inserted,
-.token.unit {
-  color: #b5cea8;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.deleted {
-  color: #ce9178;
-}
-
-.language-css .token.string.url {
-  text-decoration: underline;
-}
-
-.token.operator,
-.token.entity {
-  color: #d4d4d4;
-}
-
-.token.operator.arrow {
-  color: #569cd6;
-}
-
-.token.atrule {
-  color: #ce9178;
-}
-
-.token.atrule .token.rule {
-  color: #c586c0;
-}
-
-.token.atrule .token.url {
-  color: #9cdcfe;
-}
-
-.token.atrule .token.url .token.function {
-  color: #dcdcaa;
-}
-
-.token.atrule .token.url .token.punctuation {
-  color: #d4d4d4;
-}
-
-.token.keyword {
-  color: #569cd6;
-}
-
-.token.keyword.module,
-.token.keyword.control-flow {
-  color: #c586c0;
-}
-
-.token.function,
-.token.function .token.maybe-class-name {
-  color: #dcdcaa;
-}
-
-.token.regex {
-  color: #d16969;
-}
-
-.token.important {
-  color: #569cd6;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.constant {
-  color: #9cdcfe;
-}
-
-.token.class-name,
-.token.maybe-class-name {
-  color: #4ec9b0;
-}
-
-.token.console {
-  color: #9cdcfe;
-}
-
-.token.parameter {
-  color: #9cdcfe;
-}
-
-.token.interpolation {
-  color: #9cdcfe;
-}
-
-.token.punctuation.interpolation-punctuation {
-  color: #569cd6;
-}
-
-.token.boolean {
-  color: #569cd6;
-}
-
-.token.property,
-.token.variable,
-.token.imports .token.maybe-class-name,
-.token.exports .token.maybe-class-name {
-  color: #9cdcfe;
-}
-
-.token.selector {
-  color: #d7ba7d;
-}
-
-.token.escape {
-  color: #d7ba7d;
-}
-
-.token.tag {
-  color: #569cd6;
-}
-
-.token.tag .token.punctuation {
-  color: #808080;
-}
-
-.token.cdata {
-  color: #808080;
-}
-
-.token.attr-name {
-  color: #9cdcfe;
-}
-
-.token.attr-value,
-.token.attr-value .token.punctuation {
-  color: #ce9178;
-}
-
-.token.attr-value .token.punctuation.attr-equals {
-  color: #d4d4d4;
-}
-
-.token.entity {
-  color: #569cd6;
-}
-
-.token.namespace {
-  color: #4ec9b0;
-}
-
-/*********************************************************
-* Language Specific
-*/
-pre[class*=language-javascript],
-code[class*=language-javascript],
-pre[class*=language-jsx],
-code[class*=language-jsx],
-pre[class*=language-typescript],
-code[class*=language-typescript],
-pre[class*=language-tsx],
-code[class*=language-tsx] {
-  color: #9cdcfe;
-}
-
-pre[class*=language-css],
-code[class*=language-css] {
-  color: #ce9178;
-}
-
-pre[class*=language-html],
-code[class*=language-html] {
-  color: #d4d4d4;
-}
-
-.language-regex .token.anchor {
-  color: #dcdcaa;
-}
-
-.language-html .token.punctuation {
-  color: #808080;
-}
-
-/*********************************************************
-* Line highlighting
-*/
-pre[class*=language-] > code[class*=language-] {
-  position: relative;
-  z-index: 1;
-}
-
-.line-highlight.line-highlight {
-  background: #f7ebc6;
-  box-shadow: inset 5px 0 0 #f7d87c;
-  z-index: 0;
-}
-
-/*# sourceMappingURL=prism-vsc-dark-plus.css.map */
-/*
- * New diff- syntax
- */
-pre[class*=language-diff-] {
-  --eleventy-code-padding: 1.25em;
-  padding-left: var(--eleventy-code-padding);
-  padding-right: var(--eleventy-code-padding);
-}
-
-.token.deleted {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: inherit;
-}
-
-.token.inserted {
-  background-color: #690;
-  color: inherit;
-}
-
-/* Make the + and - characters unselectable for copy/paste */
-.token.prefix.unchanged,
-.token.prefix.inserted,
-.token.prefix.deleted {
-  -webkit-user-select: none;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.token.prefix.inserted,
-.token.prefix.deleted {
-  width: var(--eleventy-code-padding);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: full-width background color */
-.token.inserted:not(.prefix),
-.token.deleted:not(.prefix) {
-  display: block;
-  margin-left: calc(-1 * var(--eleventy-code-padding));
-  margin-right: calc(-1 * var(--eleventy-code-padding));
-  text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
-}
-
-/*# sourceMappingURL=prism-diff.css.map */
+		<style>.c-post-list { counter-reset: start-from 2 }
 @charset "UTF-8";
 /** 🏗️ Core */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
@@ -3248,58 +2922,34 @@ h2 + .c-header-anchor {
 		</header>
 
 		<main id="skip">
-			
+			<!-- Delete this message, it will also remove the component CSS from the bundle -->
 
-<h1>How to get started with VoiceOver</h1>
+<!-- Stop deleting -->
 
-<ul class="c-post-meta-data">
-	<li class="c-post-meta-data__item--time"><time datetime="2022-08-12">12 August 2022</time></li>
-	<li class="c-post-meta-data__item"><a href="/tags/ux/" class="c-post-tag">ux</a>, </li>
-	<li class="c-post-meta-data__item"><a href="/tags/a11y/" class="c-post-tag">a11y</a>, </li>
-	<li class="c-post-meta-data__item"><a href="/tags/voice-over/" class="c-post-tag">voice over</a>, </li>
-	<li class="c-post-meta-data__item"><a href="/tags/screen-reader/" class="c-post-tag">screen reader</a></li>
-</ul>
+<h1>Tagged “side project”</h1>
 
-<h2 id="how-to-use-a-screen-reader" tabindex="-1">How to use a screen reader <a class="c-header-anchor" href="#how-to-use-a-screen-reader">#</a></h2>
-<p>System Settings &gt; Accessibility &gt; Voice Over &gt; Voice Over training (recommend 20 mins)</p>
-<p>How to:</p>
-<ul>
-<li>Turn if on/off: command + F5 (or on expanded keyboard, fn + command + F5)</li>
-<li>Issue Voice Over command: control + option (also referred to as the VO key, use middle and ring finger)</li>
-<li>Move around:
-<ul>
-<li>Next/Previous: VO + left/right arrow key</li>
-<li>Go into/Exit out of collection: VO + SHIFT + up/down arrow key (out of a table, into a panel like web page view)</li>
-<li>Simulate mouse click: (double) VO + SPACE</li>
-</ul>
-</li>
-<li>Heading skip:  VO + Command + H</li>
-<li>Interrupt Voice Over: control key</li>
-<li>Rotor/Uber key: VO + U</li>
-<li>Change rate in Voice Over Settings: Shift + control + option + command + arrow up/down (press and hold)</li>
-</ul>
-<p>Demo task:</p>
-<ul>
-<li>Using wikipedia, find out how many people were on the titanic</li>
-</ul>
-<h2 id="cheat-sheets" tabindex="-1">Cheat sheets <a class="c-header-anchor" href="#cheat-sheets">#</a></h2>
-<h3 id="basic-commands" tabindex="-1">Basic commands <a class="c-header-anchor" href="#basic-commands">#</a></h3>
-<figure class="u-bleed-container:medium">
-<picture><source type="image/avif" srcset="/img/FcFZJ-HyBS-1208.avif 1208w"><source type="image/webp" srcset="/img/FcFZJ-HyBS-1208.webp 1208w"><img alt="A diagram displaying a list of 5 basic commands for VoiceOver, 1. Command + F5 to toggle VoiceOver on/off, 2. Command + Option, this combination is referred to as the VO key, 3. VO key + arrow left/right to navigate next/previous 4. VO key + Space to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to Go into/Exit out of a region." loading="lazy" decoding="async" src="/img/FcFZJ-HyBS-1208.svg" width="1208" height="621"></picture>
-<figcaption>A diagram displaying a list of 5 basic commands for VoiceOver, 1. Command + F5 to toggle VoiceOver on/off, 2. Command + Option, this combination is referred to as the VO key, 3. VO key + arrow left/right to navigate next/previous 4. VO key + Space to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to Go into/Exit out of a region.</figcaption>
-</figure>
-<h3 id="intermediate-commands" tabindex="-1">Intermediate commands <a class="c-header-anchor" href="#intermediate-commands">#</a></h3>
-<figure class="u-bleed-container:medium">
-<picture><source type="image/avif" srcset="/img/fq15oPrZnk-933.avif 933w"><source type="image/webp" srcset="/img/fq15oPrZnk-933.webp 933w"><img alt="A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings" loading="lazy" decoding="async" src="/img/fq15oPrZnk-933.svg" width="933" height="621"></picture>
-<figcaption>A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings.</figcaption>
-</figure>
-<ul class="c-iterator-links"><li>Previous: <a href="/blog/ux-of-a-disabled-button/">The User Experience of Disabled Buttons</a></li><li>Next: <a href="/blog/why-designers-should-learn-voice-over/">Why designers should learn VoiceOver</a></li>
-</ul>
+
+
+<ol reversed class="c-post-list">
+
+	<li class="c-post-list__item">
+		<a href="/blog/group-time-management/" class="c-post-list__link">A management tool to keep groups on time</a>
+		
+		<time class="c-post-list__date" datetime="2021-02-15">February 2021</time>
+		<span class="c-post-list__separator" aria-hidden="true">·</span>
+		<span class="c-post-list__reading-time">2 min read</span>
+	</li>
+
+</ol>
+
+
+<p>See <a href="/tags/">all tags</a>.</p>
+
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: /blog/how-to-get-started-with-voice-over/ -->
+		<!-- Current page: /tags/side-project/ -->
 	</body>
 </html>

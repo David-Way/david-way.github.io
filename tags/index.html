@@ -471,6 +471,10 @@ main:first-child {
   width: 100%;
 }
 
+.u-bleed-container\:x-small {
+  max-width: 24rem !important;
+}
+
 .u-bleed-container\:small {
   max-width: 48rem !important;
 }
@@ -501,6 +505,16 @@ main:first-child {
 .u-list\:unstyled > li:before {
   content: "​"; /* 1 */
   position: absolute; /* 2 */
+}
+
+.u-border\:device {
+  display: table-cell;
+  border: 16px solid var(--color-primer-border-contrast);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.u-border\:device > * {
+  margin: 0;
 }
 
 .u-m\:auto {
@@ -2914,6 +2928,21 @@ h2 + .c-header-anchor {
 <h1>Tags</h1>
 
 <ul>
+
+	
+	<li><a href="/tags/prototype/" class="c-post-tag">prototype</a></li>
+
+	
+	<li><a href="/tags/side-project/" class="c-post-tag">side project</a></li>
+
+	
+	<li><a href="/tags/interaction-design/" class="c-post-tag">interaction design</a></li>
+
+	
+	<li><a href="/tags/design-sprint/" class="c-post-tag">design sprint</a></li>
+
+	
+	<li><a href="/tags/time-management/" class="c-post-tag">time management</a></li>
 
 	
 	<li><a href="/tags/design-thinking/" class="c-post-tag">design thinking</a></li>
