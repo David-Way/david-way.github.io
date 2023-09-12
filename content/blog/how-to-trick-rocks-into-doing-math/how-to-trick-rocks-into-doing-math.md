@@ -1,7 +1,7 @@
 ---
 title: How to trick rocks into doing math
 description: This is a post on My Blog about product design.
-date: 2021-07-07
+date: 2020-07-07
 tags:
   - writing exercise
   - cpu
