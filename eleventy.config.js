@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
 	// Watch content images for the image pipeline.
-	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg,gif}");
 
 	eleventyConfig.setBrowserSyncConfig({
 		files: "./_site/css/**/*.css",
