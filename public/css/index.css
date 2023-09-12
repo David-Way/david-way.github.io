@@ -493,6 +493,16 @@ main:first-child {
   position: absolute; /* 2 */
 }
 
+.u-border\:device {
+  display: table-cell;
+  border: 16px solid var(--color-primer-border-contrast);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.u-border\:device > * {
+  margin: 0;
+}
+
 .u-m\:auto {
   margin: auto !important;
 }

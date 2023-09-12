@@ -85,6 +85,10 @@
 	}
 }
 
+.u-bleed-container\:x-small {
+	max-width: 24rem !important;
+}
+
 .u-bleed-container\:small {
 	max-width: 48rem !important;
 }
@@ -106,6 +110,17 @@
 //--------------------
 .u-list\:unstyled {
 	@include mixins.unstyled-list();
+}
+
+.u-border\:device {
+	display: table-cell;
+	border: 16px solid var(--color-primer-border-contrast);
+	border-radius: 48px;
+	overflow: hidden;
+
+	& > * {
+		margin: 0;
+	}
 }
 
 //--------------------
