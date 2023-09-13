@@ -18,7 +18,7 @@ One area where time management can be extra challenging is when you're also mana
 
 In the book [Design Sprints](http://www.gv.com/sprint/), the author Jake Knapp recommends using a [time timer](https://www.timetimer.com/) (originally designed to help a child understand the abstract passage of time vivid and concrete way), as it is particularly effective at keeping participants on track and on time resulting in more efficient meetings.
 
-The value of the concept of a time timer was evident to me. Still, with the obvious limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I prototyped a solution.
+The value of the concept of a time timer was clear to me. Still, with the limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I decided to prototype a digital solution.
 
 ## Requirements
 

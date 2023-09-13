@@ -1,12 +1,13 @@
 {
-    "cSpell.words": [
-        "affordance",
-        "affordances",
-        "ghpages",
-        "xlarge",
-        "xsmall"
-    ],
-    "files.exclude": {
-        "**/node_modules": false
-    }
+	"cSpell.words": [
+		"affordance",
+		"affordances",
+		"ghpages",
+		"Shortcode",
+		"xlarge",
+		"xsmall"
+	],
+	"files.exclude": {
+		"**/node_modules": false
+	}
 }

@@ -11,8 +11,8 @@ The goal of journey mapping is to get a holistic view of a customer's experience
 Successfully journey mapping highlights opportunities to address customers' pain points, alleviate disconnected areas of the service you provide, create a better experience for your users, and aligns your team.
 
 ### Requirements
-Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you're actually willing to work on.
-List of potential users: Which personas do you need to include?
+1. Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you're actually willing to work on.
+2. A list of potential users: Which personas do you need to include or be aware of?
 
 ### Steps
 - Define a scope, choose an entry and exit to an end-to-end customer experience.

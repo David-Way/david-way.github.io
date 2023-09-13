@@ -23,9 +23,9 @@ I'm very glad I did, as learning a how to use these tools, how they worked and t
 
 Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.
 
-It's important to not that that's [more than the number of people currently using the Fire Fox web browser](https://www.browserstack.com/guide/understanding-browser-market-share).
-
- note that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all. ([source](https://webaim.org/projects/screenreadersurvey8/)))
+{% insettext "Screen Reader User Survey", "https://webaim.org/projects/screenreadersurvey8/" %}
+It's worth noting that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+{% endinsettext %}
 
 The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users. 
 

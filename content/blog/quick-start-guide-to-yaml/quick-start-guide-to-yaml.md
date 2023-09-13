@@ -11,7 +11,9 @@ tags:
 ## Definitions
 
 <details>
-  <summary>A <strong>file</strong> is and object on a computer that is used to store data or information. </summary>
+  <summary>What is a file really?</summary>
+
+A <strong>file</strong> is and object on a computer that is used to store data or information.
 
 There are many types of files, recognisable by their extension (ie. `.doc`, `.pdf`, `.jpg`).
 Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).
@@ -19,7 +21,9 @@ Different file types are optimised for different tasks, like storing video, audi
 </details>
 
 <details>
-  <summary>A <strong>markup up language</strong> is a system of writing content so that it’s structure conveys meaning.</summary>
+  <summary>What is a markup language?</summary>
+
+A <strong>markup up language</strong> is a system of writing content so that it’s structure conveys meaning.
 
 Yaml is a data serialization language and not technically a markup language though it functions a lot like one.
 
@@ -27,7 +31,8 @@ Other markup languages you might be familiar with are HTML, XML and JSON.
 
 When you compare Yaml structure to other similar systems Yaml requires considerably less content or "decoration" to carry the same amount of information, but is less resilient regarding spacing and formatting as a result.
 
-  <table>
+<div class="u-responsive-table-container">
+<table>
   <thead>
     <tr>
       <th align="left">Yaml</th>
@@ -79,6 +84,7 @@ People:
 
   </tbody>
 </table>
+</div>
 </details>
 
 ## Yaml
@@ -110,11 +116,11 @@ age: 32
 
 <details>
   <summary markdown="span">What is the value data of writing like this?</summary>
-  <br/>
-  A computer can read and use structured data written like this a lot easier than the following:
+
+A computer can read and use structured data written a lot easier than the unstructured data, for example see the following:
 
 ```txt
-It's Joan Smiths 32nd birthday today.
+It's Joan Smiths 33rd birthday is tomorrow.
 ```
 
 Again, the key aim of Yaml is to be portable, meaning that it can be easily imported, understood by multiple programs and in programming languages.
