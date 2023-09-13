@@ -3314,7 +3314,7 @@ summary,
 <p>Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.</p>
 <p><div class="c-inset-text">
 <span>
-It's worth noting that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+It's worth noting that people with visual impairments aren't the only users of Screen Readers (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
 </span>
 <div class="c-inset-text__link-container"><a href="https://webaim.org/projects/screenreadersurvey8/">Screen Reader User Survey</a></div>
 </div></p>
@@ -3354,41 +3354,52 @@ It's worth noting that people with visual impairments aren't the only users of S
 </figure>
 <p>Being aware of and using the appropriate HTML tags (along with their <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles">implicit roles</a>) goes a long way to ensuring the content of your page is providing a usable experience for your screen reader users.</p>
 <p>Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.</p>
-<p>The following code illustrates how two solution to the icon button pattern.
-In *<em>Option A.</em> the inner <code>svg</code> element is hidden from the accessibility tree due to the <code>aria-hidden</code> attribute, however, the necessary text content of &quot;Menu&quot; has been provided using the <code>aria-label</code> attribute. This results in the screen reader announcing this elements as &quot;Menu button&quot;. Note we didn't need to include the word &quot;button&quot;, the screen reader appends that content because of the implicit role of the <code>button</code> element.</p>
+<h3 id="this-sounds-like-a-lot" tabindex="-1">This sounds like a lot... <a class="c-header-anchor" href="#this-sounds-like-a-lot">#</a></h3>
+<p>// automated tools, starting new components and design with an understanding of the accessibility requirements (keyboard interactions, correct syntax) enable you to learn at the point of need</p>
+<p>https://www.w3.org/WAI/ARIA/apg/patterns/</p>
+<p>// being familiar with a using the screen reader enables you to make a good assessment of the hidden content and practices you'll need to consider to make your designs a good experience for all your users.</p>
+<h4 id="a-simple-example" tabindex="-1">A simple example <a class="c-header-anchor" href="#a-simple-example">#</a></h4>
+<p>The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action it is important to provide the same non visual descriptions.</p>
+<p>In <strong>Option A.</strong> the inner <code>svg</code> image element is hidden from the accessibility tree due to the <code>aria-hidden</code> attribute, however the necessary equivalent text content of &quot;Menu&quot; has been provided using the <code>aria-label</code> attribute. This results in the screen reader announcing this elements as &quot;Menu button&quot;.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- Option A. --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Menu<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> 
     <span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> 
     <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
   <span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m1...<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m...<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
-<p>An alternative technique, <em>Option B.</em> delivers the same experience, this time using plain text inside a <code>span</code> element that has been visually hidden using a <code>CSS</code> class. The content of the <code>button</code> is still available to the screen reader.</p>
+<p><div class="c-inset-text">
+<span>
+Note we didn't need to include the word &quot;button&quot;, the screen reader appends that content because of the implicit role of the <code>button</code> element.
+</span>
+</div></p>
+<p>An alternative technique, <strong>Option B.</strong> delivers the same experience, this time using plain text inside a <code>span</code> element that has been visually hidden using a <code>CSS</code> class. The content of the <code>button</code> is still available to the screen reader.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- Option B. --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
-        <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img<span class="token punctuation">"</span></span>
         <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
         <span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
     <span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m1...<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m...<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>visually-hidden<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
         Menu
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
 <h2 id="testing-designs-for-screen-reader-experience" tabindex="-1">Testing designs for screen reader experience <a class="c-header-anchor" href="#testing-designs-for-screen-reader-experience">#</a></h2>
-<p>There are</p>
-<p>I've created a previous post as an introduction getting started with VoiceOver the Screen Reader built into MacOs.</p>
-<p>There are a number of tools to help assess an web page for accessibility issues</p>
+<p>Nothing beats having a your designs tested by someone who primarily accesses the web through assistive technologies like screen readers.</p>
+<p>// link these paragraphs</p>
+<p>I have written a very short onboarding guide for designers to <a href="../how-to-get-started-with-voice-over">learn the bare minimum to get started testing designs with VoiceOver</a>, the Screen Reader built into MacOs.</p>
+<p>There are a number of tools to help assess a web page for common accessibility issues.</p>
 <h3 id="other-tools" tabindex="-1">Other Tools <a class="c-header-anchor" href="#other-tools">#</a></h3>
 <ul>
 <li><a href="https://www.deque.com/axe/devtools/chrome-browser-extension/">axe DevTools browser extension</a></li>
 <li><a href="https://www.ibm.com/able/toolkit/tools">IBM Equal Access Checker</a></li>
 <li>Your browsers accessibility inspector, for <a href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/">Firefox</a> or <a href="https://developer.chrome.com/docs/devtools/accessibility/reference/#pane">Chrome</a></li>
 </ul>
+<p>https://www.w3.org/WAI/ARIA/apg/</p>
 
 <ul class="c-iterator-links"><li>Previous: <a href="/blog/how-to-get-started-with-voice-over/">How to get started with VoiceOver</a></li>
 </ul>
