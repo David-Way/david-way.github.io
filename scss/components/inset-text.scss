@@ -1,0 +1,11 @@
+.c-inset-text {
+	display: flex;
+	flex-direction: column;
+	color: var(--color-fg-muted);
+	border-inline-start: 3px solid var(--color-border-muted);
+	padding: var(--base-size-16);
+
+	&__link-container {
+		margin-block-start: var(--base-size-8);
+	}
+}

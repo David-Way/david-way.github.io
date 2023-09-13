@@ -128,8 +128,8 @@
 //--------------------
 
 @mixin focus() {
-	outline-offset: 1px;
-	outline: var(--color-checks-input-focus-text) auto 1px;
+	outline-offset: 3px;
+	outline: 2px solid var(--color-accent-fg);
 }
 
 @mixin contain-site-content {
