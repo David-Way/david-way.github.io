@@ -111,6 +111,10 @@ a[href] {
 	&:active {
 		text-decoration: underline;
 	}
+
+	&:focus-within {
+		@include mixins.focus();
+	}
 }
 
 table {
@@ -137,6 +141,7 @@ code {
 
 code {
 	word-break: break-all;
+	color: var(--fgColor-default, var(--color-fg-default));
 }
 
 :not(pre) > code {
