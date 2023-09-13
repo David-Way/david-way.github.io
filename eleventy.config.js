@@ -103,6 +103,22 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addPairedShortcode(
+		"insettext",
+		function (content, linkLabel, linkLocation) {
+			const link = linkLabel
+				? `<div class="c-inset-text__link-container"><a href="${linkLocation}">${linkLabel}</a></div>`
+				: undefined;
+
+			return `
+				<div class="c-inset-text">
+					<span>${content}</span>
+					${link && link}
+				</div>
+			`;
+		},
+	);
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
