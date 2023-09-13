@@ -1,0 +1,25 @@
+details,
+.c-details {
+  padding: var(--base-size-8) 0;
+}
+details > *:not(summary),
+.c-details > *:not(summary) {
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding-top: var(--base-size-8);
+  padding-right: var(--base-size-8);
+  padding-bottom: var(--base-size-8);
+  padding-left: var(--base-size-24);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+summary,
+.c-details__summary {
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-accent-fg);
+  padding: var(--base-size-8) 0;
+}
+
+/*# sourceMappingURL=details.css.map */

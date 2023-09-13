@@ -1,0 +1,24 @@
+@use "../partials/mixins";
+
+details,
+.c-details {
+	padding: var(--base-size-8) 0;
+
+	& > *:not(summary) {
+		border-inline-start: 3px solid var(--color-border-muted);
+		padding-top: var(--base-size-8);
+		padding-right: var(--base-size-8);
+		padding-bottom: var(--base-size-8);
+		padding-left: var(--base-size-24);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+summary,
+.c-details__summary {
+	@include mixins.type-button();
+	text-decoration: underline;
+	color: var(--color-accent-fg);
+	padding: var(--base-size-8) 0;
+}
