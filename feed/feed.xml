@@ -23,8 +23,12 @@
 &lt;p&gt;I&#39;m very glad I did, as learning a how to use these tools, how they worked and the value they provide to a significant subset of our users has helped me to assess designs through a new lense.&lt;/p&gt;
 &lt;h2 id=&quot;what-is-voiceover&quot; tabindex=&quot;-1&quot;&gt;What is VoiceOver? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.&lt;/p&gt;
-&lt;p&gt;It&#39;s important to not that that&#39;s &lt;a href=&quot;https://www.browserstack.com/guide/understanding-browser-market-share&quot;&gt;more than the number of people currently using the Fire Fox web browser&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;note that people with visual impairments aren&#39;t the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all. (&lt;a href=&quot;https://webaim.org/projects/screenreadersurvey8/&quot;&gt;source&lt;/a&gt;))&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
+&lt;span&gt;
+It&#39;s worth noting that people with visual impairments aren&#39;t the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+&lt;/span&gt;
+&lt;div class=&quot;c-inset-text__link-container&quot;&gt;&lt;a href=&quot;https://webaim.org/projects/screenreadersurvey8/&quot;&gt;Screen Reader User Survey&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users.&lt;/p&gt;
 &lt;h2 id=&quot;how-does-a-screen-reader-work&quot; tabindex=&quot;-1&quot;&gt;How does a screen reader work? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The HTML tags, the attributes we append to them, and how we nest and combine them, imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:&lt;/p&gt;
@@ -193,16 +197,19 @@ This principle can be applied to many instances where disabled buttons are commo
 		<id>https://david-way.github.io/blog/quick-start-guide-to-yaml/</id>
 		<content type="html">&lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;details&gt;
-  &lt;summary&gt;A &lt;strong&gt;file&lt;/strong&gt; is and object on a computer that is used to store data or information. &lt;/summary&gt;
+  &lt;summary&gt;What is a file really?&lt;/summary&gt;
+&lt;p&gt;A &lt;strong&gt;file&lt;/strong&gt; is and object on a computer that is used to store data or information.&lt;/p&gt;
 &lt;p&gt;There are many types of files, recognisable by their extension (ie. &lt;code&gt;.doc&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.jpg&lt;/code&gt;).
 Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).&lt;/p&gt;
 &lt;/details&gt;
 &lt;details&gt;
-  &lt;summary&gt;A &lt;strong&gt;markup up language&lt;/strong&gt; is a system of writing content so that it’s structure conveys meaning.&lt;/summary&gt;
+  &lt;summary&gt;What is a markup language?&lt;/summary&gt;
+&lt;p&gt;A &lt;strong&gt;markup up language&lt;/strong&gt; is a system of writing content so that it’s structure conveys meaning.&lt;/p&gt;
 &lt;p&gt;Yaml is a data serialization language and not technically a markup language though it functions a lot like one.&lt;/p&gt;
 &lt;p&gt;Other markup languages you might be familiar with are HTML, XML and JSON.&lt;/p&gt;
 &lt;p&gt;When you compare Yaml structure to other similar systems Yaml requires considerably less content or &amp;quot;decoration&amp;quot; to carry the same amount of information, but is less resilient regarding spacing and formatting as a result.&lt;/p&gt;
-  &lt;table&gt;
+&lt;div class=&quot;u-responsive-table-container&quot;&gt;
+&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th align=&quot;left&quot;&gt;Yaml&lt;/th&gt;
@@ -241,6 +248,7 @@ Different file types are optimised for different tasks, like storing video, audi
 &lt;/tr&gt;&lt;p&gt;&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
 &lt;/details&gt;
 &lt;h2 id=&quot;yaml&quot; tabindex=&quot;-1&quot;&gt;Yaml &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Yaml is a markup like language (used in the &lt;code&gt;.yaml&lt;/code&gt; file type) that aims to make data portable in a way that is easy to read, write and edit by humans &lt;em&gt;and&lt;/em&gt; computers.&lt;/p&gt;
@@ -259,9 +267,8 @@ Different file types are optimised for different tasks, like storing video, audi
 &lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;details&gt;
   &lt;summary markdown=&quot;span&quot;&gt;What is the value data of writing like this?&lt;/summary&gt;
-  &lt;br&gt;
-  A computer can read and use structured data written like this a lot easier than the following:
-&lt;pre class=&quot;language-txt&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;It&#39;s Joan Smiths 32nd birthday today.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A computer can read and use structured data written a lot easier than the unstructured data, for example see the following:&lt;/p&gt;
+&lt;pre class=&quot;language-txt&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt;It&#39;s Joan Smiths 33rd birthday is tomorrow.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Again, the key aim of Yaml is to be portable, meaning that it can be easily imported, understood by multiple programs and in programming languages.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&quot;blocks-of-text&quot; tabindex=&quot;-1&quot;&gt;Blocks of text &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -308,8 +315,10 @@ Different file types are optimised for different tasks, like storing video, audi
 &lt;p&gt;The goal of journey mapping is to get a holistic view of a customer&#39;s experience, understand the tasks and responsibilities currently assigned, and uncover moments of frustration and delight.
 Successfully journey mapping highlights opportunities to address customers&#39; pain points, alleviate disconnected areas of the service you provide, create a better experience for your users, and aligns your team.&lt;/p&gt;
 &lt;h3 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/journey-mapping-in-design-thinking/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you&#39;re actually willing to work on.
-List of potential users: Which personas do you need to include?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you&#39;re actually willing to work on.&lt;/li&gt;
+&lt;li&gt;A list of potential users: Which personas do you need to include or be aware of?&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&quot;steps&quot; tabindex=&quot;-1&quot;&gt;Steps &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/journey-mapping-in-design-thinking/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Define a scope, choose an entry and exit to an end-to-end customer experience.&lt;/li&gt;
@@ -345,7 +354,7 @@ Ideation leads to storyboarding, a new To-Be experience to be prototyped and val
 &lt;p&gt;Some of my recent favorite tools include &lt;a href=&quot;https://ticktick.com/?language=en_US&quot;&gt;TickTick&lt;/a&gt;, the &lt;code&gt;/remind me&lt;/code&gt; command in &lt;a href=&quot;https://slack.com/intl/en-ie/help/articles/208423427-Set-a-reminder&quot;&gt;Slack&lt;/a&gt;, and any messaging app with scheduled send functionality!&lt;/p&gt;
 &lt;p&gt;One area where time management can be extra challenging is when you&#39;re also managing other people&#39;s time, a familiar experience when running workshops.&lt;/p&gt;
 &lt;p&gt;In the book &lt;a href=&quot;http://www.gv.com/sprint/&quot;&gt;Design Sprints&lt;/a&gt;, the author Jake Knapp recommends using a &lt;a href=&quot;https://www.timetimer.com/&quot;&gt;time timer&lt;/a&gt; (originally designed to help a child understand the abstract passage of time vivid and concrete way), as it is particularly effective at keeping participants on track and on time resulting in more efficient meetings.&lt;/p&gt;
-&lt;p&gt;The value of the concept of a time timer was evident to me. Still, with the obvious limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I prototyped a solution.&lt;/p&gt;
+&lt;p&gt;The value of the concept of a time timer was clear to me. Still, with the limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I decided to prototype a digital solution.&lt;/p&gt;
 &lt;h2 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/group-time-management/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The requirements I prioritized with my implementation were:&lt;/p&gt;
 &lt;ul&gt;

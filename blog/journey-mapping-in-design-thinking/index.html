@@ -818,6 +818,11 @@ main:first-child {
   max-width: 100% !important;
 }
 
+.u-responsive-table-container {
+  display: block;
+  overflow-x: auto;
+}
+
 .u-list\:unstyled {
   list-style: none;
   margin: 0;
@@ -2094,6 +2099,10 @@ a[href] {
 a[href]:hover, a[href]:active {
   text-decoration: underline;
 }
+a[href]:focus-within {
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
+}
 
 table {
   margin: 1em 0;
@@ -2122,6 +2131,7 @@ code {
 
 code {
   word-break: break-all;
+  color: var(--fgColor-default, var(--color-fg-default));
 }
 
 :not(pre) > code {
@@ -3184,8 +3194,8 @@ pre:not([class*=language-]) {
   text-decoration-thickness: 1px;
 }
 .c-post-list__link:focus-visible {
-  outline-offset: 1px;
-  outline: var(--color-checks-input-focus-text) auto 1px;
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
 }
 
 .c-post-tag {
@@ -3230,6 +3240,41 @@ h2 + .c-header-anchor {
   margin-block-start: var(--base-size-36);
 }
 
+.c-inset-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-fg-muted);
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding: var(--base-size-16);
+}
+.c-inset-text__link-container {
+  margin-block-start: var(--base-size-8);
+}
+
+details,
+.c-details {
+  padding: var(--base-size-8) 0;
+}
+details > *:not(summary),
+.c-details > *:not(summary) {
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding-top: var(--base-size-8);
+  padding-right: var(--base-size-8);
+  padding-bottom: var(--base-size-8);
+  padding-left: var(--base-size-24);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+summary,
+.c-details__summary {
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-accent-fg);
+  padding: var(--base-size-8) 0;
+}
+
 /*# sourceMappingURL=index.css.map */</style>
 	</head>
 	<body>
@@ -3261,8 +3306,10 @@ h2 + .c-header-anchor {
 <p>The goal of journey mapping is to get a holistic view of a customer's experience, understand the tasks and responsibilities currently assigned, and uncover moments of frustration and delight.
 Successfully journey mapping highlights opportunities to address customers' pain points, alleviate disconnected areas of the service you provide, create a better experience for your users, and aligns your team.</p>
 <h3 id="requirements" tabindex="-1">Requirements <a class="c-header-anchor" href="#requirements">#</a></h3>
-<p>Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you're actually willing to work on.
-List of potential users: Which personas do you need to include?</p>
+<ol>
+<li>Journey maps are always helpful, but producing one with a known business goal is usually best. The business goal will inform the level of detail required, what the most impactful or common scenarios you are concerned with, and will be the one most likely to produce insights you're actually willing to work on.</li>
+<li>A list of potential users: Which personas do you need to include or be aware of?</li>
+</ol>
 <h3 id="steps" tabindex="-1">Steps <a class="c-header-anchor" href="#steps">#</a></h3>
 <ul>
 <li>Define a scope, choose an entry and exit to an end-to-end customer experience.</li>

@@ -818,6 +818,11 @@ main:first-child {
   max-width: 100% !important;
 }
 
+.u-responsive-table-container {
+  display: block;
+  overflow-x: auto;
+}
+
 .u-list\:unstyled {
   list-style: none;
   margin: 0;
@@ -2094,6 +2099,10 @@ a[href] {
 a[href]:hover, a[href]:active {
   text-decoration: underline;
 }
+a[href]:focus-within {
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
+}
 
 table {
   margin: 1em 0;
@@ -2122,6 +2131,7 @@ code {
 
 code {
   word-break: break-all;
+  color: var(--fgColor-default, var(--color-fg-default));
 }
 
 :not(pre) > code {
@@ -3184,8 +3194,8 @@ pre:not([class*=language-]) {
   text-decoration-thickness: 1px;
 }
 .c-post-list__link:focus-visible {
-  outline-offset: 1px;
-  outline: var(--color-checks-input-focus-text) auto 1px;
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
 }
 
 .c-post-tag {
@@ -3230,6 +3240,41 @@ h2 + .c-header-anchor {
   margin-block-start: var(--base-size-36);
 }
 
+.c-inset-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-fg-muted);
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding: var(--base-size-16);
+}
+.c-inset-text__link-container {
+  margin-block-start: var(--base-size-8);
+}
+
+details,
+.c-details {
+  padding: var(--base-size-8) 0;
+}
+details > *:not(summary),
+.c-details > *:not(summary) {
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding-top: var(--base-size-8);
+  padding-right: var(--base-size-8);
+  padding-bottom: var(--base-size-8);
+  padding-left: var(--base-size-24);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+summary,
+.c-details__summary {
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-accent-fg);
+  padding: var(--base-size-8) 0;
+}
+
 /*# sourceMappingURL=index.css.map */</style>
 	</head>
 	<body>
@@ -3265,7 +3310,7 @@ h2 + .c-header-anchor {
 <p>Some of my recent favorite tools include <a href="https://ticktick.com/?language=en_US">TickTick</a>, the <code>/remind me</code> command in <a href="https://slack.com/intl/en-ie/help/articles/208423427-Set-a-reminder">Slack</a>, and any messaging app with scheduled send functionality!</p>
 <p>One area where time management can be extra challenging is when you're also managing other people's time, a familiar experience when running workshops.</p>
 <p>In the book <a href="http://www.gv.com/sprint/">Design Sprints</a>, the author Jake Knapp recommends using a <a href="https://www.timetimer.com/">time timer</a> (originally designed to help a child understand the abstract passage of time vivid and concrete way), as it is particularly effective at keeping participants on track and on time resulting in more efficient meetings.</p>
-<p>The value of the concept of a time timer was evident to me. Still, with the obvious limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I prototyped a solution.</p>
+<p>The value of the concept of a time timer was clear to me. Still, with the limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I decided to prototype a digital solution.</p>
 <h2 id="requirements" tabindex="-1">Requirements <a class="c-header-anchor" href="#requirements">#</a></h2>
 <p>The requirements I prioritized with my implementation were:</p>
 <ul>

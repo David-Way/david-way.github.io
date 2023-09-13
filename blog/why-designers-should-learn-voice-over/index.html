@@ -818,6 +818,11 @@ main:first-child {
   max-width: 100% !important;
 }
 
+.u-responsive-table-container {
+  display: block;
+  overflow-x: auto;
+}
+
 .u-list\:unstyled {
   list-style: none;
   margin: 0;
@@ -2094,6 +2099,10 @@ a[href] {
 a[href]:hover, a[href]:active {
   text-decoration: underline;
 }
+a[href]:focus-within {
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
+}
 
 table {
   margin: 1em 0;
@@ -2122,6 +2131,7 @@ code {
 
 code {
   word-break: break-all;
+  color: var(--fgColor-default, var(--color-fg-default));
 }
 
 :not(pre) > code {
@@ -3184,8 +3194,8 @@ pre:not([class*=language-]) {
   text-decoration-thickness: 1px;
 }
 .c-post-list__link:focus-visible {
-  outline-offset: 1px;
-  outline: var(--color-checks-input-focus-text) auto 1px;
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
 }
 
 .c-post-tag {
@@ -3230,6 +3240,41 @@ h2 + .c-header-anchor {
   margin-block-start: var(--base-size-36);
 }
 
+.c-inset-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-fg-muted);
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding: var(--base-size-16);
+}
+.c-inset-text__link-container {
+  margin-block-start: var(--base-size-8);
+}
+
+details,
+.c-details {
+  padding: var(--base-size-8) 0;
+}
+details > *:not(summary),
+.c-details > *:not(summary) {
+  border-inline-start: 3px solid var(--color-border-muted);
+  padding-top: var(--base-size-8);
+  padding-right: var(--base-size-8);
+  padding-bottom: var(--base-size-8);
+  padding-left: var(--base-size-24);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+summary,
+.c-details__summary {
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-accent-fg);
+  padding: var(--base-size-8) 0;
+}
+
 /*# sourceMappingURL=index.css.map */</style>
 	</head>
 	<body>
@@ -3267,8 +3312,12 @@ h2 + .c-header-anchor {
 <p>I'm very glad I did, as learning a how to use these tools, how they worked and the value they provide to a significant subset of our users has helped me to assess designs through a new lense.</p>
 <h2 id="what-is-voiceover" tabindex="-1">What is VoiceOver? <a class="c-header-anchor" href="#what-is-voiceover">#</a></h2>
 <p>Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.</p>
-<p>It's important to not that that's <a href="https://www.browserstack.com/guide/understanding-browser-market-share">more than the number of people currently using the Fire Fox web browser</a>.</p>
-<p>note that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all. (<a href="https://webaim.org/projects/screenreadersurvey8/">source</a>))</p>
+<p><div class="c-inset-text">
+<span>
+It's worth noting that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+</span>
+<div class="c-inset-text__link-container"><a href="https://webaim.org/projects/screenreadersurvey8/">Screen Reader User Survey</a></div>
+</div></p>
 <p>The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users.</p>
 <h2 id="how-does-a-screen-reader-work" tabindex="-1">How does a screen reader work? <a class="c-header-anchor" href="#how-does-a-screen-reader-work">#</a></h2>
 <p>The HTML tags, the attributes we append to them, and how we nest and combine them, imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:</p>
