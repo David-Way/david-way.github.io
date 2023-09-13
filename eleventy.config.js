@@ -106,14 +106,18 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode(
 		"insettext",
 		function (content, linkLabel, linkLocation) {
-			const link = linkLabel
-				? `<div class="c-inset-text__link-container"><a href="${linkLocation}">${linkLabel}</a></div>`
-				: undefined;
+			if (linkLabel && linkLocation) {
+				return `
+					<div class="c-inset-text">
+						<span>${content}</span>
+						<div class="c-inset-text__link-container"><a href="${linkLocation}">${linkLabel}</a></div>
+					</div>
+				`;
+			}
 
 			return `
 				<div class="c-inset-text">
 					<span>${content}</span>
-					${link && link}
 				</div>
 			`;
 		},

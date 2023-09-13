@@ -24,7 +24,7 @@ I'm very glad I did, as learning a how to use these tools, how they worked and t
 Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.
 
 {% insettext "Screen Reader User Survey", "https://webaim.org/projects/screenreadersurvey8/" %}
-It's worth noting that people with visual impairments aren't the only users of Screen Reader (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+It's worth noting that people with visual impairments aren't the only users of Screen Readers (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
 {% endinsettext %}
 
 The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users. 
@@ -72,8 +72,19 @@ Being aware of and using the appropriate HTML tags (along with their [implicit r
 
 Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.
 
-The following code illustrates how two solution to the icon button pattern.
-In **Option A.* the inner `svg` element is hidden from the accessibility tree due to the `aria-hidden` attribute, however, the necessary text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing this elements as "Menu button". Note we didn't need to include the word "button", the screen reader appends that content because of the implicit role of the `button` element.
+### This sounds like a lot...
+ 
+// automated tools, starting new components and design with an understanding of the accessibility requirements (keyboard interactions, correct syntax) enable you to learn at the point of need 
+
+https://www.w3.org/WAI/ARIA/apg/patterns/
+
+// being familiar with a using the screen reader enables you to make a good assessment of the hidden content and practices you'll need to consider to make your designs a good experience for all your users.
+
+#### A simple example
+
+The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action it is important to provide the same non visual descriptions.
+
+In **Option A.** the inner `svg` image element is hidden from the accessibility tree due to the `aria-hidden` attribute, however the necessary equivalent text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing this elements as "Menu button".
 
 ```html
 <!-- Option A. -->
@@ -82,22 +93,25 @@ In **Option A.* the inner `svg` element is hidden from the accessibility tree du
     focusable="false" 
     aria-hidden="true"
   >
-    <path d="m1..."/>
+    <path d="m..."/>
   </svg>
 </button>
 ```
 
-An alternative technique, *Option B.* delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using a `CSS` class. The content of the `button` is still available to the screen reader.
+{% insettext %}
+Note we didn't need to include the word "button", the screen reader appends that content because of the implicit role of the `button` element.
+{% endinsettext %}
+
+An alternative technique, **Option B.** delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using a `CSS` class. The content of the `button` is still available to the screen reader.
 
 ```html
 <!-- Option B. -->
 <button type="button">
     <svg
-        role="img"
         aria-hidden="true"
         focusable="false"
     >
-        <path d="m1..."/>
+        <path d="m..."/>
     </svg>
     <span class="visually-hidden">
         Menu
@@ -107,15 +121,17 @@ An alternative technique, *Option B.* delivers the same experience, this time us
 
 ## Testing designs for screen reader experience
 
-There are 
+Nothing beats having a your designs tested by someone who primarily accesses the web through assistive technologies like screen readers.
 
-I've created a previous post as an introduction getting started with VoiceOver the Screen Reader built into MacOs.
+// link these paragraphs 
 
-There are a number of tools to help assess an web page for accessibility issues
+I have written a very short onboarding guide for designers to [learn the bare minimum to get started testing designs with VoiceOver](../how-to-get-started-with-voice-over), the Screen Reader built into MacOs. 
+
+There are a number of tools to help assess a web page for common accessibility issues.
 
 ### Other Tools
 - [axe DevTools browser extension](https://www.deque.com/axe/devtools/chrome-browser-extension/)
 - [IBM Equal Access Checker](https://www.ibm.com/able/toolkit/tools)
 - Your browsers accessibility inspector, for [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/) or [Chrome](https://developer.chrome.com/docs/devtools/accessibility/reference/#pane)
 
-
+https://www.w3.org/WAI/ARIA/apg/  
