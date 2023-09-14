@@ -1,0 +1,13 @@
+<div class="u-bleed-container:large">
+    <ol reversed class="c-project-list">
+    {% for project in projectlist | reverse %}
+        <li class="c-project-list-item{% if project.url == url %} c-project-list-item--active{% endif %} c-project-list-item--grid-shape:{{project.data.gridShape}}">
+            <a href="{{ project.url }}" class="c-project-list__link">
+                <img class="c-project-list-item__image" src="https://source.unsplash.com/random/500x300" alt="" />
+                
+                <h2 class="c-project-list-item__title">{% if project.data.title %}{{ project.data.title }}{% else %}<code>{{ project.url }}</code>{% endif %}</h2>
+            </a>
+        </li>
+    {% endfor %}
+    </ol>
+</div>
