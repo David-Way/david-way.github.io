@@ -4,43 +4,45 @@
 $spacing: (
 	"auto": auto,
 	"00": 0px,
-	"04": var(--base-size-4),
 	// 0.25rem
-	"08": var(--base-size-8),
+	"04": var(--base-size-4),
 	// 0.5rem
-	"12": var(--base-size-12),
+	"08": var(--base-size-8),
 	// 0.75rem
-	"16": var(--base-size-16),
+	"12": var(--base-size-12),
 	// 1rem
-	"20": var(--base-size-20),
+	"16": var(--base-size-16),
 	// 1.25rem
-	"24": var(--base-size-24),
+	"20": var(--base-size-20),
 	// 1.5rem
-	"28": var(--base-size-28),
+	"24": var(--base-size-24),
 	// 1.75rem
-	"32": var(--base-size-32),
+	"28": var(--base-size-28),
 	// 2rem
-	"36": var(--base-size-36),
+	"32": var(--base-size-32),
 	// 2.25rem
-	"40": var(--base-size-40),
+	"36": var(--base-size-36),
 	// 2.5rem
-	"44": var(--base-size-44),
+	"40": var(--base-size-40),
 	// 2.75rem
-	"48": var(--base-size-48),
+	"44": var(--base-size-44),
 	// 3rem
-	"64": var(--base-size-64),
+	"48": var(--base-size-48),
 	// 4rem
-	"80": var(--base-size-80),
+	"64": var(--base-size-64),
 	// 5rem
-	"96": var(--base-size-96),
+	"80": var(--base-size-80),
 	// 6rem
-	"112": var(--base-size-112),
+	"96": var(--base-size-96),
 	// 7rem
-	"128": var(--base-size-128) // 8rem,
+	"112": var(--base-size-112),
+	// 8rem
+	"128": var(--base-size-128),
 );
 
 $break-points: (
-	"x-small": 320px,
+	"xx-small": 320px,
+	"x-small": 460px,
 	"small": 640px,
 	"medium": 1440px,
 	"large": 2440px,

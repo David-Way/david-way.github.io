@@ -3054,6 +3054,14 @@ summary:focus-visible,
   color: var(--color-fg-muted);
   margin: 0;
 }
+.c-project-list-item--grid-shape\:none {
+  grid-column: span 2;
+}
+@media screen and (min-width: 460px) {
+  .c-project-list-item--grid-shape\:none {
+    grid-column: auto;
+  }
+}
 .c-project-list-item--grid-shape\:box {
   grid-row: span 2;
   grid-column: span 2;

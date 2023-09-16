@@ -1,4 +1,5 @@
 @use "../partials/mixins";
+@use "../partials/functions";
 
 .c-project-list {
 	list-style: none;
@@ -57,7 +58,6 @@
 		display: block;
 		-o-object-fit: cover;
 		object-fit: cover;
-		// border-radius: 0.5rem 0.5rem 0 0;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
@@ -86,6 +86,14 @@
 		@include mixins.type-x-small();
 		color: var(--color-fg-muted);
 		margin: 0;
+	}
+
+	&--grid-shape\:none {
+		grid-column: span 2;
+
+		@media screen and (min-width: functions.bp("x-small")) {
+			grid-column: auto;
+		}
 	}
 
 	&--grid-shape\:box {
