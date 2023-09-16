@@ -3335,32 +3335,47 @@ summary:focus-visible,
 	<li class="c-post-meta-data__item"><a href="/tags/screen-reader/" class="c-post-tag">screen reader</a></li>
 </ul>
 
-<p>I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with their magical talking tools.</p>
-<p>When explaining why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn't help but feel defeated.</p>
+<p>I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with what I could only describe at the time as their 'magical talking tools'.</p>
+<p>When they explained why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn't help but feel defeated.</p>
 <p>The first goal in the debugging process is to reproduce the bug; you need to know with certainty how to reproduce the bug to know for certain that you've solved the problem.</p>
-<p>Weary of the lengthy back and forth required to understand and resolve any issues this way, with a whole other (very patient) person in the loop, it was worth figuring out how to use a Screen Reader myself.</p>
-<p>I'm very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant subset of our users has helped me to assess designs through a new lens.</p>
+<p>Resolving complex bugs with a another (very patient) QA person in the loop can be a lengthy process. To speed things up, I realized it was worth figuring out how to use a screen reader myself.</p>
+<p>I'm very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant group of our users has helped me to assess designs through a new lens.</p>
 <h2 id="what-is-voiceover-anyway" tabindex="-1">What is VoiceOver anyway? <a class="c-header-anchor" href="#what-is-voiceover-anyway">#</a></h2>
-<p>Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology primarily used by people with vision impairments to consume written content online through audio or touch output.</p>
+<p><a href="https://www.apple.com/accessibility/vision/">VoiceOver</a> is the screen reader built into macOS. A screen reader is a piece of assistive technology primarily used by people with vision impairments to consume written content online through audio or touch output.</p>
 <p><div class="c-inset-text">
 <span>
-It's worth noting that people with visual impairments aren't the only users of Screen Readers (3% of users report cognitive impairments, 2% have motor disabilities, and up to 12% have no disability at all.)
+It's worth noting that people with visual impairments aren't the only users of screen readers (3% of users report cognitive impairments, 2% have motor disabilities, and up to 12% have no disability at all.)
 </span>
-<div class="c-inset-text__link-container"><a href="https://webaim.org/projects/screenreadersurvey8/">Screen Reader User Survey</a></div>
+<div class="c-inset-text__link-container"><a href="https://webaim.org/projects/screenreadersurvey8/">screen reader User Survey</a></div>
 </div></p>
-<p>The experience of such a broad potential audience for our designs is vital to accommodate and understand and, as with most accessibility considerations, can help elevate the usability of our designs for all users.</p>
-<h2 id="how-does-a-screen-reader-work" tabindex="-1">How does a screen reader work? <a class="c-header-anchor" href="#how-does-a-screen-reader-work">#</a></h2>
+<p>When we design for accessibility we elevate the usability of a designs for all users. The non-visual nature of the accommodations required for screen reader users means they can frequently be forgotten or seen as the developers job alone.</p>
+<p>Screen reader support is a fundamental requirement to building accessible software (a costly one when left as an afterthought), and such an important aspect of the experience that designers have a lot to contribute to implementing it correctly.</p>
+<p>Learning how to use a screen reader will make you better equipped at making inclusive decisions at every step of design process. And if you're reading this on an apple product, good news, you already have a screen reader installed on your device.</p>
+<h2 id="how-does-a-screen-reader-work-with-a-web-browser" tabindex="-1">How does a screen reader work with a web browser? <a class="c-header-anchor" href="#how-does-a-screen-reader-work-with-a-web-browser">#</a></h2>
+<p>A web browser renders a website’s HTML, CSS, and JavaScript files to construct the web page you designed. The HTML defines the structure and content of the page.</p>
+<p><div class="c-inset-text">
+<span>
+CSS adjusts the appearance, and JavaScript adds interactivity and dynamic elements.
+</span>
+</div></p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- an HTML tag --></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- an HTML tag with an attribute --></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>MDN<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- an HTML tag, with an attribute, nested in another HTML tag --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 <p>The HTML tags, the attributes we append to them, and how we nest and combine them imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:</p>
 <ol>
-<li>GUI, rendered by browser</li>
-<li>Accessibility Tree, read by a Screen Reader</li>
+<li>The visible UI we see rendered by browser</li>
+<li>The corresponding accessibility tree, which is the underlying structure that is read by a screen reader</li>
 </ol>
 <figure class="u-bleed-container:medium">
   <picture><source type="image/avif" srcset="/img/F2sbTzdFu4-659.avif 659w"><source type="image/webp" srcset="/img/F2sbTzdFu4-659.webp 659w"><img alt="A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name, and state." loading="lazy" decoding="async" src="/img/F2sbTzdFu4-659.svg" width="659" height="383"></picture>
   <figcaption>A diagram of an example accessibility tree depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements' locations, input type, name, and state.</figcaption>
 </figure> 
 <h3 id="visual-affordances" tabindex="-1">Visual affordances <a class="c-header-anchor" href="#visual-affordances">#</a></h3>
-<p>We're all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive.</p>
+<p>We're all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,</p>
 <ul>
 <li>A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.</li>
 <li>The underline of a link is an example of a convention-based affordance.</li>
@@ -3369,12 +3384,12 @@ It's worth noting that people with visual impairments aren't the only users of S
 </ul>
 <p>We rely heavily on visually available affordances to make our UI intuitive to non-screen reader users. However, these clues are not available to visually impaired users, so we need to provide equivalent information in non-visual methods.</p>
 <h3 id="non-visual-affordances" tabindex="-1">Non-visual affordances <a class="c-header-anchor" href="#non-visual-affordances">#</a></h3>
-<p>Semantic non-visual affordances required by Screen Readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.</p>
+<p>Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.</p>
 <p>Semantics or meaning is given to content in a document through:</p>
 <ul>
-<li>Location in the DOM tree, for example, is it a parent, child, or sibling.</li>
-<li>Labelling, using headings, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes">aria attributes</a> or related label elements.</li>
-<li>Tag type or tag roles: is it a list, a button, or the sidebar of our site?</li>
+<li>Location content is placed - for example, is it a parent, child, or sibling of another element?</li>
+<li>Hidden and associated content - provided through labelling, using headings, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes">aria attributes</a> or related label elements</li>
+<li>Containing element - choosing the correct tag type or tag roles: is it a list, a button, or the sidebar of our site?</li>
 </ul>
 <h3 id="working-with-the-screen-reader" tabindex="-1">Working <em>with</em> the screen reader <a class="c-header-anchor" href="#working-with-the-screen-reader">#</a></h3>
 <p>The following image illustrates two implementations of a page that could be styled to render with a visually identical result that would provide a significantly different experience for a sighted vs. a screen reader user.</p>
@@ -3393,10 +3408,10 @@ It's worth noting that people with visual impairments aren't the only users of S
 <h3 id="this-sounds-like-a-lot" tabindex="-1">This sounds like a lot... <a class="c-header-anchor" href="#this-sounds-like-a-lot">#</a></h3>
 <p>Learning <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">every <code>&lt;html&gt;</code> element</a> and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.</p>
 <p>Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/">W3 ARIA Authoring Practices Guide (APG)</a>.</p>
-<p>Being familiar with using a screen reader enables you to better assess the hidden content and practices you'll need to consider to make your designs a good experience for all your users.</p>
+<p>Being familiar with using a screen reader enables you to better assess the hidden content and practices you'll need to consider to make your designs a good experience for all of your users.</p>
 <h4 id="a-simple-example" tabindex="-1">A simple example <a class="c-header-anchor" href="#a-simple-example">#</a></h4>
-<p>The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action, it is important to provide the same non-visual descriptions.</p>
-<p>In <strong>Option A.</strong>, the inner <code>svg</code> image element is hidden from the accessibility tree due to the <code>aria-hidden</code> attribute. However, the equivalent text content of &quot;Menu&quot; has been provided using the <code>aria-label</code> attribute. This results in the screen reader announcing these elements as &quot;Menu button&quot;.</p>
+<p>Lets explore two solutions to the icon button patterns as an example of how to label an action in both a visual and non-visual way.</p>
+<p>In <strong>Option A</strong>, the inner <code>svg</code> image element is hidden from the accessibility tree due to the <code>aria-hidden</code> attribute. However, the equivalent text content of &quot;Menu&quot; has been provided using the <code>aria-label</code> attribute. This results in the screen reader announcing these elements as &quot;Menu button&quot;.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- Option A. --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Menu<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> 
@@ -3406,7 +3421,7 @@ It's worth noting that people with visual impairments aren't the only users of S
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m...<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
-<p>An alternative technique, <strong>Option B.</strong>, delivers the same experience, this time using plain text inside a <code>span</code> element that has been visually hidden using a <code>CSS</code> class. The content of the <code>button</code> is still available to the screen reader.</p>
+<p>An alternative technique, <strong>Option B</strong>, delivers the same experience, this time using plain text inside a <code>span</code> element that has been visually hidden using a <code>CSS</code> class. The content of the <code>button</code> is still available to the screen reader.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token comment">&lt;!-- Option B. --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
@@ -3427,7 +3442,7 @@ Note we didn't need to include the word &quot;button&quot;. The screen reader ap
 <p>If we had labeled the element as &quot;Menu button&quot;, a screen reader would annoyingly announce it as &quot;Menu button button&quot;. Navigating these subtle gotchas and conventions becomes second nature as you interact with a web document using a screen reader.</p>
 <h2 id="testing-designs-for-screen-reader-experience" tabindex="-1">Testing designs for screen reader experience <a class="c-header-anchor" href="#testing-designs-for-screen-reader-experience">#</a></h2>
 <p>Of course, nothing beats testing your designs with someone who primarily accesses the web through assistive technologies like screen readers. However, familiarizing yourself with the accessibility tools available, how to use a screen reader, and understanding how the screen reader conveys non-visual content will help you make better informed content, layout, and behavioral design.</p>
-<p>I have written a concise onboarding guide for designers to <a href="../how-to-get-started-with-voice-over">learn the bare minimum to start testing designs with VoiceOver</a>, the Screen Reader built into MacOs.</p>
+<p>I have written a concise onboarding guide for designers to <a href="../how-to-get-started-with-voice-over">learn the bare minimum to start testing designs with VoiceOver</a>.</p>
 <h3 id="references" tabindex="-1">References <a class="c-header-anchor" href="#references">#</a></h3>
 <ul>
 <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/">W3 ARIA Authoring Practices Guide (APG)</a>.</li>
