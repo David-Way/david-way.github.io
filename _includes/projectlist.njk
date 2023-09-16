@@ -1,6 +1,6 @@
 <div class="u-bleed-container:large">
     <ol reversed class="c-project-list">
-    {% for project in projectlist | reverse %}
+    {% for project in projectlist | sortByOrder %}
         <li class="c-project-list-item{% if project.url == url %} c-project-list-item--active{% endif %} c-project-list-item--grid-shape:{{project.data.gridShape}}">
             <a href="{{ project.url }}" class="c-project-list-item__link">
                 <img class="c-project-list-item__image" src="https://source.unsplash.com/random/500x300" alt="" />

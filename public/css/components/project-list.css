@@ -11,6 +11,7 @@
 .c-project-list-item__link {
   --c-project-list-item-tint: #e8e8e8;
   --card-blend-mode: overlay;
+  --card-blend-mode: luminosity;
   box-shadow: var(--shadow-resting-medium);
   background-color: var(--c-project-list-item-tint);
   position: relative;
@@ -27,6 +28,7 @@
   box-shadow: var(--shadow-floating-medium);
   --card-gradient: #24a9d5 max(8.5rem, 20vh);
   --card-gradient: var(--color-select-menu-tap-focus-bg) max(8.5rem, 20vh);
+  --card-gradient: oklch(0 0 0 / 0.55) 100%;
 }
 .c-project-list-item__link:hover .c-project-list-item__title, .c-project-list-item__link:focus-within .c-project-list-item__title {
   text-decoration: underline;

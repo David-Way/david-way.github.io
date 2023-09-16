@@ -89,6 +89,17 @@ module.exports = function (eleventyConfig) {
 		);
 	});
 
+	eleventyConfig.addFilter("log", (value) => {
+		console.log(value);
+	});
+
+	function sortByOrder(valuesToSort) {
+		let values = [...valuesToSort];
+		return values.sort((a, b) => Math.sign(a.data.order - b.data.order));
+	}
+
+	eleventyConfig.addFilter("sortByOrder", sortByOrder);
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItAnchor, {
