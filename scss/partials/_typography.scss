@@ -58,16 +58,19 @@ html {
 h1 {
 	@include mixins.type-h1();
 	max-width: 60ch;
+	text-wrap: balance;
 }
 
 h2 {
 	@include mixins.type-h2();
 	max-width: 60ch;
+	text-wrap: balance;
 }
 
 h3 {
 	@include mixins.type-h3();
 	max-width: 60ch;
+	text-wrap: balance;
 }
 
 h4,
@@ -75,6 +78,7 @@ h5,
 h6 {
 	@include mixins.type-h4();
 	max-width: 60ch;
+	text-wrap: balance;
 }
 
 p {
