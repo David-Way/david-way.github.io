@@ -21,4 +21,8 @@ summary,
 	text-decoration: underline;
 	color: var(--color-accent-fg);
 	padding: var(--base-size-8) 0;
+
+	&:focus-visible {
+		@include mixins.focus();
+	}
 }
