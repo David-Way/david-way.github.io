@@ -9,15 +9,13 @@ tags:
   - screen reader
 ---
 
-I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with what I could only describe at the time as their 'magical talking tools'.
+I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my designs with what I could only describe at the time as their 'magical talking tools'.
 
 When they explained why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn't help but feel defeated. 
 
 The first goal in the debugging process is to reproduce the bug; you need to know with certainty how to reproduce the bug to know for certain that you've solved the problem.
 
-Resolving complex bugs with a another (very patient) QA person in the loop can be a lengthy process. To speed things up, I realized it was worth figuring out how to use a screen reader myself.
-
-I'm very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant group of our users has helped me to assess designs through a new lens. 
+Resolving complex bugs with a another (very patient) person in the loop can be a lengthy process. To speed things up, I decided it was worth figuring out how to use a screen reader myself and I'm very grateful I did. Learning how to use these tools, how they worked, and the value they provide to a significant group of our users has helped me to assess designs through a new lens. 
 
 ## What is VoiceOver anyway?
 
@@ -44,14 +42,14 @@ CSS adjusts the appearance, and JavaScript adds interactivity and dynamic elemen
 ```html
 <div>Content</div> <!-- an HTML tag -->
 
-<div role="alert">Content</div> <!-- an HTML tag with an attribute -->
+<div role="alert">Content</div> <!-- an HTML tag with an attribute containing some content -->
 
 <div>
   <a href="https://developer.mozilla.org">MDN</a> <!-- an HTML tag, with an attribute, nested in another HTML tag -->
 </div>
 ```
 
-The HTML tags, the attributes we append to them, and how we nest and combine them imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:
+The HTML tags, the attributes we append to them, and how we nest and combine them imbue semantic meaning to the content of our designs. HTML results two things we should be concerned about:
 1. The visible UI we see rendered by browser
 2. The corresponding accessibility tree, which is the underlying structure that is read by a screen reader
 
@@ -72,16 +70,16 @@ We rely heavily on visually available affordances to make our UI intuitive to no
 
 ### Non-visual affordances
 
-Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
+Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. The smantics of HTML let us express the affordances we offer to sighted users in a way that a screen reader can announce.
 
-Semantics or meaning is given to content in a document through:
-- Location content is placed - for example, is it a parent, child, or sibling of another element?
+Semantics or meaning is given to the content in a web page through:
 - Hidden and associated content - provided through labelling, using headings, [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) or related label elements
 - Containing element - choosing the correct tag type or tag roles: is it a list, a button, or the sidebar of our site?
+- The location the elements/content is placed - for example, is it a parent, child, or sibling of another element?
 
 ### Working *with* the screen reader
 
-The following image illustrates two implementations of a page that could be styled to render with a visually identical result that would provide a significantly different experience for a sighted vs. a screen reader user.
+The following image illustrates two implementations of a page that could be styled to render with a visually identical result. Both of which would provide a significantly different experience for a sighted vs. a screen reader user.
 
 <figure class="u-bleed-container:medium">
   {% image "./images/clear-use-of-semantic-markup.svg", "A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags, and the other achieves the same visual result but with only `div` tags." %}
@@ -92,7 +90,7 @@ Being aware of and using the appropriate HTML tags (along with their [implicit r
 
 Using roles and ARIA attributes provides several additional mechanisms for adding labels, and descriptions and establishing relationships between elements when semantic HTML alone is insufficient.
 
-**Example of a role attribute applied to a HTML tag** - The alert role is used to communicate an important and usually time-sensitive message to the user.
+**Example of a role attribute applied to a HTML tag** - The alert role is used to announce an important and usually time-sensitive message to the user.
 ```html
 <div role="alert">...</div>
 ```
@@ -148,15 +146,18 @@ An alternative technique, **Option B**, delivers the same experience, this time 
 </button>
 ```
 
+Both example solutions contain visually hidden content, content that you should be aware needs to be there and content you as a designer should be contributing to.
+
+
 {% insettext %}
 Note we didn't need to include the word "button". The screen reader appends that content because of the implicit role of the `button` element. 
 {% endinsettext %}
 
-If we had labeled the element as "Menu button", a screen reader would annoyingly announce it as "Menu button button". Navigating these subtle gotchas and conventions becomes second nature as you interact with a web document using a screen reader.
+If we had labeled the element as "Menu button", a screen reader would annoyingly announce it as "Menu button button". Navigating these subtle gotchas and conventions becomes second nature as you interact with a web document more frequently using a screen reader.
 
 ## Testing designs for screen reader experience
 
-Of course, nothing beats testing your designs with someone who primarily accesses the web through assistive technologies like screen readers. However, familiarizing yourself with the accessibility tools available, how to use a screen reader, and understanding how the screen reader conveys non-visual content will help you make better informed content, layout, and behavioral design.
+Of course, nothing beats testing your designs with someone who primarily accesses the web through assistive technologies like a screen reader. However, familiarizing yourself with the accessibility tools available, how to use a screen reader, and understanding how the screen reader conveys non-visual content will help you make better informed content, layout, and behavioral design.
 
 I have written a concise onboarding guide for designers to [learn the bare minimum to start testing designs with VoiceOver](../how-to-get-started-with-voice-over).
 
