@@ -9,31 +9,51 @@ tags:
   - screen reader
 ---
 
-I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with their magical talking tools.
+I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with what I could only describe at the time as their 'magical talking tools'.
 
-When explaining why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn't help but feel defeated. 
+When they explained why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn't help but feel defeated. 
 
 The first goal in the debugging process is to reproduce the bug; you need to know with certainty how to reproduce the bug to know for certain that you've solved the problem.
 
-Weary of the lengthy back and forth required to understand and resolve any issues this way, with a whole other (very patient) person in the loop, it was worth figuring out how to use a Screen Reader myself. 
+Resolving complex bugs with a another (very patient) QA person in the loop can be a lengthy process. To speed things up, I realized it was worth figuring out how to use a screen reader myself.
 
-I'm very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant subset of our users has helped me to assess designs through a new lens. 
+I'm very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant group of our users has helped me to assess designs through a new lens. 
 
 ## What is VoiceOver anyway?
 
-Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology primarily used by people with vision impairments to consume written content online through audio or touch output.
+[VoiceOver](https://www.apple.com/accessibility/vision/) is the screen reader built into macOS. A screen reader is a piece of assistive technology primarily used by people with vision impairments to consume written content online through audio or touch output.
 
-{% insettext "Screen Reader User Survey", "https://webaim.org/projects/screenreadersurvey8/" %}
-It's worth noting that people with visual impairments aren't the only users of Screen Readers (3% of users report cognitive impairments, 2% have motor disabilities, and up to 12% have no disability at all.)
+{% insettext "screen reader User Survey", "https://webaim.org/projects/screenreadersurvey8/" %}
+It's worth noting that people with visual impairments aren't the only users of screen readers (3% of users report cognitive impairments, 2% have motor disabilities, and up to 12% have no disability at all.)
 {% endinsettext %}
 
-The experience of such a broad potential audience for our designs is vital to accommodate and understand and, as with most accessibility considerations, can help elevate the usability of our designs for all users. 
+When we design for accessibility we elevate the usability of a designs for all users. The non-visual nature of the accommodations required for screen reader users means they can frequently be forgotten or seen as the developers job alone.
 
-## How does a screen reader work?
+Screen reader support is a fundamental requirement to building accessible software (a costly one when left as an afterthought), and such an important aspect of the experience that designers have a lot to contribute to implementing it correctly.
+
+Learning how to use a screen reader will make you better equipped at making inclusive decisions at every step of design process. And if you're reading this on an apple product, good news, you already have a screen reader installed on your device.
+
+## How does a screen reader work with a web browser?
+
+A web browser renders a website’s HTML, CSS, and JavaScript files to construct the web page you designed. The HTML defines the structure and content of the page.
+
+{% insettext %}
+CSS adjusts the appearance, and JavaScript adds interactivity and dynamic elements.
+{% endinsettext %}
+
+```html
+<div>Content</div> <!-- an HTML tag -->
+
+<div role="alert">Content</div> <!-- an HTML tag with an attribute -->
+
+<div>
+  <a href="https://developer.mozilla.org">MDN</a> <!-- an HTML tag, with an attribute, nested in another HTML tag -->
+</div>
+```
 
 The HTML tags, the attributes we append to them, and how we nest and combine them imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:
-1. GUI, rendered by browser
-2. Accessibility Tree, read by a Screen Reader
+1. The visible UI we see rendered by browser
+2. The corresponding accessibility tree, which is the underlying structure that is read by a screen reader
 
 <figure class="u-bleed-container:medium">
   {% image "./images/a11y-tree.svg", "A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name, and state." %}
@@ -42,7 +62,7 @@ The HTML tags, the attributes we append to them, and how we nest and combine the
 
 ### Visual affordances
 
-We're all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive.
+We're all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,
 - A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.
 - The underline of a link is an example of a convention-based affordance.
 - Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.
@@ -52,12 +72,12 @@ We rely heavily on visually available affordances to make our UI intuitive to no
 
 ### Non-visual affordances
 
-Semantic non-visual affordances required by Screen Readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
+Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.
 
 Semantics or meaning is given to content in a document through:
-- Location in the DOM tree, for example, is it a parent, child, or sibling.
-- Labelling, using headings, [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) or related label elements.
-- Tag type or tag roles: is it a list, a button, or the sidebar of our site?
+- Location content is placed - for example, is it a parent, child, or sibling of another element?
+- Hidden and associated content - provided through labelling, using headings, [aria attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) or related label elements
+- Containing element - choosing the correct tag type or tag roles: is it a list, a button, or the sidebar of our site?
 
 ### Working *with* the screen reader
 
@@ -91,13 +111,13 @@ Learning [every `<html>` element](https://developer.mozilla.org/en-US/docs/Web/H
 
 Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the [W3 ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/).
 
-Being familiar with using a screen reader enables you to better assess the hidden content and practices you'll need to consider to make your designs a good experience for all your users.
+Being familiar with using a screen reader enables you to better assess the hidden content and practices you'll need to consider to make your designs a good experience for all of your users.
 
 #### A simple example
 
-The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action, it is important to provide the same non-visual descriptions.
+Lets explore two solutions to the icon button patterns as an example of how to label an action in both a visual and non-visual way.
 
-In **Option A.**, the inner `svg` image element is hidden from the accessibility tree due to the `aria-hidden` attribute. However, the equivalent text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing these elements as "Menu button".
+In **Option A**, the inner `svg` image element is hidden from the accessibility tree due to the `aria-hidden` attribute. However, the equivalent text content of "Menu" has been provided using the `aria-label` attribute. This results in the screen reader announcing these elements as "Menu button".
 
 ```html
 <!-- Option A. -->
@@ -111,7 +131,7 @@ In **Option A.**, the inner `svg` image element is hidden from the accessibility
 </button>
 ```
 
-An alternative technique, **Option B.**, delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using a `CSS` class. The content of the `button` is still available to the screen reader.
+An alternative technique, **Option B**, delivers the same experience, this time using plain text inside a `span` element that has been visually hidden using a `CSS` class. The content of the `button` is still available to the screen reader.
 
 ```html
 <!-- Option B. -->
@@ -138,7 +158,7 @@ If we had labeled the element as "Menu button", a screen reader would annoyingly
 
 Of course, nothing beats testing your designs with someone who primarily accesses the web through assistive technologies like screen readers. However, familiarizing yourself with the accessibility tools available, how to use a screen reader, and understanding how the screen reader conveys non-visual content will help you make better informed content, layout, and behavioral design.
 
-I have written a concise onboarding guide for designers to [learn the bare minimum to start testing designs with VoiceOver](../how-to-get-started-with-voice-over), the Screen Reader built into MacOs. 
+I have written a concise onboarding guide for designers to [learn the bare minimum to start testing designs with VoiceOver](../how-to-get-started-with-voice-over).
 
 ### References
 - [W3 ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/).
