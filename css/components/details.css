@@ -21,5 +21,10 @@ summary,
   color: var(--color-accent-fg);
   padding: var(--base-size-8) 0;
 }
+summary:focus-visible,
+.c-details__summary:focus-visible {
+  outline-offset: 3px;
+  outline: 2px solid var(--color-accent-fg);
+}
 
 /*# sourceMappingURL=details.css.map */

@@ -16,62 +16,62 @@
 		<link href="https://david-way.github.io/blog/why-designers-should-learn-voice-over/"/>
 		<updated>2022-08-12T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/why-designers-should-learn-voice-over/</id>
-		<content type="html">&lt;p&gt;I used to watch our Quality Assurance (QA) Engineer with concern, confusion and a mild sense awe as they interrogated my implemented designs with their magical talking tools.&lt;/p&gt;
-&lt;p&gt;When explaining why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting I couldn&#39;t help but feel defeated.&lt;/p&gt;
-&lt;p&gt;The first goal in the debugging process is to reproduce the bug, if you don&#39;t know with certainty how to reproduce the bug, you can&#39;t know for certain that you&#39;ve actually solved the problem.&lt;/p&gt;
-&lt;p&gt;Weary of the lengthy back and forth required to understand and resolve any issues this way, with a whole other (very patient) person in the loop, I decided it was  worth figuring out how to use a Screen Reader myself.&lt;/p&gt;
-&lt;p&gt;I&#39;m very glad I did, as learning a how to use these tools, how they worked and the value they provide to a significant subset of our users has helped me to assess designs through a new lense.&lt;/p&gt;
-&lt;h2 id=&quot;what-is-voiceover&quot; tabindex=&quot;-1&quot;&gt;What is VoiceOver? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology, primarily used by people with vision impairments, to consume written content online through audio or touch output.&lt;/p&gt;
+		<content type="html">&lt;p&gt;I used to watch our Quality Assurance (QA) Engineers with concern, confusion, and a mild sense of awe as they interrogated my implemented designs with their magical talking tools.&lt;/p&gt;
+&lt;p&gt;When explaining why some cryptic combination of keys they were mashing was not resulting in the information or behavior they were expecting, I couldn&#39;t help but feel defeated.&lt;/p&gt;
+&lt;p&gt;The first goal in the debugging process is to reproduce the bug; you need to know with certainty how to reproduce the bug to know for certain that you&#39;ve solved the problem.&lt;/p&gt;
+&lt;p&gt;Weary of the lengthy back and forth required to understand and resolve any issues this way, with a whole other (very patient) person in the loop, it was worth figuring out how to use a Screen Reader myself.&lt;/p&gt;
+&lt;p&gt;I&#39;m very grateful I did, as learning how to use these tools, how they worked, and the value they provide to a significant subset of our users has helped me to assess designs through a new lens.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-voiceover-anyway&quot; tabindex=&quot;-1&quot;&gt;What is VoiceOver anyway? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Voice Over is the Screen Reader built into Mac OS. A Screen Reader is a piece of assistive technology primarily used by people with vision impairments to consume written content online through audio or touch output.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
 &lt;span&gt;
-It&#39;s worth noting that people with visual impairments aren&#39;t the only users of Screen Readers (3% of users report cognitive impairments, 2% had motor disabilities and up to 12% of users have no disability at all.)
+It&#39;s worth noting that people with visual impairments aren&#39;t the only users of Screen Readers (3% of users report cognitive impairments, 2% have motor disabilities, and up to 12% have no disability at all.)
 &lt;/span&gt;
 &lt;div class=&quot;c-inset-text__link-container&quot;&gt;&lt;a href=&quot;https://webaim.org/projects/screenreadersurvey8/&quot;&gt;Screen Reader User Survey&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;The experience of such a wide potential audience for our designs is important to accommodate and understand and as with most accessibility considerations can help elevate the usability of our designs for all users.&lt;/p&gt;
+&lt;p&gt;The experience of such a broad potential audience for our designs is vital to accommodate and understand and, as with most accessibility considerations, can help elevate the usability of our designs for all users.&lt;/p&gt;
 &lt;h2 id=&quot;how-does-a-screen-reader-work&quot; tabindex=&quot;-1&quot;&gt;How does a screen reader work? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The HTML tags, the attributes we append to them, and how we nest and combine them, imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:&lt;/p&gt;
+&lt;p&gt;The HTML tags, the attributes we append to them, and how we nest and combine them imbue semantic meaning to our designs and the content we place inside them. HTML generates two things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;GUI, rendered by browser&lt;/li&gt;
 &lt;li&gt;Accessibility Tree, read by a Screen Reader&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&quot;u-bleed-container:medium&quot;&gt;
-  &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.avif 659w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.webp 659w&quot;&gt;&lt;img alt=&quot;A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name and state.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.svg&quot; width=&quot;659&quot; height=&quot;383&quot;&gt;&lt;/picture&gt;
-  &lt;figcaption&gt;A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name and state.&lt;/figcaption&gt;
+  &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.avif 659w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.webp 659w&quot;&gt;&lt;img alt=&quot;A diagram of an example accessibility tree, depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements locations, input type, name, and state.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/F2sbTzdFu4-659.svg&quot; width=&quot;659&quot; height=&quot;383&quot;&gt;&lt;/picture&gt;
+  &lt;figcaption&gt;A diagram of an example accessibility tree depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements&#39; locations, input type, name, and state.&lt;/figcaption&gt;
 &lt;/figure&gt; 
 &lt;h3 id=&quot;visual-affordances&quot; tabindex=&quot;-1&quot;&gt;Visual affordances &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;We&#39;re all familiar with affordances in design. An affordance is a compelling indicator as to how an item on a page operates and includes both its perceived and actual functions. Essentially they are features that teach you how to use the functions, or make them more intuitive.&lt;/p&gt;
+&lt;p&gt;We&#39;re all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.&lt;/li&gt;
-&lt;li&gt;The underline of a link, is an example of a convention based affordance.&lt;/li&gt;
+&lt;li&gt;The underline of a link is an example of a convention-based affordance.&lt;/li&gt;
 &lt;li&gt;Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.&lt;/li&gt;
-&lt;li&gt;Making buttons look 3D or clickable through copy, shape and/or color is a crucial affordance.&lt;/li&gt;
+&lt;li&gt;Making buttons look 3D or clickable through copy, shape, and/or color is a crucial affordance.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;We rely heavily on visually available affordances to make our UI&#39;s intuitive to non screen reader users. These clues are not available to visually impaired users however so we need to be sure to provide equivalent information in non-visual methods.&lt;/p&gt;
+&lt;p&gt;We rely heavily on visually available affordances to make our UI intuitive to non-screen reader users. However, these clues are not available to visually impaired users, so we need to provide equivalent information in non-visual methods.&lt;/p&gt;
 &lt;h3 id=&quot;non-visual-affordances&quot; tabindex=&quot;-1&quot;&gt;Non-visual affordances &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Semantic non-visual affordances required by Screen Readers are provided by using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
+&lt;p&gt;Semantic non-visual affordances required by Screen Readers are provided when using the correct HTML elements and attributes to render our UI. Semantics let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
 &lt;p&gt;Semantics or meaning is given to content in a document through:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Location in the DOM tree, for example is parent, child or sibling.&lt;/li&gt;
+&lt;li&gt;Location in the DOM tree, for example, is it a parent, child, or sibling.&lt;/li&gt;
 &lt;li&gt;Labelling, using headings, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes&quot;&gt;aria attributes&lt;/a&gt; or related label elements.&lt;/li&gt;
-&lt;li&gt;Tag type or tag roles, is it a list a button, the sidebar of our site.&lt;/li&gt;
+&lt;li&gt;Tag type or tag roles: is it a list, a button, or the sidebar of our site?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;working-with-the-screen-reader&quot; tabindex=&quot;-1&quot;&gt;Working &lt;em&gt;with&lt;/em&gt; the screen reader &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The following image illustrates two implementations of a page that could be styled to render with a visually identical result that would provide a very different experience for a sighted vs a screen reader user.&lt;/p&gt;
+&lt;p&gt;The following image illustrates two implementations of a page that could be styled to render with a visually identical result that would provide a significantly different experience for a sighted vs. a screen reader user.&lt;/p&gt;
 &lt;figure class=&quot;u-bleed-container:medium&quot;&gt;
-  &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.avif 656w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.webp 656w&quot;&gt;&lt;img alt=&quot;A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags and the other achieves the same visual result but with only `div` tags.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.svg&quot; width=&quot;656&quot; height=&quot;382&quot;&gt;&lt;/picture&gt;
-  &lt;figcaption&gt;A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags and the other achieves the same visual result but with only &lt;code&gt;div&lt;/code&gt; tags.&lt;/figcaption&gt;
+  &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.avif 656w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.webp 656w&quot;&gt;&lt;img alt=&quot;A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags, and the other achieves the same visual result but with only `div` tags.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/DGMMr-vfgk-656.svg&quot; width=&quot;656&quot; height=&quot;382&quot;&gt;&lt;/picture&gt;
+  &lt;figcaption&gt;A diagram displaying two HTML approaches to structure a page of content. One uses semantically correct tags, and the other achieves the same visual result but with only &lt;code&gt;div&lt;/code&gt; tags.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Being aware of and using the appropriate HTML tags (along with their &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles&quot;&gt;implicit roles&lt;/a&gt;) goes a long way to ensuring the content of your page is providing a usable experience for your screen reader users.&lt;/p&gt;
-&lt;p&gt;Using ARIA attributes provides several additional mechanisms for adding labels, descriptions and establishing relationships between elements when semantic HTML alone is not sufficient.&lt;/p&gt;
+&lt;p&gt;Using ARIA attributes provides several additional mechanisms for adding labels, and descriptions and establishing relationships between elements when semantic HTML alone is insufficient.&lt;/p&gt;
 &lt;h3 id=&quot;this-sounds-like-a-lot&quot; tabindex=&quot;-1&quot;&gt;This sounds like a lot... &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;// automated tools, starting new components and design with an understanding of the accessibility requirements (keyboard interactions, correct syntax) enable you to learn at the point of need&lt;/p&gt;
-&lt;p&gt;https://www.w3.org/WAI/ARIA/apg/patterns/&lt;/p&gt;
-&lt;p&gt;// being familiar with a using the screen reader enables you to make a good assessment of the hidden content and practices you&#39;ll need to consider to make your designs a good experience for all your users.&lt;/p&gt;
+&lt;p&gt;Learning every &lt;code&gt;&amp;lt;hmtl&amp;gt;&lt;/code&gt; element and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.&lt;/p&gt;
+&lt;p&gt;Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the (W3 ARIA Authoring Practices Guide (APG))[https://www.w3.org/WAI/ARIA/apg/patterns/].&lt;/p&gt;
+&lt;p&gt;Being familiar with using a screen reader enables you to better assess the hidden content and practices you&#39;ll need to consider to make your designs a good experience for all your users.&lt;/p&gt;
 &lt;h4 id=&quot;a-simple-example&quot; tabindex=&quot;-1&quot;&gt;A simple example &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action it is important to provide the same non visual descriptions.&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;Option A.&lt;/strong&gt; the inner &lt;code&gt;svg&lt;/code&gt; image element is hidden from the accessibility tree due to the &lt;code&gt;aria-hidden&lt;/code&gt; attribute, however the necessary equivalent text content of &amp;quot;Menu&amp;quot; has been provided using the &lt;code&gt;aria-label&lt;/code&gt; attribute. This results in the screen reader announcing this elements as &amp;quot;Menu button&amp;quot;.&lt;/p&gt;
+&lt;p&gt;The following code illustrates two solutions to the icon button pattern. When using a visual element like an icon to label an action, it is important to provide the same non-visual descriptions.&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;Option A.&lt;/strong&gt;, the inner &lt;code&gt;svg&lt;/code&gt; image element is hidden from the accessibility tree due to the &lt;code&gt;aria-hidden&lt;/code&gt; attribute. However, the equivalent text content of &amp;quot;Menu&amp;quot; has been provided using the &lt;code&gt;aria-label&lt;/code&gt; attribute. This results in the screen reader announcing these elements as &amp;quot;Menu button&amp;quot;.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- Option A. --&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;aria-label&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Menu&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;svg&lt;/span&gt; 
@@ -81,12 +81,7 @@ It&#39;s worth noting that people with visual impairments aren&#39;t the only us
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;path&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;m...&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;svg&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
-&lt;span&gt;
-Note we didn&#39;t need to include the word &amp;quot;button&amp;quot;, the screen reader appends that content because of the implicit role of the &lt;code&gt;button&lt;/code&gt; element.
-&lt;/span&gt;
-&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;An alternative technique, &lt;strong&gt;Option B.&lt;/strong&gt; delivers the same experience, this time using plain text inside a &lt;code&gt;span&lt;/code&gt; element that has been visually hidden using a &lt;code&gt;CSS&lt;/code&gt; class. The content of the &lt;code&gt;button&lt;/code&gt; is still available to the screen reader.&lt;/p&gt;
+&lt;p&gt;An alternative technique, &lt;strong&gt;Option B.&lt;/strong&gt;, delivers the same experience, this time using plain text inside a &lt;code&gt;span&lt;/code&gt; element that has been visually hidden using a &lt;code&gt;CSS&lt;/code&gt; class. The content of the &lt;code&gt;button&lt;/code&gt; is still available to the screen reader.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- Option B. --&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;button&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;svg&lt;/span&gt;
@@ -99,18 +94,22 @@ Note we didn&#39;t need to include the word &amp;quot;button&amp;quot;, the scre
         Menu
     &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
+&lt;span&gt;
+Note we didn&#39;t need to include the word &amp;quot;button&amp;quot;. The screen reader appends that content because of the implicit role of the &lt;code&gt;button&lt;/code&gt; element.
+&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;If we had labeled the element as &amp;quot;Menu button&amp;quot;, a screen reader would annoyingly announce it as &amp;quot;Menu button button&amp;quot;. Navigating these subtle gotchas and conventions becomes second nature as you interact with a web document using a screen reader.&lt;/p&gt;
 &lt;h2 id=&quot;testing-designs-for-screen-reader-experience&quot; tabindex=&quot;-1&quot;&gt;Testing designs for screen reader experience &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Nothing beats having a your designs tested by someone who primarily accesses the web through assistive technologies like screen readers.&lt;/p&gt;
-&lt;p&gt;// link these paragraphs&lt;/p&gt;
-&lt;p&gt;I have written a very short onboarding guide for designers to &lt;a href=&quot;https://david-way.github.io/blog/how-to-get-started-with-voice-over&quot;&gt;learn the bare minimum to get started testing designs with VoiceOver&lt;/a&gt;, the Screen Reader built into MacOs.&lt;/p&gt;
-&lt;p&gt;There are a number of tools to help assess a web page for common accessibility issues.&lt;/p&gt;
-&lt;h3 id=&quot;other-tools&quot; tabindex=&quot;-1&quot;&gt;Other Tools &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Of course, nothing beats testing your designs with someone who primarily accesses the web through assistive technologies like screen readers. However, familiarizing yourself with the accessibility tools available, how to use a screen reader, and understanding how the screen reader conveys non-visual content will help you make better informed content, layout, and behavioral design.&lt;/p&gt;
+&lt;p&gt;I have written a concise onboarding guide for designers to &lt;a href=&quot;https://david-way.github.io/blog/how-to-get-started-with-voice-over&quot;&gt;learn the bare minimum to start testing designs with VoiceOver&lt;/a&gt;, the Screen Reader built into MacOs.&lt;/p&gt;
+&lt;h3 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.deque.com/axe/devtools/chrome-browser-extension/&quot;&gt;axe DevTools browser extension&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/able/toolkit/tools&quot;&gt;IBM Equal Access Checker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Your browsers accessibility inspector, for &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/&quot;&gt;Firefox&lt;/a&gt; or &lt;a href=&quot;https://developer.chrome.com/docs/devtools/accessibility/reference/#pane&quot;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.w3.org/WAI/ARIA/apg/patterns/&quot;&gt;W3 ARIA Authoring Practices Guide (APG)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.deque.com/axe/devtools/chrome-browser-extension/&quot;&gt;axe DevTools browser extension&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/able/toolkit/tools&quot;&gt;IBM Equal Access Checker&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/&quot;&gt;Firefox&lt;/a&gt; or &lt;a href=&quot;https://developer.chrome.com/docs/devtools/accessibility/reference/#pane&quot;&gt;Chrome&lt;/a&gt; accessibility inspector panel.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;https://www.w3.org/WAI/ARIA/apg/&lt;/p&gt;
 </content>
 	</entry>
 	
