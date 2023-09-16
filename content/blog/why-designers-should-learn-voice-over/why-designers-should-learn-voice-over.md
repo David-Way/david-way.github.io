@@ -85,10 +85,9 @@ Using roles and ARIA attributes provides several additional mechanisms for addin
 <div id="widget1">...</div>
 ```
 
-
 ### This sounds like a lot...
  
-Learning [every `<hmtl>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.
+Learning [every `<html>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.
 
 Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the [W3 ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/).
 
