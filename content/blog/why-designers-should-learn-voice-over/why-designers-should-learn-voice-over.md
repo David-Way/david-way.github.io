@@ -70,13 +70,27 @@ The following image illustrates two implementations of a page that could be styl
 
 Being aware of and using the appropriate HTML tags (along with their [implicit roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)) goes a long way to ensuring the content of your page is providing a usable experience for your screen reader users.
 
-Using ARIA attributes provides several additional mechanisms for adding labels, and descriptions and establishing relationships between elements when semantic HTML alone is insufficient.
+Using roles and ARIA attributes provides several additional mechanisms for adding labels, and descriptions and establishing relationships between elements when semantic HTML alone is insufficient.
+
+**Example of a role attribute applied to a HTML tag** - The alert role is used to communicate an important and usually time-sensitive message to the user.
+```html
+<div role="alert">...</div>
+```
+
+**Example of aria attributes being applied to a HTML tag** - The aria-expanded attribute is set on an element to indicate if a control is expanded or collapsed, and whether or not the controlled elements are displayed or hidden.
+
+```html
+<button aria-expanded="false" aria-controls="widget1">Show widget</button>
+
+<div id="widget1">...</div>
+```
+
 
 ### This sounds like a lot...
  
-Learning every `<hmtl>` element and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.
+Learning [every `<hmtl>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and attribute is obviously not a prerequisite to web design. Many tools can enable you to learn at the point of need and help you discover issues and resolve them as you go.
 
-Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the (W3 ARIA Authoring Practices Guide (APG))[https://www.w3.org/WAI/ARIA/apg/patterns/].
+Plenty of resources document common patterns and pitfalls with advice on keyboard interactions you should be aware of and the correct ARIA roles, states, and properties to use. A great example worthy of a bookmark is the [W3 ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/patterns/).
 
 Being familiar with using a screen reader enables you to better assess the hidden content and practices you'll need to consider to make your designs a good experience for all your users.
 
