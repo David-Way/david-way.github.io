@@ -1,7 +1,37 @@
+@use "../partials/mixins";
+
 .c-iterator-links {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 24px;
 	list-style: none;
 	box-shadow: 0 calc(var(--borderWidth-thin, 1px) * -1)
 		var(--color-border-default);
 	padding: var(--base-size-16) 0;
 	margin-block-start: var(--base-size-36);
+
+	&__link-item {
+		flex: 1 1 180px;
+		padding-block: 12px;
+
+		&--prev {
+			text-align: left;
+		}
+
+		&--next {
+			text-align: right;
+		}
+	}
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__link-label {
+		@include mixins.type-small();
+		color: var(--color-fg-muted);
+		text-decoration: none;
+	}
 }
