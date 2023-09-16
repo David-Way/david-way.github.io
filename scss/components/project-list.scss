@@ -11,60 +11,80 @@
 }
 
 .c-project-list-item {
-	@include mixins.layer(
-		"resting-medium"
-	); // https://tobiasahlin.com/blog/how-to-animate-box-shadow/
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
+	&__link {
+		--c-project-list-item-tint: #e8e8e8;
+		//--card-gradient: rgba(0, 0, 0, 0.8);
+		//--card-gradient: #007bff, #f9eaea28;
+		--card-blend-mode: overlay;
+		//--card-blend-mode: multiply;
 
-	--card-gradient: rgba(0, 0, 0, 0.8);
-	--card-gradient: #007bff, #f9eaea28;
-	// --card-gradient: tomato, orange;
-	--card-blend-mode: overlay;
-	// --card-blend-mode: multiply;
+		@include mixins.layer(
+			"resting-medium"
+		); // https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
-	background-color: #fff;
-	border-radius: 0.5rem;
-	// box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-	padding-bottom: 1rem;
-	background-image: linear-gradient(
-		var(--card-gradient),
-		white max(9.5rem, 27vh)
-	);
-	overflow: hidden;
+		background-color: var(--c-project-list-item-tint);
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		border-radius: 0.5rem;
+		background-image: linear-gradient(
+			var(--card-gradient),
+			var(--c-project-list-item-tint) max(9.5rem, 27vh)
+		);
 
-	&:hover,
-	&:focus-within {
-		@include mixins.layer("floating-medium");
-		--card-gradient: #24a9d5 max(8.5rem, 20vh);
+		&:hover,
+		&:focus-within {
+			@include mixins.layer("floating-medium");
+			--card-gradient: #24a9d5 max(8.5rem, 20vh);
+			--card-gradient: var(--color-select-menu-tap-focus-bg) max(8.5rem, 20vh);
+
+			.c-project-list-item__title {
+				text-decoration: underline;
+			}
+		}
+
+		&:focus-visible {
+			@include mixins.focus();
+		}
 	}
 
 	&__image {
 		display: block;
 		-o-object-fit: cover;
 		object-fit: cover;
+		// border-radius: 0.5rem 0.5rem 0 0;
 		height: 100%;
-
-		border-radius: 0.5rem 0.5rem 0 0;
 		width: 100%;
 		object-fit: cover;
-		// height: max(10rem, 25vh);
-		// max-height: max(10rem, 30vh);
 		aspect-ratio: 4/3;
 		//aspect-ratio: 16/9;
 		mix-blend-mode: var(--card-blend-mode);
 	}
 
-	&__title {
-		@include mixins.type-body();
-		margin: 0;
-		padding: 6px;
+	&__title-container {
+		@include mixins.layer("highlight");
+		margin: var(--base-size-8);
 		position: absolute;
 		left: 0;
-		right: 0;
 		bottom: 0;
+		background-color: var(--color-canvas-default);
+		padding: var(--base-size-8);
+		border-radius: calc(0.5rem - var(--base-size-4));
+	}
+
+	&__title {
+		@include mixins.type-small();
+		margin: 0;
+	}
+
+	&__sub-title {
+		@include mixins.type-x-small();
+		color: var(--color-fg-muted);
+		margin: 0;
 	}
 
 	&--grid-shape\:box {

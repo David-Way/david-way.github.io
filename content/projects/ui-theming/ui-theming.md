@@ -1,13 +1,12 @@
 ---
 title: UI Theming
-description: /todo
+subTitle: System Design
+description: todo
 gridShape: box
 date: 2023-06-01
 tags:
-  - ux
-  - a11y
-  - voice over
-  - screen reader
+  - design sprint
+  - css custom properties  
 ---
 
 Draft post
