@@ -67,7 +67,7 @@
 	}
 
 	&__title-container {
-		@include mixins.layer("highlight");
+		@include mixins.layer("inset");
 		margin: var(--base-size-8);
 		position: absolute;
 		left: 0;

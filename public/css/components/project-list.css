@@ -48,7 +48,7 @@
   mix-blend-mode: var(--card-blend-mode);
 }
 .c-project-list-item__title-container {
-  box-shadow: var(--shadow-highlight);
+  box-shadow: var(--shadow-inset);
   margin: var(--base-size-8);
   position: absolute;
   left: 0;

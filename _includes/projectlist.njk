@@ -3,7 +3,11 @@
     {% for project in projectlist | sortByOrder %}
         <li class="c-project-list-item{% if project.url == url %} c-project-list-item--active{% endif %} c-project-list-item--grid-shape:{{project.data.gridShape}}">
             <a href="{{ project.url }}" class="c-project-list-item__link">
+                {% if project.data.thumbnail %}
+                <img class="c-project-list-item__image" src="{{ project.data.thumbnail | url }}"  alt="">
+                {% else %}
                 <img class="c-project-list-item__image" src="https://source.unsplash.com/random/500x300" alt="" />
+                {% endif %}
                 
                 {% if project.data.title %}
                 <span class="c-project-list-item__title-container">
