@@ -1,7 +1,8 @@
 @use "../partials/mixins";
 
 .c-header {
-	@include mixins.contain-site-content();
+	max-width: 64rem;
+	margin-inline: auto;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -15,6 +16,7 @@
 		font-size: 1em; /* 16px /16 */
 		font-weight: 700;
 		margin-right: 2em;
+		width: auto;
 
 		&:link:not(:hover) {
 			text-decoration: none;
