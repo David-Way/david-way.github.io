@@ -1,10 +1,8 @@
 ---
 layout: layouts/wide.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
-{# {%- css %}{% include "node_modules/prismjs/themes/prism.css" %}{% endcss %} #}
-{%- css %}{% include "public/css/prism/prism-vsc-dark-plus.css" %}{%- endcss %}
-{%- css %}{% include "public/css/prism/prism-diff.css" %}{%- endcss %}
+{# Only include the syntax highlighter CSS on project posts #}
+{%- css %}{% include "public/css/prism.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
 
 <ul class="c-post-meta-data">
