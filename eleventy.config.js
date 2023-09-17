@@ -16,11 +16,10 @@ module.exports = function (eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 	});
 
 	eleventyConfig.addPassthroughCopy("content/**/images/**/*");
-	
+
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
@@ -91,10 +90,12 @@ module.exports = function (eleventyConfig) {
 		);
 	});
 
+	// Utility filter to log nunjucks data
 	eleventyConfig.addFilter("log", (value) => {
 		console.log(value);
 	});
 
+	// Filter to sort collections by an `order` frontmatter property
 	function sortByOrder(valuesToSort) {
 		let values = [...valuesToSort];
 		return values.sort((a, b) => Math.sign(a.data.order - b.data.order));
@@ -132,6 +133,28 @@ module.exports = function (eleventyConfig) {
 				<div class="c-inset-text">
 					<span>${content}</span>
 				</div>
+			`;
+		},
+	);
+
+	eleventyConfig.addPairedShortcode(
+		"blockquote",
+		function (content, cite, citeLocation) {
+			function checkHasCiteLocation(citeLocation) {
+				return citeLocation ? `cite="${citeLocation}"` : "";
+			}
+
+			function checkHasCite(cite) {
+				return cite
+					? `<footer class="c-block-quote__footer">— <cite>${cite}</cite></footer>`
+					: "";
+			}
+
+			return `
+				<blockquote class="c-block-quote" ${checkHasCiteLocation(citeLocation)}>
+					<p class="c-block-quote__content">${content}</p>
+					${checkHasCite(cite)}
+				</blockquote>
 			`;
 		},
 	);

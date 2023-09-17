@@ -1,0 +1,27 @@
+@use "../partials/mixins";
+
+.c-block-quote {
+	background-color: var(--color-canvas-subtle);
+	padding-block: var(--base-size-12);
+	border-radius: 4px;
+
+	&__content {
+		@include mixins.type-body-lead();
+		@include mixins.layer("highlight");
+		padding-inline: var(--base-size-12);
+		margin-block: 0;
+
+		&::before {
+			content: "\201C";
+		}
+
+		&:after {
+			content: "\201D";
+		}
+	}
+
+	&__footer {
+		@include mixins.type-small();
+		padding-inline: var(--base-size-12);
+	}
+}
