@@ -14,14 +14,10 @@
 .c-project-list-item {
 	&__link {
 		--c-project-list-item-tint: #e8e8e8;
-		//--card-gradient: rgba(0, 0, 0, 0.8);
-		//--card-gradient: #007bff, #f9eaea28;
-		--card-blend-mode: overlay;
 		--card-blend-mode: luminosity;
 
-		@include mixins.layer(
-			"resting-medium"
-		); // https://tobiasahlin.com/blog/how-to-animate-box-shadow/
+		// https://tobiasahlin.com/blog/how-to-animate-box-shadow/
+		@include mixins.layer("resting-medium");
 
 		background-color: var(--c-project-list-item-tint);
 		position: relative;
@@ -40,8 +36,7 @@
 		&:hover,
 		&:focus-within {
 			@include mixins.layer("floating-medium");
-			--card-gradient: #24a9d5 max(8.5rem, 20vh);
-			--card-gradient: var(--color-select-menu-tap-focus-bg) max(8.5rem, 20vh);
+			--card-blend-mode: overlay;
 			--card-gradient: oklch(0 0 0 / 0.55) 100%;
 
 			.c-project-list-item__title {
@@ -62,12 +57,11 @@
 		width: 100%;
 		object-fit: cover;
 		aspect-ratio: 4/3;
-		//aspect-ratio: 16/9;
 		mix-blend-mode: var(--card-blend-mode);
 	}
 
 	&__title-container {
-		@include mixins.layer("inset");
+		box-shadow: var(--shadow-resting-medium) inset;
 		margin: var(--base-size-8);
 		position: absolute;
 		left: 0;

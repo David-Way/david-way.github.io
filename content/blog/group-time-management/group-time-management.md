@@ -1,5 +1,5 @@
 ---
-title: A management tool to keep groups on time
+title: "Side project: A time management tool for groups"
 description: A side project I actually use.
 date: 2021-02-15
 tags:
@@ -12,7 +12,11 @@ tags:
 
 I'm not the most naturally gifted time manager in the world. Time management software and practices are an indispensable pillar of my day-to-day life. Time-blocking, Pomodoro timers, shared calendars, scheduled notifications, I've tried and relied on them all.
 
+
+{% insettext %}
 Some of my recent favorite tools include [TickTick](https://ticktick.com/?language=en_US), the `/remind me` command in [Slack](https://slack.com/intl/en-ie/help/articles/208423427-Set-a-reminder), and any messaging app with scheduled send functionality!
+{% endinsettext %}
+
 
 One area where time management can be extra challenging is when you're also managing other people's time, a familiar experience when running workshops.
 

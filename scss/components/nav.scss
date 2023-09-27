@@ -11,6 +11,7 @@
 
 	&__list-item {
 		display: inline-block;
+		margin-inline-end: var(--base-size-16);
 
 		a[href]:not(:hover) {
 			text-decoration: none;
@@ -19,9 +20,9 @@
 		a[href][aria-current="page"] {
 			text-decoration: underline;
 		}
+	}
 
-		& + & {
-			margin-left: var(--base-size-16);
-		}
+	& li:last-of-type {
+		margin-inline-end: 0;
 	}
 }

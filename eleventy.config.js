@@ -96,12 +96,16 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Filter to sort collections by an `order` frontmatter property
-	function sortByOrder(valuesToSort) {
+	eleventyConfig.addFilter("sortByOrder", (valuesToSort) => {
 		let values = [...valuesToSort];
 		return values.sort((a, b) => Math.sign(a.data.order - b.data.order));
-	}
+	});
 
-	eleventyConfig.addFilter("sortByOrder", sortByOrder);
+	// Filter to filter collections by an `publish` frontmatter property
+	eleventyConfig.addFilter("filterPublished", (valuesToFilter) => {
+		let values = [...valuesToFilter];
+		return values.filter((value) => value.data.publish);
+	});
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", (mdLib) => {

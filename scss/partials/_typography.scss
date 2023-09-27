@@ -81,6 +81,14 @@ h6 {
 	text-wrap: balance;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.2em;
+}
+
 p {
 	@include mixins.type-body();
 	max-width: 60ch;
@@ -119,15 +127,6 @@ a[href] {
 	&:focus-within {
 		@include mixins.focus();
 	}
-}
-
-table {
-	margin: 1em 0;
-}
-
-table td,
-table th {
-	padding-right: 1em;
 }
 
 figcaption {

@@ -5,6 +5,8 @@ layout: layouts/wide.njk
 {%- css %}{% include "public/css/prism.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
 
+<p class="u-type:lead">{{description}}</p>
+
 <ul class="c-post-meta-data">
 	<li class="c-post-meta-data__item--time"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}

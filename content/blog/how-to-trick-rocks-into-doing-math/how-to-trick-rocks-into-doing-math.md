@@ -12,11 +12,11 @@ _Or_, how CPUs are made.
 
 ### Computer-Aided Design (CAD)
 
-The first step of designing a CPU is to select an instruction set and execution paradigm (referred to as the micro-architecture of the CPU). The micro-architecture for a specific application (for example, general-purpose consumer use, enterprise-grade, scientific computing, or embedded system) and a suitable performance level.
+The first step of designing a CPU is to select an instruction set and execution paradigm (referred to as the micro-architecture of the CPU). The micro-architecture is selected for a specific application (for example, general-purpose consumer use, enterprise-grade, scientific computing, or embedded system) and a suitable performance level.
 
 The implementation logic of the CPU is constructed by abstract specification of desired circuit behavior
 through the selection of appropriate components e.g. Arithmetic Logic Units (ALU), registers, and cache memory and clocks.
-The CAD software translates these specifications into the required circuits, logic devices, and logic gates and ultimately the transistors that make them. These elements are printed, in layers, to the silicone. The design is also analyzed and simulated to assess manufacturability and design integrity.
+The CAD software translates these specifications into the required circuits, logic devices, and logic gates and ultimately the transistors that make them. These elements are printed, in layers, to a silicone wafer between 0.5mm and 400 microns in thickness. The design is also analyzed and simulated to assess manufacturability and design integrity.
 
 ### Masking and Fabrication
 
