@@ -28,26 +28,21 @@
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
-		
-<!--
-Site manifesto:
-{%- for manifestoItem in metadata.manifestoList %}
-- {{ manifestoItem }}
-{%- endfor %}
--->
-
 	</head>
 	<body>
 		<a href="#skip" class="u-visually-hidden">Skip to main content</a>
 
 		<header class="c-header">
-			<a href="/" class="c-header__home-link">{{ metadata.title }}</a>
+			<a href="/" class="c-header__home-link">{{ metadata.author.name }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav class="c-nav">
 				<h2 class="u-visually-hidden">Top level navigation menu</h2>
-
-				<ul class="c-nav__list">{%- for entry in collections.all | eleventyNavigation %}<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>{%- endfor %}</ul>
+				<ul class="c-nav__list">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+				{%- endfor %}
+				</ul>
 			</nav>
 		</header>
 

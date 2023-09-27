@@ -131,3 +131,7 @@ or configure the server with the CSP directive `style-src: 'unsafe-inline'` (whi
 ## Design tokens
 
 https://primer.style/primitives/storybook/
+
+
+References
+- https://web.dev/patterns/

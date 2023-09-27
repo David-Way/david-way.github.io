@@ -3,6 +3,7 @@
 @use "./partials/spacing";
 @use "./partials/variables";
 @use "./partials/mixins";
+@use "./partials/functions";
 @use "./partials/layout";
 @use "./partials/utils";
 @use "./partials/typography";
@@ -10,6 +11,7 @@
 
 /** 🧱 Components */
 @use "./components/header.scss";
+@use "./components/index-list.scss";
 @use "./components/nav.scss";
 @use "./components/post-meta-data.scss";
 @use "./components/post-list";
@@ -18,3 +20,6 @@
 @use "./components/iterator-links.scss";
 @use "./components/inset-text.scss";
 @use "./components/details.scss";
+@use "./components/project-list.scss";
+@use "./components/block-quote.scss";
+@use "./components/table.scss";

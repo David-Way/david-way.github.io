@@ -9,9 +9,13 @@ details,
 		padding-top: var(--base-size-8);
 		padding-right: var(--base-size-8);
 		padding-bottom: var(--base-size-8);
-		padding-left: var(--base-size-24);
+
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	& > *:not(summary):not(ul) {
+		padding-left: var(--base-size-24);
 	}
 }
 
@@ -24,5 +28,9 @@ summary,
 
 	&:focus-visible {
 		@include mixins.focus();
+	}
+
+	& > ul {
+		padding-inline-start: var(--base-size-24);
 	}
 }

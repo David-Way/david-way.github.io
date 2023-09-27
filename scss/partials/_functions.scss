@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "./variables";
+
+//--------------------
+// ⚙️ Utility
+//--------------------
+
+@function bp($break-point-for) {
+	@if map-has-key(variables.$break-points, $break-point-for) {
+		@return map.get(variables.$break-points, $break-point-for);
+	}
+}

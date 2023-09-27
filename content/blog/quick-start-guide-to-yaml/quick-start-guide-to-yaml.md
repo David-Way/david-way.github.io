@@ -99,7 +99,7 @@ The three dashes <code>---</code> are used to signal the start and end of a Yaml
 
 You structure a YAML document with white-spaces. This means indentation (spaces) and new lines are crucial to a correctly structured Yaml document (always use spaces not tabs). Unless otherwise indicated, newlines indicate the end of a field.
 
-## Key value pairs
+### Key value pairs
 
 The simplest and most common field you’ll see in a `.yaml` file is a key-value pair.
 
@@ -127,7 +127,7 @@ Again, the key aim of Yaml is to be portable, meaning that it can be easily impo
 
 </details>
 
-## Blocks of text
+### Blocks of text
 
 To store a literal block of text using the pipe (`|`) character. New lines are preserved within the block.
 
@@ -140,7 +140,7 @@ literal_block: |
   stripped.
 ```
 
-## Comments
+### Comments
 
 Comments begin with a pound or hash sign (`#`). A comment is a programmer-readable explanation or annotation of data. It is ignored by the application.
 
@@ -149,7 +149,7 @@ Comments begin with a pound or hash sign (`#`). A comment is a programmer-readab
 key: value
 ```
 
-## Lists
+### Lists
 
 List or arrays are lines that begin at the same indentation level, starting with a dash followed by a space. A list groups multiple values into the same field.
 
@@ -169,7 +169,7 @@ or
 names: ["Jane", "John", "Jill"]
 ```
 
-## Dictionary List
+### Dictionary List
 
 A dictionary groups more complex values into a single field.
 

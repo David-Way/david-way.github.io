@@ -1,0 +1,27 @@
+{% if not projectlist | filterPublished | length  %}
+    <p class="u-type:lead">🏗️ Coming soon 🚧</p>
+{% endif %}
+<div class="u-bleed-container:large">
+    <ol reversed class="c-project-list">
+    {% for project in projectlist | filterPublished | sortByOrder %}
+        <li class="c-project-list-item{% if project.url == url %} c-project-list-item--active{% endif %} c-project-list-item--grid-shape:{{project.data.gridShape}}">
+            <a href="{{ project.url }}" class="c-project-list-item__link">
+                {% if project.data.thumbnail %}
+                <img class="c-project-list-item__image" src="{{ project.data.thumbnail | url }}"  alt="">
+                {% else %}
+                <img class="c-project-list-item__image" src="https://source.unsplash.com/random/500x300" alt="" />
+                {% endif %}
+                
+                {% if project.data.title %}
+                <span class="c-project-list-item__title-container">
+                    <h2 class="c-project-list-item__title">{{ project.data.title }}</h2>
+                    {% if project.data.subTitle %}
+                    <p class="c-project-list-item__sub-title">{{ project.data.subTitle }}</p>
+                    {% endif %}
+                </span>
+                {% endif %}
+            </a>
+        </li>
+    {% endfor %}
+    </ol>
+</div>

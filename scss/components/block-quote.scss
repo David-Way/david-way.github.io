@@ -1,0 +1,38 @@
+@use "../partials/mixins";
+
+.c-block-quote {
+	background-color: var(--color-canvas-subtle);
+	padding-block: var(--base-size-12);
+	border-radius: 4px;
+
+	&__content {
+		@include mixins.type-body-lead();
+		@include mixins.layer("highlight");
+		padding-inline: var(--base-size-12);
+		margin-block: 0;
+
+		&::before,
+		&::after {
+			@include mixins.type-h3();
+			color: var(--color-accent-fg);
+			font-size: 1.4em;
+			line-height: 0;
+			display: inline-block;
+			position: relative;
+			top: 6px;
+		}
+
+		&::before {
+			content: "\201C";
+		}
+
+		&:after {
+			content: "\201D";
+		}
+	}
+
+	&__footer {
+		@include mixins.type-small();
+		padding-inline: var(--base-size-12);
+	}
+}

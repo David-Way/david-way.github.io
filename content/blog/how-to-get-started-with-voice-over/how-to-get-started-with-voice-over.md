@@ -1,34 +1,51 @@
 ---
-title: How to get started with VoiceOver
+title: Quick start guide to VoiceOver
 description: A guide to evaluating the accessibility of your designs.
 date: 2022-08-12
 tags:
   - ux
   - a11y
-  - voice over
+  - voiceover
   - screen reader
 ---
 
+Getting started with a screen reader has never been more straightforward and accessible. If you're reading this on an Apple device, you already have a screen reader installed and may have even turned it on by accident.
+
+{% insettext %}
+Suppose you need clarification on what a screen reader is or want to learn more about the benefits of familiarizing yourself with a screen reader. In that case, I've also written about [why designers should learn to use VoiceOver](../why-designers-should-learn-voice-over).
+{% endinsettext %}
+
 ## How to use a screen reader
 
-System Settings > Accessibility > Voice Over > Voice Over training (recommend 20 mins)
+These are the controls required to use VoiceOver to a basic level.
 
-How to:
-- Turn if on/off: command + F5 (or on expanded keyboard, fn + command + F5)
-- Issue Voice Over command: control + option (also referred to as the VO key, use middle and ring finger)
-- Move around:
-  - Next/Previous: VO + left/right arrow key
-  - Go into/Exit out of collection: VO + SHIFT + up/down arrow key (out of a table, into a panel like web page view)
-  - Simulate mouse click: (double) VO + SPACE
-- Heading skip:  VO + Command + H
-- Interrupt Voice Over: control key
-- Rotor/Uber key: VO + U
-- Change rate in Voice Over Settings: Shift + control + option + command + arrow up/down (press and hold)
+<div class="u-bleed-container:medium">
 
-Demo task:
-- Using wikipedia, find out how many people were on the titanic
+| Command | Keys | Notes |
+|:-|:-|:-|
+| Turn VoiceOver on/off | `command` + `F5` |  Or on the expanded keyboard, `fn` + `command` + `F5`|
+| Issue command to VoiceOver | `command` + `option` | These are also referred to as the `VO` key. It's best to use your middle and ring finger respectively |
+| **Move around** | | Basic navigation |
+| Next/Previous item | `VO` + left/right arrow key | |
+| Go into/Exit out of collection | `VO` + `SHIFT` + up/down arrow key | for example, move *out* of a table or *into* a panel like web page view |
+| Simulate double mouse click | `VO` + `SPACE` | |
+| **Intermediate** | | |
+| Skip through page headings | `VO` + `command` + `H` | Commonly used to skim a page |
+| Interrupt Voice Over | `control` key | |
+| Rotor/Uber key | `VO` + `U` | |
+| Change voice rate | `Shift` + `control` + `option` + `command` + arrow up/down | Press and hold |
 
-## Cheat sheets
+</div>
+
+VoiceOver has its built in tutorial and is worth the ~20 minutes it takes to complete. You can find it by opening `System Settings` > `Accessibility` > `VoiceOver` > `VoiceOver training`.
+
+To stay familiar with the basics of VoiceOver, I find it helpful to attempt to complete a task with it once a week, for example, sending an email or reading a news article.
+
+To test yourself, try lowering your screen brightness to it's lowest setting and attempt to use [wikipedia](https://www.wikipedia.org/) to find out how many people were on the Titanic.
+
+## Cheatsheets
+
+Refer to (or bookmark) the [command table](#how-to-use-a-screen-reader) above or download and print the following cheat sheets to have them available on your desk. 
 
 ### Basic commands
 <figure class="u-bleed-container:medium">

@@ -1,0 +1,109 @@
+@use "../partials/mixins";
+@use "../partials/functions";
+
+.c-project-list {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+	grid-gap: 1em;
+}
+
+.c-project-list-item {
+	&__link {
+		--c-project-list-item-tint: #e8e8e8;
+		--card-blend-mode: luminosity;
+
+		// https://tobiasahlin.com/blog/how-to-animate-box-shadow/
+		@include mixins.layer("resting-medium");
+
+		background-color: var(--c-project-list-item-tint);
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		border-radius: 0.5rem;
+		background-image: linear-gradient(
+			var(--card-gradient),
+			var(--c-project-list-item-tint) max(9.5rem, 27vh)
+		);
+
+		&:hover,
+		&:focus-within {
+			@include mixins.layer("floating-medium");
+			--card-blend-mode: overlay;
+			--card-gradient: oklch(0 0 0 / 0.55) 100%;
+
+			.c-project-list-item__title {
+				text-decoration: underline;
+			}
+		}
+
+		&:focus-visible {
+			@include mixins.focus();
+		}
+	}
+
+	&__image {
+		display: block;
+		-o-object-fit: cover;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		aspect-ratio: 4/3;
+		mix-blend-mode: var(--card-blend-mode);
+	}
+
+	&__title-container {
+		box-shadow: var(--shadow-resting-medium) inset;
+		margin: var(--base-size-8);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: var(--color-canvas-default);
+		padding: var(--base-size-8);
+		border-radius: calc(0.5rem - var(--base-size-4));
+	}
+
+	&__title {
+		@include mixins.type-small();
+		margin: 0;
+	}
+
+	&__sub-title {
+		@include mixins.type-x-small();
+		color: var(--color-fg-muted);
+		margin: 0;
+	}
+
+	&--grid-shape\:none {
+		grid-column: span 2;
+
+		@media screen and (min-width: functions.bp("x-small")) {
+			grid-column: auto;
+		}
+	}
+
+	&--grid-shape\:box {
+		grid-row: span 2;
+		grid-column: span 2;
+
+		.c-project-list-item__title {
+			@include mixins.type-h4();
+		}
+	}
+
+	&--grid-shape\:wide {
+		grid-column: span 2;
+	}
+
+	&--grid-shape\:tall {
+		grid-row: span 2;
+	}
+}

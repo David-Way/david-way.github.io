@@ -1,9 +1,11 @@
 ---
-layout: layouts/base.njk
+layout: layouts/wide.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
+{# Only include the syntax highlighter CSS on project posts #}
 {%- css %}{% include "public/css/prism.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
+
+<p class="u-type:lead">{{description}}</p>
 
 <ul class="c-post-meta-data">
 	<li class="c-post-meta-data__item--time"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -20,22 +22,8 @@ layout: layouts/base.njk
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul class="c-iterator-links">
-	{%- if previousPost %}
-	<li class="c-iterator-links__link-item c-iterator-links__link-item--prev">
-		<a class="c-iterator-links__link" href="{{ previousPost.url }}">
-			<span class="c-iterator-links__link-label">Previous</span>
-			{{ previousPost.data.title }}
-		</a>
-	</li>
-	{% endif %}
-	{%- if nextPost %}
-	<li class="c-iterator-links__link-item c-iterator-links__link-item--next">
-		<a class="c-iterator-links__link" href="{{ nextPost.url }}">
-			<span class="c-iterator-links__link-label">Next</span>
-			{{ nextPost.data.title }}
-		</a>
-	</li>
-	{% endif %}
+	{%- if previousPost %}<li class="c-iterator-links__previous">Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+	{%- if nextPost %}<li class="c-iterator-links__next">Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
 {%- endif %}

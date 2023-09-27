@@ -1,0 +1,29 @@
+@use "../partials/variables";
+@use "../partials/mixins";
+
+table {
+	@include mixins.layer("floating-small");
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: block;
+	margin: 1em 0;
+	max-width: 100%;
+	min-width: 400px;
+	overflow: auto;
+	width: max-content;
+}
+
+table td,
+table th {
+	padding: 6px 13px;
+	border: 1px solid var(--color-border-default);
+}
+
+table tr {
+	background-color: var(--color-canvas-default);
+	border-top: 1px solid var(--color-border-muted);
+
+	&:nth-child(2n) {
+		background-color: var(--color-canvas-subtle);
+	}
+}
