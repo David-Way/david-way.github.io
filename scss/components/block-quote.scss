@@ -7,7 +7,6 @@
 
 	&__content {
 		@include mixins.type-body-lead();
-		@include mixins.layer("highlight");
 		padding-inline: var(--base-size-12);
 		margin-block: 0;
 

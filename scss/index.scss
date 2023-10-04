@@ -10,12 +10,12 @@
 @use "./partials/theme";
 
 /** 🧱 Components */
-@use "./components/header.scss";
 @use "./components/index-list.scss";
 @use "./components/nav.scss";
 @use "./components/post-meta-data.scss";
 @use "./components/post-list";
 @use "./components/post-tag.scss";
+@use "./components/header.scss";
 @use "./components/header-anchor.scss";
 @use "./components/iterator-links.scss";
 @use "./components/inset-text.scss";

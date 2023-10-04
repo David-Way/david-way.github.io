@@ -149,9 +149,11 @@ module.exports = function (eleventyConfig) {
 			}
 
 			function checkHasCite(cite) {
-				return cite
-					? `<footer class="c-block-quote__footer">— <cite>${cite}</cite></footer>`
-					: "";
+				if (cite) {
+					return `<footer class="c-block-quote__footer">— <cite>${cite}</cite></footer>`;
+				} else {
+					return "";
+				}
 			}
 
 			return `
