@@ -60,6 +60,12 @@
 	@include mixins.type-no-select();
 }
 
+.u-type\:first-letter {
+	&::first-letter {
+		initial-letter: 3;
+	}
+}
+
 //--------------------
 // 📐 Dimensions
 //--------------------
