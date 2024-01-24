@@ -89,6 +89,10 @@ h6 {
 	margin-bottom: 0.2em;
 }
 
+h1::first-letter {
+	color: var(--color-prettylights-syntax-keyword);
+}
+
 p {
 	@include mixins.type-body();
 	max-width: 60ch;
@@ -116,7 +120,7 @@ a {
 	font-size: 100%;
 	vertical-align: baseline;
 	outline: none;
-	text-decoration: none;
+	// text-decoration: none;
 	transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
 
 	&:hover,
