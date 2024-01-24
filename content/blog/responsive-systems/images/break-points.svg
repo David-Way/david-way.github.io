@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>break-points</title>
+    <g id="break-points" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="large" stroke="#FED500" stroke-width="4" x="47" y="124" width="1267" height="732"></rect>
+        <rect id="medium" stroke="#FED500" stroke-width="4" x="47" y="347" width="950" height="509"></rect>
+        <rect id="small" stroke="#FED500" stroke-width="4" x="47" y="445" width="324" height="411"></rect>
+    </g>
+</svg>
