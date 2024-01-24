@@ -64,18 +64,18 @@ The HTML tags, the attributes we append to them, and how we nest and combine the
 
 ### Visual affordances
 
-We're all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,
+An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,
 
 - A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.
-- The underline of a link is an example of a convention-based affordance.
-- Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.
-- Making buttons look 3D or clickable through copy, shape, and/or color is a crucial affordance.
+- The underline of a link is an example of a convention-based affordance. Users learn that [an underline indicates this text is a link](https://www.w3.org/TR/WCAG20-TECHS/F73.html).
+- Using a shopping cart icon to indicate the concept of online purchases (a metaphorical affordance).
+- Making buttons look 3D or clickable through copy, shape, and/or color.
 
 We rely heavily on visually available affordances to make our UI intuitive to non-screen reader users. However, these clues are not available to visually impaired users, so we need to provide equivalent information in non-visual methods.
 
 ### Non-visual affordances
 
-Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. The smantics of HTML let us express the affordances we offer to sighted users in a way that a screen reader can announce.
+The non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. The semantics of HTML let us express the affordances we offer to sighted users in a way that a screen reader can announce.
 
 Semantics or meaning is given to the content in a web page through:
 

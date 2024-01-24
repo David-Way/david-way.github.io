@@ -1,5 +1,5 @@
 ---
-title: Quick-start guide to using Yaml
+title: Yaml, a quick-start guide
 description: Learn the basics of writing serialisable data into Yaml files
 date: 2021-04-07
 tags:
@@ -8,17 +8,7 @@ tags:
   - yaml
 ---
 
-## Definitions
-
-<details>
-  <summary>What is a file really?</summary>
-
-A <strong>file</strong> is and object on a computer that is used to store data or information.
-
-There are many types of files, recognisable by their extension (ie. `.doc`, `.pdf`, `.jpg`).
-Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).
-
-</details>
+Yaml is a markup like language (used in the `.yaml` file type) that aims to make data portable in a way that is easy to read, write and edit by humans _and_ computers.
 
 <details>
   <summary>What is a markup language?</summary>
@@ -87,9 +77,15 @@ People:
 </div>
 </details>
 
-## Yaml
+<details>
+  <summary>What is a file really?</summary>
 
-Yaml is a markup like language (used in the `.yaml` file type) that aims to make data portable in a way that is easy to read, write and edit by humans _and_ computers.
+A <strong>file</strong> is and object on a computer that is used to store data or information.
+
+There are many types of files, recognisable by their extension (ie. `.doc`, `.pdf`, `.jpg`).
+Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).
+
+</details>
 
 A Yaml document contains fields to store different types of data and aims to use compact formats to describe more complex data structures (eg. lists of items and maps).
 
