@@ -1,6 +1,7 @@
 ---
 title: Are CSS utilities for color a good idea?
 description: Why I avoided color utility classes for a long time...
+publish: true
 date: 2021-02-15
 tags:
   - design system

@@ -1,6 +1,7 @@
 ---
 title: Building a Viking loom
 description: A side project
+publish: true
 date: 2023-11-18
 tags:
   - woodwork

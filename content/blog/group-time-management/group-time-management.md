@@ -1,6 +1,7 @@
 ---
 title: "A time management tool for groups"
 description: A side project I actually use.
+publish: true
 date: 2021-02-15
 tags:
   - prototype
