@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>screen-size-vs-context-zoom</title>
+    <defs>
+        <path d="M10.2555408,-4.14336123e-16 L622.744459,4.14336123e-16 C626.310534,-2.4074122e-16 627.603679,0.371302445 628.907383,1.06853082 C630.211087,1.76575919 631.234241,2.78891348 631.931469,4.09261719 C632.628698,5.39632089 633,6.68946584 633,10.2555408 L633,876.744459 C633,880.310534 632.628698,881.603679 631.931469,882.907383 C631.234241,884.211087 630.211087,885.234241 628.907383,885.931469 C627.603679,886.628698 626.310534,887 622.744459,887 L10.2555408,887 C6.68946584,887 5.39632089,886.628698 4.09261719,885.931469 C2.78891348,885.234241 1.76575919,884.211087 1.06853082,882.907383 C0.371302445,881.603679 1.60494146e-16,880.310534 -2.76224082e-16,876.744459 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="path-1"></path>
+        <filter x="-1.7%" y="-0.8%" width="103.5%" height="102.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 633 0 633 887 0 887"></polygon>
+        <filter x="-0.8%" y="-0.5%" width="101.6%" height="101.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.1277704,-2.07168062e-16 L387.87223,2.07168062e-16 C389.655267,-1.2037061e-16 390.30184,0.185651222 390.953691,0.534265408 C391.605543,0.882879593 392.11712,1.39445674 392.465735,2.04630859 C392.814349,2.69816044 393,3.34473292 393,5.1277704 L393,22.8722296 C393,24.6552671 392.814349,25.3018396 392.465735,25.9536914 C392.11712,26.6055433 391.605543,27.1171204 390.953691,27.4657346 C390.30184,27.8143488 389.655267,28 387.87223,28 L5.1277704,28 C3.34473292,28 2.69816044,27.8143488 2.04630859,27.4657346 C1.39445674,27.1171204 0.882879593,26.6055433 0.534265408,25.9536914 C0.185651222,25.3018396 8.02470732e-17,24.6552671 -1.38112041e-16,22.8722296 L1.38112041e-16,5.1277704 C-8.02470732e-17,3.34473292 0.185651222,2.69816044 0.534265408,2.04630859 C0.882879593,1.39445674 1.39445674,0.882879593 2.04630859,0.534265408 C2.69816044,0.185651222 3.34473292,1.2037061e-16 5.1277704,-2.07168062e-16 Z" id="path-6"></path>
+        <filter x="-0.1%" y="-1.8%" width="100.3%" height="103.6%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-5.0%" y="-3.8%" width="110.0%" height="107.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M10.2555408,-4.14336123e-16 L622.744459,4.14336123e-16 C626.310534,-2.4074122e-16 627.603679,0.371302445 628.907383,1.06853082 C630.211087,1.76575919 631.234241,2.78891348 631.931469,4.09261719 C632.628698,5.39632089 633,6.68946584 633,10.2555408 L633,876.744459 C633,880.310534 632.628698,881.603679 631.931469,882.907383 C631.234241,884.211087 630.211087,885.234241 628.907383,885.931469 C627.603679,886.628698 626.310534,887 622.744459,887 L10.2555408,887 C6.68946584,887 5.39632089,886.628698 4.09261719,885.931469 C2.78891348,885.234241 1.76575919,884.211087 1.06853082,882.907383 C0.371302445,881.603679 1.60494146e-16,880.310534 -2.76224082e-16,876.744459 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="path-9"></path>
+        <filter x="-1.7%" y="-0.8%" width="103.5%" height="102.5%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-12" points="0 0 633 0 633 887 0 887"></polygon>
+        <filter x="-0.8%" y="-0.5%" width="101.6%" height="101.1%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.1277704,-2.07168062e-16 L387.87223,2.07168062e-16 C389.655267,-1.2037061e-16 390.30184,0.185651222 390.953691,0.534265408 C391.605543,0.882879593 392.11712,1.39445674 392.465735,2.04630859 C392.814349,2.69816044 393,3.34473292 393,5.1277704 L393,22.8722296 C393,24.6552671 392.814349,25.3018396 392.465735,25.9536914 C392.11712,26.6055433 391.605543,27.1171204 390.953691,27.4657346 C390.30184,27.8143488 389.655267,28 387.87223,28 L5.1277704,28 C3.34473292,28 2.69816044,27.8143488 2.04630859,27.4657346 C1.39445674,27.1171204 0.882879593,26.6055433 0.534265408,25.9536914 C0.185651222,25.3018396 8.02470732e-17,24.6552671 -1.38112041e-16,22.8722296 L1.38112041e-16,5.1277704 C-8.02470732e-17,3.34473292 0.185651222,2.69816044 0.534265408,2.04630859 C0.882879593,1.39445674 1.39445674,0.882879593 2.04630859,0.534265408 C2.69816044,0.185651222 3.34473292,1.2037061e-16 5.1277704,-2.07168062e-16 Z" id="path-14"></path>
+        <filter x="-0.1%" y="-1.8%" width="100.3%" height="103.6%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-5.0%" y="-3.8%" width="110.0%" height="107.5%" filterUnits="objectBoundingBox" id="filter-16">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect id="path-17" x="69" y="68" width="632" height="832"></rect>
+        <rect id="path-19" x="739" y="68" width="632" height="832"></rect>
+    </defs>
+    <g id="screen-size-vs-context-zoom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(69.000000, 15.000000)">
+            <g id="Group-5">
+                <g id="Browser-window">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Window">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Image-goes-here" mask="url(#mask-2)">
+                        <g transform="translate(-1.000000, 0.000000)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g id="Top-bar">
+                            <path d="M10.2555408,-4.14336123e-16 L622.744459,4.14336123e-16 C626.310534,-2.4074122e-16 627.603679,0.371302445 628.907383,1.06853082 C630.211087,1.76575919 631.234241,2.78891348 631.931469,4.09261719 C632.628698,5.39632089 633,6.68946584 633,10.2555408 L633,50 L633,50 L0,50 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="Rectangle" fill="#E8E8E8"></path>
+                            <rect id="Maximize" fill="#28CA42" x="60" y="19" width="12" height="12" rx="6"></rect>
+                            <rect id="Minimize" fill="#FFBE2F" x="42" y="19" width="12" height="12" rx="6"></rect>
+                            <rect id="Close" fill="#FF5F57" x="24" y="19" width="12" height="12" rx="6"></rect>
+                            <path d="M609,31 L609,35 L585,35 L585,31 L609,31 Z M609,23 L609,27 L585,27 L585,23 L609,23 Z M609,15 L609,19 L585,19 L585,15 L609,15 Z" id="Menu" fill="#B3B3B3"></path>
+                            <g id="Address-bar" transform="translate(120.000000, 11.000000)">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                </g>
+                                <text id="Slug" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                    <tspan x="163" y="20">/1</tspan>
+                                </text>
+                                <text id="Domain" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#000000">
+                                    <tspan x="75" y="20">my-grid.com</tspan>
+                                </text>
+                                <text id="://" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                    <tspan x="61" y="20">://</tspan>
+                                </text>
+                                <text id="https" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#088043">
+                                    <tspan x="26" y="20">https</tspan>
+                                </text>
+                                <path d="M14.9298246,12.0178571 L14.9298246,10.8660714 C14.9298246,10.3839262 14.739768,9.96875174 14.3596491,9.62053571 C13.9795303,9.27231969 13.5263184,9.09821429 13,9.09821429 C12.4736816,9.09821429 12.0204697,9.27231969 11.6403509,9.62053571 C11.260232,9.96875174 11.0701754,10.3839262 11.0701754,10.8660714 L11.0701754,12.0178571 L14.9298246,12.0178571 Z M16.7426901,12.0178571 C17.0740757,12.0178571 17.3664705,12.1294632 17.619883,12.3526786 C17.8732956,12.575894 18,12.8392842 18,13.1428571 L18,18.875 C18,19.1785729 17.8732956,19.4419632 17.619883,19.6651786 C17.3664705,19.888394 17.0740757,20 16.7426901,20 L9.25730994,20 C8.92592427,20 8.63352953,19.888394 8.38011696,19.6651786 C8.12670439,19.4419632 8,19.1785729 8,18.875 L8,13.1428571 C8,12.8392842 8.12670439,12.575894 8.38011696,12.3526786 C8.63352953,12.1294632 8.92592427,12.0178571 9.25730994,12.0178571 L9.87134503,12.0178571 L9.87134503,10.8660714 C9.87134503,10.0803532 10.1783595,9.40625281 10.7923977,8.84375 C11.4064358,8.28124719 12.1422959,8 13,8 C13.8577041,8 14.5935642,8.28124719 15.2076023,8.84375 C15.8216405,9.40625281 16.128655,10.0803532 16.128655,10.8660714 L16.128655,12.0178571 L16.7426901,12.0178571 Z" id="icon" fill="#088043"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" stroke="#FF0000" stroke-width="3" filter="url(#filter-8)" x="0" y="50" width="633" height="835"></rect>
+                <rect id="Rectangle" stroke="#FF0000" stroke-width="3" x="0" y="50" width="633" height="835"></rect>
+                <g id="Group-3" transform="translate(19.000000, 73.000000)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(158.000000, 8.480256)">
+                        <rect id="Rectangle" x="0" y="0.519744483" width="438" height="40"></rect>
+                        <rect id="Rectangle" x="0" y="53.5197445" width="277" height="24"></rect>
+                        <rect id="Rectangle" x="0" y="90.5197445" width="117" height="24"></rect>
+                        <rect id="Rectangle" x="161" y="90.5197445" width="117" height="24"></rect>
+                    </g>
+                    <ellipse id="Oval" cx="65" cy="65.9343786" rx="65" ry="65.068525"></ellipse>
+                </g>
+                <g id="Group-3" transform="translate(19.000000, 248.997096)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(158.000000, 8.002904)">
+                        <rect id="Rectangle" x="0" y="0" width="438" height="40.1807229"></rect>
+                        <rect id="Rectangle" x="0" y="53.3433735" width="277.469194" height="24.246988"></rect>
+                        <rect id="Rectangle" x="0" y="90.753012" width="116.938389" height="24.246988"></rect>
+                        <rect id="Rectangle" x="160.530806" y="90.753012" width="116.938389" height="24.246988"></rect>
+                    </g>
+                    <circle id="Oval" cx="65" cy="65.0029036" r="65"></circle>
+                </g>
+                <g id="Group-2" transform="translate(177.000000, 430.480256)" fill="#D8D8D8">
+                    <rect id="Rectangle" x="0" y="0.519744483" width="438" height="40"></rect>
+                    <rect id="Rectangle" x="0" y="53.5197445" width="277" height="24"></rect>
+                    <rect id="Rectangle" x="0" y="90.5197445" width="117" height="24"></rect>
+                    <rect id="Rectangle" x="161" y="90.5197445" width="117" height="24"></rect>
+                </g>
+                <ellipse id="Oval" fill="#D8D8D8" cx="84" cy="487.934379" rx="65" ry="65.068525"></ellipse>
+                <g id="Group-3" transform="translate(19.000000, 597.997096)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(158.000000, 8.002904)">
+                        <rect id="Rectangle" x="0" y="0" width="438" height="40.1807229"></rect>
+                        <rect id="Rectangle" x="0" y="53.3433735" width="277.469194" height="24.246988"></rect>
+                        <rect id="Rectangle" x="0" y="90.753012" width="116.938389" height="24.246988"></rect>
+                        <rect id="Rectangle" x="160.530806" y="90.753012" width="116.938389" height="24.246988"></rect>
+                    </g>
+                    <circle id="Oval" cx="65" cy="65.0029036" r="65"></circle>
+                </g>
+                <g id="Actions-/-Navigation-/-zoom--in-/-32" transform="translate(435.000000, 565.000000)" fill="#000000">
+                    <path d="M106.875,73.125 L84.375,73.125 L84.375,50.625 L73.125,50.625 L73.125,73.125 L50.625,73.125 L50.625,84.375 L73.125,84.375 L73.125,106.875 L84.375,106.875 L84.375,84.375 L106.875,84.375 L106.875,73.125 Z M126.28125,118.125 C135.551407,107.099388 140.631201,93.1548565 140.625,78.75 C140.625,44.5773811 112.922619,16.875 78.75,16.875 C44.5773811,16.875 16.875,44.5773811 16.875,78.75 C16.875,112.922619 44.5773811,140.625 78.75,140.625 C93.1548565,140.631201 107.099388,135.551407 118.125,126.28125 L160.81875,168.75 L168.75,160.81875 L126.28125,118.125 Z M78.75,129.375 C50.7905845,129.375 28.125,106.709415 28.125,78.75 C28.125,50.7905845 50.7905845,28.125 78.75,28.125 C106.709415,28.125 129.375,50.7905845 129.375,78.75 C129.375,106.709415 106.709415,129.375 78.75,129.375 L78.75,129.375 Z" id="Fill"></path>
+                </g>
+            </g>
+            <g id="Group-4" transform="translate(670.000000, 0.000000)">
+                <g id="Browser-window">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="Window">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Image-goes-here" mask="url(#mask-10)">
+                        <g transform="translate(-1.000000, 0.000000)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-10)">
+                        <g id="Top-bar">
+                            <path d="M10.2555408,-4.14336123e-16 L622.744459,4.14336123e-16 C626.310534,-2.4074122e-16 627.603679,0.371302445 628.907383,1.06853082 C630.211087,1.76575919 631.234241,2.78891348 631.931469,4.09261719 C632.628698,5.39632089 633,6.68946584 633,10.2555408 L633,50 L633,50 L0,50 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="Rectangle" fill="#E8E8E8"></path>
+                            <rect id="Maximize" fill="#28CA42" x="60" y="19" width="12" height="12" rx="6"></rect>
+                            <rect id="Minimize" fill="#FFBE2F" x="42" y="19" width="12" height="12" rx="6"></rect>
+                            <rect id="Close" fill="#FF5F57" x="24" y="19" width="12" height="12" rx="6"></rect>
+                            <path d="M609,31 L609,35 L585,35 L585,31 L609,31 Z M609,23 L609,27 L585,27 L585,23 L609,23 Z M609,15 L609,19 L585,19 L585,15 L609,15 Z" id="Menu" fill="#B3B3B3"></path>
+                            <g id="Address-bar" transform="translate(120.000000, 11.000000)">
+                                <g>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                                </g>
+                                <text id="Slug" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                    <tspan x="163" y="20">/1</tspan>
+                                </text>
+                                <text id="Domain" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#000000">
+                                    <tspan x="75" y="20">my-grid.com</tspan>
+                                </text>
+                                <text id="://" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                    <tspan x="61" y="20">://</tspan>
+                                </text>
+                                <text id="https" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#088043">
+                                    <tspan x="26" y="20">https</tspan>
+                                </text>
+                                <path d="M14.9298246,12.0178571 L14.9298246,10.8660714 C14.9298246,10.3839262 14.739768,9.96875174 14.3596491,9.62053571 C13.9795303,9.27231969 13.5263184,9.09821429 13,9.09821429 C12.4736816,9.09821429 12.0204697,9.27231969 11.6403509,9.62053571 C11.260232,9.96875174 11.0701754,10.3839262 11.0701754,10.8660714 L11.0701754,12.0178571 L14.9298246,12.0178571 Z M16.7426901,12.0178571 C17.0740757,12.0178571 17.3664705,12.1294632 17.619883,12.3526786 C17.8732956,12.575894 18,12.8392842 18,13.1428571 L18,18.875 C18,19.1785729 17.8732956,19.4419632 17.619883,19.6651786 C17.3664705,19.888394 17.0740757,20 16.7426901,20 L9.25730994,20 C8.92592427,20 8.63352953,19.888394 8.38011696,19.6651786 C8.12670439,19.4419632 8,19.1785729 8,18.875 L8,13.1428571 C8,12.8392842 8.12670439,12.575894 8.38011696,12.3526786 C8.63352953,12.1294632 8.92592427,12.0178571 9.25730994,12.0178571 L9.87134503,12.0178571 L9.87134503,10.8660714 C9.87134503,10.0803532 10.1783595,9.40625281 10.7923977,8.84375 C11.4064358,8.28124719 12.1422959,8 13,8 C13.8577041,8 14.5935642,8.28124719 15.2076023,8.84375 C15.8216405,9.40625281 16.128655,10.0803532 16.128655,10.8660714 L16.128655,12.0178571 L16.7426901,12.0178571 Z" id="icon" fill="#088043"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" stroke="#FF0000" stroke-width="3" filter="url(#filter-16)" x="0" y="50" width="633" height="835"></rect>
+                <rect id="Rectangle" stroke="#FF0000" stroke-width="3" x="0" y="50" width="633" height="835"></rect>
+                <g id="Group-3" transform="translate(19.000000, 73.000000)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(84.000000, 4.000000)">
+                        <rect id="Rectangle" x="0" y="0.280433816" width="234" height="21.5824371"></rect>
+                        <rect id="Rectangle" x="0" y="28.877163" width="147.986301" height="12.9494623"></rect>
+                        <rect id="Rectangle" x="0" y="48.8409174" width="62.5068493" height="12.9494623"></rect>
+                        <rect id="Rectangle" x="86.0136986" y="48.8409174" width="62.5068493" height="12.9494623"></rect>
+                    </g>
+                    <ellipse id="Oval" cx="34.5" cy="35" rx="34.5" ry="35"></ellipse>
+                </g>
+                <g id="Group-3" transform="translate(19.000000, 167.000000)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(84.000000, 4.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="234" height="21.6626506"></rect>
+                        <rect id="Rectangle" x="0" y="28.7590361" width="148.236967" height="13.0722892"></rect>
+                        <rect id="Rectangle" x="0" y="48.9277108" width="62.4739336" height="13.0722892"></rect>
+                        <rect id="Rectangle" x="85.7630332" y="48.9277108" width="62.4739336" height="13.0722892"></rect>
+                    </g>
+                    <ellipse id="Oval" cx="34.5" cy="35" rx="34.5" ry="35"></ellipse>
+                </g>
+                <g id="Group-2" transform="translate(103.000000, 264.000000)" fill="#D8D8D8">
+                    <rect id="Rectangle" x="0" y="0" width="234" height="21"></rect>
+                    <rect id="Rectangle" x="0" y="28" width="148" height="13"></rect>
+                    <rect id="Rectangle" x="0" y="48" width="63" height="13"></rect>
+                    <rect id="Rectangle" x="86" y="48" width="63" height="13"></rect>
+                </g>
+                <circle id="Oval" fill="#D8D8D8" cx="53.5" cy="294.5" r="34.5"></circle>
+                <g id="Group-3" transform="translate(19.000000, 353.000000)" fill="#D8D8D8">
+                    <g id="Group-2" transform="translate(84.000000, 4.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="234" height="21.6626506"></rect>
+                        <rect id="Rectangle" x="0" y="28.7590361" width="148.236967" height="13.0722892"></rect>
+                        <rect id="Rectangle" x="0" y="48.9277108" width="62.4739336" height="13.0722892"></rect>
+                        <rect id="Rectangle" x="85.7630332" y="48.9277108" width="62.4739336" height="13.0722892"></rect>
+                    </g>
+                    <ellipse id="Oval" cx="34.5" cy="35" rx="34.5" ry="35"></ellipse>
+                </g>
+                <g id="Actions-/-Navigation-/-zoom--out-/-32" transform="translate(435.000000, 565.000000)" fill="#000000">
+                    <path d="M50.625,73.125 L106.875,73.125 L106.875,84.375 L50.625,84.375 L50.625,73.125 Z M126.28125,118.125 C135.551407,107.099388 140.631201,93.1548565 140.625,78.75 C140.625,44.5773811 112.922619,16.875 78.75,16.875 C44.5773811,16.875 16.875,44.5773811 16.875,78.75 C16.875,112.922619 44.5773811,140.625 78.75,140.625 C93.1548565,140.631201 107.099388,135.551407 118.125,126.28125 L160.81875,168.75 L168.75,160.81875 L126.28125,118.125 Z M78.75,129.375 C50.7905845,129.375 28.125,106.709415 28.125,78.75 C28.125,50.7905845 50.7905845,28.125 78.75,28.125 C106.709415,28.125 129.375,50.7905845 129.375,78.75 C129.375,106.709415 106.709415,129.375 78.75,129.375 L78.75,129.375 Z" id="Fill"></path>
+                </g>
+            </g>
+        </g>
+        <mask id="mask-18" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <g id="Rectangle"></g>
+        <g id="grid" opacity="0.246525254" mask="url(#mask-18)" stroke="#979797" stroke-linecap="square" stroke-width="3">
+            <g transform="translate(35.000000, 49.000000)" id="Line-3">
+                <line x1="32.5" y1="2.5" x2="32.5" y2="903.5"></line>
+                <line x1="44.5" y1="2.5" x2="44.5" y2="903.5"></line>
+                <line x1="56.5" y1="2.5" x2="56.5" y2="903.5"></line>
+                <line x1="68.5" y1="2.5" x2="68.5" y2="903.5"></line>
+                <line x1="80.5" y1="2.5" x2="80.5" y2="903.5"></line>
+                <line x1="92.5" y1="2.5" x2="92.5" y2="903.5"></line>
+                <line x1="104.5" y1="2.5" x2="104.5" y2="903.5"></line>
+                <line x1="116.5" y1="2.5" x2="116.5" y2="903.5"></line>
+                <line x1="128.5" y1="3.5" x2="128.5" y2="904.5"></line>
+                <line x1="140.5" y1="3.5" x2="140.5" y2="904.5"></line>
+                <line x1="152.5" y1="3.5" x2="152.5" y2="904.5"></line>
+                <line x1="164.5" y1="3.5" x2="164.5" y2="904.5"></line>
+                <line x1="176.5" y1="3.5" x2="176.5" y2="904.5"></line>
+                <line x1="188.5" y1="3.5" x2="188.5" y2="904.5"></line>
+                <line x1="200.5" y1="3.5" x2="200.5" y2="904.5"></line>
+                <line x1="212.5" y1="3.5" x2="212.5" y2="904.5"></line>
+                <line x1="224.5" y1="1.5" x2="224.5" y2="902.5"></line>
+                <line x1="236.5" y1="1.5" x2="236.5" y2="902.5"></line>
+                <line x1="248.5" y1="1.5" x2="248.5" y2="902.5"></line>
+                <line x1="260.5" y1="1.5" x2="260.5" y2="902.5"></line>
+                <line x1="272.5" y1="1.5" x2="272.5" y2="902.5"></line>
+                <line x1="284.5" y1="1.5" x2="284.5" y2="902.5"></line>
+                <line x1="296.5" y1="1.5" x2="296.5" y2="902.5"></line>
+                <line x1="308.5" y1="1.5" x2="308.5" y2="902.5"></line>
+                <line x1="320.5" y1="2.5" x2="320.5" y2="903.5"></line>
+                <line x1="332.5" y1="2.5" x2="332.5" y2="903.5"></line>
+                <line x1="344.5" y1="2.5" x2="344.5" y2="903.5"></line>
+                <line x1="356.5" y1="2.5" x2="356.5" y2="903.5"></line>
+                <line x1="368.5" y1="2.5" x2="368.5" y2="903.5"></line>
+                <line x1="380.5" y1="2.5" x2="380.5" y2="903.5"></line>
+                <line x1="392.5" y1="2.5" x2="392.5" y2="903.5"></line>
+                <line x1="404.5" y1="2.5" x2="404.5" y2="903.5"></line>
+                <line x1="416.5" y1="0.5" x2="416.5" y2="901.5"></line>
+                <line x1="428.5" y1="0.5" x2="428.5" y2="901.5"></line>
+                <line x1="440.5" y1="0.5" x2="440.5" y2="901.5"></line>
+                <line x1="452.5" y1="0.5" x2="452.5" y2="901.5"></line>
+                <line x1="464.5" y1="0.5" x2="464.5" y2="901.5"></line>
+                <line x1="476.5" y1="0.5" x2="476.5" y2="901.5"></line>
+                <line x1="488.5" y1="0.5" x2="488.5" y2="901.5"></line>
+                <line x1="500.5" y1="0.5" x2="500.5" y2="901.5"></line>
+                <line x1="512.5" y1="1.5" x2="512.5" y2="902.5"></line>
+                <line x1="524.5" y1="1.5" x2="524.5" y2="902.5"></line>
+                <line x1="536.5" y1="1.5" x2="536.5" y2="902.5"></line>
+                <line x1="548.5" y1="1.5" x2="548.5" y2="902.5"></line>
+                <line x1="560.5" y1="1.5" x2="560.5" y2="902.5"></line>
+                <line x1="572.5" y1="1.5" x2="572.5" y2="902.5"></line>
+                <line x1="584.5" y1="1.5" x2="584.5" y2="902.5"></line>
+                <line x1="596.5" y1="1.5" x2="596.5" y2="902.5"></line>
+                <line x1="608.5" y1="3.5" x2="608.5" y2="904.5"></line>
+                <line x1="620.5" y1="3.5" x2="620.5" y2="904.5"></line>
+                <line x1="632.5" y1="3.5" x2="632.5" y2="904.5"></line>
+                <line x1="644.5" y1="3.5" x2="644.5" y2="904.5"></line>
+                <line x1="656.5" y1="3.5" x2="656.5" y2="904.5"></line>
+                <line x1="668.5" y1="3.5" x2="668.5" y2="904.5"></line>
+                <line x1="680.5" y1="3.5" x2="680.5" y2="904.5"></line>
+                <line x1="692.5" y1="3.5" x2="692.5" y2="904.5"></line>
+                <line x1="704.5" y1="4.5" x2="704.5" y2="905.5"></line>
+                <line x1="716.5" y1="4.5" x2="716.5" y2="905.5"></line>
+                <line x1="728.5" y1="4.5" x2="728.5" y2="905.5"></line>
+                <line x1="740.5" y1="4.5" x2="740.5" y2="905.5"></line>
+                <line x1="752.5" y1="4.5" x2="752.5" y2="905.5"></line>
+                <line x1="764.5" y1="4.5" x2="764.5" y2="905.5"></line>
+                <line x1="776.5" y1="4.5" x2="776.5" y2="905.5"></line>
+                <line x1="788.5" y1="4.5" x2="788.5" y2="905.5"></line>
+                <line x1="800.5" y1="1.5" x2="800.5" y2="902.5"></line>
+                <line x1="812.5" y1="1.5" x2="812.5" y2="902.5"></line>
+                <line x1="824.5" y1="1.5" x2="824.5" y2="902.5"></line>
+                <line x1="836.5" y1="1.5" x2="836.5" y2="902.5"></line>
+                <line x1="848.5" y1="1.5" x2="848.5" y2="902.5"></line>
+                <line x1="860.5" y1="1.5" x2="860.5" y2="902.5"></line>
+                <line x1="872.5" y1="1.5" x2="872.5" y2="902.5"></line>
+                <line x1="903" y1="15" x2="2" y2="15"></line>
+                <line x1="903" y1="27" x2="2" y2="27"></line>
+                <line x1="903" y1="39" x2="2" y2="39"></line>
+                <line x1="903" y1="51" x2="2" y2="51"></line>
+                <line x1="903" y1="63" x2="2" y2="63"></line>
+                <line x1="903" y1="75" x2="2" y2="75"></line>
+                <line x1="903" y1="87" x2="2" y2="87"></line>
+                <line x1="903" y1="99" x2="2" y2="99"></line>
+                <line x1="902" y1="111" x2="1" y2="111"></line>
+                <line x1="902" y1="123" x2="1" y2="123"></line>
+                <line x1="902" y1="135" x2="1" y2="135"></line>
+                <line x1="902" y1="147" x2="1" y2="147"></line>
+                <line x1="902" y1="159" x2="1" y2="159"></line>
+                <line x1="902" y1="171" x2="1" y2="171"></line>
+                <line x1="902" y1="183" x2="1" y2="183"></line>
+                <line x1="902" y1="195" x2="1" y2="195"></line>
+                <line x1="904" y1="207" x2="3" y2="207"></line>
+                <line x1="904" y1="219" x2="3" y2="219"></line>
+                <line x1="904" y1="231" x2="3" y2="231"></line>
+                <line x1="904" y1="243" x2="3" y2="243"></line>
+                <line x1="904" y1="255" x2="3" y2="255"></line>
+                <line x1="904" y1="267" x2="3" y2="267"></line>
+                <line x1="904" y1="279" x2="3" y2="279"></line>
+                <line x1="904" y1="291" x2="3" y2="291"></line>
+                <line x1="903" y1="303" x2="2" y2="303"></line>
+                <line x1="903" y1="315" x2="2" y2="315"></line>
+                <line x1="903" y1="327" x2="2" y2="327"></line>
+                <line x1="903" y1="339" x2="2" y2="339"></line>
+                <line x1="903" y1="351" x2="2" y2="351"></line>
+                <line x1="903" y1="363" x2="2" y2="363"></line>
+                <line x1="903" y1="375" x2="2" y2="375"></line>
+                <line x1="903" y1="387" x2="2" y2="387"></line>
+                <line x1="905" y1="399" x2="4" y2="399"></line>
+                <line x1="905" y1="411" x2="4" y2="411"></line>
+                <line x1="905" y1="423" x2="4" y2="423"></line>
+                <line x1="905" y1="435" x2="4" y2="435"></line>
+                <line x1="905" y1="447" x2="4" y2="447"></line>
+                <line x1="905" y1="459" x2="4" y2="459"></line>
+                <line x1="905" y1="471" x2="4" y2="471"></line>
+                <line x1="905" y1="483" x2="4" y2="483"></line>
+                <line x1="904" y1="495" x2="3" y2="495"></line>
+                <line x1="904" y1="507" x2="3" y2="507"></line>
+                <line x1="904" y1="519" x2="3" y2="519"></line>
+                <line x1="904" y1="531" x2="3" y2="531"></line>
+                <line x1="904" y1="543" x2="3" y2="543"></line>
+                <line x1="904" y1="555" x2="3" y2="555"></line>
+                <line x1="904" y1="567" x2="3" y2="567"></line>
+                <line x1="904" y1="579" x2="3" y2="579"></line>
+                <line x1="902" y1="591" x2="1" y2="591"></line>
+                <line x1="902" y1="603" x2="1" y2="603"></line>
+                <line x1="902" y1="615" x2="1" y2="615"></line>
+                <line x1="902" y1="627" x2="1" y2="627"></line>
+                <line x1="902" y1="639" x2="1" y2="639"></line>
+                <line x1="902" y1="651" x2="1" y2="651"></line>
+                <line x1="902" y1="663" x2="1" y2="663"></line>
+                <line x1="902" y1="675" x2="1" y2="675"></line>
+                <line x1="901" y1="687" x2="0" y2="687"></line>
+                <line x1="901" y1="699" x2="0" y2="699"></line>
+                <line x1="901" y1="711" x2="0" y2="711"></line>
+                <line x1="901" y1="723" x2="0" y2="723"></line>
+                <line x1="901" y1="735" x2="0" y2="735"></line>
+                <line x1="901" y1="747" x2="0" y2="747"></line>
+                <line x1="901" y1="759" x2="0" y2="759"></line>
+                <line x1="901" y1="771" x2="0" y2="771"></line>
+                <line x1="904" y1="783" x2="3" y2="783"></line>
+                <line x1="904" y1="795" x2="3" y2="795"></line>
+                <line x1="904" y1="807" x2="3" y2="807"></line>
+                <line x1="904" y1="819" x2="3" y2="819"></line>
+                <line x1="904" y1="831" x2="3" y2="831"></line>
+                <line x1="904" y1="843" x2="3" y2="843"></line>
+            </g>
+        </g>
+        <mask id="mask-20" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <g id="Rectangle"></g>
+        <g id="grid" opacity="0.246525254" mask="url(#mask-20)" stroke="#979797" stroke-linecap="square" stroke-width="2.22516556">
+            <g transform="translate(716.000000, 0.000000)" id="Line-3">
+                <line x1="24.1059603" y1="2.5" x2="24.1059603" y2="903.5"></line>
+                <line x1="33.0066225" y1="2.5" x2="33.0066225" y2="903.5"></line>
+                <line x1="41.9072848" y1="2.5" x2="41.9072848" y2="903.5"></line>
+                <line x1="50.807947" y1="2.5" x2="50.807947" y2="903.5"></line>
+                <line x1="59.7086093" y1="2.5" x2="59.7086093" y2="903.5"></line>
+                <line x1="68.6092715" y1="2.5" x2="68.6092715" y2="903.5"></line>
+                <line x1="77.5099338" y1="2.5" x2="77.5099338" y2="903.5"></line>
+                <line x1="86.410596" y1="2.5" x2="86.410596" y2="903.5"></line>
+                <line x1="95.3112583" y1="3.5" x2="95.3112583" y2="904.5"></line>
+                <line x1="104.211921" y1="3.5" x2="104.211921" y2="904.5"></line>
+                <line x1="113.112583" y1="3.5" x2="113.112583" y2="904.5"></line>
+                <line x1="122.013245" y1="3.5" x2="122.013245" y2="904.5"></line>
+                <line x1="130.913907" y1="3.5" x2="130.913907" y2="904.5"></line>
+                <line x1="139.81457" y1="3.5" x2="139.81457" y2="904.5"></line>
+                <line x1="148.715232" y1="3.5" x2="148.715232" y2="904.5"></line>
+                <line x1="157.615894" y1="3.5" x2="157.615894" y2="904.5"></line>
+                <line x1="166.516556" y1="1.5" x2="166.516556" y2="902.5"></line>
+                <line x1="175.417219" y1="1.5" x2="175.417219" y2="902.5"></line>
+                <line x1="184.317881" y1="1.5" x2="184.317881" y2="902.5"></line>
+                <line x1="193.218543" y1="1.5" x2="193.218543" y2="902.5"></line>
+                <line x1="202.119205" y1="1.5" x2="202.119205" y2="902.5"></line>
+                <line x1="211.019868" y1="1.5" x2="211.019868" y2="902.5"></line>
+                <line x1="219.92053" y1="1.5" x2="219.92053" y2="902.5"></line>
+                <line x1="228.821192" y1="1.5" x2="228.821192" y2="902.5"></line>
+                <line x1="237.721854" y1="2.5" x2="237.721854" y2="903.5"></line>
+                <line x1="246.622517" y1="2.5" x2="246.622517" y2="903.5"></line>
+                <line x1="255.523179" y1="2.5" x2="255.523179" y2="903.5"></line>
+                <line x1="264.423841" y1="2.5" x2="264.423841" y2="903.5"></line>
+                <line x1="273.324503" y1="2.5" x2="273.324503" y2="903.5"></line>
+                <line x1="282.225166" y1="2.5" x2="282.225166" y2="903.5"></line>
+                <line x1="291.125828" y1="2.5" x2="291.125828" y2="903.5"></line>
+                <line x1="300.02649" y1="2.5" x2="300.02649" y2="903.5"></line>
+                <line x1="308.927152" y1="0.5" x2="308.927152" y2="901.5"></line>
+                <line x1="317.827815" y1="0.5" x2="317.827815" y2="901.5"></line>
+                <line x1="326.728477" y1="0.5" x2="326.728477" y2="901.5"></line>
+                <line x1="335.629139" y1="0.5" x2="335.629139" y2="901.5"></line>
+                <line x1="344.529801" y1="0.5" x2="344.529801" y2="901.5"></line>
+                <line x1="353.430464" y1="0.5" x2="353.430464" y2="901.5"></line>
+                <line x1="362.331126" y1="0.5" x2="362.331126" y2="901.5"></line>
+                <line x1="371.231788" y1="0.5" x2="371.231788" y2="901.5"></line>
+                <line x1="380.13245" y1="1.5" x2="380.13245" y2="902.5"></line>
+                <line x1="389.033113" y1="1.5" x2="389.033113" y2="902.5"></line>
+                <line x1="397.933775" y1="1.5" x2="397.933775" y2="902.5"></line>
+                <line x1="406.834437" y1="1.5" x2="406.834437" y2="902.5"></line>
+                <line x1="415.735099" y1="1.5" x2="415.735099" y2="902.5"></line>
+                <line x1="424.635762" y1="1.5" x2="424.635762" y2="902.5"></line>
+                <line x1="433.536424" y1="1.5" x2="433.536424" y2="902.5"></line>
+                <line x1="442.437086" y1="1.5" x2="442.437086" y2="902.5"></line>
+                <line x1="451.337748" y1="3.5" x2="451.337748" y2="904.5"></line>
+                <line x1="460.238411" y1="3.5" x2="460.238411" y2="904.5"></line>
+                <line x1="469.139073" y1="3.5" x2="469.139073" y2="904.5"></line>
+                <line x1="478.039735" y1="3.5" x2="478.039735" y2="904.5"></line>
+                <line x1="486.940397" y1="3.5" x2="486.940397" y2="904.5"></line>
+                <line x1="495.84106" y1="3.5" x2="495.84106" y2="904.5"></line>
+                <line x1="504.741722" y1="3.5" x2="504.741722" y2="904.5"></line>
+                <line x1="513.642384" y1="3.5" x2="513.642384" y2="904.5"></line>
+                <line x1="522.543046" y1="4.5" x2="522.543046" y2="905.5"></line>
+                <line x1="531.443709" y1="4.5" x2="531.443709" y2="905.5"></line>
+                <line x1="540.344371" y1="4.5" x2="540.344371" y2="905.5"></line>
+                <line x1="549.245033" y1="4.5" x2="549.245033" y2="905.5"></line>
+                <line x1="558.145695" y1="4.5" x2="558.145695" y2="905.5"></line>
+                <line x1="567.046358" y1="4.5" x2="567.046358" y2="905.5"></line>
+                <line x1="575.94702" y1="4.5" x2="575.94702" y2="905.5"></line>
+                <line x1="584.847682" y1="4.5" x2="584.847682" y2="905.5"></line>
+                <line x1="593.748344" y1="1.5" x2="593.748344" y2="902.5"></line>
+                <line x1="602.649007" y1="1.5" x2="602.649007" y2="902.5"></line>
+                <line x1="611.549669" y1="1.5" x2="611.549669" y2="902.5"></line>
+                <line x1="620.450331" y1="1.5" x2="620.450331" y2="902.5"></line>
+                <line x1="629.350993" y1="1.5" x2="629.350993" y2="902.5"></line>
+                <line x1="638.251656" y1="1.5" x2="638.251656" y2="902.5"></line>
+                <line x1="647.152318" y1="1.5" x2="647.152318" y2="902.5"></line>
+                <line x1="669.774834" y1="11.1258278" x2="1.48344371" y2="11.1258278"></line>
+                <line x1="669.774834" y1="20.0264901" x2="1.48344371" y2="20.0264901"></line>
+                <line x1="669.774834" y1="28.9271523" x2="1.48344371" y2="28.9271523"></line>
+                <line x1="669.774834" y1="37.8278146" x2="1.48344371" y2="37.8278146"></line>
+                <line x1="669.774834" y1="46.7284768" x2="1.48344371" y2="46.7284768"></line>
+                <line x1="669.774834" y1="55.6291391" x2="1.48344371" y2="55.6291391"></line>
+                <line x1="669.774834" y1="64.5298013" x2="1.48344371" y2="64.5298013"></line>
+                <line x1="669.774834" y1="73.4304636" x2="1.48344371" y2="73.4304636"></line>
+                <line x1="669.033113" y1="82.3311258" x2="0.741721854" y2="82.3311258"></line>
+                <line x1="669.033113" y1="91.2317881" x2="0.741721854" y2="91.2317881"></line>
+                <line x1="669.033113" y1="100.13245" x2="0.741721854" y2="100.13245"></line>
+                <line x1="669.033113" y1="109.033113" x2="0.741721854" y2="109.033113"></line>
+                <line x1="669.033113" y1="117.933775" x2="0.741721854" y2="117.933775"></line>
+                <line x1="669.033113" y1="126.834437" x2="0.741721854" y2="126.834437"></line>
+                <line x1="669.033113" y1="135.735099" x2="0.741721854" y2="135.735099"></line>
+                <line x1="669.033113" y1="144.635762" x2="0.741721854" y2="144.635762"></line>
+                <line x1="670.516556" y1="153.536424" x2="2.22516556" y2="153.536424"></line>
+                <line x1="670.516556" y1="162.437086" x2="2.22516556" y2="162.437086"></line>
+                <line x1="670.516556" y1="171.337748" x2="2.22516556" y2="171.337748"></line>
+                <line x1="670.516556" y1="180.238411" x2="2.22516556" y2="180.238411"></line>
+                <line x1="670.516556" y1="189.139073" x2="2.22516556" y2="189.139073"></line>
+                <line x1="670.516556" y1="198.039735" x2="2.22516556" y2="198.039735"></line>
+                <line x1="670.516556" y1="206.940397" x2="2.22516556" y2="206.940397"></line>
+                <line x1="670.516556" y1="215.84106" x2="2.22516556" y2="215.84106"></line>
+                <line x1="669.774834" y1="224.741722" x2="1.48344371" y2="224.741722"></line>
+                <line x1="669.774834" y1="233.642384" x2="1.48344371" y2="233.642384"></line>
+                <line x1="669.774834" y1="242.543046" x2="1.48344371" y2="242.543046"></line>
+                <line x1="669.774834" y1="251.443709" x2="1.48344371" y2="251.443709"></line>
+                <line x1="669.774834" y1="260.344371" x2="1.48344371" y2="260.344371"></line>
+                <line x1="669.774834" y1="269.245033" x2="1.48344371" y2="269.245033"></line>
+                <line x1="669.774834" y1="278.145695" x2="1.48344371" y2="278.145695"></line>
+                <line x1="669.774834" y1="287.046358" x2="1.48344371" y2="287.046358"></line>
+                <line x1="671.258278" y1="295.94702" x2="2.96688742" y2="295.94702"></line>
+                <line x1="671.258278" y1="304.847682" x2="2.96688742" y2="304.847682"></line>
+                <line x1="671.258278" y1="313.748344" x2="2.96688742" y2="313.748344"></line>
+                <line x1="671.258278" y1="322.649007" x2="2.96688742" y2="322.649007"></line>
+                <line x1="671.258278" y1="331.549669" x2="2.96688742" y2="331.549669"></line>
+                <line x1="671.258278" y1="340.450331" x2="2.96688742" y2="340.450331"></line>
+                <line x1="671.258278" y1="349.350993" x2="2.96688742" y2="349.350993"></line>
+                <line x1="671.258278" y1="358.251656" x2="2.96688742" y2="358.251656"></line>
+                <line x1="670.516556" y1="367.152318" x2="2.22516556" y2="367.152318"></line>
+                <line x1="670.516556" y1="376.05298" x2="2.22516556" y2="376.05298"></line>
+                <line x1="670.516556" y1="384.953642" x2="2.22516556" y2="384.953642"></line>
+                <line x1="670.516556" y1="393.854305" x2="2.22516556" y2="393.854305"></line>
+                <line x1="670.516556" y1="402.754967" x2="2.22516556" y2="402.754967"></line>
+                <line x1="670.516556" y1="411.655629" x2="2.22516556" y2="411.655629"></line>
+                <line x1="670.516556" y1="420.556291" x2="2.22516556" y2="420.556291"></line>
+                <line x1="670.516556" y1="429.456954" x2="2.22516556" y2="429.456954"></line>
+                <line x1="669.033113" y1="438.357616" x2="0.741721854" y2="438.357616"></line>
+                <line x1="669.033113" y1="447.258278" x2="0.741721854" y2="447.258278"></line>
+                <line x1="669.033113" y1="456.15894" x2="0.741721854" y2="456.15894"></line>
+                <line x1="669.033113" y1="465.059603" x2="0.741721854" y2="465.059603"></line>
+                <line x1="669.033113" y1="473.960265" x2="0.741721854" y2="473.960265"></line>
+                <line x1="669.033113" y1="482.860927" x2="0.741721854" y2="482.860927"></line>
+                <line x1="669.033113" y1="491.761589" x2="0.741721854" y2="491.761589"></line>
+                <line x1="669.033113" y1="500.662252" x2="0.741721854" y2="500.662252"></line>
+                <line x1="668.291391" y1="509.562914" x2="0" y2="509.562914"></line>
+                <line x1="668.291391" y1="518.463576" x2="0" y2="518.463576"></line>
+                <line x1="668.291391" y1="527.364238" x2="0" y2="527.364238"></line>
+                <line x1="668.291391" y1="536.264901" x2="0" y2="536.264901"></line>
+                <line x1="668.291391" y1="545.165563" x2="0" y2="545.165563"></line>
+                <line x1="668.291391" y1="554.066225" x2="0" y2="554.066225"></line>
+                <line x1="668.291391" y1="562.966887" x2="0" y2="562.966887"></line>
+                <line x1="668.291391" y1="571.86755" x2="0" y2="571.86755"></line>
+                <line x1="670.516556" y1="580.768212" x2="2.22516556" y2="580.768212"></line>
+                <line x1="670.516556" y1="589.668874" x2="2.22516556" y2="589.668874"></line>
+                <line x1="670.516556" y1="598.569536" x2="2.22516556" y2="598.569536"></line>
+                <line x1="670.516556" y1="607.470199" x2="2.22516556" y2="607.470199"></line>
+                <line x1="670.516556" y1="616.370861" x2="2.22516556" y2="616.370861"></line>
+                <line x1="670.516556" y1="625.271523" x2="2.22516556" y2="625.271523"></line>
+                <line x1="670.516556" y1="634.172185" x2="2.22516556" y2="634.172185"></line>
+                <line x1="692.02649" y1="643.072848" x2="23.7350993" y2="643.072848"></line>
+                <line x1="692.02649" y1="651.97351" x2="23.7350993" y2="651.97351"></line>
+                <line x1="696.476821" y1="660.13245" x2="28.1854305" y2="660.13245"></line>
+                <line x1="696.476821" y1="669.033113" x2="28.1854305" y2="669.033113"></line>
+            </g>
+        </g>
+    </g>
+</svg>

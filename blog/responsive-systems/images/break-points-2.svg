@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>break-points-2</title>
+    <g id="break-points-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="large" stroke="#FED500" stroke-width="4" x="47" y="124" width="1267" height="732"></rect>
+        <rect id="medium" stroke="#FED500" stroke-width="4" fill="#FFFFFF" x="47" y="347" width="950" height="509"></rect>
+        <g id="medium-content" transform="translate(225.000000, 371.000000)" fill-opacity="0.35">
+            <circle id="Oval" fill="#040303" cx="20" cy="20" r="20"></circle>
+            <rect id="Rectangle" fill="#000000" x="50" y="7" width="104" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="152" width="292" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="302" y="152" width="292" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="287" width="292" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="302" y="287" width="292" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="422" width="594" height="61"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="70" width="415" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="90" width="94" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="50" y="27" width="94" height="7"></rect>
+            <rect id="Rectangle" fill="#000000" x="516" y="7" width="78" height="28" rx="14"></rect>
+        </g>
+        <rect id="small" stroke="#FED500" stroke-width="4" fill="#FFFFFF" x="47" y="445" width="324" height="411"></rect>
+        <g id="small-content" transform="translate(65.000000, 463.000000)" fill-opacity="0.35">
+            <circle id="Oval" fill="#040303" cx="20" cy="20" r="20"></circle>
+            <rect id="Rectangle" fill="#000000" x="50" y="7" width="104" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="152" width="288" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="287" width="288" height="105"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="70" width="288" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="90" width="288" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="0" y="110" width="196" height="12"></rect>
+            <rect id="Rectangle" fill="#000000" x="50" y="27" width="94" height="7"></rect>
+            <rect id="Rectangle" fill="#000000" x="210" y="7" width="78" height="28" rx="14"></rect>
+        </g>
+    </g>
+</svg>

@@ -4,12 +4,48 @@
 	<subtitle>Writing about my not-important experiences.</subtitle>
 	<link href="https://david-way.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://david-way.github.io/"/>
-	<updated>2022-08-12T00:00:00Z</updated>
+	<updated>2023-11-18T00:00:00Z</updated>
 	<id>https://david-way.github.io/</id>
 	<author>
 		<name>David Way</name>
 		<email>david_way@live.ie</email>
 	</author>
+	
+	<entry>
+		<title>Building a Viking loom</title>
+		<link href="https://david-way.github.io/blog/warp-weighted-loom/"/>
+		<updated>2023-11-18T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/warp-weighted-loom/</id>
+		<content type="html">&lt;p&gt;Building a product and watching other people use and get value from it is a very rewarding feeling and something I appreciate deeply about my job.
+Building tools for others to create with has somehow felt less rewarding to me. One step too far removed from the act of the craft maybe. Who wants to be the coach when you can be the player?&lt;/p&gt;
+&lt;p&gt;However, I recently built a tool, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Warp-weighted_loom&quot;&gt;stone aged warp weighted loom&lt;/a&gt;, for a local weaving expert and I&#39;ve found the feeling of creative reward really changes when you&#39;re supporting a star player like Marja, the Micheal Jordan of weaving let&#39;s call her.&lt;/p&gt;
+&lt;h2 id=&quot;the-weaver&quot; tabindex=&quot;-1&quot;&gt;The Weaver &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/warp-weighted-loom/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;For the last 40 years Marja has been a Weaving/textile history and heritage enthusiasts, and for 6 years a weaving instructor in the &lt;a href=&quot;https://www.thelibertiesweavers.ie/about&quot;&gt;Liberties Weavers project&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;design&quot; tabindex=&quot;-1&quot;&gt;Design &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/warp-weighted-loom/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The research needed to design a tool for a technical skill, and rich domain knowledge can take as long or longer than building the tool itself. While I&#39;m still unable to weave myself (did you know Leo Fender, founder of Fender Musical Instruments, couldn&#39;t play a note on the guitar), my partner has been learning and practicing weaving for almost two years and so was an accommodating Subject Matter Expert to user test with.&lt;/p&gt;
+&lt;p&gt;Some features and functions of the finished loom include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rotating cloth beam and sliding latch for weaving materials longer than the length of the loom.&lt;/li&gt;
+&lt;li&gt;Knock-down joinery to allow the loom to be disassembled when not in use or for transport.&lt;/li&gt;
+&lt;li&gt;Compact lean-to design allows the loom to be used in a confined space.&lt;/li&gt;
+&lt;li&gt;adjustable fork arms to allow you to stand, sit in a chair, or on the floor when weaving.&lt;/li&gt;
+&lt;li&gt;Natural beeswax finish to avoid tarnishing the weaving yarn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-result&quot; tabindex=&quot;-1&quot;&gt;The Result &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/warp-weighted-loom/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/dFFebw1BVe-3024.avif 3024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/dFFebw1BVe-3024.webp 3024w&quot;&gt;&lt;img alt=&quot;Finished warp weighted loom&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/dFFebw1BVe-3024.jpeg&quot; width=&quot;3024&quot; height=&quot;4032&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+A photograph of the finished loom.
+&lt;/figcaption&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/p1zVzdhTks-1512.avif 1512w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/p1zVzdhTks-1512.webp 1512w&quot;&gt;&lt;img alt=&quot;Warp weighted loom in use&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/p1zVzdhTks-1512.jpeg&quot; width=&quot;1512&quot; height=&quot;2016&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+The warp weighted loom in use.
+&lt;/figcaption&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/X2Xp3nBJQd-1832.avif 1832w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/X2Xp3nBJQd-1832.webp 1832w&quot;&gt;&lt;img alt=&quot;Directions of use for warp weighted loom&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/X2Xp3nBJQd-1832.png&quot; width=&quot;1832&quot; height=&quot;1295&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+Technical drawings and assembly instructions for the loom.
+&lt;/figcaption&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Why designers should learn VoiceOver</title>
@@ -58,16 +94,16 @@ CSS adjusts the appearance, and JavaScript adds interactivity and dynamic elemen
   &lt;figcaption&gt;A diagram of an example accessibility tree depicting the hierarchical relationship of HTML elements and the implicit information they supply to the screen reader, such as the elements&#39; locations, input type, name, and state.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;h3 id=&quot;visual-affordances&quot; tabindex=&quot;-1&quot;&gt;Visual affordances &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;We&#39;re all familiar with affordances in design. An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,&lt;/p&gt;
+&lt;p&gt;An affordance is a compelling indicator of how an item on a page operates that includes its perceived and actual functions. Essentially, they are features that teach you how to use the functions or make them more intuitive. For example,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A handle on a teapot teaches you how to hold it, and the spout suggests what to do next.&lt;/li&gt;
-&lt;li&gt;The underline of a link is an example of a convention-based affordance.&lt;/li&gt;
-&lt;li&gt;Using a shopping cart icon to indicate the concept of online purchases would be a metaphorical affordance.&lt;/li&gt;
-&lt;li&gt;Making buttons look 3D or clickable through copy, shape, and/or color is a crucial affordance.&lt;/li&gt;
+&lt;li&gt;The underline of a link is an example of a convention-based affordance. Users learn that &lt;a href=&quot;https://www.w3.org/TR/WCAG20-TECHS/F73.html&quot;&gt;an underline indicates this text is a link&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Using a shopping cart icon to indicate the concept of online purchases (a metaphorical affordance).&lt;/li&gt;
+&lt;li&gt;Making buttons look 3D or clickable through copy, shape, and/or color.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We rely heavily on visually available affordances to make our UI intuitive to non-screen reader users. However, these clues are not available to visually impaired users, so we need to provide equivalent information in non-visual methods.&lt;/p&gt;
 &lt;h3 id=&quot;non-visual-affordances&quot; tabindex=&quot;-1&quot;&gt;Non-visual affordances &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Semantic non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. The smantics of HTML let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
+&lt;p&gt;The non-visual affordances required by screen readers are provided when using the correct HTML elements and attributes to render our UI. The semantics of HTML let us express the affordances we offer to sighted users in a way that a screen reader can announce.&lt;/p&gt;
 &lt;p&gt;Semantics or meaning is given to the content in a web page through:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Hidden and associated content - provided through labelling, using headings, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes&quot;&gt;aria attributes&lt;/a&gt; or related label elements&lt;/li&gt;
@@ -130,14 +166,14 @@ Note we didn&#39;t need to include the word &amp;quot;button&amp;quot;. The scre
 	</entry>
 	
 	<entry>
-		<title>Quick start guide to VoiceOver</title>
+		<title>VoiceOver Screen reader, a quick-start guide</title>
 		<link href="https://david-way.github.io/blog/how-to-get-started-with-voice-over/"/>
 		<updated>2022-08-12T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/how-to-get-started-with-voice-over/</id>
 		<content type="html">&lt;p&gt;Getting started with a screen reader has never been more straightforward and accessible. If you&#39;re reading this on an Apple device, you already have a screen reader installed and may have even turned it on by accident.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
 &lt;span&gt;
-Suppose you need clarification on what a screen reader is or want to learn more about the benefits of familiarizing yourself with a screen reader. In that case, I&#39;ve also written about &lt;a href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over&quot;&gt;why designers should learn to use VoiceOver&lt;/a&gt;.
+Unsure what a screen reader is or want to learn more about the benefits of familiarizing yourself with a screen reader. In that case, I&#39;ve also written about &lt;a href=&quot;https://david-way.github.io/blog/why-designers-should-learn-voice-over&quot;&gt;why designers should learn to use VoiceOver&lt;/a&gt;.
 &lt;/span&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
 &lt;h2 id=&quot;how-to-use-a-screen-reader&quot; tabindex=&quot;-1&quot;&gt;How to use a screen reader &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/how-to-get-started-with-voice-over/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -224,7 +260,8 @@ Suppose you need clarification on what a screen reader is or want to learn more 
 &lt;figure class=&quot;u-bleed-container:medium&quot;&gt;
 &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/fq15oPrZnk-933.avif 933w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/fq15oPrZnk-933.webp 933w&quot;&gt;&lt;img alt=&quot;A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/fq15oPrZnk-933.svg&quot; width=&quot;933&quot; height=&quot;621&quot;&gt;&lt;/picture&gt;
 &lt;figcaption&gt;A diagram displaying a list of 4 intermediate level commands for VoiceOver, 1. VO + Command + H to navigate through the heading elements on the page, a common method for skimming a page, 2. Control to interrupt VoiceOver output, 3. VO key + U open the Rotor quick menu 4. Shift + VO key + Command + to simulate a double mouse click,  5. VO + Shift + up/down arrow keys to adjust VoiceOver settings.&lt;/figcaption&gt;
-&lt;/figure&gt;</content>
+&lt;/figure&gt;
+</content>
 	</entry>
 	
 	<entry>
@@ -239,7 +276,7 @@ Suppose you need clarification on what a screen reader is or want to learn more 
 &lt;p&gt;&lt;i&gt;* Designing something to look both disabled and identifiable as a button while achieving adequate contrast is tricky.&lt;/i&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-1-what-does-disabling-a-button-from-a-screen-readers-perspective-mean&quot; tabindex=&quot;-1&quot;&gt;1.1 What does disabling a button from a Screen Readers perspective mean? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/ux-of-a-disabled-button/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;details&gt;
-  &lt;summary&gt;ℹ️ What is a &lt;i&gt;Screen Reader&lt;/i&gt;?&lt;/summary&gt;
+  &lt;summary&gt;What is a &lt;i&gt;Screen Reader&lt;/i&gt;?&lt;/summary&gt;
 &lt;p&gt;A screen reader is assistive software primarily used by people with low or no vision. It converts the semantic elements on a web page (for example, text, buttons, images, and links) into audible speech or braille.&lt;/p&gt;
 &lt;/details&gt;
 &lt;p&gt;A disabled button is non-existent to a Screen Reader user, meaning they don&#39;t even get the weak indicator afforded to fully sighted users.&lt;/p&gt;
@@ -275,17 +312,11 @@ This principle can be applied to many instances where disabled buttons are commo
 	</entry>
 	
 	<entry>
-		<title>Quick-start guide to using Yaml</title>
+		<title>Yaml, a quick-start guide</title>
 		<link href="https://david-way.github.io/blog/quick-start-guide-to-yaml/"/>
 		<updated>2021-04-07T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/quick-start-guide-to-yaml/</id>
-		<content type="html">&lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;details&gt;
-  &lt;summary&gt;What is a file really?&lt;/summary&gt;
-&lt;p&gt;A &lt;strong&gt;file&lt;/strong&gt; is and object on a computer that is used to store data or information.&lt;/p&gt;
-&lt;p&gt;There are many types of files, recognisable by their extension (ie. &lt;code&gt;.doc&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.jpg&lt;/code&gt;).
-Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).&lt;/p&gt;
-&lt;/details&gt;
+		<content type="html">&lt;p&gt;Yaml is a markup like language (used in the &lt;code&gt;.yaml&lt;/code&gt; file type) that aims to make data portable in a way that is easy to read, write and edit by humans &lt;em&gt;and&lt;/em&gt; computers.&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;What is a markup language?&lt;/summary&gt;
 &lt;p&gt;A &lt;strong&gt;markup up language&lt;/strong&gt; is a system of writing content so that it’s structure conveys meaning.&lt;/p&gt;
@@ -334,8 +365,12 @@ Different file types are optimised for different tasks, like storing video, audi
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/details&gt;
-&lt;h2 id=&quot;yaml&quot; tabindex=&quot;-1&quot;&gt;Yaml &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Yaml is a markup like language (used in the &lt;code&gt;.yaml&lt;/code&gt; file type) that aims to make data portable in a way that is easy to read, write and edit by humans &lt;em&gt;and&lt;/em&gt; computers.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;What is a file really?&lt;/summary&gt;
+&lt;p&gt;A &lt;strong&gt;file&lt;/strong&gt; is and object on a computer that is used to store data or information.&lt;/p&gt;
+&lt;p&gt;There are many types of files, recognisable by their extension (ie. &lt;code&gt;.doc&lt;/code&gt;, &lt;code&gt;.pdf&lt;/code&gt;, &lt;code&gt;.jpg&lt;/code&gt;).
+Different file types are optimised for different tasks, like storing video, audio, text, configurations or computer instructions (code).&lt;/p&gt;
+&lt;/details&gt;
 &lt;p&gt;A Yaml document contains fields to store different types of data and aims to use compact formats to describe more complex data structures (eg. lists of items and maps).&lt;/p&gt;
 &lt;h2 id=&quot;yaml-structure&quot; tabindex=&quot;-1&quot;&gt;Yaml structure &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/quick-start-guide-to-yaml/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The three dashes &lt;code&gt;---&lt;/code&gt; are used to signal the start and end of a Yaml document.&lt;/p&gt;
@@ -430,7 +465,7 @@ Ideation leads to storyboarding, a new To-Be experience to be prototyped and val
 	</entry>
 	
 	<entry>
-		<title>Side project: A time management tool for groups</title>
+		<title>A time management tool for groups</title>
 		<link href="https://david-way.github.io/blog/group-time-management/"/>
 		<updated>2021-02-15T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/group-time-management/</id>
@@ -483,24 +518,26 @@ This was the first project I used a tool like &lt;a href=&quot;https://pagespeed
 		<link href="https://david-way.github.io/blog/design-system-color-utilities/"/>
 		<updated>2021-02-15T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/design-system-color-utilities/</id>
-		<content type="html">&lt;p&gt;A footgun refers to something designed to be highly likely to be used in a way that will cause more problems than it solves.&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Providing color utilities in your design system can be a risk to the accessibility of the products built with it. Providing &lt;a href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;automated, integrated accessibility testing and linting rules&lt;/a&gt; can limit this risk, and providing &lt;a href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;high-level design and usage guidance and technical implementation details together&lt;/a&gt; is a bonus, too.&lt;/p&gt;
+&lt;h2 id=&quot;with-great-power&quot; tabindex=&quot;-1&quot;&gt;With great power... &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A footgun refers to something designed to be highly likely to be used in a way that will cause more problems than it solves.&lt;/p&gt;
 &lt;p&gt;A CSS utility class applies a single abstracted rule or a collection of simple rules, typically scoped to achieve a particular pattern. In the context of a Design System, it is also an efficient sanctioned/supported way to extend system design decisions to custom components and variants.&lt;/p&gt;
 &lt;p&gt;Here is an example of a utility class for applying lead typography styles.&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/** _utils.scss - how it&#39;s made */&lt;/span&gt;
 &lt;span class=&quot;token selector&quot;&gt;.u-type&#92;:lead&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 22px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 400&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 34px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 77rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 22px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 400&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 34px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 77rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;!-&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;index.html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;how&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;it&#39;s&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;used&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- index.html - how it&#39;s used --&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;u-type:lead&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    A lead paragraph is the opening paragraph of an article, 
-    book chapter, or other written work that summarizes its main ideas.
+	A lead paragraph is the opening paragraph of an article, book chapter, or
+	other written work that summarizes its main ideas.
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
 &lt;span&gt;
-Unless you&#39;re working with a utility first approach, prefixing utility classes  with a &lt;code&gt;u-&lt;/code&gt; is a useful way to make the source of its effect more obvious (utilities will often be &lt;code&gt;!important&lt;/code&gt; with high specificity, overriding other styles, seeing a utility class on an object helps to explain this behavior if it&#39;s unexpected)
+Unless you&#39;re working with a utility first approach, prefixing utility classes with a &lt;code&gt;u-&lt;/code&gt; is a useful way to make the source of its effect more obvious (utilities will often be &lt;code&gt;!important&lt;/code&gt; with high specificity, overriding other styles, seeing a utility class on an object helps to explain this behavior if it&#39;s unexpected)
 &lt;/span&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Providing utility classes to Design System consumers as part of your established API is an easy decision with clear value. Utility classes help developers:&lt;/p&gt;
@@ -509,69 +546,71 @@ Unless you&#39;re working with a utility first approach, prefixing utility class
 &lt;li&gt;&lt;strong&gt;Improve Efficiency&lt;/strong&gt; - utility classes can &lt;a href=&quot;https://en.wikipedia.org/wiki/Don%27t_repeat_yourself&quot;&gt;DRY&lt;/a&gt; out the styles delivered to the browser by abstracting some of the more commonly applied styles and simplify the work required to use the design language to any extensions or customizations of the Design System contents.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Avoid common issues&lt;/strong&gt; - utilities help abstract robust, cross-browser solutions to complex or unintuitive front-end development problems.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;with-great-power&quot; tabindex=&quot;-1&quot;&gt;With great power... &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Utility classes are very powerful development tool. Our Design System provides utility classes for spacing, elevation, animation, display type, visibility across breakpoints, maintaining aspect ratio, visually joining elements, and scoping different themes inline in a page&lt;/p&gt;
-&lt;p&gt;Though it was one of the most commonly requested, color was the last category of utilities we included. The primary concerns were accessibility-related but also aesthetic. Our experience with customization didn&#39;t trust that these utilities would be used wisely and therefore thought it was safer they never existed in the first place.&lt;/p&gt;
-&lt;p&gt;I gathered examples of customer requests related to color and analyzed the themes. When a client wants to apply color to a design, they usually intend to elevate the visual impact of a specific element or &amp;quot;make it pop&amp;quot;. Balance or visual hierarchy&lt;/p&gt;
-&lt;p&gt;Status colors
-Colors can be used to reflect system status. Conventionally, red represents danger or error, yellow represents a warning, green represents normal or success, and blue represents passive information.&lt;/p&gt;
+&lt;p&gt;Utility classes are very powerful development tool. Our Design System provides utility classes for spacing, elevation, animation, display type, visibility across breakpoints, maintaining aspect ratio, visually joining elements, and scoping different themes inline in a page.&lt;/p&gt;
+&lt;p&gt;Though it was one of the most commonly requested, color was the last category of utilities we included. The primary concerns were accessibility-related but also aesthetic. Our experience with customization meant we didn&#39;t trust that these utilities would be used wisely and therefore thought it was safer they never existed in the first place.&lt;/p&gt;
+&lt;p&gt;I gathered examples of customer requests related to color and analyzed the themes. When a client wants to apply color to a design, they usually intend to elevate the visual impact of a specific element or &amp;quot;make it pop&amp;quot;, usually in a manner that would be guaranteed to upset the balance or visual hierarchy of the page.&lt;/p&gt;
+&lt;p&gt;Another more valid use case was the commonly occurring need to apply colors to elements that colors can be used to reflect system status.&lt;/p&gt;
 &lt;h2 id=&quot;solution&quot; tabindex=&quot;-1&quot;&gt;Solution &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;What are the accessibility implications of using color as decoration? What are the conventional and cultural connotations of this color. Which users need to receive the information you&#39;re imparting with color? Which colors are safe to use, and where are they safe to use? How can color affect the balance and hierarchy of the page?
-Is the thing you want to make more impactful going to&lt;/p&gt;
-&lt;p&gt;These are many questions a designer asks before deciding the appropriate use of a color.&lt;/p&gt;
-&lt;h3 id=&quot;automation-and-tooling&quot; tabindex=&quot;-1&quot;&gt;Automation and tooling &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Our product provides a testing suit that comes with an perform automated integrated accessibility testing.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Another potential solution is to provide an ESLint rule set
-Prefixing classes can also be helpful. Recommend linting class usage and limiting developers to only utility classes.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;What are the accessibility implications of using color as decoration? What are the conventional and cultural connotations of this color. Which users need to receive the information you&#39;re imparting with color? Which colors are safe to use, and where are they safe to use? How can color affect the balance and hierarchy of the page? Is the element you want to make more impactful going to outweigh other elements on the page? These are many questions a designer asks before deciding the appropriate use of a color.&lt;/p&gt;
+&lt;p&gt;One solution to minimize the risks of developers not asking (or knowing to ask) these questions was to A. &lt;a href=&quot;https://heydonworks.com/article/how-i-accidentally-killed-several-ux-designers/&quot;&gt;document high-level design guidance and technical implementation details next to each other on the same page&lt;/a&gt;, and B. provide automated tooling to check for accessibility issues and to remind developers to manually check and consider their usage.&lt;/p&gt;
+&lt;h3 id=&quot;a-automation-and-tooling&quot; tabindex=&quot;-1&quot;&gt;A. Automation and tooling &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Our product provides a testing suite that performs automated accessibility and visual regression testing, the full depth of which I won&#39;t go into here. However, here is a custom ESLint rule for illustrative purposes that could be use as part of the a wider automated approach. This rule checks all React elements that are using color based utility classes and provides a recommendation to the developer and links to further tools for testing.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token literal-property property&quot;&gt;meta&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token literal-property property&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;suggestion&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token literal-property property&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token literal-property property&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Manually confirm contrast&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;token literal-property property&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Possible Accessibility Errors&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;token literal-property property&quot;&gt;recommended&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;token literal-property property&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://webaim.org/resources/contrastchecker/&quot;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token function-variable function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token function-variable function&quot;&gt;JSXAttribute&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;className&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;u-color:&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          context&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;report&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token literal-property property&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token literal-property property&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; 
-              &lt;span class=&quot;token string&quot;&gt;&quot;Manually check this element for color contrast against its background. Include tests for the state.&quot;&lt;/span&gt;
-          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token literal-property property&quot;&gt;meta&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token literal-property property&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;suggestion&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token literal-property property&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token literal-property property&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+				&lt;span class=&quot;token string&quot;&gt;&quot;Manually confirm contrast/Visual balance/Clarity and Consistency for color utility class use&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;token literal-property property&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Possible Accessibility Errors&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;token literal-property property&quot;&gt;recommended&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;token literal-property property&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://webaim.org/resources/contrastchecker/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;token function-variable function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token function-variable function&quot;&gt;JSXAttribute&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+					node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;className&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt;
+					node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;raw&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;u-color:&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+					context&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;report&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+						&lt;span class=&quot;token literal-property property&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+						&lt;span class=&quot;token literal-property property&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+								1. Manually check this element for color contrast against its background. Include tests for the interaction states if applicable. 
+								2. Check if this color is applied to more than 10% of the page; one color should not overpower the other colors on the page.
+								3. Is this color used to convey meaning consistently across the application, and does the selected color use align with conventional use or have mismatched cultural connotations to your user?
+								4. Check to see if color alone is being used to convey information, and ensure text and graphics are understandable when viewed without color.
+							&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+					&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;documentation-and-guidance&quot; tabindex=&quot;-1&quot;&gt;Documentation and guidance &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Document high-level design guidance and technical implementation details next to each other on the same page...&lt;/p&gt;
-&lt;h2 id=&quot;example-guidance&quot; tabindex=&quot;-1&quot;&gt;Example guidance &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;b-documentation-and-guidance&quot; tabindex=&quot;-1&quot;&gt;B. Documentation and guidance &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In a Design System, documenting design guidance/considerations in the same place as the technical implementation guidance is a good idea (not new a new idea).
+Here is a sample of some color utility guidance we provide for our status color utilities. The guidance is short and clear. It demonstrates how to use each utility in the context it is best suited to by giving specific examples of when each is appropriate and general warnings to consider when applying color to a UI using utility classes.&lt;/p&gt;
+&lt;h4 id=&quot;example-guidance&quot; tabindex=&quot;-1&quot;&gt;Example guidance &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;⚠️ Color should be used with purpose and never as decoration. Never use color alone to convey information. Ensure that colored text and graphics are understandable when viewed without color. &lt;a href=&quot;https://webaim.org/resources/contrastchecker/&quot;&gt;Test your foreground and background color combinations&lt;/a&gt; to ensure there is enough contrast between them. Colorblind and low-vision users may not be able to perceive the color differences, and screen readers do not announce colors to non-sighted readers.&lt;/p&gt;
-&lt;h2 id=&quot;support-colors&quot; tabindex=&quot;-1&quot;&gt;Support colors &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h5&gt;Support colors&lt;/h5&gt;
 &lt;p&gt;Conventionally, red represents danger or error, yellow represents a warning, green represents normal or success, and blue represents passive information.&lt;/p&gt;
-&lt;h3 id=&quot;success&quot; tabindex=&quot;-1&quot;&gt;Success &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h6&gt;Success&lt;/h6&gt;
 &lt;p&gt;Use for Success, Confirmed, Completed, or On states.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;element&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;u-color:success&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;✅ Application submitted
 Your reference number is HDJ2123F.
 Example of appropriate use of the success color on a status indicator&lt;/p&gt;
-&lt;h3 id=&quot;warning&quot; tabindex=&quot;-1&quot;&gt;Warning &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h6&gt;Warning&lt;/h6&gt;
 &lt;p&gt;Use for Warning and Caution states.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;element&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;u-color:warning&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;⚠️ Verification required
 Example of appropriate use of the warning color on a status indicator&lt;/p&gt;
-&lt;h3 id=&quot;danger&quot; tabindex=&quot;-1&quot;&gt;Danger &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h6&gt;Danger&lt;/h6&gt;
 &lt;p&gt;Use for Error, Failure, Reduction, Cancellation, and Incorrect usage states.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;element&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;u-color:danger&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;🔻$4.04&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Example of appropriate use of the danger color on an adjustment indicator&lt;/p&gt;
-&lt;h3 id=&quot;info&quot; tabindex=&quot;-1&quot;&gt;Info &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/design-system-color-utilities/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h6&gt;Info&lt;/h6&gt;
 &lt;p&gt;Use for Additional information, Help and Exceptions states.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;element&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;u-color:info&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;ℹ️ Planned office closure
@@ -580,7 +619,7 @@ Example of appropriate use of the info color on a status indicator&lt;/p&gt;
 	</entry>
 	
 	<entry>
-		<title>Side project: Mandala generator</title>
+		<title>Mandala generator</title>
 		<link href="https://david-way.github.io/blog/mandala-generator/"/>
 		<updated>2021-01-02T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/mandala-generator/</id>

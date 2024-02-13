@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>screen-size-vs-dynamic-content</title>
+    <g id="screen-size-vs-dynamic-content" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(334.000000, 325.000000)">
+            <rect id="Rectangle" stroke="#979797" stroke-width="3" x="1.5" y="1.5" width="478" height="246" rx="10"></rect>
+            <g id="Group-3" transform="translate(29.000000, 35.000000)" fill="#D8D8D8">
+                <g id="Group-2" transform="translate(84.000000, 4.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="658" height="22"></rect>
+                    <rect id="Rectangle" x="0" y="29" width="197" height="13"></rect>
+                    <rect id="Rectangle" x="0" y="49" width="92" height="13"></rect>
+                </g>
+                <ellipse id="Oval" cx="34.5" cy="35" rx="34.5" ry="35"></ellipse>
+            </g>
+            <rect id="Rectangle" fill="#D8D8D8" x="29" y="119" width="368" height="24"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="29" y="157" width="368" height="24"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="29" y="195" width="90" height="24"></rect>
+        </g>
+    </g>
+</svg>
