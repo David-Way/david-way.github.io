@@ -67,21 +67,19 @@
 // 🏗️ Layer
 //--------------------
 @mixin layer($layer) {
-	@if map-has-key(variables.$layer-shadows, $layer) {
-		box-shadow: #{map.get(variables.$layer-shadows, $layer)};
+	@if not map-has-key(variables.$layer-shadows, $layer) {
+		@warn "❗ #{$layer} is not a valid layer.";
 	}
-	else {
-		@warn '#{$layer} is not a valid layer.';
-	}
+
+	box-shadow: #{map.get(variables.$layer-shadows, $layer)};
 }
 
 @mixin getZIndexFor($index-for) {
-	@if map-has-key(variables.$z-index, $index-for) {
-		z-index: #{map.get(variables.$z-index, $index-for)};
+	@if not map-has-key(variables.$z-index, $index-for) {
+		@warn '❗ #{$index-for} does not have a valid z-index.';
 	}
-	else {
-		@warn '#{$index-for} does not have a valid z-index.';
-	}
+
+	z-index: #{map.get(variables.$z-index, $index-for)};
 }
 
 //--------------------

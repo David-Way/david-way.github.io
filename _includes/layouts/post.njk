@@ -16,8 +16,8 @@ layout: layouts/base.njk
 {{ content | safe }}
 
 {%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- set previousPost = collections.posts | filterPublished | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | filterPublished | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul class="c-iterator-links">
 	{%- if previousPost %}

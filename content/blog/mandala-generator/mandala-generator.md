@@ -1,6 +1,7 @@
 ---
-title: "Side project: Mandala generator"
-description: Challenging UI
+title: "Mandala generator"
+description: Challenging UI side project
+publish: true
 date: 2021-01-02
 tags:
   - prototype

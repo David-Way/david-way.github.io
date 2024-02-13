@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>traditional-grid</title>
+    <defs>
+        <path d="M10.2555408,-4.14336123e-16 L1281.74446,4.14336123e-16 C1285.31053,-2.4074122e-16 1286.60368,0.371302445 1287.90738,1.06853082 C1289.21109,1.76575919 1290.23424,2.78891348 1290.93147,4.09261719 C1291.6287,5.39632089 1292,6.68946584 1292,10.2555408 L1292,876.744459 C1292,880.310534 1291.6287,881.603679 1290.93147,882.907383 C1290.23424,884.211087 1289.21109,885.234241 1287.90738,885.931469 C1286.60368,886.628698 1285.31053,887 1281.74446,887 L10.2555408,887 C6.68946584,887 5.39632089,886.628698 4.09261719,885.931469 C2.78891348,885.234241 1.76575919,884.211087 1.06853082,882.907383 C0.371302445,881.603679 1.60494146e-16,880.310534 -2.76224082e-16,876.744459 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="path-1"></path>
+        <filter x="-0.9%" y="-0.8%" width="101.7%" height="102.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 1292 0 1292 887 0 887"></polygon>
+        <filter x="-0.4%" y="-0.5%" width="100.8%" height="101.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.1277704,1.95404733e-17 L1046.87223,4.33876596e-16 C1048.65527,-2.52094797e-16 1049.30184,0.185651222 1049.95369,0.534265408 C1050.60554,0.882879593 1051.11712,1.39445674 1051.46573,2.04630859 C1051.81435,2.69816044 1052,3.34473292 1052,5.1277704 L1052,22.8722296 C1052,24.6552671 1051.81435,25.3018396 1051.46573,25.9536914 C1051.11712,26.6055433 1050.60554,27.1171204 1049.95369,27.4657346 C1049.30184,27.8143488 1048.65527,28 1046.87223,28 L5.1277704,28 C3.34473292,28 2.69816044,27.8143488 2.04630859,27.4657346 C1.39445674,27.1171204 0.882879593,26.6055433 0.534265408,25.9536914 C0.185651222,25.3018396 5.30516965e-16,24.6552671 -9.13064838e-16,22.8722296 L3.64820576e-16,5.1277704 C-2.11971261e-16,3.34473292 0.185651222,2.69816044 0.534265408,2.04630859 C0.882879593,1.39445674 1.39445674,0.882879593 2.04630859,0.534265408 C2.69816044,0.185651222 3.34473292,-1.13535777e-17 5.1277704,1.95404733e-17 Z" id="path-6"></path>
+        <filter x="-0.0%" y="-1.8%" width="100.1%" height="103.6%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M10.2555408,-4.14336123e-16 L679.744459,4.14336123e-16 C683.310534,-2.4074122e-16 684.603679,0.371302445 685.907383,1.06853082 C687.211087,1.76575919 688.234241,2.78891348 688.931469,4.09261719 C689.628698,5.39632089 690,6.68946584 690,10.2555408 L690,876.744459 C690,880.310534 689.628698,881.603679 688.931469,882.907383 C688.234241,884.211087 687.211087,885.234241 685.907383,885.931469 C684.603679,886.628698 683.310534,887 679.744459,887 L10.2555408,887 C6.68946584,887 5.39632089,886.628698 4.09261719,885.931469 C2.78891348,885.234241 1.76575919,884.211087 1.06853082,882.907383 C0.371302445,881.603679 1.60494146e-16,880.310534 -2.76224082e-16,876.744459 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="path-8"></path>
+        <filter x="-1.6%" y="-0.8%" width="103.2%" height="102.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-11" points="0 0 690 0 690 887 0 887"></polygon>
+        <filter x="-0.7%" y="-0.5%" width="101.4%" height="101.1%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.1277704,-2.07168062e-16 L444.87223,2.07168062e-16 C446.655267,-1.2037061e-16 447.30184,0.185651222 447.953691,0.534265408 C448.605543,0.882879593 449.11712,1.39445674 449.465735,2.04630859 C449.814349,2.69816044 450,3.34473292 450,5.1277704 L450,22.8722296 C450,24.6552671 449.814349,25.3018396 449.465735,25.9536914 C449.11712,26.6055433 448.605543,27.1171204 447.953691,27.4657346 C447.30184,27.8143488 446.655267,28 444.87223,28 L5.1277704,28 C3.34473292,28 2.69816044,27.8143488 2.04630859,27.4657346 C1.39445674,27.1171204 0.882879593,26.6055433 0.534265408,25.9536914 C0.185651222,25.3018396 8.02470732e-17,24.6552671 -1.38112041e-16,22.8722296 L1.38112041e-16,5.1277704 C-8.02470732e-17,3.34473292 0.185651222,2.69816044 0.534265408,2.04630859 C0.882879593,1.39445674 1.39445674,0.882879593 2.04630859,0.534265408 C2.69816044,0.185651222 3.34473292,1.2037061e-16 5.1277704,-2.07168062e-16 Z" id="path-13"></path>
+        <filter x="-0.1%" y="-1.8%" width="100.2%" height="103.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M10.2555408,-4.14336123e-16 L411.744459,4.14336123e-16 C415.310534,-2.4074122e-16 416.603679,0.371302445 417.907383,1.06853082 C419.211087,1.76575919 420.234241,2.78891348 420.931469,4.09261719 C421.628698,5.39632089 422,6.68946584 422,10.2555408 L422,876.744459 C422,880.310534 421.628698,881.603679 420.931469,882.907383 C420.234241,884.211087 419.211087,885.234241 417.907383,885.931469 C416.603679,886.628698 415.310534,887 411.744459,887 L10.2555408,887 C6.68946584,887 5.39632089,886.628698 4.09261719,885.931469 C2.78891348,885.234241 1.76575919,884.211087 1.06853082,882.907383 C0.371302445,881.603679 1.60494146e-16,880.310534 -2.76224082e-16,876.744459 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="path-15"></path>
+        <filter x="-2.6%" y="-0.8%" width="105.2%" height="102.5%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-18" points="0 0 422 0 422 887 0 887"></polygon>
+        <filter x="-1.2%" y="-0.5%" width="102.4%" height="101.1%" filterUnits="objectBoundingBox" id="filter-19">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.1277704,-2.07168062e-16 L176.87223,2.07168062e-16 C178.655267,-1.2037061e-16 179.30184,0.185651222 179.953691,0.534265408 C180.605543,0.882879593 181.11712,1.39445674 181.465735,2.04630859 C181.814349,2.69816044 182,3.34473292 182,5.1277704 L182,22.8722296 C182,24.6552671 181.814349,25.3018396 181.465735,25.9536914 C181.11712,26.6055433 180.605543,27.1171204 179.953691,27.4657346 C179.30184,27.8143488 178.655267,28 176.87223,28 L5.1277704,28 C3.34473292,28 2.69816044,27.8143488 2.04630859,27.4657346 C1.39445674,27.1171204 0.882879593,26.6055433 0.534265408,25.9536914 C0.185651222,25.3018396 8.02470732e-17,24.6552671 -1.38112041e-16,22.8722296 L1.38112041e-16,5.1277704 C-8.02470732e-17,3.34473292 0.185651222,2.69816044 0.534265408,2.04630859 C0.882879593,1.39445674 1.39445674,0.882879593 2.04630859,0.534265408 C2.69816044,0.185651222 3.34473292,1.2037061e-16 5.1277704,-2.07168062e-16 Z" id="path-20"></path>
+        <filter x="-0.3%" y="-1.8%" width="100.5%" height="103.6%" filterUnits="objectBoundingBox" id="filter-21">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="traditional-grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(74.000000, 15.000000)">
+            <g id="Browser-window">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Window">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Image-goes-here" mask="url(#mask-2)">
+                    <g transform="translate(-1.000000, 0.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g id="Top-bar">
+                        <path d="M10.2555408,-4.14336123e-16 L1281.74446,4.14336123e-16 C1285.31053,-2.4074122e-16 1286.60368,0.371302445 1287.90738,1.06853082 C1289.21109,1.76575919 1290.23424,2.78891348 1290.93147,4.09261719 C1291.6287,5.39632089 1292,6.68946584 1292,10.2555408 L1292,50 L1292,50 L0,50 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="Rectangle" fill="#E8E8E8"></path>
+                        <rect id="Maximize" fill="#28CA42" x="60" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Minimize" fill="#FFBE2F" x="42" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Close" fill="#FF5F57" x="24" y="19" width="12" height="12" rx="6"></rect>
+                        <path d="M1268,31 L1268,35 L1244,35 L1244,31 L1268,31 Z M1268,23 L1268,27 L1244,27 L1244,23 L1268,23 Z M1268,15 L1268,19 L1244,19 L1244,15 L1268,15 Z" id="Menu" fill="#B3B3B3"></path>
+                        <g id="Address-bar" transform="translate(120.000000, 11.000000)">
+                            <g>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            </g>
+                            <text id="Slug" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="163" y="20">/1</tspan>
+                            </text>
+                            <text id="Domain" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#000000">
+                                <tspan x="75" y="20">my-grid.com</tspan>
+                            </text>
+                            <text id="://" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="61" y="20">://</tspan>
+                            </text>
+                            <text id="https" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#088043">
+                                <tspan x="26" y="20">https</tspan>
+                            </text>
+                            <path d="M14.9298246,12.0178571 L14.9298246,10.8660714 C14.9298246,10.3839262 14.739768,9.96875174 14.3596491,9.62053571 C13.9795303,9.27231969 13.5263184,9.09821429 13,9.09821429 C12.4736816,9.09821429 12.0204697,9.27231969 11.6403509,9.62053571 C11.260232,9.96875174 11.0701754,10.3839262 11.0701754,10.8660714 L11.0701754,12.0178571 L14.9298246,12.0178571 Z M16.7426901,12.0178571 C17.0740757,12.0178571 17.3664705,12.1294632 17.619883,12.3526786 C17.8732956,12.575894 18,12.8392842 18,13.1428571 L18,18.875 C18,19.1785729 17.8732956,19.4419632 17.619883,19.6651786 C17.3664705,19.888394 17.0740757,20 16.7426901,20 L9.25730994,20 C8.92592427,20 8.63352953,19.888394 8.38011696,19.6651786 C8.12670439,19.4419632 8,19.1785729 8,18.875 L8,13.1428571 C8,12.8392842 8.12670439,12.575894 8.38011696,12.3526786 C8.63352953,12.1294632 8.92592427,12.0178571 9.25730994,12.0178571 L9.87134503,12.0178571 L9.87134503,10.8660714 C9.87134503,10.0803532 10.1783595,9.40625281 10.7923977,8.84375 C11.4064358,8.28124719 12.1422959,8 13,8 C13.8577041,8 14.5935642,8.28124719 15.2076023,8.84375 C15.8216405,9.40625281 16.128655,10.0803532 16.128655,10.8660714 L16.128655,12.0178571 L16.7426901,12.0178571 Z" id="icon" fill="#088043"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="grid1" transform="translate(46.000000, 90.000000)">
+                <rect id="Rectangle" fill="#D8D8D8" x="11" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="308" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="606" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="903" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="1199" height="167"></rect>
+                <text id="25%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="118" y="96">25%</tspan>
+                </text>
+                <text id="25%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="415" y="96">25%</tspan>
+                </text>
+                <text id="25%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="713" y="96">25%</tspan>
+                </text>
+                <text id="25%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="1010" y="96">25%</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group" transform="translate(118.000000, 375.000000)">
+            <g id="Browser-window">
+                <mask id="mask-9" fill="white">
+                    <use xlink:href="#path-8"></use>
+                </mask>
+                <g id="Window">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-8"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                </g>
+                <g id="Image-goes-here" mask="url(#mask-9)">
+                    <g transform="translate(-1.000000, 0.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    </g>
+                </g>
+                <g id="Group" mask="url(#mask-9)">
+                    <g id="Top-bar">
+                        <path d="M10.2555408,-4.14336123e-16 L679.744459,4.14336123e-16 C683.310534,-2.4074122e-16 684.603679,0.371302445 685.907383,1.06853082 C687.211087,1.76575919 688.234241,2.78891348 688.931469,4.09261719 C689.628698,5.39632089 690,6.68946584 690,10.2555408 L690,50 L690,50 L0,50 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="Rectangle" fill="#E8E8E8"></path>
+                        <rect id="Maximize" fill="#28CA42" x="60" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Minimize" fill="#FFBE2F" x="42" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Close" fill="#FF5F57" x="24" y="19" width="12" height="12" rx="6"></rect>
+                        <path d="M666,31 L666,35 L642,35 L642,31 L666,31 Z M666,23 L666,27 L642,27 L642,23 L666,23 Z M666,15 L666,19 L642,19 L642,15 L666,15 Z" id="Menu" fill="#B3B3B3"></path>
+                        <g id="Address-bar" transform="translate(120.000000, 11.000000)">
+                            <g>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                            </g>
+                            <text id="Slug" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="163" y="20">/1</tspan>
+                            </text>
+                            <text id="Domain" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#000000">
+                                <tspan x="75" y="20">my-grid.com</tspan>
+                            </text>
+                            <text id="://" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="61" y="20">://</tspan>
+                            </text>
+                            <text id="https" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#088043">
+                                <tspan x="26" y="20">https</tspan>
+                            </text>
+                            <path d="M14.9298246,12.0178571 L14.9298246,10.8660714 C14.9298246,10.3839262 14.739768,9.96875174 14.3596491,9.62053571 C13.9795303,9.27231969 13.5263184,9.09821429 13,9.09821429 C12.4736816,9.09821429 12.0204697,9.27231969 11.6403509,9.62053571 C11.260232,9.96875174 11.0701754,10.3839262 11.0701754,10.8660714 L11.0701754,12.0178571 L14.9298246,12.0178571 Z M16.7426901,12.0178571 C17.0740757,12.0178571 17.3664705,12.1294632 17.619883,12.3526786 C17.8732956,12.575894 18,12.8392842 18,13.1428571 L18,18.875 C18,19.1785729 17.8732956,19.4419632 17.619883,19.6651786 C17.3664705,19.888394 17.0740757,20 16.7426901,20 L9.25730994,20 C8.92592427,20 8.63352953,19.888394 8.38011696,19.6651786 C8.12670439,19.4419632 8,19.1785729 8,18.875 L8,13.1428571 C8,12.8392842 8.12670439,12.575894 8.38011696,12.3526786 C8.63352953,12.1294632 8.92592427,12.0178571 9.25730994,12.0178571 L9.87134503,12.0178571 L9.87134503,10.8660714 C9.87134503,10.0803532 10.1783595,9.40625281 10.7923977,8.84375 C11.4064358,8.28124719 12.1422959,8 13,8 C13.8577041,8 14.5935642,8.28124719 15.2076023,8.84375 C15.8216405,9.40625281 16.128655,10.0803532 16.128655,10.8660714 L16.128655,12.0178571 L16.7426901,12.0178571 Z" id="icon" fill="#088043"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="grid1" transform="translate(42.000000, 90.000000)">
+                <rect id="Rectangle" fill="#D8D8D8" x="11" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="308" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="11" y="168" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="308" y="168" width="286" height="144"></rect>
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="605" height="323"></rect>
+                <text id="50%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="118" y="96">50%</tspan>
+                </text>
+                <text id="50%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="415" y="96">50%</tspan>
+                </text>
+                <text id="50%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="118" y="252">50%</tspan>
+                </text>
+                <text id="50%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="415" y="252">50%</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group" transform="translate(868.000000, 304.000000)">
+            <g id="Browser-window">
+                <mask id="mask-16" fill="white">
+                    <use xlink:href="#path-15"></use>
+                </mask>
+                <g id="Window">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-15"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                </g>
+                <g id="Image-goes-here" mask="url(#mask-16)">
+                    <g transform="translate(-1.000000, 0.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-18"></use>
+                    </g>
+                </g>
+                <g id="Group" mask="url(#mask-16)">
+                    <g id="Top-bar">
+                        <path d="M10.2555408,-4.14336123e-16 L411.744459,4.14336123e-16 C415.310534,-2.4074122e-16 416.603679,0.371302445 417.907383,1.06853082 C419.211087,1.76575919 420.234241,2.78891348 420.931469,4.09261719 C421.628698,5.39632089 422,6.68946584 422,10.2555408 L422,50 L422,50 L0,50 L2.76224082e-16,10.2555408 C-1.60494146e-16,6.68946584 0.371302445,5.39632089 1.06853082,4.09261719 C1.76575919,2.78891348 2.78891348,1.76575919 4.09261719,1.06853082 C5.39632089,0.371302445 6.68946584,2.4074122e-16 10.2555408,-4.14336123e-16 Z" id="Rectangle" fill="#E8E8E8"></path>
+                        <rect id="Maximize" fill="#28CA42" x="60" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Minimize" fill="#FFBE2F" x="42" y="19" width="12" height="12" rx="6"></rect>
+                        <rect id="Close" fill="#FF5F57" x="24" y="19" width="12" height="12" rx="6"></rect>
+                        <path d="M398,31 L398,35 L374,35 L374,31 L398,31 Z M398,23 L398,27 L374,27 L374,23 L398,23 Z M398,15 L398,19 L374,19 L374,15 L398,15 Z" id="Menu" fill="#B3B3B3"></path>
+                        <g id="Address-bar" transform="translate(120.000000, 11.000000)">
+                            <g>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-20"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
+                            </g>
+                            <text id="Slug" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="163" y="20">/1</tspan>
+                            </text>
+                            <text id="Domain" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#000000">
+                                <tspan x="75" y="20">my-grid.com</tspan>
+                            </text>
+                            <text id="://" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#808080">
+                                <tspan x="61" y="20">://</tspan>
+                            </text>
+                            <text id="https" font-family="ArialMT, Arial" font-size="16" font-weight="normal" line-spacing="16" fill="#088043">
+                                <tspan x="26" y="20">https</tspan>
+                            </text>
+                            <path d="M14.9298246,12.0178571 L14.9298246,10.8660714 C14.9298246,10.3839262 14.739768,9.96875174 14.3596491,9.62053571 C13.9795303,9.27231969 13.5263184,9.09821429 13,9.09821429 C12.4736816,9.09821429 12.0204697,9.27231969 11.6403509,9.62053571 C11.260232,9.96875174 11.0701754,10.3839262 11.0701754,10.8660714 L11.0701754,12.0178571 L14.9298246,12.0178571 Z M16.7426901,12.0178571 C17.0740757,12.0178571 17.3664705,12.1294632 17.619883,12.3526786 C17.8732956,12.575894 18,12.8392842 18,13.1428571 L18,18.875 C18,19.1785729 17.8732956,19.4419632 17.619883,19.6651786 C17.3664705,19.888394 17.0740757,20 16.7426901,20 L9.25730994,20 C8.92592427,20 8.63352953,19.888394 8.38011696,19.6651786 C8.12670439,19.4419632 8,19.1785729 8,18.875 L8,13.1428571 C8,12.8392842 8.12670439,12.575894 8.38011696,12.3526786 C8.63352953,12.1294632 8.92592427,12.0178571 9.25730994,12.0178571 L9.87134503,12.0178571 L9.87134503,10.8660714 C9.87134503,10.0803532 10.1783595,9.40625281 10.7923977,8.84375 C11.4064358,8.28124719 12.1422959,8 13,8 C13.8577041,8 14.5935642,8.28124719 15.2076023,8.84375 C15.8216405,9.40625281 16.128655,10.0803532 16.128655,10.8660714 L16.128655,12.0178571 L16.7426901,12.0178571 Z" id="icon" fill="#088043"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="grid1" transform="translate(56.000000, 90.000000)">
+                <rect id="Rectangle" fill="#D8D8D8" x="12" y="12" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="12" y="324" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="12" y="168" width="286" height="144"></rect>
+                <rect id="Rectangle" fill="#D8D8D8" x="12" y="480" width="286" height="144"></rect>
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="309" height="657"></rect>
+                <text id="100%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="110" y="96">100%</tspan>
+                </text>
+                <text id="100%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="110" y="408">100%</tspan>
+                </text>
+                <text id="100%" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="32" font-weight="500" fill="#343334">
+                    <tspan x="110" y="252">100%</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

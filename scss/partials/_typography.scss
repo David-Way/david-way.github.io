@@ -1,10 +1,7 @@
 @use "./variables";
 @use "./mixins";
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
-
 // 🔗 Reference: https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=400&minRatio=1.25&maxFontSize=18&maxWidth=1280&maxRatio=1.333&steps=x-sm%2Csm%2Cbase%2Cmd%2Clg%2Cxl%2Cxxl%2Cxxxl&baseStep=base&prefix=font-size&decimals=2&includeFallbacks=on&useRems=on&remValue=16&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1280
-
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
 	:root {
@@ -89,6 +86,10 @@ h6 {
 	margin-bottom: 0.2em;
 }
 
+h1::first-letter {
+	color: var(--color-prettylights-syntax-keyword);
+}
+
 p {
 	@include mixins.type-body();
 	line-height: 1.5;
@@ -104,7 +105,11 @@ li {
 }
 
 a {
-	color: var(--color-accent-fg);
+	color: currentColor;
+	text-underline-position: from-font;
+	text-decoration-color: var(--color-accent-fg);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2ex;
 	box-sizing: border-box;
 	padding: 0;
 	border: 0;
@@ -113,16 +118,20 @@ a {
 	font-size: 100%;
 	vertical-align: baseline;
 	outline: none;
-	text-decoration: none;
-	transition: color 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
 
 	&:hover,
 	&:active {
-		text-decoration: underline;
+		color: var(--color-accent-fg);
+		text-decoration-thickness: 2px;
+	}
+
+	&:visited {
+		color: currentColor;
 	}
 
 	&:focus-within {
 		@include mixins.focus();
+		text-decoration-thickness: 2px;
 	}
 }
 

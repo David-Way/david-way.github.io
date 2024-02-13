@@ -27,6 +27,11 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		text-wrap: balance;
+
+		&:visited {
+			color: var(--color-accent-fg);
+		}
 	}
 
 	&__link-label {

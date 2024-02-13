@@ -1,0 +1,39 @@
+.l-persona {
+	box-shadow: var(--shadow-floating-small);
+	border: 1px solid var(--color-border-default);
+	border-radius: 6px;
+	margin-block: var(--base-size-16);
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -24px;
+	}
+
+	img {
+		margin: 0;
+	}
+
+	&__meta,
+	&__content,
+	&__quotes {
+		margin: 24px;
+		padding: var(--base-size-16);
+	}
+
+	&__meta {
+		flex: 1 0 35ch;
+	}
+
+	&__content {
+		flex: 2 0 35ch;
+	}
+
+	&__quotes {
+		flex: 3 0 35ch;
+
+		& > * {
+			margin-inline: 0;
+		}
+	}
+}
