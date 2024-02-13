@@ -92,15 +92,12 @@ h1::first-letter {
 
 p {
 	@include mixins.type-body();
+	line-height: 1.5;
 	max-width: 60ch;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
-}
-
-p {
-	line-height: 1.5;
 }
 
 li {

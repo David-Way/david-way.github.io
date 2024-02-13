@@ -23,7 +23,7 @@ layout: layouts/base.njk
 	{%- if previousPost %}
 	<li class="c-iterator-links__link-item c-iterator-links__link-item--prev">
 		<a class="c-iterator-links__link" href="{{ previousPost.url }}">
-			<span class="c-iterator-links__link-label">Previous</span>
+			<span class="c-iterator-links__link-label">Previous post</span>
 			{{ previousPost.data.title }}
 		</a>
 	</li>
@@ -31,7 +31,7 @@ layout: layouts/base.njk
 	{%- if nextPost %}
 	<li class="c-iterator-links__link-item c-iterator-links__link-item--next">
 		<a class="c-iterator-links__link" href="{{ nextPost.url }}">
-			<span class="c-iterator-links__link-label">Next</span>
+			<span class="c-iterator-links__link-label">Next post</span>
 			{{ nextPost.data.title }}
 		</a>
 	</li>
