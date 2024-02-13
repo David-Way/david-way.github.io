@@ -22,7 +22,7 @@ The difference between a disabled button and a regular button is usually very su
 #### 1.1 What does disabling a button from a Screen Readers perspective mean?
 
 <details>
-  <summary>ℹ️ What is a <i>Screen Reader</i>?</summary>
+  <summary>What is a <i>Screen Reader</i>?</summary>
 
 A screen reader is assistive software primarily used by people with low or no vision. It converts the semantic elements on a web page (for example, text, buttons, images, and links) into audible speech or braille.
 
@@ -60,6 +60,7 @@ For example, let's look at the typical approach of using a disabled button to pr
 
 In other words, allow and use the user's premature interaction with the control as an opportunity to inform or guide them on how to continue.
 This principle can be applied to many instances where disabled buttons are commonly used.
+
 <!-- ## When should a disabled button be used
 
 ![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) -->
