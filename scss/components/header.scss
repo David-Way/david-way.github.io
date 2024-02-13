@@ -21,5 +21,9 @@
 		&:link:not(:hover) {
 			text-decoration: none;
 		}
+
+		&::first-letter {
+			color: var(--color-prettylights-syntax-keyword);
+		}
 	}
 }
