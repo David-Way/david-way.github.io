@@ -7,7 +7,7 @@
 
 	&__item {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		align-items: baseline;
 		counter-increment: start-from -1;
 		margin-bottom: 1em;
