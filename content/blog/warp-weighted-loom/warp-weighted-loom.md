@@ -11,7 +11,7 @@ tags:
 Building a product and watching other people use and get value from it is a very rewarding feeling and something I appreciate deeply about my job.
 Building tools for others to create with has somehow felt less rewarding to me. One step too far removed from the act of the craft maybe. Who wants to be the coach when you can be the player?
 
-However, I recently built a tool, a [stone aged warp weighted loom](https://en.wikipedia.org/wiki/Warp-weighted_loom), for a local weaving expert and I've found the feeling of creative reward really changes when you're supporting a star player like Marja, the Micheal Jordan of weaving let's call her.
+However, I recently built a tool, a [stone aged warp weighted loom](https://en.wikipedia.org/wiki/Warp-weighted_loom), for a local weaving expert and I've found the feeling of creative reward really changes when you're supporting a star player like Marja, the Michael Jordan of weaving let's call her.
 
 ## The Weaver
 
