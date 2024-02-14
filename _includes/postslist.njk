@@ -2,13 +2,15 @@
 <ol reversed class="c-post-list">
 {% for post in postslist | filterPublished | reverse %}
 	<li class="c-post-list__item{% if post.url == url %} c-post-list__item--active{% endif %}">
-		<a href="{{ post.url }}" class="c-post-list__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		
-		<div class="c-post-list__item-meta">
-			<time class="c-post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-			<span class="c-post-list__separator" aria-hidden="true">·</span>
-			<span class="c-post-list__reading-time">{{ post | readingTime }} read</span>
 		<div>
+			<a href="{{ post.url }}" class="c-post-list__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+			
+			<div class="c-post-list__item-meta">
+				<time class="c-post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+				<span class="c-post-list__separator" aria-hidden="true">·</span>
+				<span class="c-post-list__reading-time">{{ post | readingTime }} read</span>
+			<div>
+		</div>
 	</li>
 {% endfor %}
 </ol>

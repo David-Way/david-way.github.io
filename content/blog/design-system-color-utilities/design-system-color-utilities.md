@@ -9,7 +9,7 @@ tags:
   - a11y
 ---
 
-**Summary:** Providing color utilities in your design system can be a risk to the accessibility of the products built with it. Providing [automated, integrated accessibility testing and linting rules](#automation-and-tooling) can limit this risk, and providing [high-level design and usage guidance and technical implementation details together](#documentation-and-guidance) is a bonus, too.
+**Summary:** Providing color utilities in your design system can be a risk to the accessibility of the products built with it. Providing [automated, integrated accessibility testing and linting rules](#a-automation-and-tooling) can limit this risk, and providing [high-level design and usage guidance and technical implementation details together](#b-documentation-and-guidance) is a bonus, too.
 
 ## With great power...
 
