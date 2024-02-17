@@ -5,28 +5,28 @@
 // 📖 Typography
 //--------------------
 @mixin type-h1() {
-	font-size: var(--font-size-xxxl, 3.05rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xxxl, 3.05rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-h2() {
-	font-size: var(--font-size-xxl, 2.4rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xxl, 2.4rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-h3() {
-	font-size: var(--font-size-xl, 1.95rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-xl, 1.95rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-h4() {
-	font-size: var(--font-size-lg, 1.56rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-lg, 1.56rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-body-lead() {
-	font-size: var(--font-size-md, 1.25rem);
-	font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-md, 1.25rem) !important;
+	font-weight: variables.$font-weight-regular !important;
 }
 
 @mixin type-body() {
@@ -35,23 +35,23 @@
 }
 
 @mixin type-small() {
-	font-size: var(--font-size-sm, 0.8rem);
-	font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-sm, 0.8rem) !important;
+	font-weight: variables.$font-weight-regular !important;
 }
 
 @mixin type-x-small() {
-	font-size: var(--font-size-x-sm, 0.64rem);
-	font-weight: variables.$font-weight-regular;
+	font-size: var(--font-size-x-sm, 0.64rem) !important;
+	font-weight: variables.$font-weight-regular !important;
 }
 
 @mixin type-button() {
-	font-size: var(--font-size-base, 1rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-base, 1rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-button-small() {
-	font-size: var(--font-size-sm, 0.8rem);
-	font-weight: variables.$font-weight-bold;
+	font-size: var(--font-size-sm, 0.8rem) !important;
+	font-weight: variables.$font-weight-bold !important;
 }
 
 @mixin type-no-select() {
