@@ -63,6 +63,37 @@
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+@mixin style-link() {
+	color: currentColor;
+	text-underline-position: from-font;
+	text-decoration-color: var(--color-accent-fg);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2ex;
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: none;
+
+	&:hover,
+	&:active {
+		color: var(--color-accent-fg);
+		text-decoration-thickness: 2px;
+	}
+
+	&:visited {
+		color: currentColor;
+	}
+
+	&:focus-within {
+		@include focus();
+		text-decoration-thickness: 2px;
+	}
+}
+
 //--------------------
 // 🏗️ Layer
 //--------------------
