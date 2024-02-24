@@ -73,7 +73,13 @@
 
 	&__title {
 		@include mixins.type-small();
-		margin: 0;
+		@include mixins.style-link();
+		color: currentColor;
+		font-size: 1.1875em; /* 19px /16 */
+		font-weight: 600;
+		text-underline-position: from-font;
+		text-underline-offset: 0;
+		text-decoration-thickness: 1px;
 	}
 
 	&__sub-title {

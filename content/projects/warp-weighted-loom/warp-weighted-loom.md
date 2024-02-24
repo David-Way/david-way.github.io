@@ -2,6 +2,9 @@
 title: Building a Viking loom
 description: A side project
 publish: true
+gridShape: box
+order: 1
+thumbnail: warp-weighted-loom/images/warp-weighted-loom.jpg
 date: 2023-11-18
 tags:
   - woodwork
