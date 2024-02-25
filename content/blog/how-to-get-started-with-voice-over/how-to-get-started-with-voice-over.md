@@ -20,7 +20,7 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 
 These are the controls required to use VoiceOver to a basic level.
 
-<div class="u-bleed-container:medium">
+<div class="u-bleed-container:medium u-responsive-table-container">
 
 | Command                        | Keys                                                       | Notes                                                                                                 |
 | :----------------------------- | :--------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
