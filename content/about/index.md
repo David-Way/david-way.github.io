@@ -8,3 +8,8 @@ eleventyNavigation:
 # About Me
 
 I am a person that writes stuff.
+
+## Links
+
+- [GitHub](https://github.com/David-Way)
+- [LinkedIn](https://www.linkedin.com/in/david-way-ireland/)
