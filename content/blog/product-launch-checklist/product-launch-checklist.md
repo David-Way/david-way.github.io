@@ -25,11 +25,11 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 - Check that `prefers-reduced-motion` preference is honoured. Animations can trigger discomfort for those with vestibular motion disorders.
 
-**☑️ Bypass blocks**
+**☑️ Bypass blocks are available**
 
 - Can people navigate sequentially through content directly access to the primary content of the Web page. Does this page need a [skip link](https://www.w3.org/WAI/WCAG21/Techniques/?general/G1)?
 
-**☑️ Consistent and identifiable states**
+**☑️ Consistent and identifiable application states**
 
 - Does the focus and hover interactions for all interactive elements match?
 - Is the same language used for system state across the product?
@@ -38,7 +38,7 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 - Can every feature be be Perceived, Operated, Understood by using a keyboard or screen reader. Is the styling, features and content of your product robust? Can it be accessed on a wide variety of browsers and with a wide variety of assistive technologies?
 
-**☑️ Pointer gestures**
+**☑️ Pointer gestures are constant**
 
 - Are the correct pointers consistently displayed when you hover over and interact with elements on the page?
 
@@ -47,7 +47,7 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 - Double and then half your content (simulating language translation). Is that what you expected to happen? Are you seeing unexpected wrapping or truncation?
 - Change your browser zoom (`cmd`/`ctrl` and `+`/`-`) as your layout changes. Is that what you expected to happen? Are visual relationships between (established through spacing and proximity) maintained across different layouts?
 
-**☑️ Tab order and reading order**
+**☑️ Tab order and reading order matches**
 
 - What are the actions on this page? Can you access them using the keyboard only? Can you discover and interact with them using a screen reader? Is the order of content focused in a similar way that a sighted user consumes the content of the page?
 
@@ -59,33 +59,33 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 ## Content design
 
-**☑️ Valid heading structure**
+**☑️ Heading structure is valid**
 
 - Check that the semantic headings elements on the page reflect the page organization, skipping heading ranks can be confusing and should be avoided where possible.
 
-**☑️ Alternative text**
+**☑️ Alternative text is available**
 
 - Non decorative images have descriptive alternative text or
 - Captioning and transcripts is provided for any embedded, or linked to, video content.
 - Graphs have alternative tables
 
-**☑️ Error messaging**
+**☑️ Error messaging is helpful**
 
 - Do the messages associated with any error states you can trigger identify the problem and cause, and provide a solution (if possible)?
 
-**☑️ Input feedback**
+**☑️ Input feedback in place**
 
 - Input fields provide feedback at the correct time Inline errors should validate when the user leaves the field, not during interaction.
 - Form data that needs to be server side validated should summarize the errors at the top of the form and link to the fields or sections related to the errors.
 
-**☑️ Labels, instructions, page titles, and purposeful link text**
+**☑️ Labels, instructions, page titles, and links have purposeful text**
 
-- Do you links make sense on their own. Would someone reading the label of a link know the location that link will take them without needing to decern it from surrounding context?
+- Do your links make sense on their own. Would someone reading the label of a link know the location that link will take them without needing to decern it from surrounding context?
 - Are the page titles set correctly and consistently across the product?
 
 ## Visual design
 
-**☑️ Color contrast**
+**☑️ Color contrast passes minimum**
 
 - Change your preferred color scheme (light, dark, high contrast mode). Are your focus states, controls, icons, and images still accessible?
 
@@ -106,3 +106,5 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 - Are you displaying [faux fonts](https://fonts.google.com/knowledge/glossary/faux_fake_pseudo_synthesized)/font synthesis?
 - Are your fonts being applied correctly. Check with a device that doesn't have your selected fonts installed? Are suitable fallback fonts defined?
+
+🚢🚀🍻 Happy launching!
