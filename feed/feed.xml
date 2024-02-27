@@ -244,11 +244,11 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 &lt;ul&gt;
 &lt;li&gt;Check that &lt;code&gt;prefers-reduced-motion&lt;/code&gt; preference is honoured. Animations can trigger discomfort for those with vestibular motion disorders.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Bypass blocks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Bypass blocks are available&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Can people navigate sequentially through content directly access to the primary content of the Web page. Does this page need a &lt;a href=&quot;https://www.w3.org/WAI/WCAG21/Techniques/?general/G1&quot;&gt;skip link&lt;/a&gt;?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Consistent and identifiable states&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Consistent and identifiable application states&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Does the focus and hover interactions for all interactive elements match?&lt;/li&gt;
 &lt;li&gt;Is the same language used for system state across the product?&lt;/li&gt;
@@ -257,7 +257,7 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 &lt;ul&gt;
 &lt;li&gt;Can every feature be be Perceived, Operated, Understood by using a keyboard or screen reader. Is the styling, features and content of your product robust? Can it be accessed on a wide variety of browsers and with a wide variety of assistive technologies?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Pointer gestures&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Pointer gestures are constant&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Are the correct pointers consistently displayed when you hover over and interact with elements on the page?&lt;/li&gt;
 &lt;/ul&gt;
@@ -266,7 +266,7 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 &lt;li&gt;Double and then half your content (simulating language translation). Is that what you expected to happen? Are you seeing unexpected wrapping or truncation?&lt;/li&gt;
 &lt;li&gt;Change your browser zoom (&lt;code&gt;cmd&lt;/code&gt;/&lt;code&gt;ctrl&lt;/code&gt; and &lt;code&gt;+&lt;/code&gt;/&lt;code&gt;-&lt;/code&gt;) as your layout changes. Is that what you expected to happen? Are visual relationships between (established through spacing and proximity) maintained across different layouts?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Tab order and reading order&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Tab order and reading order matches&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;What are the actions on this page? Can you access them using the keyboard only? Can you discover and interact with them using a screen reader? Is the order of content focused in a similar way that a sighted user consumes the content of the page?&lt;/li&gt;
 &lt;/ul&gt;
@@ -277,32 +277,32 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 &lt;li&gt;Are images only as large as they need to be? Is there a significant page re-layout or &lt;a href=&quot;https://www.afasterweb.com/2015/08/29/what-the-jank/&quot;&gt;jank&lt;/a&gt; caused as content and media finish loading?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;content-design&quot; tabindex=&quot;-1&quot;&gt;Content design &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/product-launch-checklist/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Valid heading structure&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Heading structure is valid&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Check that the semantic headings elements on the page reflect the page organization, skipping heading ranks can be confusing and should be avoided where possible.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Alternative text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Alternative text is available&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Non decorative images have descriptive alternative text or&lt;/li&gt;
 &lt;li&gt;Captioning and transcripts is provided for any embedded, or linked to, video content.&lt;/li&gt;
 &lt;li&gt;Graphs have alternative tables&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Error messaging&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Error messaging is helpful&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Do the messages associated with any error states you can trigger identify the problem and cause, and provide a solution (if possible)?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Input feedback&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Input feedback in place&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Input fields provide feedback at the correct time Inline errors should validate when the user leaves the field, not during interaction.&lt;/li&gt;
 &lt;li&gt;Form data that needs to be server side validated should summarize the errors at the top of the form and link to the fields or sections related to the errors.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Labels, instructions, page titles, and purposeful link text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Labels, instructions, page titles, and links have purposeful text&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Do you links make sense on their own. Would someone reading the label of a link know the location that link will take them without needing to decern it from surrounding context?&lt;/li&gt;
+&lt;li&gt;Do your links make sense on their own. Would someone reading the label of a link know the location that link will take them without needing to decern it from surrounding context?&lt;/li&gt;
 &lt;li&gt;Are the page titles set correctly and consistently across the product?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;visual-design&quot; tabindex=&quot;-1&quot;&gt;Visual design &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/product-launch-checklist/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;☑️ Color contrast&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;☑️ Color contrast passes minimum&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Change your preferred color scheme (light, dark, high contrast mode). Are your focus states, controls, icons, and images still accessible?&lt;/li&gt;
 &lt;/ul&gt;
@@ -324,6 +324,7 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 &lt;li&gt;Are you displaying &lt;a href=&quot;https://fonts.google.com/knowledge/glossary/faux_fake_pseudo_synthesized&quot;&gt;faux fonts&lt;/a&gt;/font synthesis?&lt;/li&gt;
 &lt;li&gt;Are your fonts being applied correctly. Check with a device that doesn&#39;t have your selected fonts installed? Are suitable fallback fonts defined?&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;🚢🚀🍻 Happy launching!&lt;/p&gt;
 </content>
 	</entry>
 	
