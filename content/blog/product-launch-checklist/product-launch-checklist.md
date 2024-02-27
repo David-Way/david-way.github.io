@@ -4,7 +4,7 @@ description: Finalizing your delivery
 publish: true
 date: 2022-01-16
 tags:
-  - ux
+  - web design
   - product design
   - a11y
   - html
