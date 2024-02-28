@@ -13,7 +13,7 @@ tags:
 
 Your requirements are met, your users are excited, your testing is complete, and your team is racing toward the finish line of another successful delivery…
 
-You probably didn't forget anything, but just to be sure, here's a final polish checklist to put your mind at ease before you push this thing out the door.
+You probably didn't forget anything, anything that's easy to overlook. Just to be sure though, here's a final polish checklist to put your mind at ease before you push this thing out the door.
 
 ## Interaction design
 
@@ -38,7 +38,7 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 - Can every feature be be Perceived, Operated, Understood by using a keyboard or screen reader. Is the styling, features and content of your product robust? Can it be accessed on a wide variety of browsers and with a wide variety of assistive technologies?
 
-**☑️ Pointer gestures are constant**
+**☑️ Pointer gestures are consistent**
 
 - Are the correct pointers consistently displayed when you hover over and interact with elements on the page?
 
@@ -75,8 +75,9 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 **☑️ Input feedback in place**
 
-- Input fields provide feedback at the correct time Inline errors should validate when the user leaves the field, not during interaction.
+- Input fields provide feedback at the correct time. Inline errors should validate when the user leaves the field, not during interaction.
 - Form data that needs to be server side validated should summarize the errors at the top of the form and link to the fields or sections related to the errors.
+- The correct virtual keyboard type is displayed for each input field (type and input node - text, tel, url, email, numeric, decimal, and search).
 
 **☑️ Labels, instructions, page titles, and links have purposeful text**
 
@@ -85,11 +86,11 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 ## Visual design
 
-**☑️ Color contrast passes minimum**
+**☑️ Color contrast passes AA minimum**
 
 - Change your preferred color scheme (light, dark, high contrast mode). Are your focus states, controls, icons, and images still accessible?
 
-**☑️ Color usage**
+**☑️ Color usage is purposeful but not overloaded**
 
 - Use color with purpose and never as decoration. Never use color alone to convey information; ensure that colored text and graphics are understandable when viewed without color. Color-blind and low-vision users may not be able to perceive the color differences, and screen readers do not announce colors to non-sighted readers.
 
@@ -97,7 +98,7 @@ You probably didn't forget anything, but just to be sure, here's a final polish 
 
 - Check the printed versions of each page. As backgrounds styles will be removed when printing it is important to check that information and state is not lost. This is commonly forgotten with customized checkbox and select form elements.
 
-**☑️ Consistent visuals**
+**☑️ Graphics are consistent**
 
 - Are your icons and pictograms all from the same suite? If not, are the tone, style and stroke sizes consistent?
 - Is all content sentence case or all title case? Check to make sure you have a single approach.
