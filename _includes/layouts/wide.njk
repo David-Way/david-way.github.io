@@ -49,8 +49,11 @@
 			{{ content | safe }}
 		</main>
 
-		<footer class="c-footer">Site and contents by david way</footer>
-
+		<footer class="c-footer">
+			<div class="c-footer__nav">
+				Site and contents by {{ metadata.author.name }}
+			</div>
+		</footer>
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>

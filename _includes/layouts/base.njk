@@ -56,8 +56,28 @@ Site manifesto:
 			{{ content | safe }}
 		</main>
 
-		<footer class="c-footer">Site and contents by david way</footer>
+		<footer class="c-footer">
+			<div class="c-footer__nav">
+				Site and contents by {{ metadata.author.name }}
+			</div>
 
+			{% if (page.url === '/') and (pagespeedapi.categories !== undefined) %}
+			<div class="c-footer__meta">
+				<p id="page-speed-insight-scores" class="u-type:x-small u-type:meta">PageSpeed Insights</p>
+				<ul class="c-page-speed-indicator" aria-labelledby="page-speed-insight-scores">
+					{% for key, result in pagespeedapi.categories %}
+					<li class="c-page-speed-indicator-metric">
+						<div class="c-page-speed-indicator-metric__container">
+							<span class="c-page-speed-indicator-metric__gauge {{ 'c-page-speed-indicator-metric__gauge--bad' if result.grade === 'bad' }}{{ 'c-page-speed-indicator-metric__gauge--ok' if result.grade === 'ok' }}{{ 'c-page-speed-indicator-metric__gauge--good' if result.grade === 'good' }}"></span>
+							<span class="c-page-speed-indicator-metric__score">{{ result.score }}</span>
+						</div>
+						<span class="c-page-speed-indicator-metric__label">{{ result.title }} </span>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+		</footer>
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
