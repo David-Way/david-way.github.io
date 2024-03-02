@@ -1,5 +1,7 @@
 # Eleventy
 _site/
+.env
+.cache
 
 # Dependencies
 /node_modules

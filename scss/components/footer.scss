@@ -1,10 +1,17 @@
 @use "../partials/mixins";
 
 .c-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	max-width: 64rem;
 	margin-inline: auto;
 	position: sticky;
 	top: 100vh;
+	gap: var(--base-size-16);
 	padding: var(--base-size-16);
-	// border-top: 1px solid var(--color-border-default);
+
+	&__nav {
+		align-self: flex-end;
+	}
 }
