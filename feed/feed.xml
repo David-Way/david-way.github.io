@@ -530,55 +530,6 @@ Ideation leads to storyboarding, a new To-Be experience to be prototyped and val
 	</entry>
 	
 	<entry>
-		<title>A time management tool for group work</title>
-		<link href="https://david-way.github.io/blog/group-time-management/"/>
-		<updated>2021-02-15T00:00:00Z</updated>
-		<id>https://david-way.github.io/blog/group-time-management/</id>
-		<content type="html">&lt;p&gt;I&#39;m not the most naturally gifted time manager in the world. Time management software and practices are an indispensable pillar of my day-to-day life. Time-blocking, Pomodoro timers, shared calendars, scheduled notifications, I&#39;ve tried and relied on them all.&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
-&lt;span&gt;
-Some of my recent favorite tools include &lt;a href=&quot;https://ticktick.com/?language=en_US&quot;&gt;TickTick&lt;/a&gt;, the &lt;code&gt;/remind me&lt;/code&gt; command in &lt;a href=&quot;https://slack.com/intl/en-ie/help/articles/208423427-Set-a-reminder&quot;&gt;Slack&lt;/a&gt;, and any messaging app with scheduled send functionality!
-&lt;/span&gt;
-&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;One area where time management can be extra challenging is when you&#39;re also managing other people&#39;s time, a familiar experience when running workshops.&lt;/p&gt;
-&lt;p&gt;In the book &lt;a href=&quot;http://www.gv.com/sprint/&quot;&gt;Design Sprints&lt;/a&gt;, the author Jake Knapp recommends using a &lt;a href=&quot;https://www.timetimer.com/&quot;&gt;time timer&lt;/a&gt; (originally designed to help a child understand the abstract passage of time vivid and concrete way), as it is particularly effective at keeping participants on track and on time resulting in more efficient meetings.&lt;/p&gt;
-&lt;p&gt;The value of the concept of a time timer was clear to me. Still, with the limitation of it being a physical object, I would have to remember to carry it with me, and it would be less useful in virtual workshops. I was looking for a personal project and had a free evening, so I decided to prototype a digital solution.&lt;/p&gt;
-&lt;h2 id=&quot;requirements&quot; tabindex=&quot;-1&quot;&gt;Requirements &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/group-time-management/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The requirements I prioritized with my implementation were:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tactile&lt;/strong&gt; - The interaction should be discoverable, intuitive, and delightful. It should feel like you&#39;re using the physical equivalent.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt; - I wanted to be able to make quick adjustments to the timer on the fly. There are always those moments when we could all do with an extra 30 seconds. The time to adjust the clock can&#39;t be longer than the extra time needed.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Light weight&lt;/strong&gt; - Performance and accessibility are essential for any tool. In the middle of a workshop, you need to be able to get up and running quickly.
-&lt;ul&gt;
-&lt;li&gt;I decided to make this a Progressive Web App (PWA) so it can be installed locally, run offline, and have its own app icon on the device&#39;s home screen/taskbar for quick access.&lt;/li&gt;
-&lt;li&gt;To save on bundle size and avoid requesting and serving an audio file, the web AudioContext API would be used to generate the audio or the alarm noise.&lt;/li&gt;
-&lt;li&gt;I used &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk&quot;&gt;Light house&lt;/a&gt; and &lt;a href=&quot;https://pagespeed.web.dev/&quot;&gt;Google Page speed&lt;/a&gt; tools to audit the performance and help with applying PWA best practices.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;u-bleed-container:medium&quot;&gt;
-&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/NYVaksBTCi-942.avif 942w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/NYVaksBTCi-942.webp 942w&quot;&gt;&lt;img alt=&quot;Page Speed score indicators, 98 Performance, 95 Accessibility, 100 Best Practices, 100 SEO 💪...&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/NYVaksBTCi-942.png&quot; width=&quot;942&quot; height=&quot;110&quot;&gt;&lt;/picture&gt;
-&lt;figcaption&gt;
-This was the first project I used a tool like &lt;a href=&quot;https://pagespeed.web.dev/analysis/https-david-way-github-io-time-timer/xx8pnanrcb?form_factor=mobile&quot;&gt;Page Speed&lt;/a&gt;.
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;h2 id=&quot;user-testing&quot; tabindex=&quot;-1&quot;&gt;User Testing &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/group-time-management/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;After deploying the first version I asked a few colleagues to test it. The feedback was positive but most felt that the direction you scroll the time dial could have been more intuitive. Users felt it should be a counterclockwise motion to add time and wind down clockwise. This was an easy fix and matched the design and intent of the original time timer.&lt;/p&gt;
-&lt;p&gt;Additionally, users felt the relative change in size of the remaining time area was too small to notice when setting longer times and were unsure if the timer was running. To resolve this, I added a ripple animation to the border of the dial to indicate movement when the clock is &amp;quot;ticking&amp;quot; and a toggle switch to display the underlying countdown. Displaying the countdown by default would have been distracting, but having the option to show it helped reassure users the timer was running.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/group-time-management/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;This was a short but rewarding side project that was a great opportunity the explore some new development tools and techniques.&lt;/p&gt;
-&lt;div class=&quot;u-bleed-container:x-small&quot;&gt;
-&lt;div class=&quot;u-border:device&quot;&gt;
-&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/R0x9cmX54M-388.avif 388w&quot;&gt;&lt;source type=&quot;image/gif&quot; srcset=&quot;https://david-way.github.io/img/R0x9cmX54M-388.gif 388w&quot;&gt;&lt;img alt=&quot;Product preview animation&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/R0x9cmX54M-388.webp&quot; width=&quot;388&quot; height=&quot;844&quot;&gt;&lt;/picture&gt;
-&lt;/div&gt;
-&lt;figcaption&gt;
-    A year later and this is still a tool I frequently reach for, so feel free to try out the &lt;a href=&quot;https://david-way.github.io/time-timer/&quot;&gt;time timer web app&lt;/a&gt; if it might be helpful to you too.
-&lt;/figcaption&gt;
-&lt;/div&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Are CSS utilities for color a good idea?</title>
 		<link href="https://david-way.github.io/blog/design-system-color-utilities/"/>
 		<updated>2021-02-15T00:00:00Z</updated>
