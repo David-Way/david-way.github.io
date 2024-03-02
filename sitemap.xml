@@ -107,12 +107,22 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/ux/</loc>
+		<loc>https://david-way.github.io/tags/design-system/</loc>
+		<lastmod>2024-03-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/developer-experience/</loc>
 		<lastmod>2024-03-02</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/a11y/</loc>
+		<lastmod>2024-03-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/ux/</loc>
 		<lastmod>2024-03-02</lastmod>
 	</url>
 	
@@ -123,16 +133,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/screen-reader/</loc>
-		<lastmod>2024-03-02</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-system/</loc>
-		<lastmod>2024-03-02</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/developer-experience/</loc>
 		<lastmod>2024-03-02</lastmod>
 	</url>
 	
@@ -222,17 +222,17 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/voice-over/</loc>
-		<lastmod>2024-03-02</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/design-sprint/</loc>
 		<lastmod>2024-03-02</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<lastmod>2024-03-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/voice-over/</loc>
 		<lastmod>2024-03-02</lastmod>
 	</url>
 	
