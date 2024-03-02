@@ -17,5 +17,9 @@ jobs:
           cache: "npm"
       - name: Install packages
         run: npm ci
+      - name: create .env file
+        run: |
+          touch .env
+          echo PAGE_SPEED_API_KEY=${{ secrets.PAGE_SPEED_API_KEY }} >> .env
       - name: Run npm build
         run: npm run build
