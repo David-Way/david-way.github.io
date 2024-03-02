@@ -4,6 +4,7 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 
 module.exports = async function () {
 	const params = new URLSearchParams();
+	let data;
 	params.append("url", homepage);
 	params.append("key", process.env.PAGE_SPEED_API_KEY);
 	// We use the fields query string param to ask the Google API to only
@@ -15,38 +16,42 @@ module.exports = async function () {
 	);
 	params.append("prettyPrint", false);
 	// I use the `mobile` strategy, but `desktop` is a valid value too.
-	params.append("strategy", "desktop");
+	params.append("strategy", "mobile");
 	params.append("category", "PERFORMANCE");
 	params.append("category", "ACCESSIBILITY");
 	params.append("category", "BEST-PRACTICES");
 	params.append("category", "SEO");
 
-	let data = await EleventyFetch(
-		`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${params.toString()}`,
-		{
-			duration: "1d",
-			type: "json",
-		},
-	);
+	try {
+		data = await EleventyFetch(
+			`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${params.toString()}`,
+			{
+				duration: "1d",
+				type: "json",
+			},
+		);
+		data = JSON.parse(JSON.stringify(data.lighthouseResult.categories));
+		Object.keys(data).map(function (key) {
+			data[key].grade = getGradeFromScore(data[key].score);
+			data[key].score = parseInt(data[key].score * 100, 10);
+		});
+	} catch (event) {
+		return {
+			categories: undefined,
+		};
+	}
 
-	data = JSON.parse(JSON.stringify(data.lighthouseResult.categories));
-	console.log(data);
-	const getGrade = function (score) {
-		if (score < 0.5) {
-			return "bad";
-		}
-		if (score < 0.9) {
-			return "ok";
-		}
-		return "good";
-	};
-
-	Object.keys(data).map(function (key) {
-		data[key].score = parseInt(data[key].score * 100, 10);
-		data[key].grade = getGrade(data[key].score);
-	});
-	console.log(data);
 	return {
 		categories: data,
 	};
+};
+
+const getGradeFromScore = function (score) {
+	if (score < 0.5) {
+		return "bad";
+	}
+	if (score < 0.9) {
+		return "ok";
+	}
+	return "good";
 };

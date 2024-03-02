@@ -61,7 +61,7 @@ Site manifesto:
 				Site and contents by {{ metadata.author.name }}
 			</div>
 
-			{% if(page.url === '/') %}
+			{% if (page.url === '/') and (pagespeedapi.categories !== undefined) %}
 			<div class="c-footer__meta">
 				<p id="page-speed-insight-scores" class="u-type:x-small u-type:meta">PageSpeed Insights</p>
 				<ul class="c-page-speed-indicator" aria-labelledby="page-speed-insight-scores">
