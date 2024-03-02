@@ -1,7 +1,11 @@
 ---
 title: "A time management tool for group work"
+subTitle: A side project I actually use.
 description: A side project I actually use.
 publish: true
+gridShape: tall
+order: 3
+thumbnail: group-time-management/images/time-timer.gif
 date: 2021-02-15
 tags:
   - prototype

@@ -1,10 +1,11 @@
 ---
 title: Building a Viking loom
-description: A side project
+subTitle: Designing and building a warp weighted loom suitable for a home use.
+description: Designing and building a warp weighted loom suitable for a home use.
 publish: true
 gridShape: box
-order: 1
-thumbnail: warp-weighted-loom/images/warp-weighted-loom.jpg
+order: 2
+thumbnail: warp-weighted-loom/images/weave.jpeg
 date: 2023-11-18
 tags:
   - woodwork
@@ -24,9 +25,9 @@ For the last 40 years Marja has been a Weaving/textile history and heritage enth
 
 The brief for this project was simple enough. Design and build warp weighted loom suitable for a home use with a working area of around 6 by 4 feet.
 
-I started with research to familiarize myself with the weaving domain, its key concepts and what a warp weighted loom was... Once I understood the basics, I watched videos of weavers demonstrating, describing and teaching techniques on their own looms.
+I started with research to familiarize myself with the weaving domain, its key concepts and what a warp weighted loom was... This research began at an event hosted by the Liberty Weavers project where I was able to see a variety of weaving techniques, their products and ask questions.
 
-I took note of any novel solutions between the looms as well as any needs or difficulties the weavers reported.
+Once I understood the basics, I watched videos of weavers demonstrating, describing and teaching techniques on their own looms. I took note of any novel solutions between the looms as well as any needs or difficulties the weavers reported.
 
 The research needed to design a tool for a technical skill, and rich domain knowledge can take as long or longer than building the tool itself. While I'm still unable to weave myself (did you know Leo Fender, founder of Fender Musical Instruments, couldn't play a note on the guitar), my partner has been learning and practicing weaving for almost two years and so was an accommodating Subject Matter Expert to user test with.
 
@@ -42,11 +43,11 @@ As **a weaver** I need **a rigid and dependable frame I can tightly wrap** so th
 
 #### Need B.
 
-As **a weaver** I need **to be able to adjust the working space of the loom** so that I **can work and move between ergonomic positions**.
+As **a weaver** I need **to be able to adjust the working space of the loom** so that I **can work on a range of different sized pieces and move between ergonomic positions while working**.
 
 #### Need C.
 
-As **a weaver** I need **a space conscious loom that is easy to put together** so that I **can avoid wasting time with setup and teardown of the loom**.
+As **a weaver** I need **a portable and space conscious loom that is easy to put together** so that I **can avoid wasting time with setup and teardown of the loom**.
 
 </div>
 
@@ -82,5 +83,5 @@ The warp weighted loom in use.
 {% image "./images/finished-product.jpeg", "A woven scarf" %}
 
 <figcaption>
-The finished product.
+The finished product, by Marja.
 </figcaption>
