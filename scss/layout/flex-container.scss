@@ -1,0 +1,47 @@
+@use "../partials/variables";
+
+$justifications: "normal", "flex-start", "flex-end", "center", "space-between",
+	"space-around", "space-evenly";
+$alignments: "stretch", "center", "flex-start", "flex-end";
+$directions: "row", "row-reverse", "column", "column-reverse";
+
+.l-flex-container {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 0;
+	margin-left: 0;
+	list-style-type: none;
+
+	@each $justification in $justifications {
+		&--justify\:#{$justification} {
+			justify-content: #{$justification};
+		}
+	}
+
+	@each $alignment in $alignments {
+		&--align\:#{$alignment} {
+			align-items: #{$alignment};
+		}
+	}
+
+	@each $direction in $directions {
+		&--direction\:#{$direction} {
+			flex-direction: #{$direction};
+		}
+	}
+
+	@each $key, $value in variables.$spacing {
+		@if $key != "auto" {
+			&--spacing\:#{$key} {
+				margin: calc(($value / 2) * -1) !important;
+			}
+
+			&--spacing\:#{$key} > * {
+				margin: calc($value / 2) !important;
+			}
+		}
+	}
+}
