@@ -80,7 +80,7 @@
 
 	&:hover,
 	&:active {
-		color: var(--color-accent-fg);
+		color: currentColor;
 		text-decoration-thickness: 2px;
 	}
 
