@@ -5,7 +5,6 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 module.exports = async function () {
 	const params = new URLSearchParams();
 	let data;
-	console.log("homepage!!", homepage);
 	params.append("url", homepage);
 	params.append("key", process.env.PAGE_SPEED_API_KEY);
 	// We use the fields query string param to ask the Google API to only
@@ -37,7 +36,6 @@ module.exports = async function () {
 			data[key].score = parseInt(data[key].score * 100, 10);
 		});
 	} catch (event) {
-		console.log("EVENT", event);
 		return {
 			categories: undefined,
 		};

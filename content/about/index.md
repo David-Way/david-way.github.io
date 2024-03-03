@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # About Me
 
-I am a person that writes stuff.
+I am a designer-maker that writes stuff.
 
 ## Links
 
