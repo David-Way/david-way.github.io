@@ -157,26 +157,6 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/writing-exercise/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/cpu/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/product-design/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-thinking/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/ux/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
@@ -192,7 +172,27 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/writing-exercise/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/cpu/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/product-design/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/prototype/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/design-thinking/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
 	
@@ -227,6 +227,11 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/responsive-design/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/design-research/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
@@ -243,11 +248,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/design-pattern/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/responsive-design/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
 	
@@ -277,17 +277,17 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/voice-over/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/woodwork/</loc>
-		<lastmod>2024-03-03</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/design-sprint/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<lastmod>2024-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/voice-over/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
 	
@@ -302,7 +302,7 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<loc>https://david-way.github.io/tags/woodwork/</loc>
 		<lastmod>2024-03-03</lastmod>
 	</url>
 </urlset>
