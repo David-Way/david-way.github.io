@@ -10,9 +10,9 @@ tags:
   - writing
 ---
 
-Storytelling is how the human mind likes to consume information. Our thought synchronizes with that of the storyteller. Allowing us to experience the story as if we were living it ourselves. In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we're looking at.
+Storytelling is how the human mind likes to consume information. Our thoughts synchronize with that of the storyteller. Allowing us to experience the story as if we were living it ourselves. In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we're looking at.
 
-However, stories don't always need to make logical sense. We are occasionally willing to suspend disbelief if the story or storyteller is engaging enough.
+However, stories don't always need to make logical sense. We are occasionally willing to suspend disbelief if the story _or_ storyteller is engaging enough.
 
 While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. A blindingly obvious omission from our thinking that could affect the result and direction of our proposed design. How was this the first time I've noticed this not-so-minor oversight? The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause, it was immensely worrying at this late stage of the project.
 
