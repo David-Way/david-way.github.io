@@ -1,6 +1,6 @@
 ---
-title: Storytelling in design, an unpleasant learning experience
-description: Storytelling is how the human mind likes to consume and information
+title: Are we telling ourselves stories?
+description: Storytelling in design, an unpleasant learning experience.
 publish: true
 date: 2024-02-28
 tags:
@@ -10,20 +10,24 @@ tags:
   - writing
 ---
 
-Storytelling is how the human mind likes to consume information. Our thoughts synchronize with that of the storyteller. Allowing us to experience the story as if we were living it ourselves. In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we're looking at.
+Storytelling is how the human mind likes to consume information. Our thoughts synchronize with that of the storyteller. Allowing us to experience the story as if we were living it ourselves.
 
-However, stories don't always need to make logical sense. We are occasionally willing to suspend disbelief if the story _or_ storyteller is engaging enough.
+In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we're looking at.
 
-While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. A blindingly obvious omission from our thinking that could affect the result and direction of our proposed design. How was this the first time I've noticed this not-so-minor oversight? The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause, it was immensely worrying at this late stage of the project.
+However, stories don't always need to make logical sense. We are, occasionally, willing to suspend disbelief if the story _or_ the storyteller is engaging enough...
 
-We were scheduled to present our findings and recommendations the next day. Should we reschedule the playback? I scrambled to the team; hopefully, someone knew the answer. Luckily, this particular issue could be answered before the presentation, and it didn't change the design recommendations we were making. But we were lucky...
+While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. A blindingly obvious omission from our thinking that could affect the result and direction of our proposed design. How was this the first time I've noticed this not-so-minor oversight? The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause or causes, it was immensely worrying at this late stage of the project.
 
-Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In the heat of a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated; some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated. A systematic approach will catch more information and represent it clearly but looking back, the gap in my process and a contributing factor to this episode as a not making enough time to write and consolidate my understanding.
+We were scheduled to present our findings and recommendations the next day. Should we reschedule the playback? I scrambled to the team; hopefully, someone knew the answer. Luckily, this particular question could be answered before the presentation, and it didn't change or invalidate the design recommendations we were making. But we got lucky...
+
+Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated. Some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated.
+
+A systematic approach will catch more information and represent it more clearly but looking back, the gap in my process and a contributing factor to this episode was a not making enough time to write and consolidate my understanding.
 
 Writing is really good at finding holes in your knowledge or reasoning. If you can't entirely outline a thought or set of points into a written sentence or paragraph, then you probably need to finish exploring or formulating that thought.
 
-Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought and avenues of exploration.
+Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought in need of more robust exploration.
 
 Writing concisely and frequently throughout the design process is just as important as any other design process task. Summarizing learnings and ideas. Forming them into cogent sentences. Writing down checklists of questions and, importantly, circulating this information frequently with the team helps form a more comprehensive understanding with better quality ideas and solutions.
 
-Tell your stories, but to avoid potholes, write, share, and refine them diligently first.
+Keep telling your stories designers. But to avoid plot holes (and heart attacks), write, share, and refine them diligently first.
