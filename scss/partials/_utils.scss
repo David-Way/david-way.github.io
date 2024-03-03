@@ -208,8 +208,20 @@
 }
 
 //--------------------
-// 📲 Flexbox & Grid
+// 📲 Flexbox, Grid & layout
 //--------------------
+.u-display\:flex {
+	display: flex !important;
+}
+
+.u-display\:inline {
+	display: inline !important;
+}
+
+.u-display\:block {
+	display: block !important;
+}
+
 .u-flex-justify-content\:center {
 	justify-content: center !important;
 }

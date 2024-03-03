@@ -61,7 +61,7 @@ You probably didn't forget anything, anything that's easy to overlook. Just to b
 
 **☑️ Heading structure is valid**
 
-- Check that the semantic headings elements on the page reflect the page organization, skipping heading ranks can be confusing and should be avoided where possible.
+- Check that the semantic heading elements on the page reflect the page organization, skipping heading ranks can be confusing and should be avoided where possible.
 
 **☑️ Alternative text is available**
 

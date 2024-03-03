@@ -67,12 +67,17 @@ A photograph of the finished loom.
 
 Some features and functions of the finished loom include:
 
-- Precise tolerance knock-down joinery to give the loom strength and rigidity when in use and allow the loom to be disassembled for transport when not in use (Need A. and C.).
-- Rotating cloth beam and sliding latch for weaving materials longer than the length of the loom (Need B.).
-- Adjustable fork arms to allow you to stand, sit in a chair, or on the floor when weaving (Need B.).
-- Compact lean-to design minimizes the working footprint and allows the loom to be used in a confined space (Need C.).
-- Printed and digital assembly and usage instructions (Need C.).
-- Natural beeswax finish to avoid tarnishing any weaving yarn it comes into contact with (Need A.).
+**Precise tolerance knock-down joinery** to give the loom strength and rigidity when in use and allow the loom to be disassembled for transport when not in use (Need A. and C.).
+
+**Rotating cloth beam and sliding latch** for weaving materials longer than the length of the loom (Need B.).
+
+**Adjustable fork arms** to allow you to stand, sit in a chair, or on the floor when weaving (Need B.).
+
+**Compact lean-to design** minimizes the working footprint and allows the loom to be used in a confined space (Need C.).
+
+**Printed and digital assembly and usage instructions** (Need C.).
+
+**Natural beeswax finish** to avoid tarnishing any weaving yarn it comes into contact with (Need A.).
 
 {% image "./images/warp-weighted-loom-in-use.jpeg", "Warp weighted loom in use" %}
 
