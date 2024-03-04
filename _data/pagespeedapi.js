@@ -16,7 +16,7 @@ module.exports = async function () {
 	);
 	params.append("prettyPrint", false);
 	// I use the `mobile` strategy, but `desktop` is a valid value too.
-	params.append("strategy", "mobile");
+	params.append("strategy", "desktop");
 	params.append("category", "PERFORMANCE");
 	params.append("category", "ACCESSIBILITY");
 	params.append("category", "BEST-PRACTICES");

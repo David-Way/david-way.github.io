@@ -33,6 +33,7 @@
 		flex-wrap: wrap;
 		align-items: baseline;
 		border-radius: 0.5rem;
+		border: 1px solid var(--color-border-subtle);
 		background-image: linear-gradient(
 			var(--card-gradient),
 			var(--c-project-list-item-tint) max(9.5rem, 27vh)

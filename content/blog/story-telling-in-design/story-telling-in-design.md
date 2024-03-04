@@ -22,7 +22,7 @@ We were scheduled to present our findings and recommendations the next day. Shou
 
 Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated. Some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated.
 
-A systematic approach will catch more information and represent it more clearly but looking back, the gap in my process and a contributing factor to this episode was a not making enough time to write and consolidate my understanding.
+A systematic approach will catch more information and represent it more clearly but looking back, the main contributing factor to this episode was not making enough time to write and consolidate my understanding as I went.
 
 Writing is really good at finding holes in your knowledge or reasoning. If you can't entirely outline a thought or set of points into a written sentence or paragraph, then you probably need to finish exploring or formulating that thought.
 
