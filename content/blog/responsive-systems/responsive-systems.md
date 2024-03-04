@@ -1,8 +1,8 @@
 ---
 title: Responsive design at scale; Responding to what?
-description: TODO
-publish: false
-date: 2022-10-11
+description: Responsive design 101 and 102.
+publish: true
+date: 2021-05-11
 tags:
   - a11y
   - responsive design
@@ -224,29 +224,17 @@ What must the layout that holds this content achieve to retain this original pur
 Think back to our unknowns (language, context, font size, zoom, position) and how they can interfere with our intended purpose here.
 Making judgments on **when** our layout should adapt to maintain that purpose is not possible when the only adjustments we can make are in relation to screen size.
 
-## 🤷‍♂️
-
 Using traditional interventions to maintain the meaning of our designs is an unachievable task. Absolutely not! We've just been approaching things with the wrong mindset and from the wrong direction.
 
 ### What should we respond to?
 
-![2d-parametric-adaptive-floor-plans.gif]
-
-What should we respond to if responding to our user's screen size is not helpful? Your content is the reason your user visits your site, and its accessibility to them should be your primary concern.
-
-But when designing systems or platforms, your content is provided or configured into the product by your customers,
-
-Your designs should try to respond to and maintain the purpose or intent of the layout and be robust enough to gracefully handle the additional variable qualities of both content and context.
+What should we respond to if responding to our user's screen size is not helpful? Your content is the reason your user visits your site, and its accessibility to them should be your primary concern. But when designing systems or platforms, your content is provided or configured into the product by your customers. Your designs should try to respond to and maintain the purpose or intent of the layout and be robust enough to gracefully handle the additional variable qualities of both content and context.
 
 ### How?
 
-Instead of starting on the outside (our screen size), We can start from the inside and work our way out.
+Instead of starting on the outside (our screen size), We can start from the inside and work our way out. We want to build our designs in a way that minimizes the need for us to intervene. As we've seen, responsive design is designing for an environment you'll never really see anyway.
 
-We want to build our designs in a way that minimizes the need for us to intervene. As we've seen, responsive design is designing for an environment you'll never really see anyway.
-
-![3d-adaptive-floor-plans.gif]
-To do this, we should think about our layouts as ways to influence our content with tolerances and acceptable ranges.
-Think of yourself as the browser's mentor rather than its micro-manager. If we want our layout to be intrinsically responsive to the content and context it is exposed to, we'll need better tools.
+To do this, we should think about our layouts as ways to influence our content with tolerances and acceptable ranges. Think of yourself as the browser's mentor rather than its micro-manager. If we want our layout to be intrinsically responsive to the content and context it is exposed to, we'll need better tools.
 
 ## Better tools of the trade
 
@@ -265,17 +253,16 @@ TODO - REMAKE (https://blog.prototypr.io/8-rules-for-perfect-typography-in-ui-21
 ### Flexbox and CSS Grid
 
 These tools are relatively new (5 years) but are well-supported by modern browsers. They allow us to describe layouts with no (or much less) human interventions required.
+
 While Media queries can be viewed as simple **if** statements based on page size, Flexbox/CSS grid can be viewed as mini algorithms or layout machines that are more context/content-aware and allow us to abstract the purpose of our designs in ways that are independent of things out of our control like zoom, language and font size.
 
 ### Flexbox
 
-```md
 Flexbox lets us:
 
-- [x] Set ideal widths/heights and guard rails for when those ideals cannot be met
-- [x] Grow and shrink elements proportionally to each other (maintaining hierarchy and visual impact) or prevent items from growing or shrinking at all.
-- [x] Control and context over scoped containers, Independent of the number of elements there will be
-```
+- ✅ Set ideal widths/heights and guard rails for when those ideals cannot be met.
+- ✅ Grow and shrink elements proportionally to each other (maintaining hierarchy and visual impact) or prevent items from growing or shrinking at all.
+- ✅ Control and and provide context to scoped containers that is independent of the number of elements there will be.
 
 Flexbox allows us to set ideal or basis widths - without stopping elements from growing and shrinking when appropriate. It also allows us to grow and shrink related elements at given ratios.
 
@@ -349,13 +336,29 @@ Container queries are a long-awaited, recent addition to the responsive design t
 
 Some patterns are more inherently responsive than others and are worth learning about, too.
 
-![priority-plus.gif]
-
 **Dynamic, progressive disclosure** - The priority plus is one good example. This pattern usually requires JavaScript. It is inherently responsive because it is agnostic to where it's placed, how many items you put in it, or the sizes of those items.
 
-**Scrollable tabs** -
+<div>
 
-**Let it wrap** - More of a principle than a pattern but
+<iframe height="300" style="width: 100%;" scrolling="no" title="Drop Away Nav" src="https://codepen.io/chriscoyier/embed/GJRXYE?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/chriscoyier/pen/GJRXYE">
+  Drop Away Nav</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+</div>
+
+**Scrollable tabs** - This pattern is inherently responsive and easy to interact with because it displays left and right scroll buttons that are hidden when the tabs do not overflow the available area.
+
+<div>
+{% image "./images/scrollable-tabs.png", "Scrollable tabs with scroll button(s) visible when the tabs overflow the available area." %}
+
+<figcaption>
+    Source: <a href="https://mui.com/material-ui/react-tabs/">MUI React Library</a>.
+</figcaption>
+</div>
+
+## Conclusion
 
 I hope this helped give an idea of the problems and solutions that exist in the responsive design space if you're starting out.
 If you're interested in learning more, I highly recommend a book called [Every Layout](https://every-layout.dev/) by Heydon Pickering and the indispensible resource that is [buildexcellentwebsit.es](https://buildexcellentwebsit.es/) by Andy Bell.
