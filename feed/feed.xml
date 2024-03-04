@@ -22,7 +22,7 @@
 &lt;p&gt;While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. A blindingly obvious omission from our thinking that could affect the result and direction of our proposed design. How was this the first time I&#39;ve noticed this not-so-minor oversight? The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause or causes, it was immensely worrying at this late stage of the project.&lt;/p&gt;
 &lt;p&gt;We were scheduled to present our findings and recommendations the next day. Should we reschedule the playback? I scrambled to the team; hopefully, someone knew the answer. Luckily, this particular question could be answered before the presentation, and it didn&#39;t change or invalidate the design recommendations we were making. But we got lucky...&lt;/p&gt;
 &lt;p&gt;Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated. Some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated.&lt;/p&gt;
-&lt;p&gt;A systematic approach will catch more information and represent it more clearly but looking back, the gap in my process and a contributing factor to this episode was a not making enough time to write and consolidate my understanding.&lt;/p&gt;
+&lt;p&gt;A systematic approach will catch more information and represent it more clearly but looking back, the main contributing factor to this episode was not making enough time to write and consolidate my understanding as I went.&lt;/p&gt;
 &lt;p&gt;Writing is really good at finding holes in your knowledge or reasoning. If you can&#39;t entirely outline a thought or set of points into a written sentence or paragraph, then you probably need to finish exploring or formulating that thought.&lt;/p&gt;
 &lt;p&gt;Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought in need of more robust exploration.&lt;/p&gt;
 &lt;p&gt;Writing concisely and frequently throughout the design process is just as important as any other design process task. Summarizing learnings and ideas. Forming them into cogent sentences. Writing down checklists of questions and, importantly, circulating this information frequently with the team helps form a more comprehensive understanding with better quality ideas and solutions.&lt;/p&gt;
@@ -411,6 +411,246 @@ This principle can be applied to many instances where disabled buttons are commo
 &lt;!-- ## When should a disabled button be used
 
 ![animation showing an asynchronous action triggered by a button temporarily disabling a button](https://raw.github.ibm.com/DWay/not-important/master/src/images/posts/ux-disabled-buttons/disable-button-pattern.gif) --&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Responsive design at scale; Responding to what?</title>
+		<link href="https://david-way.github.io/blog/responsive-systems/"/>
+		<updated>2021-05-11T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/responsive-systems/</id>
+		<content type="html">&lt;p&gt;I&#39;ve been working on projects that aim to be as inherently responsive as possible to help our customers avoid the headaches of supporting many devices.&lt;/p&gt;
+&lt;p&gt;As a result, I&#39;ve learned the value of a systemized approach to responsive design. So today, I will talk about how that differs from the common understanding of responsive design and some other things I&#39;ve learned.&lt;/p&gt;
+&lt;p&gt;I&#39;ll be talking more abstractly and not very specifically about the code, so hopefully, there&#39;s something for everyone here.&lt;/p&gt;
+&lt;p&gt;So... I&#39;ll start with a definition.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+Responsive web design is a technique for making web pages look good on a variety of devices and screen sizes.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Every responsive design blog post&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;When you start learning about responsive design, slightly fuzzy definitions like this are usually the kind of thing you&#39;ll see.&lt;/p&gt;
+&lt;p&gt;This seems straightforward, so let&#39;s unpack this and get started. We can learn the basics of those techniques in the next 5 minutes.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+Responsive web design is a technique for making web pages look good on &lt;strong&gt;a variety of devices and screen sizes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Every responsive design blog post&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;If we&#39;re designing responsively, we will support multiple screen sizes. Ultimately, this means we must make changes or interventions in our designs to accommodate the real estate differences those screens offer.&lt;/p&gt;
+&lt;p&gt;We&#39;ll make interventions to keep our designs looking good, or at least not break them. Let&#39;s look at some tools and techniques available for making these responsive interventions.&lt;/p&gt;
+&lt;h2 id=&quot;tools-of-the-trade&quot; tabindex=&quot;-1&quot;&gt;Tools of the trade &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;breakpoints&quot; tabindex=&quot;-1&quot;&gt;Breakpoints &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/break-points.svg&quot; alt=&quot;Nested rectangles abstractly representing three different screen sizes&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We&#39;ll start by choosing some screens or window sizes to support; we&#39;ll call these our breakpoints. The purpose of selecting breakpoints is to give us a representative sample of ways that our users will experience our designs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/break-points-1.svg&quot; alt=&quot;break-points-1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Our designs will start mobile-first, meaning our smallest screens are the default layout; any additional space is treated as a progressive enhancement. Space is not something we can assume we&#39;ll have, and it is not required for our designs to work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/break-points-2.svg&quot; alt=&quot;break-points-2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;But we&#39;ll make the most of it when we do have it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/break-points-3.svg&quot; alt=&quot;break-points-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This mobile-first approach can help focus our designs and ensure they work well, first in the more restrictive environments of smaller devices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/break-points-labelled.svg&quot; alt=&quot;break-points-labelled&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So, let&#39;s choose some standard screen sizes and start making our interventions at those points; these are the ones Bootstrap uses.&lt;/p&gt;
+&lt;p&gt;We may need to make additional interventions and tweaks to our designs between these points once we have our content in... but these are the main changes we&#39;ll see.&lt;/p&gt;
+&lt;h3 id=&quot;media-queries&quot; tabindex=&quot;-1&quot;&gt;Media queries &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The magical media query is the next tool we learn about.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/example-media-query.gif&quot; alt=&quot;example-media-queries.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here&#39;s what they look like if you&#39;ve never seen one (this is the only code I&#39;ll show today). It seems like an &lt;code&gt;If&lt;/code&gt; statement because that&#39;s basically what it is. Just a conditional check on the current screen width, and then some styles to apply when that condition is met.&lt;/p&gt;
+&lt;p&gt;In this example, the background of our page is tomato red. The new style is applied if our breakpoint has been reached, setting the background light blue.&lt;/p&gt;
+&lt;p&gt;We&#39;ll want to use our breakpoints to intervene in our design. These media queries are how we achieve new layouts at those breakpoints, but instead of simply changing colors, we conditionally apply new dimensions, positions, and directions to our elements.&lt;/p&gt;
+&lt;h3 id=&quot;grid-systems-and-percentage-widths&quot; tabindex=&quot;-1&quot;&gt;Grid systems and percentage widths &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/traditional-grid.svg&quot; alt=&quot;traditional-grid.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Next, we have percentage widths and the traditional Grid systems you may already know. Hopefully, it&#39;s easy to see how we can use media queries to systemize our chosen breakpoints and build something like a traditional responsive grid system.&lt;/p&gt;
+&lt;p&gt;Responsive Grids allow us to abstract repeatable structures in our designs and divide the space on our page into proportional columns. We use our breakpoints as markers for interventions and choose how to best adapt our content to fit the available space.&lt;/p&gt;
+&lt;p&gt;Better still, these columns are sized as percentages of the available space, so our columns constantly proportionally adjust and respond between our breakpoints!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/invision-blog-responsive-hero-rwd-1-animated.gif&quot; alt=&quot;invision-blog-responsive-hero-rwd-1-animated.gif&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;in-conclusion&quot; tabindex=&quot;-1&quot;&gt;In conclusion? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;After we apply these tools to our designs, responsive design has been achieved! 🚢&lt;/p&gt;
+&lt;p&gt;It&#39;s straightforward to build robust and dynamic designs that adapt to our user&#39;s needs...almost too easy if you ask me.&lt;/p&gt;
+&lt;p&gt;Wait, why is the scrollbar only halfway down the page!?&lt;/p&gt;
+&lt;h2 id=&quot;be-the-browsers-mentor-not-its-micromanager&quot; tabindex=&quot;-1&quot;&gt;Be the browsers mentor, not its micromanager &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unfortunately, there are a lot of limitations to these approaches that aren&#39;t immediately intuitive, or they weren&#39;t to me anyway. Much learning around responsive design starts and ends with the material I&#39;ve shared.&lt;/p&gt;
+&lt;p&gt;These techniques are not sufficient and never really were. They&#39;re simply the best tools we had for a long time.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot; cite=&quot;https://wcag.com/designers/1-4-1-reflow/&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+Success Criterion 1.4.10 Reflow (Level AA): Content can be presented without loss of information or functionality and without requiring scrolling in two dimensions...&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Web Content Accessibility Guidelines (WCAG)&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;When it comes to supporting a responsive design as an accessibility requirement (not just supporting some arbitrary screen sizes), there are other factors to consider, ones that can&#39;t be catered for with these techniques.&lt;/p&gt;
+&lt;p&gt;The documentation for the reflow success criteria on the Web Accessibility Initiative&#39;s accessibility checklist is a good resource for helping to understand what I mean and is well worth reading. Let&#39;s examine why this basic responsive approach doesn&#39;t solve our reflow problems and why it doesn&#39;t scale well.&lt;/p&gt;
+&lt;h3 id=&quot;responsive-vs-systematically-responsive&quot; tabindex=&quot;-1&quot;&gt;Responsive vs. Systematically responsive &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The basic approach I&#39;ve discussed is only really effective where three things are known ahead of time:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;strong&gt;context&lt;/strong&gt; of your content (I&#39;ll explain what I mean soon)&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;content&lt;/strong&gt; your designs will contain&lt;/li&gt;
+&lt;li&gt;The way your user has &lt;strong&gt;configured&lt;/strong&gt; their browser&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When designing responsively at scale, all three of these are unknowns or known to be variable.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot; cite=&quot;https://alistapart.com/article/dao/&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+When first learning responsive design, we tend to take a print designer&#39;s approach, with fixed widths and fixed paper sizes in mind. In reality, we should embrace the fact that the web doesn&#39;t have the same constraints as printed page, and design with its flexibility in mind.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;A Dao of Web Design by John Allsopp&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;h4 id=&quot;why-they-are-unknown&quot; tabindex=&quot;-1&quot;&gt;Why they are unknown &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-size-vs-context-1.svg&quot; alt=&quot;screen-size-vs-context-1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;First, there&#39;s a subtle difference between your user&#39;s &lt;strong&gt;screen size&lt;/strong&gt; and your &lt;strong&gt;user&#39;s context&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Highlighted here, you can see &amp;quot;screen size&amp;quot;. We have relied on this red box for the condition of all our responsive interventions so far. But Our user&#39;s context accounts for a lot more and is independent of screen size in the following ways:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-size-vs-context-zoom.svg&quot; alt=&quot;screen-size-vs-context-zoom&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Zoom&lt;/strong&gt; - users have control over the zoom level of the content on their page; notice the screen size doesn&#39;t change, but the content does.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-size-vs-context-translate.svg&quot; alt=&quot;screen-size-vs-context-translate&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Language&lt;/strong&gt; - Secondly, your content will be translated. Translation often leads to different space requirements for the same content. If you&#39;ve ever found yourself tweaking a fixed width to contain some piece of content exactly, you&#39;ll find your German users are now experiencing a lot of unintended truncation or wrapping.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
+&lt;span&gt;
+Side note: fixed dimensions are your enemy in responsive design. 🔥
+&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/base-font-settings.png&quot; alt=&quot;base-font-settings&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Base font size/letter spacing&lt;/strong&gt; - Another way the space required by your content can change is due to the control the browsers give to the user over what their base font (or body copy) can be, not only altering the dimensions of our content but also potentially affecting visual hierarchy of our designs. These are tools provided as an aid to the accessibility of our websites. We should accommodate this behavior, not fight it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-size-vs-context-position.svg&quot; alt=&quot;screen-size-vs-context-position&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Position&lt;/strong&gt; - when building at scale, you&#39;re likely building by composing components. Building components, you should also be aware that you&#39;re building containers for variable content in variable contexts.&lt;/p&gt;
+&lt;p&gt;The position, and as a result, the proportion of the page your component will occupy, is not always knowable or obvious.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-size-vs-dynamic-content.svg&quot; alt=&quot;screen-size-vs-context-dynamic-content&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dynamic content&lt;/strong&gt; - When building systems for others to use and configure, you rarely control the actual content that gets placed inside those systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zoom&lt;/li&gt;
+&lt;li&gt;Language/Internationalization&lt;/li&gt;
+&lt;li&gt;Base font size&lt;/li&gt;
+&lt;li&gt;Dynamic content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In short, designing responsively without these things in mind will lead to your content and layout being malformed, obscured, truncated, or challenging to consume for someone, probably not you.
+An excellent responsive measure of your UI is how it handles this list of variables.&lt;/p&gt;
+&lt;p&gt;Let&#39;s quickly summarize what this means for the old way of being responsive.&lt;/p&gt;
+&lt;h3 id=&quot;myth-1-our-breakpoints-are-how-our-users-will-see-our-designs&quot; tabindex=&quot;-1&quot;&gt;Myth #1 - Our breakpoints are how our users will see our designs &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/screen-sizes.svg&quot; alt=&quot;screen-sizes&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The massive proliferation of devices means there is no actual set of standard dimensions to design for.&lt;/p&gt;
+&lt;p&gt;As we saw, our selected breakpoints are arbitrary to the point of uselessness and are a very shallow representative sample of our user&#39;s context. There are numerous other factors to account for that affect how our users see our designs.&lt;/p&gt;
+&lt;h3 id=&quot;myth-2-grids-and-media-queries-allow-us-to-adapt-our-design-to-best-fit-the-available-space&quot; tabindex=&quot;-1&quot;&gt;Myth #2 - Grids and Media queries allow us to adapt our design to best fit the available space &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/nothing-to-respond-to.svg&quot; alt=&quot;nothing-to-respond-to&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Being squishy alone is not being responsive. Grids and layouts that depend on media queries don&#39;t adapt to available space. They adapt only to the screen size they&#39;re viewed in.&lt;/p&gt;
+&lt;p&gt;Because all these variables are unknown, responsive design is ultimately designed for an environment you&#39;ll never see.&lt;/p&gt;
+&lt;p&gt;We must use whatever the content and purpose or intent of our design rather than arbitrary device widths to determine where interventions should be made.&lt;/p&gt;
+&lt;h3 id=&quot;myth-3-design-is-aesthetics&quot; tabindex=&quot;-1&quot;&gt;Myth #3 - Design is aesthetics &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.&amp;quot; ― Charles Eames, American designer, architect, and filmmaker&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The purpose of design, responsive or not, is not to look nice, not primarily anyway. As old Charlie puts it, design is a plan to purposely arrange elements.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;&lt;strong&gt;Responsive&lt;/strong&gt; Design is a plan for arranging elements in such a way as best to accomplish a particular purpose, &lt;strong&gt;across contexts.&lt;/strong&gt;&amp;quot; ― &lt;s&gt;Charles Eames, American designer, architect, and filmmaker&lt;/s&gt; - Micheal Scott&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Responsive design is an extension of this: maintaining a plan for arranging with purpose across contexts.&lt;/p&gt;
+&lt;h3 id=&quot;what-do-you-mean-by-purpose&quot; tabindex=&quot;-1&quot;&gt;What do you mean by purpose? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;To clarify what I mean by purpose. The size, position, and relationship elements have between each other on a page; all this is purposeful. Here are some quick samples of examples related to layout.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/law-of-proximity.svg&quot; alt=&quot;law-of-proximity&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Law of proximity: Objects close to each other are perceived to be related when compared with separated elements. The amount of spacing between elements can be used to denote relatedness.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/law-scannable-text.svg&quot; alt=&quot;law-scannable-text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Line Measure: The width of a line of text, in characters, is known as its measure. Reasonable measure is critical for the comfortable scanning of successive lines of text. Usually, a value between 45 and 75 characters is reasonable. Note this is independent of screen or font size.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/law-visual-hierachy.svg&quot; alt=&quot;law-visual-hierarchy&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Content Hierarchy: A strong and relative visual hierarchy must be created and maintained. What is most important on the page should be obvious to the user. This applies to typography and the visual impact of the other elements on your page.&lt;/p&gt;
+&lt;h4 id=&quot;example-of-purpose&quot; tabindex=&quot;-1&quot;&gt;Example of purpose &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/purpose.svg&quot; alt=&quot;Three column of sample body text, each with it&#39;s own header. Each header is closer to each body than each column is to another.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s look at a simple example to demonstrate purpose in design.
+Say we must display 3 pieces of text, each with its own heading.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The 3 text elements have equal visual weight because they are equally important.&lt;/li&gt;
+&lt;li&gt;The text elements have a spatial relationship to each other and their headings. They are more related to their headings than to each other.&lt;/li&gt;
+&lt;li&gt;The text and their headings have a size relationship to each other, denoting hierarchy and helping with comprehension.&lt;/li&gt;
+&lt;li&gt;The text remains readable (a sensible minimum and maximum measure should be maintained)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What must the layout that holds this content achieve to retain this original purpose across contexts?&lt;/p&gt;
+&lt;p&gt;Think back to our unknowns (language, context, font size, zoom, position) and how they can interfere with our intended purpose here.
+Making judgments on &lt;strong&gt;when&lt;/strong&gt; our layout should adapt to maintain that purpose is not possible when the only adjustments we can make are in relation to screen size.&lt;/p&gt;
+&lt;p&gt;Using traditional interventions to maintain the meaning of our designs is an unachievable task. Absolutely not! We&#39;ve just been approaching things with the wrong mindset and from the wrong direction.&lt;/p&gt;
+&lt;h3 id=&quot;what-should-we-respond-to&quot; tabindex=&quot;-1&quot;&gt;What should we respond to? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;What should we respond to if responding to our user&#39;s screen size is not helpful? Your content is the reason your user visits your site, and its accessibility to them should be your primary concern. But when designing systems or platforms, your content is provided or configured into the product by your customers. Your designs should try to respond to and maintain the purpose or intent of the layout and be robust enough to gracefully handle the additional variable qualities of both content and context.&lt;/p&gt;
+&lt;h3 id=&quot;how&quot; tabindex=&quot;-1&quot;&gt;How? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Instead of starting on the outside (our screen size), We can start from the inside and work our way out. We want to build our designs in a way that minimizes the need for us to intervene. As we&#39;ve seen, responsive design is designing for an environment you&#39;ll never really see anyway.&lt;/p&gt;
+&lt;p&gt;To do this, we should think about our layouts as ways to influence our content with tolerances and acceptable ranges. Think of yourself as the browser&#39;s mentor rather than its micro-manager. If we want our layout to be intrinsically responsive to the content and context it is exposed to, we&#39;ll need better tools.&lt;/p&gt;
+&lt;h2 id=&quot;better-tools-of-the-trade&quot; tabindex=&quot;-1&quot;&gt;Better tools of the trade &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;rems-and-modular-scale&quot; tabindex=&quot;-1&quot;&gt;Rems and Modular scale &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;TODO - REMAKE (https://blog.prototypr.io/8-rules-for-perfect-typography-in-ui-21b37f6f23ce)
+&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/type-heirarchy.png&quot; alt=&quot;type-heirarchy&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Display: 3rem
+heading: 2rem
+body: 1rem (16px default)
+overline: 0.8rem
+Starting at the very middle with our text. Rems or root Ems are relative properties where 1 Rem equals one times the default base font size.
+They allow you to build your typographical hierarchy using one or more ratios relative to the base font size. This means if the base font is changed (through user settings or browser plugin), the proportions of your typography scales with it, and therefore, the meaning between your type levels is maintained! You can also use rems in the same way for spacing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;flexbox-and-css-grid&quot; tabindex=&quot;-1&quot;&gt;Flexbox and CSS Grid &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;These tools are relatively new (5 years) but are well-supported by modern browsers. They allow us to describe layouts with no (or much less) human interventions required.&lt;/p&gt;
+&lt;p&gt;While Media queries can be viewed as simple &lt;strong&gt;if&lt;/strong&gt; statements based on page size, Flexbox/CSS grid can be viewed as mini algorithms or layout machines that are more context/content-aware and allow us to abstract the purpose of our designs in ways that are independent of things out of our control like zoom, language and font size.&lt;/p&gt;
+&lt;h3 id=&quot;flexbox&quot; tabindex=&quot;-1&quot;&gt;Flexbox &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Flexbox lets us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ Set ideal widths/heights and guard rails for when those ideals cannot be met.&lt;/li&gt;
+&lt;li&gt;✅ Grow and shrink elements proportionally to each other (maintaining hierarchy and visual impact) or prevent items from growing or shrinking at all.&lt;/li&gt;
+&lt;li&gt;✅ Control and and provide context to scoped containers that is independent of the number of elements there will be.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Flexbox allows us to set ideal or basis widths - without stopping elements from growing and shrinking when appropriate. It also allows us to grow and shrink related elements at given ratios.&lt;/p&gt;
+&lt;p&gt;We can set the minimum and maximum widths for child elements as percentage values of the parent container width. This allows us to mimic some behavior of container queries, letting elements respond to their own size, not the pages. An example will help demonstrate why all this is useful to us.&lt;/p&gt;
+&lt;h4 id=&quot;flexbox-example&quot; tabindex=&quot;-1&quot;&gt;Flexbox example &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/sidebar-rule.svg&quot; alt=&quot;sidebar-rule&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The Sidebar rule - a Sidebar is defined as an area of secondary importance to the main area of importance
+In layout, it is usually safe to equate real estate with importance, so with that in mind with Flexbox
+we can build a layout that behaves like as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Put &amp;quot;Sidebar&amp;quot; beside the &amp;quot;Main&amp;quot; area, When &amp;quot;Main&amp;quot; is greater than or equal to half the available space (not half the page size).&lt;/li&gt;
+&lt;li&gt;When &amp;quot;Sidebar&amp;quot; and &amp;quot;Main&amp;quot; are the same size, &amp;quot;Sidebar&amp;quot; is no longer a sidebar; let&#39;s make an intervention and stack these elements instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This abstraction of a layout has a purpose and can maintain it, independent of screen size and our other variables.&lt;/p&gt;
+&lt;h3 id=&quot;css-grid&quot; tabindex=&quot;-1&quot;&gt;CSS Grid &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;CSS grids differ from traditional ones in that they can be configured to adapt to more complex and dynamic content. They can easily infer what to do with additional elements based on some given criteria.&lt;/p&gt;
+&lt;h4 id=&quot;css-grid-example&quot; tabindex=&quot;-1&quot;&gt;CSS Grid example &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.l-grid__inner&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;auto-fill&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;15rem&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 1fr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/css-grid-1.svg&quot; alt=&quot;css-grid-1&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here&#39;s an example of some ways you can set up a CSS grid.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/css-grid-2.svg&quot; alt=&quot;css-grid-2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;repeat means columns are created on demand to accommodate any number of child elements&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/css-grid-3.svg&quot; alt=&quot;css-grid-3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;auto-fill&lt;/code&gt; property tells the grid that columns can be added or removed if needed depending on the number of elements and the next value which allows us to set a tolerant range for what we consider to be acceptable sizes of those columns.&lt;/p&gt;
+&lt;p&gt;In this case, the minimum column width is 15 times the base font size (maintaining a readable line measure for contained content). The maximum of 1fr means all columns should then expand and equally share any extra space when available.&lt;/p&gt;
+&lt;h3 id=&quot;the-difference-between-flexbox-and-css-grid&quot; tabindex=&quot;-1&quot;&gt;The difference between Flexbox and CSS Grid &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/flexbox-vs-grid.svg&quot; alt=&quot;flexbox-vs-grid&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;ll commonly use both Grid and Flexbox in combination with each other but if you&#39;re ever wondering how to choose between these two tools, this little illustration is all you need.&lt;/p&gt;
+&lt;p&gt;If you require elements of variable size to behave responsively, &lt;strong&gt;use Flexbox&lt;/strong&gt;; examples might include button groups, category tags, or any text-like content.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use CSS grid&lt;/strong&gt; if you require your elements to maintain uniform sizing and 2 dimensional alignment.&lt;/p&gt;
+&lt;h3 id=&quot;container-queries&quot; tabindex=&quot;-1&quot;&gt;Container queries &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://david-way.github.io/blog/responsive-systems/images/container-queries.svg&quot; alt=&quot;container-queries&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Container queries are a long-awaited, recent addition to the responsive design toolbox. Container queries allow us to apply styles to an element based on the size of the element&#39;s container. This seems like our previously maligned Media queries; however, responding to the element&#39;s available space rather than the page size is a much more powerful and dependable way to base styling decisions.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@container&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 380px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;/* When the card is at least 380px wide*/&lt;/span&gt;
+	&lt;span class=&quot;token selector&quot;&gt;.c-card&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;flex-direction&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; row&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;/* change the layout of its content */&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;inherently-responsive-patterns&quot; tabindex=&quot;-1&quot;&gt;Inherently responsive patterns &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Some patterns are more inherently responsive than others and are worth learning about, too.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dynamic, progressive disclosure&lt;/strong&gt; - The priority plus is one good example. This pattern usually requires JavaScript. It is inherently responsive because it is agnostic to where it&#39;s placed, how many items you put in it, or the sizes of those items.&lt;/p&gt;
+&lt;div&gt;
+&lt;iframe height=&quot;300&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;Drop Away Nav&quot; src=&quot;https://codepen.io/chriscoyier/embed/GJRXYE?default-tab=result&amp;theme-id=dark&quot; frameborder=&quot;no&quot; loading=&quot;lazy&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+  See the Pen &lt;a href=&quot;https://codepen.io/chriscoyier/pen/GJRXYE&quot;&gt;
+  Drop Away Nav&lt;/a&gt; by Chris Coyier  (&lt;a href=&quot;https://codepen.io/chriscoyier&quot;&gt;@chriscoyier&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Scrollable tabs&lt;/strong&gt; - This pattern is inherently responsive and easy to interact with because it displays left and right scroll buttons that are hidden when the tabs do not overflow the available area.&lt;/p&gt;
+&lt;div&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/KJE43X6r6B-815.avif 815w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/KJE43X6r6B-815.webp 815w&quot;&gt;&lt;img alt=&quot;Scrollable tabs with scroll button(s) visible when the tabs overflow the available area.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/KJE43X6r6B-815.png&quot; width=&quot;815&quot; height=&quot;98&quot;&gt;&lt;/picture&gt;
+&lt;figcaption&gt;
+    Source: &lt;a href=&quot;https://mui.com/material-ui/react-tabs/&quot;&gt;MUI React Library&lt;/a&gt;.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/responsive-systems/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I hope this helped give an idea of the problems and solutions that exist in the responsive design space if you&#39;re starting out.
+If you&#39;re interested in learning more, I highly recommend a book called &lt;a href=&quot;https://every-layout.dev/&quot;&gt;Every Layout&lt;/a&gt; by Heydon Pickering and the indispensible resource that is &lt;a href=&quot;https://buildexcellentwebsit.es/&quot;&gt;buildexcellentwebsit.es&lt;/a&gt; by Andy Bell.&lt;/p&gt;
+&lt;p&gt;Thanks for reading this far!&lt;/p&gt;
 </content>
 	</entry>
 	
