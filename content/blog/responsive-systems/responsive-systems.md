@@ -240,15 +240,13 @@ To do this, we should think about our layouts as ways to influence our content w
 
 ### Rems and Modular scale
 
-TODO - REMAKE (https://blog.prototypr.io/8-rules-for-perfect-typography-in-ui-21b37f6f23ce)
-![type-heirarchy](./images/type-heirarchy.png)
+![type hierarchy](./images/type-hierarchy.svg)
 
-> Display: 3rem
-> heading: 2rem
-> body: 1rem (16px default)
-> overline: 0.8rem
-> Starting at the very middle with our text. Rems or root Ems are relative properties where 1 Rem equals one times the default base font size.
-> They allow you to build your typographical hierarchy using one or more ratios relative to the base font size. This means if the base font is changed (through user settings or browser plugin), the proportions of your typography scales with it, and therefore, the meaning between your type levels is maintained! You can also use rems in the same way for spacing.
+Starting at the very middle with our text. Rems or root Ems are relative properties where 1 Rem equals one times the default base font size.
+
+They allow you to build your typographical hierarchy using one or more ratios relative to the base font size.
+
+This means if the base font is changed (through user settings or browser plugin), the proportions of your typography scales with it, and therefore, the meaning between your type levels is maintained! You can also use rems in the same way for spacing.
 
 ### Flexbox and CSS Grid
 
