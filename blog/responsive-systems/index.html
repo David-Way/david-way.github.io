@@ -198,16 +198,10 @@ Making judgments on <strong>when</strong> our layout should adapt to maintain th
 <p>To do this, we should think about our layouts as ways to influence our content with tolerances and acceptable ranges. Think of yourself as the browser's mentor rather than its micro-manager. If we want our layout to be intrinsically responsive to the content and context it is exposed to, we'll need better tools.</p>
 <h2 id="better-tools-of-the-trade" tabindex="-1">Better tools of the trade <a class="c-header-anchor" href="#better-tools-of-the-trade">#</a></h2>
 <h3 id="rems-and-modular-scale" tabindex="-1">Rems and Modular scale <a class="c-header-anchor" href="#rems-and-modular-scale">#</a></h3>
-<p>TODO - REMAKE (https://blog.prototypr.io/8-rules-for-perfect-typography-in-ui-21b37f6f23ce)
-<img src="./images/type-heirarchy.png" alt="type-heirarchy"></p>
-<blockquote>
-<p>Display: 3rem
-heading: 2rem
-body: 1rem (16px default)
-overline: 0.8rem
-Starting at the very middle with our text. Rems or root Ems are relative properties where 1 Rem equals one times the default base font size.
-They allow you to build your typographical hierarchy using one or more ratios relative to the base font size. This means if the base font is changed (through user settings or browser plugin), the proportions of your typography scales with it, and therefore, the meaning between your type levels is maintained! You can also use rems in the same way for spacing.</p>
-</blockquote>
+<p><img src="./images/type-hierarchy.svg" alt="type hierarchy"></p>
+<p>Starting at the very middle with our text. Rems or root Ems are relative properties where 1 Rem equals one times the default base font size.</p>
+<p>They allow you to build your typographical hierarchy using one or more ratios relative to the base font size.</p>
+<p>This means if the base font is changed (through user settings or browser plugin), the proportions of your typography scales with it, and therefore, the meaning between your type levels is maintained! You can also use rems in the same way for spacing.</p>
 <h3 id="flexbox-and-css-grid" tabindex="-1">Flexbox and CSS Grid <a class="c-header-anchor" href="#flexbox-and-css-grid">#</a></h3>
 <p>These tools are relatively new (5 years) but are well-supported by modern browsers. They allow us to describe layouts with no (or much less) human interventions required.</p>
 <p>While Media queries can be viewed as simple <strong>if</strong> statements based on page size, Flexbox/CSS grid can be viewed as mini algorithms or layout machines that are more context/content-aware and allow us to abstract the purpose of our designs in ways that are independent of things out of our control like zoom, language and font size.</p>
