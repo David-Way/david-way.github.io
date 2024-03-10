@@ -1,0 +1,4 @@
+Sitemap: https://www.davidway.ie/sitemap.xml
+
+User-agent: *
+Disallow:
