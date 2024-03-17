@@ -14,7 +14,7 @@ tags:
   - ports
 ---
 
-As a developer, you might be familiar with the obnoxious `EADDRINUSE` port in-use message. You commonly encounter it when you're frantically context-switching between projects, usually when in a rush. You may be trying to spin up a project up for that Sprint Demo in 15 minutes or dusting off some long dormant some code you haven't looked at in a while. Either way, you are eager to get moving, and now you have a side quest.
+You might be familiar with the obnoxious `EADDRINUSE` port in-use message. It's commonly encountered when frantically context-switching between projects. You may be trying to spin up a project up for that Sprint Demo in 15 minutes or dusting off some long dormant code you haven't looked at in a while. Either way, you are eager to get moving, and now you have a side quest.
 
 Lucky for you, a good friend of mine built a fantastic app that helps with this problem, [Port Manager](https://portmanager.app/). Port Managers' most helpful feature is that it allows you to identify and free up any in-use ports in a few clicks. I use it frequently, and I encourage you to try it yourself.
 
