@@ -42,7 +42,7 @@
 	<li class="c-post-meta-data__item"><a href="/tags/ports/" class="c-post-tag">ports</a></li>
 </ul>
 
-<p>As a developer, you might be familiar with the obnoxious <code>EADDRINUSE</code> port in-use message. You commonly encounter it when you're frantically context-switching between projects, usually when in a rush. You may be trying to spin up a project up for that Sprint Demo in 15 minutes or dusting off some long dormant some code you haven't looked at in a while. Either way, you are eager to get moving, and now you have a side quest.</p>
+<p>You might be familiar with the obnoxious <code>EADDRINUSE</code> port in-use message. It's commonly encountered when frantically context-switching between projects. You may be trying to spin up a project up for that Sprint Demo in 15 minutes or dusting off some long dormant code you haven't looked at in a while. Either way, you are eager to get moving, and now you have a side quest.</p>
 <p>Lucky for you, a good friend of mine built a fantastic app that helps with this problem, <a href="https://portmanager.app/">Port Manager</a>. Port Managers' most helpful feature is that it allows you to identify and free up any in-use ports in a few clicks. I use it frequently, and I encourage you to try it yourself.</p>
 <p>However, I'm not always working on a Mac or even a machine with a GUI, so when I run into this problem in those cases, I am often disappointed to remember that <a href="https://portmanager.app/">Port Manager</a> is only currently available on Mac (macOS Sierra 10.12+).</p>
 <p>I was looking for a project to work on for <a href="https://hacktoberfest.com/">hacktoberfest</a> without adding to the noise OSS maintainers are frequently exposed to during this time of year so I decided to create something new to try and solve my own problem.</p>
@@ -65,6 +65,7 @@
 <picture><source type="image/avif" srcset="/img/NpoIAL1QjB-1480.avif 1480w"><source type="image/webp" srcset="/img/NpoIAL1QjB-1480.webp 1480w"><img alt="hushup cli tool displaying a table of currently open ports and an index that can be used to close them." loading="lazy" decoding="async" src="/img/NpoIAL1QjB-1480.png" width="1480" height="868"></picture>
 </a>
 </div>
+<p>Color was used to help reinforce the association between the most important pieces of the UI, the command input and the target index of the desired process.</p>
 <h2 id="results" tabindex="-1">Results <a class="c-header-anchor" href="#results">#</a></h2>
 <p>This results in a responsive and powerful experience that can quickly get the user back on track. Users only need to remember one (shorter command) and they are guided through the rest of the process reducing cognitive load and anxiety.</p>
 <p><a class="u-type:body-lead" href="https://www.npmjs.com/package/hushup">Try the hushup cli tool yourself</a>.</p>
