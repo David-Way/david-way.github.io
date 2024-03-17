@@ -53,6 +53,8 @@ The tool then prompts the user and accepts the index of the process they want to
 
 </div>
 
+Color was used to help reinforce the association between the most important pieces of the UI, the command input and the target index of the desired process.
+
 ## Results
 
 This results in a responsive and powerful experience that can quickly get the user back on track. Users only need to remember one (shorter command) and they are guided through the rest of the process reducing cognitive load and anxiety.
