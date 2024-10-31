@@ -29,28 +29,18 @@
 &lt;p&gt;Teach everyone (Business, Design, Development, and QA) how to use a screen reader to a basic level, and hold sessions where the team tries to achieve tasks in the product using screen readers/or keyboards only and discuss findings and investigate issues.&lt;/p&gt;
 &lt;p&gt;Be proactive about accessibility issues by adding automated accessibility testing in the Integration/Delivery pipeline. Develop a mature accessibility program.&lt;/p&gt;
 &lt;p&gt;Add (or link out to) a Web Accessibility Checklist to your Pull Request template, for example.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] I added new or updated the UI
-&lt;ul&gt;
-&lt;li&gt;[ ] The new UI elements Keyboard accessible&lt;/li&gt;
-&lt;li&gt;[ ] Is all content translatable?&lt;/li&gt;
-&lt;li&gt;[ ] Are the levels of headings picked so that they show in the correct hierarchical order?&lt;/li&gt;
-&lt;li&gt;[ ] Are all the controls close to what they&#39;re controlling? For instance, are the Edit and Delete buttons next to the things they change?&lt;/li&gt;
-&lt;li&gt;[ ] I manually ran the Axe Dev tool and ensured there were no new violations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;[ ] I added a new page
-&lt;ul&gt;
-&lt;li&gt;[ ] Is the page title updated and announced correctly&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;[ ] I added images or Icons
-&lt;ul&gt;
-&lt;li&gt;[ ] Does information get across in ways other than color alone?&lt;/li&gt;
-&lt;li&gt;[ ] Is the image provided with alternative text or declared as decorative&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre class=&quot;language-md&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added new or updated the UI
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] The new UI elements Keyboard accessible
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is all content translatable?
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Are the levels of headings picked so that they show in the correct hierarchical order?
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Are all the controls close to what they&#39;re controlling? For instance, are the Edit and Delete buttons next to the things they change?
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I manually ran the Axe Dev tool and ensured there were no new violations
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added a new page
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the page title updated and announced correctly
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added images or Icons
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Does information get across in ways other than color alone?
+	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the image provided with alternative text or declared as decorative
+&lt;/code&gt;&lt;/pre&gt;
 </content>
 	</entry>
 	
