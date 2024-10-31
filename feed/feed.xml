@@ -4,12 +4,55 @@
 	<subtitle>Writing about my not-important experiences.</subtitle>
 	<link href="https://david-way.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://david-way.github.io/"/>
-	<updated>2024-10-31T15:10:50Z</updated>
+	<updated>2024-11-02T00:00:00Z</updated>
 	<id>https://david-way.github.io/</id>
 	<author>
 		<name>David Way</name>
 		<email>david_way@live.ie</email>
 	</author>
+	
+	<entry>
+		<title>Accessibility boot camp takeaways</title>
+		<link href="https://david-way.github.io/blog/accessibility-bootcamp-takeaways/"/>
+		<updated>2024-11-02T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/accessibility-bootcamp-takeaways/</id>
+		<content type="html">&lt;p&gt;I would consider myself reasonably familiar with the accessibility domain. Still, as I&#39;ve had very little formal training, I decided to attend an accessibility boot camp recently. I was looking forward to better understanding the gaps in my knowledge and converting some of those unknowns into known unknowns. It was a fantastic experience, and very encouraging to see how people engaged the team was. These were my takeaways from the 16-hour event.&lt;/p&gt;
+&lt;h2 id=&quot;impact-on-user-experience-how-does-accessibility-create-a-more-inclusive-user-experience&quot; tabindex=&quot;-1&quot;&gt;Impact on User Experience: How does accessibility create a more inclusive user experience? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Accessible design is good design. Accessibility removes or lowers barriers and improves the experience for all users (not just those with permanent, temporary, or situational disabilities).&lt;/p&gt;
+&lt;h2 id=&quot;product-value-what-is-the-long-term-value-of-prioritizing-accessibility-in-our-work&quot; tabindex=&quot;-1&quot;&gt;Product Value: What is the long-term value of prioritizing accessibility in our work? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A product team could solely make a business case for accessibility as it protects from legal action and associated costs. However, having a reputation as having solid commitment to accessibility can help you gain better trust with your customers and users and associate an inclusive image with the product&#39;s brand.&lt;/p&gt;
+&lt;p&gt;The earlier and more frequently you address accessibility defects in the product/feature development process, the less expensive they are to resolve, leaving room for investment in other product areas.&lt;/p&gt;
+&lt;p&gt;Finally, it is a moral obligation, a point of pride in our work as developers, and a selling point or competitive advantage for the product to be best-in-class AAA accessible.&lt;/p&gt;
+&lt;h2 id=&quot;team-collaboration-how-can-we-integrate-accessibility-into-everyone-s-responsibilities&quot; tabindex=&quot;-1&quot;&gt;Team Collaboration: How can we integrate accessibility into everyone&#39;s responsibilities? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Treat accessibility defects as defects and prioritize them based on the impact on the excluded user and the downstream benefits to all other users.&lt;/p&gt;
+&lt;p&gt;Raise awareness across the team/set processes and standards. Have accessibility specialists/champions and a11y-focused team communication channels to share knowledge. Attend &lt;a href=&quot;https://dequeuniversity.com/curriculum/instructor-led/bootcamp&quot;&gt;accessibility courses&lt;/a&gt; and recognize employees willing to develop and contribute accessibility skills to the product and company as part of their career advancement.&lt;/p&gt;
+&lt;p&gt;Teach everyone (Business, Design, Development, and QA) how to use a screen reader to a basic level, and hold sessions where the team tries to achieve tasks in the product using screen readers/or keyboards only and discuss findings and investigate issues.&lt;/p&gt;
+&lt;p&gt;Be proactive about accessibility issues by adding automated accessibility testing in the Integration/Delivery pipeline. Develop a mature accessibility program.&lt;/p&gt;
+&lt;p&gt;Add (or link out to) a Web Accessibility Checklist to your Pull Request template, for example.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] I added new or updated the UI
+&lt;ul&gt;
+&lt;li&gt;[ ] The new UI elements Keyboard accessible&lt;/li&gt;
+&lt;li&gt;[ ] Is all content translatable?&lt;/li&gt;
+&lt;li&gt;[ ] Are the levels of headings picked so that they show in the correct hierarchical order?&lt;/li&gt;
+&lt;li&gt;[ ] Are all the controls close to what they&#39;re controlling? For instance, are the Edit and Delete buttons next to the things they change?&lt;/li&gt;
+&lt;li&gt;[ ] I manually ran the Axe Dev tool and ensured there were no new violations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] I added a new page
+&lt;ul&gt;
+&lt;li&gt;[ ] Is the page title updated and announced correctly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] I added images or Icons
+&lt;ul&gt;
+&lt;li&gt;[ ] Does information get across in ways other than color alone?&lt;/li&gt;
+&lt;li&gt;[ ] Is the image provided with alternative text or declared as decorative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Are we telling ourselves stories?</title>
