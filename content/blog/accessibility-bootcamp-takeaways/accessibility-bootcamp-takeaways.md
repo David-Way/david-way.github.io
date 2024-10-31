@@ -33,6 +33,7 @@ Be proactive about accessibility issues by adding automated accessibility testin
 
 Add (or link out to) a Web Accessibility Checklist to your Pull Request template, for example.
 
+```md
 - [ ] I added new or updated the UI
 	- [ ] The new UI elements Keyboard accessible
 	- [ ] Is all content translatable?
@@ -45,3 +46,4 @@ Add (or link out to) a Web Accessibility Checklist to your Pull Request template
 	- [ ] Does information get across in ways other than color alone?
 	- [ ] Is the image provided with alternative text or declared as decorative
 
+```
