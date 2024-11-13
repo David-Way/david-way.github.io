@@ -70,7 +70,7 @@ Site manifesto:
 			<nav class="c-nav">
 				<h2 class="u-visually-hidden">Top level navigation menu</h2>
 
-				<ul class="c-nav__list">{%- for entry in collections.all | eleventyNavigation %}<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>{%- endfor %}</ul>
+				<ul class="c-nav__list">{%- for entry in collections.all | eleventyNavigation %}<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if page.url == "/" and page.url == entry.url or page.url.toLowerCase() == entry.url.toLowerCase() %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>{%- endfor %}</ul>
 			</nav>
 		</header>
 
@@ -85,18 +85,20 @@ Site manifesto:
 
 			{% if (page.url === '/') and (pagespeedapi.categories !== undefined) %}
 			<div class="c-footer__meta">
-				<p id="page-speed-insight-scores" class="u-type:x-small u-type:meta">PageSpeed Insights</p>
-				<ul class="c-page-speed-indicator" aria-labelledby="page-speed-insight-scores">
-					{% for key, result in pagespeedapi.categories %}
-					<li class="c-page-speed-indicator-metric">
-						<div class="c-page-speed-indicator-metric__container">
-							<span class="c-page-speed-indicator-metric__gauge {{ 'c-page-speed-indicator-metric__gauge--bad' if result.grade === 'bad' }}{{ 'c-page-speed-indicator-metric__gauge--ok' if result.grade === 'ok' }}{{ 'c-page-speed-indicator-metric__gauge--good' if result.grade === 'good' }}"></span>
-							<span class="c-page-speed-indicator-metric__score">{{ result.score }}</span>
-						</div>
-						<span class="c-page-speed-indicator-metric__label">{{ result.title }}</span>
-					</li>
-					{% endfor %}
-				</ul>
+				<details class="u-p:00">
+					<summary class="u-p:00"><span id="page-speed-insight-scores" class="u-type:small u-type:meta">PageSpeed Insights</span></summary>
+					<ul class="c-page-speed-indicator u-pl:08 u-pt:08" aria-labelledby="page-speed-insight-scores">
+						{% for key, result in pagespeedapi.categories %}
+						<li class="c-page-speed-indicator-metric">
+							<div class="c-page-speed-indicator-metric__container">
+								<span class="c-page-speed-indicator-metric__gauge {{ 'c-page-speed-indicator-metric__gauge--bad' if result.grade === 'bad' }}{{ 'c-page-speed-indicator-metric__gauge--ok' if result.grade === 'ok' }}{{ 'c-page-speed-indicator-metric__gauge--good' if result.grade === 'good' }}"></span>
+								<span class="c-page-speed-indicator-metric__score">{{ result.score }}</span>
+							</div>
+							<span class="c-page-speed-indicator-metric__label">{{ result.title }}</span>
+						</li>
+						{% endfor %}
+					</ul>
+				</details>
 			</div>
 			{% endif %}
 		</footer>

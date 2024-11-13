@@ -39,7 +39,7 @@
 				<h2 class="u-visually-hidden">Top level navigation menu</h2>
 				<ul class="c-nav__list">
 				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					<li class="c-nav__list-item"><a href="{{ entry.url }}"{% if page.url == "/" and page.url == entry.url or page.url.toLowerCase() == entry.url.toLowerCase() %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
 			</nav>
