@@ -6,13 +6,7 @@
 //--------------------
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .u-visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+	@include mixins.visually-hidden();
 }
 
 //--------------------
@@ -133,8 +127,8 @@
 
 .u-border\:device {
 	display: table-cell;
-	border: 16px solid var(--color-primer-border-contrast);
-	border-radius: 48px;
+	border: 1rem solid var(--color-primer-border-contrast);
+	border-radius: 3rem;
 	overflow: hidden;
 
 	& > * {
@@ -220,6 +214,22 @@
 
 .u-display\:block {
 	display: block !important;
+}
+
+.u-display\:none {
+	display: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.u-display\:none-when-color-scheme\:dark {
+		display: none !important;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.u-display\:none-when-color-scheme\:light {
+		display: none !important;
+	}
 }
 
 .u-flex-justify-content\:center {
