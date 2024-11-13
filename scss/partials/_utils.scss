@@ -216,6 +216,22 @@
 	display: block !important;
 }
 
+.u-display\:none {
+	display: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.u-display\:none-when-color-scheme\:dark {
+		display: none !important;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.u-display\:none-when-color-scheme\:light {
+		display: none !important;
+	}
+}
+
 .u-flex-justify-content\:center {
 	justify-content: center !important;
 }
