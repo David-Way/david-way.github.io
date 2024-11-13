@@ -133,8 +133,8 @@
 
 .u-border\:device {
 	display: table-cell;
-	border: 16px solid var(--color-primer-border-contrast);
-	border-radius: 48px;
+	border: 1rem solid var(--color-primer-border-contrast);
+	border-radius: 3rem;
 	overflow: hidden;
 
 	& > * {
