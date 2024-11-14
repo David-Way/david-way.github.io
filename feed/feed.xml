@@ -45,7 +45,7 @@
 	</entry>
 	
 	<entry>
-		<title>Are we telling ourselves stories?</title>
+		<title>Telling stories to ourselves</title>
 		<link href="https://david-way.github.io/blog/story-telling-in-design/"/>
 		<updated>2024-02-28T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/story-telling-in-design/</id>
@@ -60,6 +60,89 @@
 &lt;p&gt;Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought in need of more robust exploration.&lt;/p&gt;
 &lt;p&gt;Writing concisely and frequently throughout the design process is just as important as any other design process task. Summarizing learnings and ideas. Forming them into cogent sentences. Writing down checklists of questions and, importantly, circulating this information frequently with the team helps form a more comprehensive understanding with better quality ideas and solutions.&lt;/p&gt;
 &lt;p&gt;Keep telling your stories designers. But to avoid plot holes (and heart attacks), write, share, and refine them diligently first.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The theme toggle, an empty vanity</title>
+		<link href="https://david-way.github.io/blog/dark-mode-toggles/"/>
+		<updated>2023-03-10T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/dark-mode-toggles/</id>
+		<content type="html">&lt;p&gt;&lt;strong&gt;&lt;abbr&gt;TLDR&lt;/abbr&gt;:&lt;/strong&gt; This site has a &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; theme, but it doesn&#39;t have a dark/light mode toggle or a theme selector because your browser/device already has one.&lt;/p&gt;
+&lt;p&gt;The primary goal for this site was to force myself to write more. I always enjoy having written, but I rarely enjoy the act of writing itself.&lt;/p&gt;
+&lt;p&gt;One of the more enjoyable aspects of having this site is having a place to tinker with things and explore ideas. Sometimes that enjoyment becomes a &amp;quot;productive&amp;quot; distraction from that primary goal.&lt;/p&gt;
+&lt;p&gt;A &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; theme one of the first things I implemented for this site.&lt;/p&gt;
+&lt;p&gt;But before adding a feature for a features sake I asked myself the following two questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Should you provide a &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; mode?&lt;/li&gt;
+&lt;li&gt;Should I add a theme toggle control?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;u-bleed-container:x-small u-mv:16&quot;&gt;
+&lt;div class=&quot;u-border:device&quot;&gt;
+&lt;div class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/7IBMMDz3G--480.avif 480w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/7IBMMDz3G--480.webp 480w&quot;&gt;&lt;img alt=&quot;The not-important site in dark mode&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/7IBMMDz3G--480.png&quot; width=&quot;480&quot; height=&quot;820&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;div class=&quot;u-display:none-when-color-scheme:light&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/9uQ3FqWwOD-480.avif 480w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/9uQ3FqWwOD-480.webp 480w&quot;&gt;&lt;img alt=&quot;The not-important site in light mode&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/9uQ3FqWwOD-480.png&quot; width=&quot;480&quot; height=&quot;820&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;
+This very site, &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;brooding in dark mode&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;beaming away in light mode&lt;/span&gt;.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;question-1-should-you-provide-a-darklight-mode&quot; tabindex=&quot;-1&quot;&gt;Question 1: Should you provide a &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; mode? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/dark-mode-toggles/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;
+&lt;p&gt;A dark color scheme can reduce eye strain, especially in low-light environments, can extend battery life (for certain OLED display types), and some users find dark mode visually appealing and modern.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;u-display:none-when-color-scheme:light u-bleed-container:default&quot;&gt;
+&lt;p&gt;Light mode has been the standard for a long time, and many users are accustomed to it, so it has become an expected feature.&lt;/p&gt;
+&lt;p&gt;Light mode is generally more readable in well-lit environments. A &lt;a href=&quot;https://journals.sagepub.com/doi/abs/10.1177/0018720813515509&quot;&gt;Human Factors study suggests light mode enhances the legibility of text&lt;/a&gt;, and as a result, the reading comprehension and proofreading performance of the reader. Light backgrounds can also be more conducive to displaying accurate colors in some scenarios.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Neither dark or light mode is objectively superior; each has its merits and pitfalls that depend on individual preferences and other factors out of your control. The most responsible course of action is obviously to offer both a light and dark mode and let the user decide.&lt;/p&gt;
+&lt;p&gt;Once it was finished implementing the &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; mode, I was slightly embarrassed to say that I was excited to work on a cool toggle switch.&lt;/p&gt;
+&lt;h2 id=&quot;question-2-should-i-add-a-theme-toggle-control&quot; tabindex=&quot;-1&quot;&gt;Question 2: Should I add a theme toggle control? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/dark-mode-toggles/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;My initial intuition was that this would be an easy yes. these were honestly the best reasons I could devise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Appeal of Novelty&lt;/strong&gt;: Because it will be fun (think of all the time we can spend tweaking the easing curve on an elaborate sun into moon animation) 🤓&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Optimism bias&lt;/strong&gt;: Because it&#39;s easy. Once you have the theme designed and implemented in CSS Custom properties, the code to implement switching between modes using a toggle is trivial&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bandwagon effect&lt;/strong&gt;: Because everyone has one (someone even built a beautiful site dedicated to &lt;a href=&quot;https://toggles.dev/&quot;&gt;cataloging common theme toggle types&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Vanity&lt;/strong&gt;: Because I put all this effort into supporting a &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; mode, not every site has one, so why not make it discoverable and easily accessible?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Less than convincing. Perhaps I should have asked a more open question. A question like &amp;quot;How should the user select a theme?&amp;quot;.&lt;/p&gt;
+&lt;p&gt;This is a better question to ask as it opens up the possibilities to a reality that was quick to come to mind.&lt;/p&gt;
+&lt;p&gt;Users already have a global and robust way to define their preferred theme and browsers do a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility&quot;&gt;good job&lt;/a&gt; of honoring the application of these preferences.&lt;/p&gt;
+&lt;figure class=&quot;u-bleed-container:small&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/CGmqmhpy5U-736.avif 736w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/CGmqmhpy5U-736.webp 736w&quot;&gt;&lt;img alt=&quot;The Android theme controls also allow for scheduling for when a particular theme should be applied&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/CGmqmhpy5U-736.png&quot; width=&quot;736&quot; height=&quot;311&quot;&gt;&lt;/picture&gt;
+&lt;figcaption&gt;The Firefox mode selector allows you to explicitly set your preference for the browser or to defer to a preference you&#39;ve set more broadly at the Operating System level&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-inset-text&quot;&gt;
+&lt;span&gt;
+However it&#39;s important that the default value should be set to use the system preference and that the users shouldn&#39;t see a &lt;a href=&quot;https://css-tricks.com/flash-of-inaccurate-color-theme-fart/&quot;&gt;Flash of inAccurate coloR Theme&lt;/a&gt; which is very likely as the code to store and and respond to previous preference is going to be running after a page’s first render.
+&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These controls work system-wide/device-wide, often at the Operating System level (where the user can set it once) and at a per-application level where users can automatically adjust their preferred theme based on conditions like the time of day or ambient light conditions.&lt;/p&gt;
+&lt;figure class=&quot;u-bleed-container:x-small&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/kkXhc6VNwP-738.avif 738w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/kkXhc6VNwP-738.webp 738w&quot;&gt;&lt;img alt=&quot;The Android theme controls also allow for scheduling for when a particular theme should be applied&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/kkXhc6VNwP-738.png&quot; width=&quot;738&quot; height=&quot;914&quot;&gt;&lt;/picture&gt;
+&lt;figcaption&gt;The Android theme controls also allow for scheduling for when a particular theme should be applied&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;From a theming perspective, there is nothing unique enough about this site that I should have any reason to think it would be an exception to how a visitor would normally prefer to consume their content.&lt;/p&gt;
+&lt;p&gt;Adding a theme toggle to the page adds design redundancy at the cost of complicating a simple feature. It&#39;s also an extra tab stop for keyboard/screen reader users and an additional eye fixation. It&#39;s also extra code to maintain.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+…[Perfection is achieved] not when there is nothing left to add, but when there is nothing left to take away.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Antoine de Saint-Exupery. (2022). Wit &amp; Wisdom. The Week, (1413), 21.&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;Maybe, the user will never discover and beam in wonder at the exceptional &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; theme I toiled away on (a noble sacrifice on my part).&lt;/p&gt;
+&lt;p&gt;But maybe, the best theme toggle is the one the user already has.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -281,7 +364,7 @@ Unsure what a screen reader is or want to learn more about the benefits of famil
 	</entry>
 	
 	<entry>
-		<title>User affected noise driven animation</title>
+		<title>Merging user input with random noise for smooth animation</title>
 		<link href="https://david-way.github.io/blog/flow-field-with-user-interaction/"/>
 		<updated>2022-02-15T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/flow-field-with-user-interaction/</id>
