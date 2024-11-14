@@ -103,6 +103,6 @@ Adding a theme toggle to the page adds design redundancy at the cost of complica
 …[Perfection is achieved] not when there is nothing left to add, but when there is nothing left to take away.
 {% endblockquote %}
 
-Maybe, the user will never discover and beam in wonder at the majestic <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (I'll live).
+Maybe, the user will never discover and beam in wonder at the exceptional <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (a noble sacrifice on my part).
 
 But maybe, the best theme toggle is the one the user already has.
