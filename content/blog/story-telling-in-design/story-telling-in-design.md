@@ -1,5 +1,5 @@
 ---
-title: Are we telling ourselves stories?
+title: Telling stories to ourselves
 description: Storytelling in design, an unpleasant learning experience.
 publish: true
 date: 2024-02-28
