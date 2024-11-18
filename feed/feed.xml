@@ -27,6 +27,7 @@ The curb cut effect is the phenomenon of disability-friendly features being used
 				&lt;/blockquote&gt;
 &lt;p&gt;Accessibility removes or lowers barriers and improves the experience for all users with and without disabilities.&lt;/p&gt;
 &lt;p&gt;These benefits extend to those with permanent, temporary, or situational disabilities as well as those of us with future disabilities. The &lt;a href=&quot;https://www.who.int/health-topics/disability&quot;&gt;WHO ICF report&lt;/a&gt; estimated 1.3 billion people – about 16% of the global population – currently experience significant disability.&lt;/p&gt;
+&lt;div class=&quot;u-bleed-container:small u-responsive-table-container&quot;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -52,7 +53,7 @@ The curb cut effect is the phenomenon of disability-friendly features being used
 &lt;tr&gt;
 &lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Auditory&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:left&quot;&gt;Deaf&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;Ear infection/failing aid&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Ear infection/failing disability aid&lt;/td&gt;
 &lt;td style=&quot;text-align:left&quot;&gt;In a crowd&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -63,6 +64,7 @@ The curb cut effect is the phenomenon of disability-friendly features being used
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
 &lt;h2 id=&quot;product-value-what-is-the-long-term-value-of-prioritizing-accessibility-in-our-work&quot; tabindex=&quot;-1&quot;&gt;Product Value: What is the long-term value of prioritizing accessibility in our work? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A product team could solely make a business case for accessibility as it protects from legal action and associated costs. However, having a reputation as having solid commitment to accessibility can help you gain better trust with your customers and users and associate an inclusive image with the product&#39;s brand.&lt;/p&gt;
 &lt;p&gt;The earlier and more frequently you address accessibility defects in the product/feature development process, the less expensive they are to resolve, leaving room for investment in other product areas (the push left principle reduces cost).&lt;/p&gt;
