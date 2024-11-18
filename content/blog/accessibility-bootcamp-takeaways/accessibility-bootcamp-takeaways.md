@@ -21,12 +21,16 @@ Accessibility removes or lowers barriers and improves the experience for all use
 
 These benefits extend to those with permanent, temporary, or situational disabilities as well as those of us with future disabilities. The [WHO ICF report](https://www.who.int/health-topics/disability) estimated 1.3 billion people – about 16% of the global population – currently experience significant disability.
 
-| Type of disability | Permanent           | Temporary                 | Situational              |
-| :----------------- | :------------------ | :------------------------ | :----------------------- |
-| **Physical**       | Missing limb        | Broken/injured limb       | Holding a child          |
-| **Visual**         | Blind               | Cataracts/environmental   | Bright sunlight          |
-| **Auditory**       | Deaf                | Ear infection/failing aid | In a crowd               |
-| **Cognitive**      | Learning disability | Stressed/in an emergency  | Using a foreign language |
+<div class="u-bleed-container:small u-responsive-table-container">
+
+| Type of disability | Permanent           | Temporary                            | Situational              |
+| :----------------- | :------------------ | :----------------------------------- | :----------------------- |
+| **Physical**       | Missing limb        | Broken/injured limb                  | Holding a child          |
+| **Visual**         | Blind               | Cataracts/environmental              | Bright sunlight          |
+| **Auditory**       | Deaf                | Ear infection/failing disability aid | In a crowd               |
+| **Cognitive**      | Learning disability | Stressed/in an emergency             | Using a foreign language |
+
+</div>
 
 ## Product Value: What is the long-term value of prioritizing accessibility in our work?
 
