@@ -18,29 +18,89 @@
 		<id>https://david-way.github.io/blog/accessibility-bootcamp-takeaways/</id>
 		<content type="html">&lt;p&gt;I would consider myself reasonably familiar with the accessibility domain. Still, as I&#39;ve had very little formal training, I decided to attend an accessibility boot camp recently. I was looking forward to better understanding the gaps in my knowledge and converting some of those unknowns into known unknowns. It was a fantastic experience, and very encouraging to see how people engaged the team was. These were my takeaways from the 16-hour event.&lt;/p&gt;
 &lt;h2 id=&quot;impact-on-user-experience-how-does-accessibility-create-a-more-inclusive-user-experience&quot; tabindex=&quot;-1&quot;&gt;Impact on User Experience: How does accessibility create a more inclusive user experience? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Accessible design is good design. Accessibility removes or lowers barriers and improves the experience for all users (not just those with permanent, temporary, or situational disabilities).&lt;/p&gt;
+&lt;p&gt;Accessible design is good design.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot; cite=&quot;https://en.wikipedia.org/wiki/Curb_cut_effect&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+The curb cut effect is the phenomenon of disability-friendly features being used and appreciated by a larger group than the people they were designed for. For example, many hearing people use closed captioning. The phenomenon is named for curb cuts – miniature ramps comprising parts of sidewalk – which were first made for wheelchair access in particular places, but are now ubiquitous and no longer widely recognized as a disability-accessibility feature. The curb cut effect is a subset of universal design, which is the purposeful design of an environment so that it is accessible to all people regardless of ability or disability.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Wikipedia&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;Accessibility removes or lowers barriers and improves the experience for all users with and without disabilities.&lt;/p&gt;
+&lt;p&gt;These benefits extend to those with permanent, temporary, or situational disabilities as well as those of us with future disabilities. The &lt;a href=&quot;https://www.who.int/health-topics/disability&quot;&gt;WHO ICF report&lt;/a&gt; estimated 1.3 billion people – about 16% of the global population – currently experience significant disability.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Type of disability&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Permanent&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Temporary&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Situational&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Physical&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Missing limb&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Broken/injured limb&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Holding a child&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Visual&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Blind&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Cataracts/environmental&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Bright sunlight&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Auditory&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Deaf&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Ear infection/failing aid&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;In a crowd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;strong&gt;Cognitive&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Learning disability&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Stressed/in an emergency&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Using a foreign language&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h2 id=&quot;product-value-what-is-the-long-term-value-of-prioritizing-accessibility-in-our-work&quot; tabindex=&quot;-1&quot;&gt;Product Value: What is the long-term value of prioritizing accessibility in our work? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A product team could solely make a business case for accessibility as it protects from legal action and associated costs. However, having a reputation as having solid commitment to accessibility can help you gain better trust with your customers and users and associate an inclusive image with the product&#39;s brand.&lt;/p&gt;
-&lt;p&gt;The earlier and more frequently you address accessibility defects in the product/feature development process, the less expensive they are to resolve, leaving room for investment in other product areas.&lt;/p&gt;
-&lt;p&gt;Finally, it is a moral obligation, a point of pride in our work as developers, and a selling point or competitive advantage for the product to be best-in-class AAA accessible.&lt;/p&gt;
+&lt;p&gt;The earlier and more frequently you address accessibility defects in the product/feature development process, the less expensive they are to resolve, leaving room for investment in other product areas (the push left principle reduces cost).&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;blockquote class=&quot;c-block-quote&quot;&gt;
+&lt;p class=&quot;c-block-quote__content&quot;&gt;
+You can use an eraser on the drafting table or a sledgehammer on the construction site.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+					&lt;footer class=&quot;c-block-quote__footer&quot;&gt;— &lt;cite&gt;Frank Lloyd Wright&lt;/cite&gt;&lt;/footer&gt;
+				&lt;/blockquote&gt;
+&lt;p&gt;Finally, it is a moral obligation, a point of pride in our craft as designers and developers, and a selling point or competitive advantage for the product to be best-in-class AAA accessible.&lt;/p&gt;
 &lt;h2 id=&quot;team-collaboration-how-can-we-integrate-accessibility-into-everyone-s-responsibilities&quot; tabindex=&quot;-1&quot;&gt;Team Collaboration: How can we integrate accessibility into everyone&#39;s responsibilities? &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibility-bootcamp-takeaways/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Treat accessibility defects as defects and prioritize them based on the impact on the excluded user and the downstream benefits to all other users.&lt;/p&gt;
-&lt;p&gt;Raise awareness across the team/set processes and standards. Have accessibility specialists/champions and a11y-focused team communication channels to share knowledge. Attend &lt;a href=&quot;https://dequeuniversity.com/curriculum/instructor-led/bootcamp&quot;&gt;accessibility courses&lt;/a&gt; and recognize employees willing to develop and contribute accessibility skills to the product and company as part of their career advancement.&lt;/p&gt;
-&lt;p&gt;Teach everyone (Business, Design, Development, and QA) how to use a screen reader to a basic level, and hold sessions where the team tries to achieve tasks in the product using screen readers/or keyboards only and discuss findings and investigate issues.&lt;/p&gt;
-&lt;p&gt;Be proactive about accessibility issues by adding automated accessibility testing in the Integration/Delivery pipeline. Develop a mature accessibility program.&lt;/p&gt;
-&lt;p&gt;Add (or link out to) a Web Accessibility Checklist to your Pull Request template, for example.&lt;/p&gt;
+&lt;p&gt;Treat accessibility defects as defects and prioritize them based on the impact on the excluded user (permanently disabled) and the downstream benefits to all other users (temporarily and situationally disabled).&lt;/p&gt;
+&lt;p&gt;Develop a mature accessibility program. Raise awareness across the team/set processes and standards. Have accessibility specialists/champions and a11y-focused team communication channels to share knowledge.&lt;/p&gt;
+&lt;p&gt;Attend accessibility courses and recognize employees willing to develop and contribute accessibility skills to the product and company as part of their career advancement.&lt;/p&gt;
+&lt;p&gt;Learn about the &lt;a href=&quot;https://www.w3.org/WAI/fundamentals/accessibility-principles/&quot;&gt;POUR principles&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Perceivable&lt;/li&gt;
+&lt;li&gt;Operable&lt;/li&gt;
+&lt;li&gt;Understandable&lt;/li&gt;
+&lt;li&gt;Robust&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Teach everyone (Business, Design, Development, and QA) how to &lt;a href=&quot;https://david-way.github.io/blog/how-to-get-started-with-voice-over&quot;&gt;use a screen reader to a basic level&lt;/a&gt;, and hold sessions where the team tries to achieve tasks in the product using screen readers/or keyboards only and discuss findings and investigate issues.&lt;/p&gt;
+&lt;p&gt;Be proactive about accessibility issues by adding automated accessibility testing and linters into the Integration/Delivery pipeline.&lt;/p&gt;
+&lt;p&gt;Add (or link out to) a Web Accessibility Checklist to your Pull Request template, for example:&lt;/p&gt;
 &lt;pre class=&quot;language-md&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-md&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added new or updated the UI
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] The new UI elements Keyboard accessible
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is all content translatable?
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Are the levels of headings picked so that they show in the correct hierarchical order?
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Are all the controls close to what they&#39;re controlling? For instance, are the Edit and Delete buttons next to the things they change?
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I manually ran the Axe Dev tool and ensured there were no new violations
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] The designer has identified and provided embedded screen reader content, for example, icon labels, image provided with alternative text or declared as decorative
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Link text labels clearly what the purpose and location of the link
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] The new UI elements or features are keyboard accessible
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] The levels of headings show in the correct hierarchical order?
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] All the controls are close to what they&#39;re controlling. For example, Edit and Delete buttons next to the
+        things they change.
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] All content translatable
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I manually ran the Axe Dev tool/IBMA tool and ensured there were no new violations
 &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added a new page
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the page title updated and announced correctly
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the page title updated and announced correctly
 &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] I added images or Icons
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Does information get across in ways other than color alone?
-	&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the image provided with alternative text or declared as decorative
-&lt;/code&gt;&lt;/pre&gt;
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Does information get across in ways other than color alone?
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; [ ] Is the image provided with alternative text or declared as decorative&lt;/code&gt;&lt;/pre&gt;
 </content>
 	</entry>
 	
