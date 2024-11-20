@@ -5,7 +5,7 @@ publish: true
 date: 2024-11-02
 tags:
   - a11y
-  - design process
+  - design strategy
 ---
 
 I would consider myself reasonably familiar with the accessibility domain. Still, as I've had very little formal training, I decided to attend an accessibility boot camp recently. I was looking forward to better understanding the gaps in my knowledge and converting some of those unknowns into known unknowns. It was a fantastic experience, and very encouraging to see how people engaged the team was. These were my takeaways from the 16-hour event.
