@@ -121,6 +121,21 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addShortcode(
+		"describedlink",
+		function (label, href, description) {
+			const uuid = `described-link-id-${
+				Date.now().toString(36) + Math.random().toString(36).substr(2)
+			}`;
+			return `
+				<div class="c-described-link">
+					<a id="${uuid}" href="${href}" class="c-described-link__label">${label}</a>
+					<span aria-describedby="${uuid}" class="c-described-link__description">${description}</span>
+				</div>
+			`;
+		},
+	);
+
 	eleventyConfig.addPairedShortcode(
 		"insettext",
 		function (content, linkLabel, linkLocation) {

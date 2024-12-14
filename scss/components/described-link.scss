@@ -1,0 +1,21 @@
+@use "../partials/mixins";
+
+.c-described-link {
+	background-color: var(--color-canvas-subtle);
+	padding-block: var(--base-size-12);
+	padding-inline: var(--base-size-12);
+	border-radius: 4px;
+	border: 1px solid var(--color-border-subtle);
+
+	&__content {
+		@include mixins.type-body-lead();
+		padding-inline: var(--base-size-12);
+		margin-block: 0;
+	}
+
+	&__description {
+		@include mixins.type-small();
+		display: block;
+		margin-block-start: var(--base-size-8);
+	}
+}
