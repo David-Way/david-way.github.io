@@ -4,12 +4,131 @@
 	<subtitle>Writing about my not-important experiences.</subtitle>
 	<link href="https://david-way.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://david-way.github.io/"/>
-	<updated>2024-11-02T00:00:00Z</updated>
+	<updated>2024-11-22T00:00:00Z</updated>
 	<id>https://david-way.github.io/</id>
 	<author>
 		<name>David Way</name>
 		<email>david_way@live.ie</email>
 	</author>
+	
+	<entry>
+		<title>A11y toolkit</title>
+		<link href="https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/"/>
+		<updated>2024-11-22T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/</id>
+		<content type="html">&lt;p&gt;Humans are the only species for whom tool use is a defining and universal characteristic.&lt;/p&gt;
+&lt;p&gt;Tools embody the knowledge and expertise related to the tasks and needs they were designed to address. They crystallize, refine, and facilitate the sharing of this knowledge and expertise.&lt;/p&gt;
+&lt;p&gt;Here is a list of tools and resources I&#39;ve found very useful when learning and applying the concepts and principles of accessible design.&lt;/p&gt;
+&lt;h2 id=&quot;web-design-tools&quot; tabindex=&quot;-1&quot;&gt;Web Design Tools &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1di6gio5bguwm&quot; href=&quot;https://webaim.org/resources/contrastchecker/&quot; class=&quot;c-described-link__label&quot;&gt;WebAim Color contrast checker&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1di6gio5bguwm&quot; class=&quot;c-described-link__description&quot;&gt;Contrast is a measure of the difference in perceived &#39;luminance&#39; or brightness between two colors. Having enough contrast is vital to ensure users with visual disabilities, must be able to perceive content on the page.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1dw1yxcofxoej&quot; href=&quot;https://dequeuniversity.com/color-contrast&quot; class=&quot;c-described-link__label&quot;&gt;Deque color contrast checker&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1dw1yxcofxoej&quot; class=&quot;c-described-link__description&quot;&gt;Much like the WebAim contrast checker but it uses a different algorithm and can give slightly different results. It&#39;s worth testing with both tools if your values are just barely meeting minimum contrast requirements.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d4luk2swm9fu&quot; href=&quot;https://dequeuniversity.com/library/&quot; class=&quot;c-described-link__label&quot;&gt;Deque aria usage patterns&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d4luk2swm9fu&quot; class=&quot;c-described-link__description&quot;&gt;A code library of accessibility focused work in progress examples.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d934yw17nx2w&quot; href=&quot;https://www.deque.com/axe/browser-extensions/&quot; class=&quot;c-described-link__label&quot;&gt;Axe browser extension&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d934yw17nx2w&quot; class=&quot;c-described-link__description&quot;&gt;A free accessibility browser extension.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d4m77l8sf7gi&quot; href=&quot;https://pagespeed.web.dev/&quot; class=&quot;c-described-link__label&quot;&gt;pagespeed.web.dev&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d4m77l8sf7gi&quot; class=&quot;c-described-link__description&quot;&gt;Analyze your implementation with PageSpeed Insights. Get your PageSpeed score and use PageSpeed suggestions to make your web site faster and more accessible.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1dw4z7ah98qvo&quot; href=&quot;https://www.webfx.com/tools/read-able/&quot; class=&quot;c-described-link__label&quot;&gt;WebFX&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1dw4z7ah98qvo&quot; class=&quot;c-described-link__description&quot;&gt;An objective reading grade level assessment tool. Ensure your language is clear and understandable to your target audience.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d8o9ng2jow5g&quot; href=&quot;https://www.figma.com/community/file/1118184491812988116/ibm-accessibility-design-kit&quot; class=&quot;c-described-link__label&quot;&gt;IBM a11y Figma annotations and guidance kit&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d8o9ng2jow5g&quot; class=&quot;c-described-link__description&quot;&gt;This Figma library contains bite-sized guidance and handoff assets for accessibility.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1di5pvfem9r4&quot; href=&quot;https://wave.webaim.org/&quot; class=&quot;c-described-link__label&quot;&gt;WAVE Web Accessibility Evaluation Tools&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1di5pvfem9r4&quot; class=&quot;c-described-link__description&quot;&gt;WAVE® is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h2 id=&quot;bookmarklets&quot; tabindex=&quot;-1&quot;&gt;Bookmarklets &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;details&gt;
+  &lt;summary&gt;What is a bookmarklet?&lt;/summary&gt;
+&lt;p&gt;A browser bookmarklet is a small piece of JavaScript code saved as a bookmark in a web browser.&lt;/p&gt;
+&lt;p&gt;Bookmarklets can perform a specific action when clicked and be used to manipulate , interact with the current webpage and its content.&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d2a45kcp7n1k&quot; href=&quot;https://www.ssa.gov/accessibility/andi/help/install.html/&quot; class=&quot;c-described-link__label&quot;&gt;ANDI&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d2a45kcp7n1k&quot; class=&quot;c-described-link__description&quot;&gt;Accessible Name &amp;amp; Description Inspector (ANDI) is a free accessibility testing tool.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8b1d8gacx5vpcgw&quot; href=&quot;https://dequeuniversity.com/validator&quot; class=&quot;c-described-link__label&quot;&gt;Full Current Page DOM HTML Validator&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8b1d8gacx5vpcgw&quot; class=&quot;c-described-link__description&quot;&gt;This bookmarklet is the most convenient way of using the W3C HTML Validator service.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;A long list of very specific bookmarklets can be found on &lt;a href=&quot;https://pauljadam.com/bookmarklets.html&quot;&gt;Paul J. Adam&lt;/a&gt;&#39;s consultancy site.&lt;/p&gt;
+&lt;h2 id=&quot;references&quot; tabindex=&quot;-1&quot;&gt;References &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;figure&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://david-way.github.io/img/cYzCZXmHRu-1258.avif 1258w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://david-way.github.io/img/cYzCZXmHRu-1258.webp 1258w&quot;&gt;&lt;img alt=&quot;collection of do&#39;s and don&#39;ts UK Gov a11y posters&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://david-way.github.io/img/cYzCZXmHRu-1258.png&quot; width=&quot;1258&quot; height=&quot;1134&quot;&gt;&lt;/picture&gt;
+&lt;figcaption&gt;
+The &lt;cite&gt;&lt;a href=&quot;https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/&quot;&gt;Dos and don&#39;ts on designing for accessibility&lt;/a&gt;&lt;/cite&gt; by UK Gov Design Team. Print them out and hang them around the studio/office.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpofi0ai1m86&quot; href=&quot;https://www.w3.org/WAI/ARIA/apg/patterns/&quot; class=&quot;c-described-link__label&quot;&gt;ARIA Authoring Practices Guide (APG) Patterns&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpofi0ai1m86&quot; class=&quot;c-described-link__description&quot;&gt;Learn how to make accessible web components and widgets with ARIA roles, states and properties and by implementing keyboard support. Provides one or more ways of implementing each pattern, demonstrated with functional examples.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpq24fwvzyw3&quot; href=&quot;https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/&quot; class=&quot;c-described-link__label&quot;&gt;ARIA Authoring Practices Guide (APG) Names and descriptions&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpq24fwvzyw3&quot; class=&quot;c-described-link__description&quot;&gt;Learn how to provide elements with accessible names and, where appropriate, accessible descriptions.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpcpijmh4xh94&quot; href=&quot;https://www.w3.org/WAI/fundamentals/&quot; class=&quot;c-described-link__label&quot;&gt;W3 A11y fundamentals guide&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpcpijmh4xh94&quot; class=&quot;c-described-link__description&quot;&gt;An industry standard resource that provides information for getting started with accessibility&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpw5lcaiuljo&quot; href=&quot;https://www.davidway.ie/blog/accessibility-bootcamp-takeaways/&quot; class=&quot;c-described-link__label&quot;&gt;Bootcamp takeaways - Blog post&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpw5lcaiuljo&quot; class=&quot;c-described-link__description&quot;&gt;Just a lil blog post I whipped up after completing one of the Deques&#39; bootcamp courses&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezplg5npphtpef&quot; href=&quot;https://www.davidmacd.com/blog/wai-aria-accessbility-for-average-web-developers.html&quot; class=&quot;c-described-link__label&quot;&gt;Aria attributes; A quick guide&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezplg5npphtpef&quot; class=&quot;c-described-link__description&quot;&gt;Developers should be able to understand what aria attributes do and when to use them and, most importantly, when not to use them.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpi9jryg29ko&quot; href=&quot;https://a11ysupport.io/&quot; class=&quot;c-described-link__label&quot;&gt;Assistive Technologies support reference&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpi9jryg29ko&quot; class=&quot;c-described-link__description&quot;&gt;A reference to tell if your code will work with assistive technologies.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezp31z9rqoq45g&quot; href=&quot;https://www.powermapper.com/tests/screen-readers&quot; class=&quot;c-described-link__label&quot;&gt;Screen Reader Browser combination support reference&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezp31z9rqoq45g&quot; class=&quot;c-described-link__description&quot;&gt;Overall reliability of HTML, CSS and ARIA features designed for assistive technology in different screen reader / browser combinations.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpd9dgqyrd1pk&quot; href=&quot;https://html5accessibility.com/&quot; class=&quot;c-described-link__label&quot;&gt;HTML5 accessibility feature browser support&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpd9dgqyrd1pk&quot; class=&quot;c-described-link__description&quot;&gt;Get the current accessibility support status of HTML5 features across major browsers.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezph931amjd9eh&quot; href=&quot;https://accessibility.blog.gov.uk/&quot; class=&quot;c-described-link__label&quot;&gt;Accessibility in government, GOV.UK blog&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezph931amjd9eh&quot; class=&quot;c-described-link__description&quot;&gt;A blog that documenting how the GDS accessibility team is rebuilding inclusive digital services across the UK Government.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpghy9uz3wjwp&quot; href=&quot;https://raindrop.io/a11ycat/a11y-cat-digital-accessibility-resources-35893871&quot; class=&quot;c-described-link__label&quot;&gt;A11y Cat Digital Accessibility Resources&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpghy9uz3wjwp&quot; class=&quot;c-described-link__description&quot;&gt;A link directory for professionals who work with digital accessibility.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpuiffdeb7khf&quot; href=&quot;https://www.foreveryone.design/&quot; class=&quot;c-described-link__label&quot;&gt;foreveryone.design&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpuiffdeb7khf&quot; class=&quot;c-described-link__description&quot;&gt;67% of accessibility defects originate in the design process. Shift the fix left by using this library of high-quality resources for UX/UI designers.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h2 id=&quot;courses&quot; tabindex=&quot;-1&quot;&gt;Courses &lt;a class=&quot;c-header-anchor&quot; href=&quot;https://david-way.github.io/blog/accessibilty-toolkit/accessibility-toolkit/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpsd0tjauft5c&quot; href=&quot;https://dequeuniversity.com/curriculum/instructor-led/bootcamp&quot; class=&quot;c-described-link__label&quot;&gt;Deque: Accessibility Bootcamp&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpsd0tjauft5c&quot; class=&quot;c-described-link__description&quot;&gt;A two-day bootcamp to equip individuals across various technical roles with the fundamental knowledge and domain specific practical a11y skills.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;c-described-link&quot;&gt;
+&lt;a id=&quot;described-link-id-m4og8ezpeg9is1binxv&quot; href=&quot;https://www.accessibilityassociation.org/s/certification&quot; class=&quot;c-described-link__label&quot;&gt;IAAP Certification program&lt;/a&gt;
+&lt;span aria-describedby=&quot;described-link-id-m4og8ezpeg9is1binxv&quot; class=&quot;c-described-link__description&quot;&gt;The IAAP Certification program offers professional credentials in accessibility, validating knowledge and skills in creating inclusive digital and physical environments.&lt;/span&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Accessibility boot camp takeaways</title>
@@ -108,28 +227,9 @@ You can use an eraser on the drafting table or a sledgehammer on the constructio
 	</entry>
 	
 	<entry>
-		<title>Telling stories to ourselves</title>
-		<link href="https://david-way.github.io/blog/story-telling-in-design/"/>
-		<updated>2024-02-28T00:00:00Z</updated>
-		<id>https://david-way.github.io/blog/story-telling-in-design/</id>
-		<content type="html">&lt;p&gt;Storytelling is how the human mind likes to consume information. Our thoughts synchronize with that of the storyteller. Listening to a well told story is almost to experience it ourselves.&lt;/p&gt;
-&lt;p&gt;In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we&#39;re looking at.&lt;/p&gt;
-&lt;p&gt;However, stories don&#39;t always need to make logical sense. We are, occasionally, willing to suspend disbelief if the story &lt;em&gt;or&lt;/em&gt; the storyteller is engaging enough...&lt;/p&gt;
-&lt;p&gt;While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. An obvious omission that could affect the result and direction of our proposed design. The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause or causes, it was worrying at this late stage of the project.&lt;/p&gt;
-&lt;p&gt;We were scheduled to present our findings and recommendations the next day. Should we reschedule the playback? I scrambled to the team; hopefully, someone knew the answer. Luckily, this particular question could be answered before the presentation, and it didn&#39;t change or invalidate the design recommendations we were making. But we got lucky...&lt;/p&gt;
-&lt;p&gt;Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated. Some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated.&lt;/p&gt;
-&lt;p&gt;A systematic approach will catch more information and represent it more clearly but looking back, the main contributing factor to this episode was not making enough time to write and consolidate my understanding as I went.&lt;/p&gt;
-&lt;p&gt;Writing is really good at finding holes in your knowledge or reasoning. If you can&#39;t entirely outline a thought or set of points into a written sentence or paragraph, then you probably need to finish exploring or formulating that thought.&lt;/p&gt;
-&lt;p&gt;Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought in need of more robust exploration.&lt;/p&gt;
-&lt;p&gt;Writing concisely and frequently throughout the design process is just as important as any other design process task. Summarizing learnings and ideas. Forming them into cogent sentences. Writing down checklists of questions and, importantly, circulating this information frequently with the team helps form a more comprehensive understanding with better quality ideas and solutions.&lt;/p&gt;
-&lt;p&gt;Keep telling your stories designers. But to avoid plot holes (and heart attacks), write, share, and refine them diligently first.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>The theme toggle, an empty vanity</title>
 		<link href="https://david-way.github.io/blog/dark-mode-toggles/"/>
-		<updated>2023-03-10T00:00:00Z</updated>
+		<updated>2023-02-10T00:00:00Z</updated>
 		<id>https://david-way.github.io/blog/dark-mode-toggles/</id>
 		<content type="html">&lt;p&gt;&lt;strong&gt;&lt;abbr&gt;TLDR&lt;/abbr&gt;:&lt;/strong&gt; This site has a &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; theme, but it doesn&#39;t have a dark/light mode toggle or a theme selector because your browser/device already has one.&lt;/p&gt;
 &lt;p&gt;The primary goal for this site was to force myself to write more. I always enjoy having written, but I rarely enjoy the act of writing itself.&lt;/p&gt;
@@ -206,6 +306,25 @@ However it&#39;s important that the default value should be set to use the syste
 				&lt;/blockquote&gt;
 &lt;p&gt;Maybe, the user will never discover and beam in wonder at the exceptional &lt;span class=&quot;u-display:none-when-color-scheme:dark&quot;&gt;dark&lt;/span&gt;&lt;span class=&quot;u-display:none-when-color-scheme:light&quot;&gt;light&lt;/span&gt; theme I toiled away on (a noble sacrifice on my part).&lt;/p&gt;
 &lt;p&gt;But maybe, the best theme toggle is the one the user already has.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Telling stories to ourselves</title>
+		<link href="https://david-way.github.io/blog/story-telling-in-design/"/>
+		<updated>2023-01-28T00:00:00Z</updated>
+		<id>https://david-way.github.io/blog/story-telling-in-design/</id>
+		<content type="html">&lt;p&gt;Storytelling is how the human mind likes to consume information. Our thoughts synchronize with that of the storyteller. Listening to a well told story is almost to experience it ourselves.&lt;/p&gt;
+&lt;p&gt;In design, we rely on it as an efficient and valuable tool for communicating complex information and compelling our listeners to care and engage more deeply with the problem we&#39;re looking at.&lt;/p&gt;
+&lt;p&gt;However, stories don&#39;t always need to make logical sense. We are, occasionally, willing to suspend disbelief if the story &lt;em&gt;or&lt;/em&gt; the storyteller is engaging enough...&lt;/p&gt;
+&lt;p&gt;While preparing a recent presentation after a large (and what felt at the time like a diligently executed) piece of design research, I was fine-tuning the narrative from the scenario we storyboard-ed earlier that day. Suddenly, a glaringly obvious plot hole appeared to me. An obvious omission that could affect the result and direction of our proposed design. The team of very motivated domain and product experts were working closely together on th project for two weeks straight. Through workshops, user testing sessions, and debriefing sessions, no one thought to bring it up or ask about it? Whatever the cause or causes, it was worrying at this late stage of the project.&lt;/p&gt;
+&lt;p&gt;We were scheduled to present our findings and recommendations the next day. Should we reschedule the playback? I scrambled to the team; hopefully, someone knew the answer. Luckily, this particular question could be answered before the presentation, and it didn&#39;t change or invalidate the design recommendations we were making. But we got lucky...&lt;/p&gt;
+&lt;p&gt;Times like these highlight the importance of adhering to a good research process. Mistakes happen, lapses in judgment, bias, and blind spots. We are human after all. In a fast-moving project, some themes can go unnoticed, or their impact can be underappreciated. Some half-formed ideas can be ripped from your focus by other priorities before they are fully formed and interrogated.&lt;/p&gt;
+&lt;p&gt;A systematic approach will catch more information and represent it more clearly but looking back, the main contributing factor to this episode was not making enough time to write and consolidate my understanding as I went.&lt;/p&gt;
+&lt;p&gt;Writing is really good at finding holes in your knowledge or reasoning. If you can&#39;t entirely outline a thought or set of points into a written sentence or paragraph, then you probably need to finish exploring or formulating that thought.&lt;/p&gt;
+&lt;p&gt;Discussion and presentation can encourage us to consciously or unconsciously follow the happy path, ignoring difficult threads of thought in need of more robust exploration.&lt;/p&gt;
+&lt;p&gt;Writing concisely and frequently throughout the design process is just as important as any other design process task. Summarizing learnings and ideas. Forming them into cogent sentences. Writing down checklists of questions and, importantly, circulating this information frequently with the team helps form a more comprehensive understanding with better quality ideas and solutions.&lt;/p&gt;
+&lt;p&gt;Keep telling your stories designers. But to avoid plot holes (and heart attacks), write, share, and refine them diligently first.&lt;/p&gt;
 </content>
 	</entry>
 	
