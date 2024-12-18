@@ -12,9 +12,11 @@ tags:
 
 Humans are the only species for whom tool use is a defining and universal characteristic.
 
-Tools embody the knowledge and expertise related to the tasks and needs they were designed to address. They crystallize, refine, and facilitate the sharing of this knowledge and expertise.
+What I value most in good tools is how they embody the toolmakers knowledge and the expertise related to the tasks and needs they were designed to address. They crystallize, refine, and facilitate the sharing of this knowledge and expertise. Good tools can provide solutions while teaching you more about the underlying problems.
 
-Here is a list of tools and resources I've found very useful when learning and applying the concepts and principles of accessible design.
+When approaching a new domain, finding and deeply learning about available tools can be a great introduction to learning about the domain.
+
+In the last year I've been learning deeply and applying the concepts and principles of accessible digital product design. Here is a list of tools and resources I've found particularly useful.
 
 ## Web Design Tools
 
