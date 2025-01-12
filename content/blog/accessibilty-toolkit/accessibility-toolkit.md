@@ -87,6 +87,8 @@ A long list of very specific bookmarklets can be found on [Paul J. Adam](https:/
 
 ## References
 
+Here's a list of related references, because the best tool box you can fill is the one between your ears...
+
 <figure>
 {% image "./images/uk-gov-dos-donts-a11y-posters.png", "collection of do's and don'ts UK Gov a11y posters" %}
 
