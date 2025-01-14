@@ -87,8 +87,6 @@ A long list of very specific bookmarklets can be found on [Paul J. Adam](https:/
 
 ## References
 
-Here's a list of related references, because the best tool box you can fill is the one between your ears...
-
 <figure>
 {% image "./images/uk-gov-dos-donts-a11y-posters.png", "collection of do's and don'ts UK Gov a11y posters" %}
 
@@ -155,6 +153,13 @@ The <cite><a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on
 
 ## Courses
 
+Here's a list of accessibility training materials, because the best tool box you can fill is the one between your ears...
+
+{% describedlink
+  "Accessibility First Design",
+  "https://www.linkedin.com/learning/accessibility-first-design/why-accessibility-first-design",
+  "A short hour and a half course covering the benefits of an accessibility-first approach to designing digital experiences to build more useful, resilient, and inclusive products."
+%}
 {% describedlink
   "Deque: Accessibility Bootcamp",
   "https://dequeuniversity.com/curriculum/instructor-led/bootcamp",
