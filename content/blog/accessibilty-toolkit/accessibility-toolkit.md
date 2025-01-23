@@ -46,6 +46,11 @@ In the last year I've been learning deeply and applying the concepts and princip
   "Analyze your implementation with PageSpeed Insights. Get your PageSpeed score and use PageSpeed suggestions to make your web site faster and more accessible."
 %}
 {% describedlink
+  "Flesch Kincaid Calculator",
+  "https://charactercalculator.com/flesch-reading-ease/",
+  "Gauge the accessibility of your written content. An online tool that evaluates the readability of a piece of text. The tool gives both ease of reading score and calculates the reading grade level which equates the texts complexity to an American school grade level."
+%}
+{% describedlink
   "WebFX",
   "https://www.webfx.com/tools/read-able/",
   "An objective reading grade level assessment tool. Ensure your language is clear and understandable to your target audience."
