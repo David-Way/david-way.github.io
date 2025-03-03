@@ -14,7 +14,7 @@ Humans are the only species for whom tool use is a defining and universal charac
 
 What I value most in good tools is how they embody the toolmakers knowledge and the expertise related to the tasks and needs they were designed to address. They crystallize, refine, and facilitate the sharing of this knowledge and expertise. Good tools can provide solutions while teaching you more about the underlying problems.
 
-When approaching a new domain, finding and deeply learning about available tools can be a great introduction to learning about the domain.
+It's easy to over rely and over-focus on tooling (at the expense of studying theory and gaining practical experience) but when approaching a new domain, deeply learning about available tools can be a great introduction to learning about the domain.
 
 In the last year I've been learning deeply and applying the concepts and principles of accessible digital product design. Here is a list of tools and resources I've found particularly useful.
 
