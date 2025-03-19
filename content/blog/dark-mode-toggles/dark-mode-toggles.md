@@ -59,11 +59,11 @@ Light mode is generally more readable in well-lit environments. A [Human Factors
 
 Neither dark or light mode is objectively superior; each has its merits and pitfalls that depend on individual preferences and other factors out of your control. The most responsible course of action is obviously to offer both a light and dark mode and let the user decide.
 
-Once it was finished implementing the <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, I was slightly embarrassed to say that I was excited to work on a cool toggle switch.
+Once I was finished implementing the <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, I'm slightly embarrassed to say, I was excited to work on a cool toggle switch.
 
 ## Question 2: Should I add a theme toggle control?
 
-My initial intuition was that this would be an easy yes. these were honestly the best reasons I could devise:
+My first intuition was that the answer to this question would be an obvious "yes". In an effort to honestly evaluate the feature, what follows are the best reasons I could come up with.
 
 - **Appeal of Novelty**: Because it will be fun (think of all the time we can spend tweaking the easing curve on an elaborate sun into moon animation) 🤓
 
@@ -73,11 +73,11 @@ My initial intuition was that this would be an easy yes. these were honestly the
 
 - **Vanity**: Because I put all this effort into supporting a <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, not every site has one, so why not make it discoverable and easily accessible?
 
-Less than convincing. Perhaps I should have asked a more open question. A question like "How should the user select a theme?".
+Less than convincing. Perhaps you can think of better reasons or perhaps I should have asked a more open question. A question like "How should the user select a theme?".
 
-This is a better question to ask as it opens up the possibilities to a reality that was quick to come to mind.
+This is a better question as it opens up the mind to lateral possibilities, diverging from the narrow focus of a solution. The next thought came easier.
 
-Users already have a global and robust way to define their preferred theme and browsers do a [good job](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility) of honoring the application of these preferences.
+Users already have a global and robust way to define their preferred theme and browsers do a [good job](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility) of honoring the application of these preferences!
 
 <figure class="u-bleed-container:small">
 {% image "./images/firefox-mode-selector.png", "The Android theme controls also allow for scheduling for when a particular theme should be applied" %}
@@ -85,7 +85,7 @@ Users already have a global and robust way to define their preferred theme and b
 </figure>
 
 {% insettext %}
-However it's important that the default value should be set to use the system preference and that the users shouldn't see a [Flash of inAccurate coloR Theme](https://css-tricks.com/flash-of-inaccurate-color-theme-fart/) which is very likely as the code to store and and respond to previous preference is going to be running after a page’s first render.
+ℹ️ However it's important that the default value should be set to use the system preference and that the users shouldn't see a [Flash of inAccurate coloR Theme](https://css-tricks.com/flash-of-inaccurate-color-theme-fart/) which is very likely as the code to store and and respond to previous preference is going to be running after a page’s first render.
 {% endinsettext %}
 
 These controls work system-wide/device-wide, often at the Operating System level (where the user can set it once) and at a per-application level where users can automatically adjust their preferred theme based on conditions like the time of day or ambient light conditions.
@@ -95,14 +95,14 @@ These controls work system-wide/device-wide, often at the Operating System level
 <figcaption>The Android theme controls also allow for scheduling for when a particular theme should be applied</figcaption>
 </figure>
 
-From a theming perspective, there is nothing unique enough about this site that I should have any reason to think it would be an exception to how a visitor would normally prefer to consume their content.
+From a theming perspective, there is nothing unique enough about this site. Nothing that I should have any reason to think it would be an exception to how a visitor would normally prefer to consume their content. Users spend most of their time on other websites, so they expect your site to work like all the other sites they already know. It's also reasonable for them to expect those sites to honor configuration decisions they have already made.
 
-Adding a theme toggle to the page adds design redundancy at the cost of complicating a simple feature. It's also an extra tab stop for keyboard/screen reader users and an additional eye fixation. It's also extra code to maintain.
+Adding a theme toggle to the page adds design redundancy at the cost of complicating a simple feature. It's also an extra tab stop for keyboard/screen reader users and an additional eye fixation as well as extra code to maintain.
 
 {% blockquote "Antoine de Saint-Exupery. (2022). Wit & Wisdom. The Week, (1413), 21." %}
 …[Perfection is achieved] not when there is nothing left to add, but when there is nothing left to take away.
 {% endblockquote %}
 
-Maybe, the user will never discover and beam in wonder at the exceptional <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (a noble sacrifice on my part).
+Maybe, some users will never discover and beam in wonder at the exceptional <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (a noble sacrifice on my part).
 
 But maybe, the best theme toggle is the one the user already has.
