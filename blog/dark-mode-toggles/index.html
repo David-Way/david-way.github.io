@@ -99,9 +99,9 @@ This very site, <span class="u-display:none-when-color-scheme:dark">brooding in 
 <p>Light mode is generally more readable in well-lit environments. A <a href="https://journals.sagepub.com/doi/abs/10.1177/0018720813515509">Human Factors study suggests light mode enhances the legibility of text</a>, and as a result, the reading comprehension and proofreading performance of the reader. Light backgrounds can also be more conducive to displaying accurate colors in some scenarios.</p>
 </div>
 <p>Neither dark or light mode is objectively superior; each has its merits and pitfalls that depend on individual preferences and other factors out of your control. The most responsible course of action is obviously to offer both a light and dark mode and let the user decide.</p>
-<p>Once it was finished implementing the <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, I was slightly embarrassed to say that I was excited to work on a cool toggle switch.</p>
+<p>Once I was finished implementing the <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, I'm slightly embarrassed to say, I was excited to work on a cool toggle switch.</p>
 <h2 id="question-2-should-i-add-a-theme-toggle-control" tabindex="-1">Question 2: Should I add a theme toggle control? <a class="c-header-anchor" href="#question-2-should-i-add-a-theme-toggle-control">#</a></h2>
-<p>My initial intuition was that this would be an easy yes. these were honestly the best reasons I could devise:</p>
+<p>My first intuition was that the answer to this question would be an obvious &quot;yes&quot;. In an effort to honestly evaluate the feature, what follows are the best reasons I could come up with.</p>
 <ul>
 <li>
 <p><strong>Appeal of Novelty</strong>: Because it will be fun (think of all the time we can spend tweaking the easing curve on an elaborate sun into moon animation) 🤓</p>
@@ -116,16 +116,16 @@ This very site, <span class="u-display:none-when-color-scheme:dark">brooding in 
 <p><strong>Vanity</strong>: Because I put all this effort into supporting a <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> mode, not every site has one, so why not make it discoverable and easily accessible?</p>
 </li>
 </ul>
-<p>Less than convincing. Perhaps I should have asked a more open question. A question like &quot;How should the user select a theme?&quot;.</p>
-<p>This is a better question to ask as it opens up the possibilities to a reality that was quick to come to mind.</p>
-<p>Users already have a global and robust way to define their preferred theme and browsers do a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility">good job</a> of honoring the application of these preferences.</p>
+<p>Less than convincing. Perhaps you can think of better reasons or perhaps I should have asked a more open question. A question like &quot;How should the user select a theme?&quot;.</p>
+<p>This is a better question as it opens up the mind to lateral possibilities, diverging from the narrow focus of a solution. The next thought came easier.</p>
+<p>Users already have a global and robust way to define their preferred theme and browsers do a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility">good job</a> of honoring the application of these preferences!</p>
 <figure class="u-bleed-container:small">
 <picture><source type="image/avif" srcset="/img/CGmqmhpy5U-736.avif 736w"><source type="image/webp" srcset="/img/CGmqmhpy5U-736.webp 736w"><img alt="The Android theme controls also allow for scheduling for when a particular theme should be applied" loading="lazy" decoding="async" src="/img/CGmqmhpy5U-736.png" width="736" height="311"></picture>
 <figcaption>The Firefox mode selector allows you to explicitly set your preference for the browser or to defer to a preference you've set more broadly at the Operating System level</figcaption>
 </figure>
 <p><div class="c-inset-text">
 <span>
-However it's important that the default value should be set to use the system preference and that the users shouldn't see a <a href="https://css-tricks.com/flash-of-inaccurate-color-theme-fart/">Flash of inAccurate coloR Theme</a> which is very likely as the code to store and and respond to previous preference is going to be running after a page’s first render.
+ℹ️ However it's important that the default value should be set to use the system preference and that the users shouldn't see a <a href="https://css-tricks.com/flash-of-inaccurate-color-theme-fart/">Flash of inAccurate coloR Theme</a> which is very likely as the code to store and and respond to previous preference is going to be running after a page’s first render.
 </span>
 </div></p>
 <p>These controls work system-wide/device-wide, often at the Operating System level (where the user can set it once) and at a per-application level where users can automatically adjust their preferred theme based on conditions like the time of day or ambient light conditions.</p>
@@ -133,15 +133,15 @@ However it's important that the default value should be set to use the system pr
 <picture><source type="image/avif" srcset="/img/kkXhc6VNwP-738.avif 738w"><source type="image/webp" srcset="/img/kkXhc6VNwP-738.webp 738w"><img alt="The Android theme controls also allow for scheduling for when a particular theme should be applied" loading="lazy" decoding="async" src="/img/kkXhc6VNwP-738.png" width="738" height="914"></picture>
 <figcaption>The Android theme controls also allow for scheduling for when a particular theme should be applied</figcaption>
 </figure>
-<p>From a theming perspective, there is nothing unique enough about this site that I should have any reason to think it would be an exception to how a visitor would normally prefer to consume their content.</p>
-<p>Adding a theme toggle to the page adds design redundancy at the cost of complicating a simple feature. It's also an extra tab stop for keyboard/screen reader users and an additional eye fixation. It's also extra code to maintain.</p>
+<p>From a theming perspective, there is nothing unique enough about this site. Nothing that I should have any reason to think it would be an exception to how a visitor would normally prefer to consume their content. Users spend most of their time on other websites, so they expect your site to work like all the other sites they already know. It's also reasonable for them to expect those sites to honor configuration decisions they have already made.</p>
+<p>Adding a theme toggle to the page adds design redundancy at the cost of complicating a simple feature. It's also an extra tab stop for keyboard/screen reader users and an additional eye fixation as well as extra code to maintain.</p>
 <p><blockquote class="c-block-quote" >
 <p class="c-block-quote__content">
 …[Perfection is achieved] not when there is nothing left to add, but when there is nothing left to take away.</p>
 </p>
 					<footer class="c-block-quote__footer">— <cite>Antoine de Saint-Exupery. (2022). Wit & Wisdom. The Week, (1413), 21.</cite></footer>
 				</blockquote>
-<p>Maybe, the user will never discover and beam in wonder at the exceptional <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (a noble sacrifice on my part).</p>
+<p>Maybe, some users will never discover and beam in wonder at the exceptional <span class="u-display:none-when-color-scheme:dark">dark</span><span class="u-display:none-when-color-scheme:light">light</span> theme I toiled away on (a noble sacrifice on my part).</p>
 <p>But maybe, the best theme toggle is the one the user already has.</p>
 
 <ul class="c-iterator-links">
