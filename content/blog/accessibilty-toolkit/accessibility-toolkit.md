@@ -175,3 +175,8 @@ Here's a list of accessibility training materials, because the best tool box you
   "https://www.accessibilityassociation.org/s/certification",
   "The IAAP Certification program offers professional credentials in accessibility, validating knowledge and skills in creating inclusive digital and physical environments."
 %}
+{% describedlink
+  "Learn Accessibility Course - web.dev",
+  "https://web.dev/learn/accessibility",
+  "An evergreen course for beginners and advanced web developers. It is not a complete reference on the subject but offers a good overview of accessibility principles, accessibility testing and content design from an accessible perspective."
+%}
