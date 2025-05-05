@@ -4,10 +4,10 @@ cook: 25
 rest: 5
 ---
 
-## Ingredients 
+## Ingredients
 
 - mushroom (chanterelles, trumpet, oyster, or sliced button)
-- touch oil of
+- oil
 - spice mix (for example, garlic, smoked paprika, oregano, brown sugar)
 
 ## Process
@@ -15,7 +15,7 @@ rest: 5
 - Preheat oven to 200°C
 - Toss mushrooms in spice mix and oil
 - Spread mushrooms uncrowded on baking tray
-- Bake for ~25 minutes 
+- Bake for ~25 minutes
 
 ## Notes
 
