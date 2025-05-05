@@ -232,6 +232,16 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/design-system/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/developer-experience/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/ux/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
@@ -243,16 +253,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/screen-reader/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-system/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/developer-experience/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -277,17 +277,22 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/prototype/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/html/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/design-technologist/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/prototype/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/responsive-design/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -317,11 +322,6 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/responsive-design/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/design-pattern/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
@@ -332,12 +332,7 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/design-sprint/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<loc>https://david-way.github.io/tags/voice-over/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -362,7 +357,12 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/voice-over/</loc>
+		<loc>https://david-way.github.io/tags/design-sprint/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/time-management/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
