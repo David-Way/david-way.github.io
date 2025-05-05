@@ -122,12 +122,32 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/food/arayes/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/food/crispy-chicken-wings/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/food/crispy-smashed-potatoes/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/food/feta-tortilla/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/food/mushroom-crisp/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/food/onion-burger/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -162,6 +182,11 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/design-strategy/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/web-design/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
@@ -183,21 +208,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/i-may-be-wrong-but/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-strategy/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-system/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/developer-experience/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -237,6 +247,21 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/design-system/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/developer-experience/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/design-thinking/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/writing-exercise/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
@@ -248,11 +273,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/product-design/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/design-thinking/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
@@ -272,16 +292,6 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/data-storage/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/yaml/</loc>
-		<lastmod>2025-05-05</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/design-research/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
@@ -293,6 +303,16 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/writing/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/data-storage/</loc>
+		<lastmod>2025-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/yaml/</loc>
 		<lastmod>2025-05-05</lastmod>
 	</url>
 	
