@@ -6,16 +6,16 @@ rest: 5
 
 ## Ingredients
 
-- chicken wings 
+- chicken wings
 - oil
-- salt 
-- pepper 
+- salt
+- pepper
 - baking powder
 
-## Process 
+## Process
 
-- Preheat oven at 120c
-- Dry chicken using paper towels 
+- Preheat oven at 120°C
+- Dry chicken using paper towels
 - Season chicken, arrange spaced out on baking tray
 - Roast at 120°C for 30 minutes, bottom of oven
 - Roast at 220°C for 40-50 minutes
