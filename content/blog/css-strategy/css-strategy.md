@@ -10,9 +10,9 @@ tags:
 
 Powerful modern CSS tooling and features have made achieving desired effects easier and more robust than ever.
 
-When the "how" is so trivial you barely have to think about it you can lose some of the time and as a result the deeper understanding of the Why's and Whens that comes as a side effect of of trial and error.
+When the "how" is so trivial you barely have to think about it you can lose some of the time and as a result the deeper understanding of the Why's and Whens that comes as a side effect of trial and error.
 
-I'll take this opportunity to share a few more strategic points of view I've pondered up in my years of pushing (and failing to push) pixels that I might have missed if things were always as easy as they are today.
+I'll take this opportunity to share a few more nuqnces points of view I've pondered up in my years of pushing (and failing to push) pixels that I feel I might have missed if things were always as easy as they are today.
 
 
 ## Mobile first?
