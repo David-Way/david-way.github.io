@@ -33,4 +33,4 @@ Enforcing an aspect ratio, via the padding bottom trick or the modern aspect-rat
 
 Finely tuned code splitting, lazy loading/preloading assets, auditing and automating unused styles culling, file  minification, inlining critical above the fold render path styles, optimising animations to use hardware acceleration. These have the largest effect on the metrics we care the most about, reducing bundle size, minimizing FLOUT and other layout jank, preventing render thread blocking and minimizing time to first paint.
 
-Low selector specificity will barely nudge the needle on any of these metrics but I single it out for it's outsized effect on the architecture, scalability and maintainability of a project.
+Low selector specificity will barely nudge the needle on any of these metrics but I single it out for it's outsized effect on the architecture, agility, scalability and maintainability of a project.
