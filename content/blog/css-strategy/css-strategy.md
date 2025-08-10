@@ -47,3 +47,5 @@ Low selector specificity will barely nudge the needle on any of these metrics bu
 
 pros: don't have to name things anymore, declaration order becomes ignorable
 cons: component system don't benefit 
+
+better solutions exists, CSS modules, many worse solutions also exist 
