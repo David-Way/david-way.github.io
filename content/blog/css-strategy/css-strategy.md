@@ -42,3 +42,8 @@ Low selector specificity will barely nudge the needle on any of these metrics bu
 
 ### CSS in JS, for or against?
 
+
+### Tailwind 
+
+pros: don't have to name things anymore 
+cons: 
