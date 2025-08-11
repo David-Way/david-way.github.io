@@ -17,7 +17,7 @@ I'll take this opportunity to share a few more nuanced points of view I've ponde
 
 ## Mobile first?
 
-The "direction" you write your CSS in should, for simplicity's sake, likely follow whatever convention your team has established already. Ideally, you should implement both options,on a case-by-case basis, and use the direction that results in the least amount of or most elegant code. Ultimately the key value here is to be thinking and designing in a mobile first mindset. "Space is not a given, space is a progressive enhancement, the pattern I choose will work first in the restrictions of a small screen and adapt to take advantage of any additional space where available".
+The "direction" you write your CSS in should, for simplicity's sake, likely follow whatever convention your team has established already. Ideally, you should implement both options,on a case-by-case basis, and use the direction that results in the least amount of or most elegant code. Ultimately the key value here is to be thinking and designing in a mobile first mindset. "Space is not a given, space is a progressive enhancement, the pattern I choose will work first in the restrictions of a small screen and adapt to take advantage of any additional space where available". The direction you implement that design in is less important.
 
 ## Using rems means my fonts are responsive?
 
