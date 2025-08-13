@@ -35,6 +35,11 @@ Finely tuned code splitting, lazy loading/preloading assets, auditing and automa
 
 Low selector specificity will barely nudge the needle on any of these metrics but I single it out for specific "performance" focus for it's outsized effect on the style architecture, agility, scalability and maintainability of a project. Also, developer sanity.
 
+## Design tokens are not just about scalability, reuse, performance, theme-abilty and consistency.
+
+Dessign tokens are about imbuing meaningful relationships between your design decisions.
+
+Capturing these relationships with meaningful names (and in a single place) makes understanding the downstream effects of changes and implementing accessibility best practices, such as maintaining sufficient color contrast, much simpler.
 
 ## More to come... 
 
