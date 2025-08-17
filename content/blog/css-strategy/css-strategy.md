@@ -17,7 +17,7 @@ I'll take this opportunity to share a few more nuanced points of view I've ponde
 
 ## Mobile first?
 
-The "direction" you write your CSS in should, for simplicity's sake, likely follow whatever convention your team has established already. Ideally, you should implement both options,on a case-by-case basis, and use the direction that results in the least amount of or most elegant code. Ultimately the key value here is to be thinking and designing in a mobile first mindset. "Space is not a given, space is a progressive enhancement, the pattern I choose will work first in the restrictions of a small screen and adapt to take advantage of any additional space where available".
+The "direction" you write your CSS in should, for simplicity's sake, likely follow whatever convention your team has established already. Ideally, you should implement both options,on a case-by-case basis, and use the direction that results in the least amount of or most elegant code. Ultimately the key value here is to be thinking and designing in a mobile first mindset. "Space is not a given, space is a progressive enhancement, the pattern I choose will work first in the restrictions of a small screen and adapt to take advantage of any additional space where available". The direction you implement that design in is less important.
 
 ## Using rems means my fonts are responsive?
 
@@ -31,7 +31,7 @@ Enforcing an aspect ratio, via the padding bottom trick or the modern aspect-rat
 
 ## Is performance in CSS important? What's worth focusing on?
 
-Finely tuned code splitting, lazy loading/preloading assets, auditing and automating unused styles culling, file  minification, inlining critical above the fold render path styles, optimising animations to use hardware acceleration and avoid triggering repaints. These have the largest effect on the metrics we care the most about, reducing bundle size, minimizing FLOUT and other layout jank, preventing render thread blocking and minimizing time to first paint. These are all worth investing some level of effort into, however...
+Finely tuned code splitting, lazy loading/preloading assets, auditing and automating unused styles culling, file  minification, inlining critical above the fold render path styles, optimising animations to use hardware acceleration and avoid triggering repaints. These have the largest effect on the metrics we care the most about, reducing bundle size, minimizing FLOUT and other layout jank, preventing render thread blocking and minimizing time to first paint. CSS is rarely the main cause of performance issues and in some cases the complexity incurred by these methods can be like picking up pennies infront of a steam roller and the energy would be best spent elsewhere (media and JavaScript). These are all worth investing some level of effort into, however...
 
 Low selector specificity will barely nudge the needle on any of these metrics but I single it out for specific "performance" focus for it's outsized effect on the style architecture, agility, scalability and maintainability of a project. Also, developer sanity.
 
