@@ -41,7 +41,7 @@ The requirements I prioritized with my implementation were:
 <figure class="u-bleed-container:medium">
 {% image "./images/page-speed-score.png", "Page Speed score indicators, 98 Performance, 95 Accessibility, 100 Best Practices, 100 SEO 💪..." %}
 <figcaption>
-This was the first project I used a tool like <a href="https://pagespeed.web.dev/analysis/https-david-way-github-io-time-timer/xx8pnanrcb?form_factor=mobile">Page Speed</a>.
+This was the first project I used a tool like <a href="https://pagespeed.web.dev/analysis/https-www-davidway-ie-time-timer/aj3gqm6821?form_factor=mobile">Page Speed</a>.
 </figcaption>
 </figure>
 
