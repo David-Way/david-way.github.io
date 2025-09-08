@@ -1,46 +1,45 @@
 @use "./variables";
 @use "./mixins";
 
-// 🔗 Reference: https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=400&minRatio=1.25&maxFontSize=18&maxWidth=1280&maxRatio=1.333&steps=x-sm%2Csm%2Cbase%2Cmd%2Clg%2Cxl%2Cxxl%2Cxxxl&baseStep=base&prefix=font-size&decimals=2&includeFallbacks=on&useRems=on&remValue=16&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1280
-/* Fluid font size variables, for browsers that support clamp */
-@supports (font-size: clamp(1rem, 1vw, 1rem)) {
-	:root {
-		--font-size-x-sm: clamp(0.64rem, -0.01vw + 0.64rem, 0.63rem);
-		--font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
-		--font-size-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
-		--font-size-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
-		--font-size-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
-		--font-size-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
-		--font-size-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
-		--font-size-xxxl: clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem);
-	}
+// 🔗 Reference: https://www.fluid-type-scale.com/calculate?minFontSize=20&minWidth=400&minRatio=1.25&maxFontSize=24&maxWidth=1280&maxRatio=1.333&steps=x-sm%2Csm%2Cbase%2Cmd%2Clg%2Cxl%2Cxxl%2Cxxxl&baseStep=base&prefix=font-size&useContainerWidth=undefined&includeFallbacks=true&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1280
+
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+		--font-size-x-sm: clamp(0.8rem, 0.08vi + 0.78rem, 0.84rem);
+		--font-size-sm: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+		--font-size-base: clamp(1.25rem, 0.45vi + 1.14rem, 1.5rem);
+		--font-size-md: clamp(1.56rem, 0.79vi + 1.36rem, 2rem);
+		--font-size-lg: clamp(1.95rem, 1.29vi + 1.63rem, 2.67rem);
+		--font-size-xl: clamp(2.44rem, 2.02vi + 1.94rem, 3.55rem);
+		--font-size-xxl: clamp(3.05rem, 3.06vi + 2.29rem, 4.74rem);
+		--font-size-xxxl: clamp(3.81rem, 4.54vi + 2.68rem, 6.31rem);
+  }
 }
-
-/* Fallback variables for browsers that don't support clamp */
-@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
-	:root {
-		--font-size-x-sm: 0.64rem;
-		--font-size-sm: 0.8rem;
-		--font-size-base: 1rem;
-		--font-size-md: 1.25rem;
-		--font-size-lg: 1.56rem;
-		--font-size-xl: 1.95rem;
-		--font-size-xxl: 2.44rem;
-		--font-size-xxxl: 3.05rem;
-	}
-
-	@media screen and (min-width: 1280px) {
-		:root {
-			--font-size-x-sm: 0.63rem;
-			--font-size-sm: 0.84rem;
-			--font-size-base: 1.13rem;
-			--font-size-md: 1.5rem;
-			--font-size-lg: 2rem;
-			--font-size-xl: 2.66rem;
-			--font-size-xxl: 3.55rem;
-			--font-size-xxxl: 4.73rem;
-		}
-	}
+/* For browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+		--font-size-x-sm: 0.8rem;
+		--font-size-sm: 1rem;
+		--font-size-base: 1.25rem;
+		--font-size-md: 1.56rem;
+		--font-size-lg: 1.95rem;
+		--font-size-xl: 2.44rem;
+		--font-size-xxl: 3.05rem;
+		--font-size-xxxl: 3.81rem;
+  }
+  @media screen and (min-width: 1280px) {
+    :root {
+			--font-size-x-sm: 0.84rem;
+			--font-size-sm: 1.13rem;
+			--font-size-base: 1.5rem;
+			--font-size-md: 2rem;
+			--font-size-lg: 2.67rem;
+			--font-size-xl: 3.55rem;
+			--font-size-xxl: 4.74rem;
+			--font-size-xxxl: 6.31rem;
+    }
+  }
 }
 
 html {
