@@ -98,7 +98,7 @@
 // 🏗️ Layer
 //--------------------
 @mixin layer($layer) {
-	@if not map-has-key(variables.$layer-shadows, $layer) {
+	@if not map.has-key(variables.$layer-shadows, $layer) {
 		@warn "❗ #{$layer} is not a valid layer.";
 	}
 
@@ -106,7 +106,7 @@
 }
 
 @mixin getZIndexFor($index-for) {
-	@if not map-has-key(variables.$z-index, $index-for) {
+	@if not map.has-key(variables.$z-index, $index-for) {
 		@warn '❗ #{$index-for} does not have a valid z-index.';
 	}
 
