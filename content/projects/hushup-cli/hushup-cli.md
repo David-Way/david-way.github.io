@@ -3,7 +3,7 @@ title: "hushup CLI"
 subTitle: A node command line tool to quickly assess and kill processes with open ports.
 description: A node command line tool to quickly assess and kill processes with open ports.
 publish: true
-gridShape: square
+gridShape: tall
 order: 4
 thumbnail: hushup-cli/images/hushup-cli.png
 date: 2021-10-03
