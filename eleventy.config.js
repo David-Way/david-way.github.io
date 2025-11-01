@@ -1,17 +1,16 @@
-const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
+import { DateTime } from "luxon";
+import markdownItAnchor from "markdown-it-anchor";
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const readingTime = require("eleventy-plugin-reading-time");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
+import { default as pluginDrafts } from "./eleventy.config.drafts.js";
+import { default as pluginImages } from "./eleventy.config.images.js";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
@@ -34,8 +33,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
 
-	eleventyConfig.addPlugin(readingTime);
-
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
@@ -44,6 +41,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	// TODO
+	// eleventyConfig.addPlugin(UpgradeHelper);
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -105,6 +105,20 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("filterPublished", (valuesToFilter) => {
 		let values = [...valuesToFilter];
 		return values.filter((value) => value.data.publish);
+	});
+
+	eleventyConfig.addFilter("readingTime", (post) => {
+		const wordsPerMinute = 238; // Average reading speed
+		if (typeof post !== "string") {
+			return "0 minutes";
+		}
+
+		const wordCount = post
+			.split(/\s+/)
+			.filter((word) => word.length > 0).length;
+		const readingTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
+
+		return `${readingTimeMinutes} min`;
 	});
 
 	// Customize Markdown library settings:

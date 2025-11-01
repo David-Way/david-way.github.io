@@ -1,13 +1,20 @@
-require("dotenv").config();
-const { homepage } = require("../package.json");
-const EleventyFetch = require("@11ty/eleventy-fetch");
+import dotenv from "dotenv";
+dotenv.config();
+import Fetch from "@11ty/eleventy-fetch";
 
-module.exports = async function () {
-	const params = new URLSearchParams();
+export default async function () {
 	let data;
-	params.append("url", homepage);
-	params.append("key", process.env.PAGE_SPEED_API_KEY);
-	// We use the fields query string param to ask the Google API to only
+
+	if (process?.env?.ELEVENTY_ENV !== 'production') { // don't run page speed in development
+		return {
+			categories: data,
+		};
+	}
+
+	const params = new URLSearchParams();
+	params.append("url", process?.env?.HOMEPAGE_ENV);
+	params.append("key", process?.env?.PAGE_SPEED_API_KEY);
+	// Use the fields query string param to ask the Google API to only
 	// return the data we need - a score and title for each category in the
 	// Lighthouse test. Without this, the API returns a *lot* of data.
 	params.append(
@@ -15,15 +22,14 @@ module.exports = async function () {
 		"lighthouseResult.categories.*.score,lighthouseResult.categories.*.title",
 	);
 	params.append("prettyPrint", false);
-	// I use the `mobile` strategy, but `desktop` is a valid value too.
-	params.append("strategy", "desktop");
+	params.append("strategy", "desktop"); // alt option: 'mobile'
 	params.append("category", "PERFORMANCE");
 	params.append("category", "ACCESSIBILITY");
 	params.append("category", "BEST-PRACTICES");
 	params.append("category", "SEO");
 
 	try {
-		data = await EleventyFetch(
+		data = await Fetch(
 			`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${params.toString()}`,
 			{
 				duration: "1d",
@@ -36,14 +42,12 @@ module.exports = async function () {
 			data[key].score = parseInt(data[key].score * 100, 10);
 		});
 	} catch (event) {
+		console.log('error')
+		console.log(event);
 		return {
 			categories: undefined,
 		};
 	}
-
-	return {
-		categories: data,
-	};
 };
 
 const getGradeFromScore = function (score) {

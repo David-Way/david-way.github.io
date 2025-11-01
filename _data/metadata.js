@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "!important",
 	url: "https://david-way.github.io/",
 	language: "en",
