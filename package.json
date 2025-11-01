@@ -1,11 +1,12 @@
 {
 	"name": "not-important",
 	"version": "1.0.0",
+	"type": "module",
 	"description": "A place for words.",
 	"scripts": {
 		"build": "npx @11ty/eleventy && npm run build:css",
 		"build:css": "npx sass --style compressed scss/index.scss:public/css/styles.css scss/prism/index.scss:public/css/prism.css",
-		"build:ghpages": "ELEVENTY_ENV=production npx @11ty/eleventy",
+		"build:ghpages": "ELEVENTY_ENV=production HOMEPAGE_ENV='https://www.davidway.ie/' npx @11ty/eleventy",
 		"start": "npm run build:css && npx @11ty/eleventy --serve --quiet & npm run watch:sass",
 		"watch:sass": "npx sass --style compressed scss/index.scss:public/css/styles.css scss/prism/index.scss:public/css/prism.css --watch",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
@@ -13,20 +14,19 @@
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-fetch": "^4.0.0",
-		"@11ty/eleventy-img": "^3.1.0",
-		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-bundle": "^1.0.4",
-		"@11ty/eleventy-plugin-rss": "^1.2.0",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"@11ty/eleventy": "^3.1.2",
+		"@11ty/eleventy-fetch": "^5.1.0",
+		"@11ty/eleventy-img": "^6.0.4",
+		"@11ty/eleventy-navigation": "^1.0.4",
+		"@11ty/eleventy-plugin-bundle": "^3.0.7",
+		"@11ty/eleventy-plugin-rss": "^2.0.4",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"@primer/primitives": "^7.12.0",
 		"dotenv": "^16.4.5",
-		"eleventy-plugin-reading-time": "^0.0.1",
-		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^8.6.7",
-		"prettier": "3.0.3",
-		"sass": "^1.66.1"
+		"luxon": "^3.7.2",
+		"markdown-it-anchor": "^9.2.0",
+		"prettier": "3.6.2",
+		"sass": "^1.93.3"
 	},
 	"homepage": "https://www.davidway.ie/",
 	"repository": {
@@ -43,11 +43,14 @@
 	},
 	"license": "MIT",
 	"engines": {
-		"node": "v18.16.0"
+		"node": "v24.11.0"
 	},
 	"sass": {
 		"includePaths": [
 			"./node_modules"
 		]
+	},
+	"dependencies": {
+		"@11ty/eleventy-upgrade-help": "^3.0.1"
 	}
 }

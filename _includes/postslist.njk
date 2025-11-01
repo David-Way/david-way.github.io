@@ -8,7 +8,7 @@
 			<div class="c-post-list__item-meta">
 				<time class="c-post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
 				<span class="c-post-list__separator" aria-hidden="true">·</span>
-				<span class="c-post-list__reading-time">{{ post | readingTime }} read</span>
+				<span class="c-post-list__reading-time">{{ post.page.rawInput | readingTime }} read</span>
 			<div>
 		</div>
 	</li>
