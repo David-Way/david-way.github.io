@@ -1,14 +1,19 @@
 @use "../partials/mixins";
 @use "../partials/functions";
 
+
+$-min-column-width: 240px;
+$-grid-gap: 1em;
+$-grid-stack-width: calc(calc($-min-column-width * 2) + $-grid-gap); 
+
 .c-project-list {
 	list-style: none;
 	padding: 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax($-min-column-width, 1fr));
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
-	grid-gap: 1em;
+	grid-gap: $-grid-gap;
 
 	&:focus-within .c-project-list-item__link:not(:focus-within),
 	&:hover .c-project-list-item__link:not(:hover) {
@@ -57,9 +62,9 @@
 		display: block;
 		-o-object-fit: cover;
 		object-fit: cover;
+		object-position: top;
 		height: 100%;
 		width: 100%;
-		object-fit: cover;
 		aspect-ratio: 4/3;
 		mix-blend-mode: var(--card-blend-mode);
 	}
@@ -103,13 +108,26 @@
 	&--grid-shape\:box {
 		grid-row: span 2;
 		grid-column: span 2;
+
+		@media (max-width: $-grid-stack-width) {
+			grid-row: auto;
+			grid-column: auto;
+		}
 	}
 
 	&--grid-shape\:wide {
 		grid-column: span 2;
+
+		@media (max-width: $-grid-stack-width) {
+			grid-column: auto;
+		}
 	}
 
 	&--grid-shape\:tall {
 		grid-row: span 2;
+
+		@media (max-width: $-grid-stack-width) {
+			grid-row: auto;
+		}
 	}
 }
