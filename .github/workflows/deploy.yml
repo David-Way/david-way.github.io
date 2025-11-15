@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: github-pages
+    environment: main
     strategy:
       matrix:
         node-version: ["24.11.0"]
