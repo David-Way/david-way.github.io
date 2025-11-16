@@ -42,9 +42,6 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
 
-	// TODO
-	// eleventyConfig.addPlugin(UpgradeHelper);
-
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
@@ -139,12 +136,30 @@ export default function (eleventyConfig) {
 		"describedlink",
 		function (label, href, description) {
 			const uuid = `described-link-id-${
-				Date.now().toString(36) + Math.random().toString(36).substr(2)
+				Date.now().toString(36) + Math.random().toString(36).substring(2)
 			}`;
 			return `
 				<div class="c-described-link">
 					<a id="${uuid}" href="${href}" class="c-described-link__label">${label}</a>
 					<span aria-describedby="${uuid}" class="c-described-link__description">${description}</span>
+				</div>
+			`;
+		},
+	);
+
+	eleventyConfig.addShortcode(
+		"checkbox",
+		function (label, description, checked) {
+			const uuid = `checkbox-id-${
+				Date.now().toString(36) + Math.random().toString(36).substring(2)
+			}`;
+			return `
+				<div class="c-checkbox">
+					<label class="c-checkbox__label"${description ? ` aria-describedby="${uuid}"` : ''}>
+						<input type="checkbox"${checked ? ' checked' : ''} name="${`checkbox-${uuid}`}" />
+						<span class="c-checkbox__label-text">${label}</span>
+					</label>
+					${ (description) ? `<p id="${uuid}" class="c-checkbox__description">${description}</p>` : null }
 				</div>
 			`;
 		},
