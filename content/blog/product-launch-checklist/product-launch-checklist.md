@@ -100,7 +100,7 @@ You probably didn't forget anything, anything that's easy to overlook. Just to b
 %}
 
 {% checkbox
-  "Labels, instructions, page titles, and links have purposeful tex",
+  "Labels, instructions, page titles, and links have purposeful text",
   "Do your links make sense on their own. Would someone reading the label of a link know the location that link will take them without needing to decern it from surrounding context?<br/><br/>Are the page titles set correctly and consistently across the product?",
   false
 %}
