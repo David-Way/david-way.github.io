@@ -1,0 +1,78 @@
+@use "../partials/mixins";
+
+$-checkbox-width: 44px;
+$-checkbox-border-radius: 4px;
+
+.c-checkbox {
+    border: 1px solid var(--color-border-subtle);
+    border-radius: $-checkbox-border-radius;
+    padding: var(--base-size-8);
+
+    &__description {
+        padding: var(--base-size-8);
+        margin: 0;
+    }
+
+    &__label {
+        @include mixins.type-button();
+        display: grid;
+        grid-template-columns: $-checkbox-width auto;
+        align-items: center;
+        gap: var(--base-size-8);
+        padding: var(--base-size-8);
+        background-color: var(--color-canvas-subtle);
+        border-radius: 4px;
+
+        input[type="checkbox"] {
+            /* Add if not using autoprefixer */
+            -webkit-appearance: none;
+            /* Remove most all native input styles */
+            appearance: none;
+            /* For iOS < 15 */
+            background-color: var(--color-canvas-default);
+            /* Not removed via appearance */
+            margin: 0;
+
+            font: inherit;
+            color: currentColor;
+            width: $-checkbox-width;
+            height: $-checkbox-width;
+            border: 2px solid currentColor;
+            border-radius: $-checkbox-border-radius;
+            transform: translateY(-0.075em);
+
+            display: grid;
+            place-content: center;
+            align-self: flex-start;
+
+            &::before {
+                content: "";
+                width: calc($-checkbox-width * .75);
+                height: calc($-checkbox-width * .75);
+                clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                transform: scale(0);
+                transform-origin: bottom left;
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em var(--form-control-color);
+                background-color: CanvasText;
+                background-color: var(--color-accent-fg);
+            }
+
+            &:checked {
+                &::before {
+                    transform: scale(1);
+                }
+
+                & + .c-checkbox__label-text {
+                    text-decoration: line-through;
+                    text-decoration-color: var(--color-switch-track-checked-bg);
+                    text-decoration-thickness: 2px;
+                }
+            }
+
+            &:focus {
+                @include mixins.focus();
+            }
+        }
+    }
+}
