@@ -1,6 +1,5 @@
 # Eleventy
 _site/
-public/*.css
 .env
 .cache
 
@@ -8,6 +7,7 @@ public/*.css
 /node_modules
 
 # Sass
+public/*.css
 .sass-cache/
 *.css.map
 *.sass.map
