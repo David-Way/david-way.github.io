@@ -4,7 +4,7 @@ details,
 .c-details {
 	padding: var(--base-size-8) 0;
 
-	& > *:not(summary) {
+	&>*:not(summary) {
 		border-inline-start: 3px solid var(--color-border-muted);
 		padding-top: var(--base-size-8);
 		padding-right: var(--base-size-8);
@@ -14,7 +14,7 @@ details,
 		margin-bottom: 0;
 	}
 
-	& > *:not(summary):not(ul) {
+	&>*:not(summary):not(ul) {
 		padding-left: var(--base-size-24);
 	}
 }
@@ -31,7 +31,7 @@ summary,
 		@include mixins.focus();
 	}
 
-	& > ul {
+	&>ul {
 		padding-inline-start: var(--base-size-24);
 	}
 }

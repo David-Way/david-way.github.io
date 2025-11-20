@@ -55,12 +55,18 @@
 }
 
 @mixin type-no-select() {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old versions of Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 @mixin style-link() {
@@ -127,9 +133,11 @@
     * 1. Add a non-breaking space
     * 2. Make sure it doesn't mess up the DOM flow
     */
-	& > li:before {
-		content: "\200B"; /* 1 */
-		position: absolute; /* 2 */
+	&>li:before {
+		content: "\200B";
+		/* 1 */
+		position: absolute;
+		/* 2 */
 	}
 }
 

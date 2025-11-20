@@ -74,8 +74,8 @@ export default function (eleventyConfig) {
 
 	// Return all the tags used in a collection
 	eleventyConfig.addFilter("getAllTags", (collection) => {
-		let tagSet = new Set();
-		for (let item of collection) {
+		const tagSet = new Set();
+		for (const item of collection) {
 			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
 		}
 		return Array.from(tagSet);
@@ -94,13 +94,13 @@ export default function (eleventyConfig) {
 
 	// Filter to sort collections by an `order` frontmatter property
 	eleventyConfig.addFilter("sortByOrder", (valuesToSort) => {
-		let values = [...valuesToSort];
+		const values = [...valuesToSort];
 		return values.sort((a, b) => Math.sign(a.data.order - b.data.order));
 	});
 
 	// Filter to filter collections by an `publish` frontmatter property
 	eleventyConfig.addFilter("filterPublished", (valuesToFilter) => {
-		let values = [...valuesToFilter];
+		const values = [...valuesToFilter];
 		return values.filter((value) => value.data.publish);
 	});
 
@@ -132,42 +132,36 @@ export default function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addShortcode(
-		"describedlink",
-		function (label, href, description) {
-			const uuid = `described-link-id-${
-				Date.now().toString(36) + Math.random().toString(36).substring(2)
-			}`;
-			return `
+	eleventyConfig.addShortcode("describedlink", (label, href, description) => {
+		const uuid = `described-link-id-${
+			Date.now().toString(36) + Math.random().toString(36).substring(2)
+		}`;
+		return `
 				<div class="c-described-link">
 					<a id="${uuid}" href="${href}" class="c-described-link__label">${label}</a>
 					<span aria-describedby="${uuid}" class="c-described-link__description">${description}</span>
 				</div>
 			`;
-		},
-	);
+	});
 
-	eleventyConfig.addShortcode(
-		"checkbox",
-		function (label, description, checked) {
-			const uuid = `checkbox-id-${
-				Date.now().toString(36) + Math.random().toString(36).substring(2)
-			}`;
-			return `
+	eleventyConfig.addShortcode("checkbox", (label, description, checked) => {
+		const uuid = `checkbox-id-${
+			Date.now().toString(36) + Math.random().toString(36).substring(2)
+		}`;
+		return `
 				<div class="c-checkbox">
-					<label class="c-checkbox__label"${description ? ` aria-describedby="${uuid}"` : ''}>
-						<input type="checkbox"${checked ? ' checked' : ''} name="${`checkbox-${uuid}`}" />
+					<label class="c-checkbox__label"${description ? ` aria-describedby="${uuid}"` : ""}>
+						<input type="checkbox"${checked ? " checked" : ""} name="${`checkbox-${uuid}`}" />
 						<span class="c-checkbox__label-text">${label}</span>
 					</label>
-					${ (description) ? `<p id="${uuid}" class="c-checkbox__description">${description}</p>` : null }
+					${description ? `<p id="${uuid}" class="c-checkbox__description">${description}</p>` : null}
 				</div>
 			`;
-		},
-	);
+	});
 
 	eleventyConfig.addPairedShortcode(
 		"insettext",
-		function (content, linkLabel, linkLocation) {
+		(content, linkLabel, linkLocation) => {
 			if (linkLabel && linkLocation) {
 				return `
 					<div class="c-inset-text">
@@ -187,7 +181,7 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addPairedShortcode(
 		"blockquote",
-		function (content, cite, citeLocation) {
+		(content, cite, citeLocation) => {
 			function checkHasCiteLocation(citeLocation) {
 				return citeLocation ? `cite="${citeLocation}"` : "";
 			}
@@ -248,4 +242,4 @@ export default function (eleventyConfig) {
 		// folder name and does **not** affect where things go in the output folder.
 		pathPrefix: "/",
 	};
-};
+}

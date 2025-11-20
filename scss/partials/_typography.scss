@@ -141,7 +141,7 @@ code {
 	color: var(--fgColor-default, var(--color-fg-default));
 }
 
-:not(pre) > code {
+:not(pre)>code {
 	padding: 0.2em 0.4em;
 	margin: 0;
 	font-size: 85%;

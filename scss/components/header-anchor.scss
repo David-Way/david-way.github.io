@@ -5,19 +5,22 @@
 	font-size: 1em;
 	margin-left: 0.1em;
 }
+
 a[href].c-header-anchor,
 a[href].c-header-anchor:visited {
 	color: transparent;
 }
+
 a[href].c-header-anchor:focus,
 a[href].c-header-anchor:hover {
 	text-decoration: underline;
 }
+
 a[href].c-header-anchor:focus,
-:hover > a[href].c-header-anchor {
+:hover>a[href].c-header-anchor {
 	color: var(--color-accent-fg);
 }
 
-h2 + .c-header-anchor {
+h2+.c-header-anchor {
 	font-size: 1.5em;
 }
