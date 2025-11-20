@@ -38,6 +38,7 @@ export default async function () {
 			},
 		);
 		data = JSON.parse(JSON.stringify(data.lighthouseResult.categories));
+		// biome-ignore lint/suspicious/useIterableCallbackReturn: n/a
 		Object.keys(data).map((key) => {
 			data[key].grade = getGradeFromScore(data[key].score);
 			data[key].score = parseInt(data[key].score * 100, 10);
