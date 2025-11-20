@@ -11,6 +11,8 @@
 		"watch:sass": "npx sass --style compressed scss/index.scss:public/css/styles.css scss/prism/index.scss:public/css/prism.css --watch",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debug:start": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+		"format": "biome format --write",
+		"lint": "npx @biomejs/biome lint --write",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
 	},
 	"devDependencies": {
@@ -21,6 +23,7 @@
 		"@11ty/eleventy-plugin-bundle": "^3.0.7",
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+		"@biomejs/biome": "2.3.6",
 		"@primer/primitives": "^7.12.0",
 		"dotenv": "^16.4.5",
 		"luxon": "^3.7.2",
