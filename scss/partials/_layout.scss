@@ -18,7 +18,7 @@ html {
 	overflow-y: scroll;
 }
 
-main > *:not(img):not(video):not(picture) {
+main>*:not(img):not(video):not(picture) {
 	@include mixins.contain-site-content();
 }
 

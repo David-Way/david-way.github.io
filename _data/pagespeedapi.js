@@ -5,7 +5,8 @@ import Fetch from "@11ty/eleventy-fetch";
 export default async function () {
 	let data;
 
-	if (process?.env?.ELEVENTY_ENV !== 'production') { // don't run page speed in development
+	if (process?.env?.ELEVENTY_ENV !== "production") {
+		// don't run page speed in development
 		return {
 			categories: data,
 		};
@@ -37,20 +38,21 @@ export default async function () {
 			},
 		);
 		data = JSON.parse(JSON.stringify(data.lighthouseResult.categories));
-		Object.keys(data).map(function (key) {
+		// biome-ignore lint/suspicious/useIterableCallbackReturn: n/a
+		Object.keys(data).map((key) => {
 			data[key].grade = getGradeFromScore(data[key].score);
 			data[key].score = parseInt(data[key].score * 100, 10);
 		});
 	} catch (event) {
-		console.log('error')
+		console.log("error");
 		console.log(event);
 		return {
 			categories: undefined,
 		};
 	}
-};
+}
 
-const getGradeFromScore = function (score) {
+const getGradeFromScore = (score) => {
 	if (score < 0.5) {
 		return "bad";
 	}

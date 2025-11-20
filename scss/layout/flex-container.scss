@@ -34,12 +34,12 @@ $directions: "row", "row-reverse", "column", "column-reverse";
 	}
 
 	@each $key, $value in variables.$spacing {
-		@if $key != "auto" {
+		@if $key !="auto" {
 			&--spacing\:#{$key} {
 				margin: calc(($value / 2) * -1) !important;
 			}
 
-			&--spacing\:#{$key} > * {
+			&--spacing\:#{$key}>* {
 				margin: calc($value / 2) !important;
 			}
 		}

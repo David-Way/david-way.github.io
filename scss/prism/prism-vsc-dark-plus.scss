@@ -29,6 +29,7 @@ code[class*="language-"] *::selection {
 }
 
 @media print {
+
 	pre[class*="language-"],
 	code[class*="language-"] {
 		text-shadow: none;
@@ -42,12 +43,13 @@ pre[class*="language-"] {
 	background: #1e1e1e;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
 	padding: 0.1em 0.3em;
 	border-radius: 4px;
 	color: #db4c69;
 	background: #1e1e1e;
 }
+
 /*********************************************************
 * Tokens
 */
@@ -229,6 +231,7 @@ pre[class*="language-"] {
 .token.namespace {
 	color: #4ec9b0;
 }
+
 /*********************************************************
 * Language Specific
 */
@@ -261,10 +264,11 @@ code[class*="language-html"] {
 .language-html .token.punctuation {
 	color: #808080;
 }
+
 /*********************************************************
 * Line highlighting
 */
-pre[class*="language-"] > code[class*="language-"] {
+pre[class*="language-"]>code[class*="language-"] {
 	position: relative;
 	z-index: 1;
 }

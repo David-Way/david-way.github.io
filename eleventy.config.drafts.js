@@ -9,7 +9,7 @@ export const eleventyComputedPermalink = () => {
 
 		return data.permalink;
 	};
-}
+};
 
 export const eleventyComputedExcludeFromCollections = () => {
 	// When using `addGlobalData` and you *want* to return a function, you must nest functions like this.
@@ -22,7 +22,7 @@ export const eleventyComputedExcludeFromCollections = () => {
 
 		return data.eleventyExcludeFromCollections;
 	};
-}
+};
 
 export default function (eleventyConfig) {
 	eleventyConfig.addGlobalData(
@@ -50,4 +50,4 @@ export default function (eleventyConfig) {
 
 		logged = true;
 	});
-};
+}

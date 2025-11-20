@@ -1,4 +1,4 @@
 export default {
-  tags: ["projects"],
-  layout: "layouts/project.njk",
+	tags: ["projects"],
+	layout: "layouts/project.njk",
 };
