@@ -11,8 +11,8 @@ A starter repository showing how to build a blog with the [Eleventy](https://www
 1. Make a directory and navigate to it:
 
 ```
-mkdir my-blog-name
-cd my-blog-name
+mkdir my-blog-name-one
+cd my-blog-name-one
 ```
 
 2. Clone this Repository
