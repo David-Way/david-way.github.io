@@ -25,4 +25,4 @@ rest: 0
 - Add pancetta, wait 30 secs, add tomato paste 
 - Add beef, mix and brown 
 - Add sauce and simmer 
-- Build burritos 🌯 
+- Build burritos
