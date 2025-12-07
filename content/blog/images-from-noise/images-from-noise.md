@@ -1,7 +1,7 @@
 ---
 title: Images from noise are noise
 description: How to spot and if an image was diffused or imagined.
-publish: true
+publish: false
 date: 2025-12-03
 tags:
   - ai
@@ -9,9 +9,9 @@ tags:
   - I may be wrong but
 ---
 
-I'm not in classes territory yet but <i>20/20</i> my eyesight is not. I've no visual conditions, but you could say I've had too many birthdays to not be thinking about some form of corrective eye wear in the not too distant future. Dispite this, I'm one of those that have a strangely tuned eye for spotting AI generated images. 
+I'm not in classes territory yet but <i>20/20</i> my eyes are not. I've had too many birthdays to not be thinking about some form of corrective eye wear in the not too distant future. Though I do have a strangely tuned eye for spotting AI generated images. 
 
-I recently walked jetlagged through an Osaka market, in a very busy, vibrant and overwhelming street. At least fifty meters ahead, a cluster of hoodies swung low from the front of a building. In a street overflowing with color and noise and things forgeign to me, those hoodies stood out. I couldn't make out what was on them at first but I was immedeately certain they were covered in AI-generated images. My certainty and discomfort grew with each step closer. These were some mad and wrectched objects.
+I recently stumbled jetlagged through an Osaka market sterwn along a busy, vibrant and overwhelming street. At least fifty meters ahead, a cluster of hoodies swung low from the front of a building. In a street overflowing with color and noise and things forgeign to me, those hoodies stood out. I couldn't make out what was on them at first but I was immedeately certain they were covered in AI-generated images. My certainty and discomfort grew with each step closer. These were some mad and wrectched objects.
 
 Can the barrier to entry for creativity be too low? Is there such a thing as bad art? Thanks to AI, yeah I guess, now there is. There was a cruel but useful filter built into the old way images were made. People who, I do not count myself among, have developed the skills required produce something had at least the ability to learn something. The time and skill investment encouraged the creator to consider if the result would be worth the effort.
 
