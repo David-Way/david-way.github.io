@@ -4,12 +4,12 @@ description: More robust, maintainable testing that helps strengthen product acc
 publish: true
 date: 2025-12-09
 tags:
-  - end to end testing
+  - e2e testing
   - testing library
   - a11y
 ---
 
-Test IDs provide a quick convenience for testers but no broader value to the product while they slowly become a net detriment to many other contributors to, and qualities of, a project.
+Test IDs provide a quick convenience for testers but no broader value to the product while they slowly become a net detriment to many other contributors to, and qualities of a project.
 
 The purpose of attaching test IDs to your UI is to make e2e testing easier, less fragile, and occasionally when swimming in `div` soup, to make it possible in the first place. A worthy endeavour, but the cost of relying heavily on this technique is that test IDs quickly become another implementation detail, an overhead and a friction that ultimately erodes the perception of code quality by giving a false perception of test robustness and UI fragility when the opposite can as easily be the case.
 
@@ -17,7 +17,7 @@ When used as a last resort test IDs can reduce the fragility of e2e tests, but i
 
 Instead of relying on test IDs and expecting contained markup trees to exist in a very fragile and specific way, it is better to favour accessibility roles and labels, visible user-facing text, and semantic markup for your testing selectors.
 
-What do I mean exactly? Well Playwright has [role-based locators](https://playwright.dev/docs/locators) and Testing Library has [role-based queries](https://testing-library.com/docs/queries/about/). Read those, and you probably 
+What do I mean exactly? Well Playwright has [role-based locators](https://playwright.dev/docs/locators) and Testing Library has [role-based queries](https://testing-library.com/docs/queries/about/).
 
 Selecting by roles and content also more closely resembles the way software is used by humans. As an aside, if it's hard to test something in this way, it is also an indicator that you're over-testing or using the wrong tool (ie, don’t test details better covered by visual regression or unit tests).
 
@@ -49,6 +49,10 @@ An accessibility defect is discovered, the expanded state of the menu is not com
     Open menu
   </button>
 </div>
+```
+```js
+// A resilient, accessibility conscious, role based selector
+page.getByRole('button', { name: /Open menu/i }).click();
 ```
 
 The above test ID selector will fail if the markup is moderately changed and the maintainer doesn't stop to consider the many instances this component could be referenced in an end to end testing suite.
