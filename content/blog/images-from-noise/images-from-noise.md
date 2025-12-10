@@ -50,7 +50,7 @@ Uncanny valley level of photo realism, unnaturally crisp subjects, unusual or am
 
 It’s hard to miss the high saturation, tendency towards vivid, unbalanced colors, and higher contrast AI seems to favor. Attention-grabbing, reality-distorting. Unrealistic outcomes, another “too good to be true” metric.
 
-## The absence of human intention
+## Absence of human intention
 This is the hardest one to articulate, but the easiest to feel. Hollow, soulless, lacking the intention or artistic conveyance of composition or expression. Ask yourself, “Why did/would someone produce this image?” Does this have a point of view? Does it have the tool marks of a culture? 
 
 To take a photo is to actively frame, selectively edit, and capture a slice of time and space, to record a version of reality. To paint or draw an image is to conjure forms and shapes to illustrate a feeling, capture a moment. Art communicates a relationship the artist has with society. AI images tend to lack depth of purpose or meaningful drama, or they’re sugary calories with no nutritional value, or they’re a ham-handed attempt at it. A lack of a point of view, a lack of tacit knowledge, because you never had to develop them through iteration and growth through participatory talent.
