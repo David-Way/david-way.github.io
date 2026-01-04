@@ -69,18 +69,21 @@ html {
 
 h1 {
 	@include mixins.type-h1();
+	letter-spacing: -0.1rem;
 	max-width: 60ch;
 	text-wrap: balance;
 }
 
 h2 {
 	@include mixins.type-h2();
+	letter-spacing: -0.05rem;
 	max-width: 60ch;
 	text-wrap: balance;
 }
 
 h3 {
 	@include mixins.type-h3();
+	letter-spacing: -0.03rem;
 	max-width: 60ch;
 	text-wrap: balance;
 }
