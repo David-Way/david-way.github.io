@@ -89,14 +89,15 @@ When you need to manage the arrangement and spacing of multiple components, espe
 ```
 
 ```jsx
-<Grid columns={{ sm: 1, md: 2, lg: 3 }} gap="6">
+<AutoGrid  gap="6">
   {saleNowOn && (
-    <ProductCard product={saleProduct}>
+    <ProductCard product={saleProduct} />
   )}
+
   {products.map(product => (
     <ProductCard key={product.id} product={product} />
   ))}
-</Grid>
+</AutoGrid>
 ```
 
 ### Inline styles
@@ -118,16 +119,3 @@ return (
   </>
 );
 ```
-
-<!-- ## More to come... 
-
-### It's 2025, should I still consider a pre-proccessor?
-
-### CSS in JS, for or against? -->
-
-<!-- ### Tailwind 
-
-pros: don't have to name things anymore, declaration order becomes ignorable
-cons: component system don't benefit 
-
-better solutions exists, CSS modules, many worse solutions also exist  -->
