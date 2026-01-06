@@ -101,7 +101,7 @@ When you need to manage the arrangement and spacing of multiple components, espe
 
 ### Inline styles
 
-As the result of a highly specific JavaScript calculation 
+Inline styles should be avoided as they are high in specificity and low in reusability. They should be reserved for applying the result of a highly specific JavaScript calculations. For example, as part of a positioning engine.
 
 ```jsx
 const {targetRef, styles} = usePosition();
