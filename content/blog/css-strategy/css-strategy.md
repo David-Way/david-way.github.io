@@ -31,25 +31,91 @@ Enforcing an aspect ratio, via the padding bottom trick or the modern aspect-rat
 
 ## Is performance in CSS important? What's worth focusing on?
 
-Finely tuned code splitting, lazy loading/preloading assets, auditing and automating unused styles culling, file  minification, inlining critical above the fold render path styles, optimising animations to use hardware acceleration and avoid triggering repaints. These have the largest effect on the metrics we care the most about, reducing bundle size, minimizing FLOUT and other layout jank, preventing render thread blocking and minimizing time to first paint. CSS is rarely the main cause of performance issues and in some cases the complexity incurred by these methods can be like picking up pennies infront of a steam roller and the energy would be best spent elsewhere (media and JavaScript). These are all worth investing some level of effort into, however...
+Finely tuned code splitting, lazy loading/preloading assets, auditing and automating unused styles culling, file  minification, inlining critical above the fold render path styles, optimising animations to use hardware acceleration and avoid triggering repaints. These have the largest effect on the metrics we care the most about, reducing bundle size, minimizing FLOUT and other layout jank, preventing render thread blocking and minimizing time to first paint. CSS is rarely the main cause of performance issues and in some cases the complexity incurred by these methods can be like picking up pennies in front of a steam roller and the energy would be best spent elsewhere (media and JavaScript). These are all worth investing some level of effort into, however...
 
 Low selector specificity will barely nudge the needle on any of these metrics but I single it out for specific "performance" focus for it's outsized effect on the style architecture, agility, scalability and maintainability of a project. Also, developer sanity.
 
 ## Design tokens are not just about scalability, reuse, performance, theme-abilty and consistency.
 
-Dessign tokens are about imbuing meaningful relationships between your design decisions.
+Design tokens are about imbuing meaningful relationships between your design decisions.
 
 Capturing these relationships with meaningful names (and in a single place) makes understanding the downstream effects of changes and implementing accessibility best practices, such as maintaining sufficient color contrast, much simpler.
 
-## More to come... 
+## What type of CSS should I use?
 
-### It's 2025, should I still consider a pre-proccessor?
+Our goal should be to create a styling system that is consistent, scalable, and easy for developers to work with. We can avoid duplicated code, maintain a consistent visual style, and make our stylesheets easier to debug and maintain by by carefully selecting the most appropriate methods of applying styles.
 
-### CSS in JS, for or against?
+### Custom CSS
 
-<!-- ### Tailwind 
+If the styles are inherent to the component and are not applicable anywhere else. When you need to specify multiple, component-specific style rules that are not just single values and the styling is complex and tightly coupled to the component’s structure and functionality then write custom CSS.
 
-pros: don't have to name things anymore, declaration order becomes ignorable
-cons: component system don't benefit 
+```scss
+.button {
+  @include mixins.button-reset()
+  background: ...;
+  color: ...;
+  border: ...;
 
-better solutions exists, CSS modules, many worse solutions also exist  -->
+  &__icon {
+    ...
+  }
+
+  &--secondary {
+    border-color: ...;
+  }
+}
+```
+
+### Utility class
+
+If you're adjusting how multiple components arrange between themselves in a simple non-dynamic way or applying a highly repetitive and generalizable single value (e.g. adjusting spacing between static components). This approach helps reduce CSS bloat (drying out you spacing styles) and encourages consistency.
+
+```jsx
+<div className="u-padding-block-start:medium">
+  <Button className="u-margin-inline-end:small" />
+  <Button icon={<Icon className="u-color:success" />} />
+</div>
+```
+
+### Layout component
+
+When you need to manage the arrangement and spacing of multiple components, especially in a complex or dynamic way, a layout component is the right tool. These are reusable components that encapsulate layout logic, often using Flexbox or Grid.
+
+
+```jsx
+<Stack spacing="medium" align="center" justify="flex-start" as="ul">
+  {listItems.map(listItem => (<ListItem>{listItem}</ListItem>))}
+</Stack>
+```
+
+```jsx
+<AutoGrid  gap="6">
+  {saleNowOn && (
+    <ProductCard product={saleProduct} />
+  )}
+
+  {products.map(product => (
+    <ProductCard key={product.id} product={product} />
+  ))}
+</AutoGrid>
+```
+
+### Inline styles
+
+Inline styles should be avoided as they are high in specificity and low in reusability. They should be reserved for applying the result of a highly specific JavaScript calculations. For example, as part of a positioning engine.
+
+```jsx
+const {targetRef, styles} = usePosition();
+
+return (
+  <>
+    <Button ref={targetRef}>
+      <Icon decorative />
+      <span className="u-screen-reader-only">Tooltip</span>
+    </Button>
+    <div style={styles}>
+      Tooltip content
+    </div>
+  </>
+);
+```
