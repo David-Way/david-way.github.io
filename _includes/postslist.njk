@@ -3,7 +3,7 @@
 {% for post in postslist | filterPublished | reverse %}
 	<li class="c-post-list__item{% if post.url == url %} c-post-list__item--active{% endif %}">
 		<div>
-			<a href="{{ post.url }}" class="c-post-list__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+			<a href="{{ post.url }}" class="c-post-list__link" style="view-transition-name: post-title-{{ post.url | slugify }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
 			
 			<div class="c-post-list__item-meta">
 				<time class="c-post-list__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
