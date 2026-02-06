@@ -112,6 +112,7 @@ p {
 	@include mixins.type-body();
 	line-height: 1.5;
 	max-width: 60ch;
+ text-wrap: pretty;
 
 	&:last-child {
 		margin-bottom: 0;
