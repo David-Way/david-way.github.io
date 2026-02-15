@@ -99,11 +99,11 @@ Combining the above parts achieves a maintainable, schema-driven system that tra
 
 </div>
 
-<figcaption>
-<h3>Try out the <a href="https://davidway.ie/checklist">Checklist</a> demo yourself.</h3>
-</figcaption>
-
 </div>
+
+<figcaption>
+<h3> <a href="https://davidway.ie/checklist">Try out the Checklist demo yourself</a></h3>
+</figcaption>
 
 ## Result
 
@@ -134,8 +134,8 @@ To demonstrate the solution, I’ve added a number of example schemas to the dem
 {% image "./images/checklist-select.png", "Checklist select page" %}
 </div>
 
-<figcaption>
-<h3>Try out the <a href="https://davidway.ie/checklist">Checklist</a> demo yourself.</h3>
-</figcaption>
-
 </div>
+
+<figcaption>
+<h3> <a href="https://davidway.ie/checklist">Try out the Checklist demo yourself</a></h3>
+</figcaption>
