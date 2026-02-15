@@ -14,7 +14,7 @@
                 
                 {% if project.data.title %}
                 <span class="c-project-list-item__title-container">
-                    <h2 class="c-project-list-item__title">{{ project.data.title }}</h2>
+                    <h2 class="c-project-list-item__title" style="view-transition-name: post-title-{{ project.url | slugify }}">{{ project.data.title }}</h2>
                     {% if project.data.subTitle %}
                     <p class="c-project-list-item__sub-title">{{ project.data.subTitle }}</p>
                     {% endif %}
