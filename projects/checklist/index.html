@@ -29,7 +29,7 @@
 
 		<main id="skip">
 			
-<h1>Schema-driven checklists</h1>
+<h1 style="view-transition-name: post-title-projects-checklist">Schema-driven checklists</h1>
 
 <p class="u-type:lead">A checklist app, with sample dynamic, multi-step examples, where the form schema is defined in JSON.</p>
 
@@ -42,20 +42,52 @@
 	<li class="c-post-meta-data__item"><a href="/tags/checklist/" class="c-post-tag">checklist</a></li>
 </ul>
 
-<p>Checklists get a bad name. When checklists are used as fossilised bureaucratic rituals rather than methodical tools for better outcomes, it’s not a surprise that a bad taste often lingers for the unfortunate victim they’re forced on. The phrase “tick-box exercise” usually reflects frustration with how checklists are implemented, the thoughtlessness with which they are applied or enforced, or the outdated, detached, condescending, or unrefined content they contain.</p>
-<p>However, checklists are a powerful technology that can complement the human mind very well. They turn complex, error-prone processes into repeatable, deterministic actions. Instead of relying on memory or experience, they can crystallise critical, hard-learned knowledge, allowing newcomers and old hands alike to reliably achieve complex tasks, unburdened by the cognitive load of tracking their current and next steps. This is especially true under pressure or when tasks are infrequent enough not to become habitual.</p>
-<p>The difference between good and bad checklists, in my opinion, is mostly about how they extend the user's ability, buoyed by the experience of those who’ve come before, and how they enlighten the user about what to do, how to do it, and the why. A good checklist is a cognitive safety net and load balancer for fast-moving situations where the volume and complexity of knowledge and prospective avenues to resolution are overwhelming. A good checklist does not descend from on high as a dictate but is instead a living document, authored and collaboratively maintained by those who use it.</p>
+<p>Checklists get a bad name. When used as fossilised bureaucratic rituals rather than methodical tools for better outcomes, it’s not a surprise that a bad taste often lingers for the unfortunate victim they’re forced on. The phrase “tick-box exercise” usually reflects frustration with how checklists are implemented, the thoughtlessness with which they are applied or enforced, or the outdated, detached, condescending, or unrefined content they contain.</p>
+<p>However, checklists are a powerful technology that can complement the human mind very well. They turn complex, error-prone processes into repeatable, deterministic actions. Instead of relying on memory or experience, they can crystallise critical, hard-learned knowledge, allowing newcomers and old hands alike to reliably achieve complex tasks, unburdened by the cognitive load of tracking their current and next steps. This is especially true under pressure <em>or</em> when tasks are infrequent enough not to become habitual.</p>
+<p>The difference between good and bad checklists, in my opinion, is mostly about how they extend the user's ability, buoyed by the experience of those who’ve come before, and how they enlighten the user about what to do, how to do it, and the why. A good checklist is a cognitive safety net and load balancer for fast-moving situations where the volume and complexity of knowledge and prospective avenues to resolution are overwhelming. A good checklist does not descend from on high as a dictate but is instead a living document, authored and collaboratively maintained and refined by those who use it.</p>
 <h2 id="the-challenge" tabindex="-1">The Challenge <a class="c-header-anchor" href="#the-challenge">#</a></h2>
-<p>This was a project initially aimed at providing a learning opportunity with a set of technologies I’ve been interested in for a while. But it was also an attempt to tame the growing mountain of scrap paper on my desk, the fractured array of disparate wiki articles, Jira, and GitHub templates into a single tool, accessible from anywhere, for sharing and recording processes.</p>
+<p>This was a project started as an experiment to learn a little more about technologies I’ve been interested in for a while. But it was soon grew into an attempt to tame the growing mountain of scrap paper on my desk, the fractured array of disparate wiki articles, Jira, and GitHub templates I rely on day-to-day, into a single tool, accessible from anywhere, for sharing and recording processes.</p>
 <p>In an effort to harness the utility of a good checklist and to wrangle my own innate human ineptitude, I also wanted to create a tool that would enable others to author, maintain, and publish dynamic, checklist-worthy processes without access to their own product development team.</p>
 <p>How might a tool help users use and develop good checklists? For a solution to be useful and have a low barrier to entry, it needs to help users define complex processes, record compliance, guide inexperienced users through complex, dynamic, and branching processes, and be easy to author and iterate on. Users might not have developers or coding skills. Users might have complex conditional processes that could greatly benefit from dynamic progressive disclosure, or requirements that change frequently and are often updated.</p>
 <h2 id="the-solution" tabindex="-1">The Solution <a class="c-header-anchor" href="#the-solution">#</a></h2>
 <p>With the goal of a flexible, user-friendly solution that minimizes development overhead, I combined the following.</p>
 <p><strong>Part 1:</strong> JSON (JavaScript Object Notation) is a lightweight format for representing structured data in a way that is easy for humans to read and for machines to parse. Using JSON as a store for a process definition offers a good balance of structure and ease of access.</p>
-<p><strong>Part 2:</strong> <a href="https://json-schema.org/">JSON Schema</a> is a human and machine-readable <em>standard</em> for describing the structure, rules, and constraints of JSON data. It lets you define the shape of data to express which fields can or should exist, what data types they must be (string, number, object, array, etc.), which fields are required, and which values are allowed.</p>
+<pre class="language-json" tabindex="0"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"John Doe"</span><span class="token punctuation">,</span>
+    <span class="token property">"age"</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+    <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"john.doe@example.com"</span>
+<span class="token punctuation">}</span></code></pre>
+<p><strong>Part 2:</strong> <a href="https://json-schema.org/">JSON Schema</a> is a human and machine-readable <em>standard</em> for describing the structure, rules, and constraints of JSON data. It lets you define the shape of data to express which fields can or should exist in a form, what data types they must be (string, number, object, array, etc.), which fields are required, and which values are allowed.</p>
+<pre class="language-json" tabindex="0"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Course Checklist"</span><span class="token punctuation">,</span>
+  <span class="token property">"properties"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"Stage"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+      <span class="token property">"enum"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Week 1"</span><span class="token punctuation">,</span> <span class="token string">"Week 2"</span><span class="token punctuation">,</span> <span class="token string">"Week 3"</span><span class="token punctuation">,</span> <span class="token string">"Week 4"</span><span class="token punctuation">,</span> <span class="token string">"Week 5"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"default"</span><span class="token operator">:</span> <span class="token string">"Week 1"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"allOf"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"if"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"properties"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"Stage"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"const"</span><span class="token operator">:</span> <span class="token string">"Week 1"</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"then"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"properties"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"week1LabCompletion"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"object"</span><span class="token punctuation">,</span>
+            <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Complete Lab 1"</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></code></pre>
 <p>With JSON Schema, you can establish patterns, recursively nest them, set minimum and maximum constraints, and then automatically validate against them. It feels a bit like defining a declarative rules definition or encoding logic in configuration rather than in code.</p>
 <p>If your application is process-definition-heavy and expected to evolve frequently, that’s exactly the kind of environment where a schema-driven approach becomes strategically valuable, and not just convenient.</p>
-<p><strong>Part 3:</strong> React JSON Schema Form (RJSF) Library is a React library that automatically generates forms from a JSON Schema. Instead of manually coding each input field, managing state, and writing validation logic, you define a schema that describes the data structure you want, and the library renders the corresponding form with built-in validation and error handling.</p>
+<p><strong>Part 3:</strong> React JSON Schema Form (RJSF) Library is a React library that automatically generates forms from a JSON Schema. Instead of manually coding each input field, managing state, and writing validation logic, you define a schema that describes the data structure you want, and the library renders the corresponding form with built-in, conditional display, validation and error handling.</p>
 <p>One thing missing from RJSF is the ability to create multi-page or wizard-like forms, but it was relatively simple to add this as a wrapper that splits a single appropriately flagged JSON Schema into “pages” and controls which page is displayed at any one time. Essentially, RJSF handles single-page forms, and the wrapper orchestrates the multi-step flow separately.</p>
 <p><strong>Part 4:</strong> User-friendly, accessible UI presentation through a set of form controls optimised for conditional and binary question answering.</p>
 <p><img src="./images/interaction.webp" alt="Animation showing radio buttons"></p>
@@ -70,21 +102,22 @@
 </figcaption>
 </div>
 <h2 id="result" tabindex="-1">Result <a class="c-header-anchor" href="#result">#</a></h2>
-<p>In summary, defining complex checklists is hard because:</p>
+<p>In summary, defining complex checklists forms in code is hard because:</p>
 <ul>
-<li>Complex nested branching becomes hard to reason about</li>
-<li>Non-technical users struggle to author or debug it.</li>
-<li>Readability and maintainability decline rapidly at scale.</li>
+<li>Complex nested branching becomes hard to reason about, readability and maintainability decline rapidly at scale.</li>
+<li>Non-technical users struggle to author or debug it</li>
 <li>There are very complex state, validation, and accessibility requirements for the form UI. You want to systemise and solve each requirement once, so you can reuse it.</li>
 </ul>
+<p>Things that are difficult to change impeding improvement, refinement and experimentation.</p>
 <p>This solution makes defining complex forms easy because conditional structures can be expressed declaratively. Updating the process becomes a schema “configuration” change rather than a React customisation or rewrite, saving development time. The data-based approach to the UI enables the application to enforce good form design principles or user experience guardrails, as well as make accessibility decisions.</p>
-<p>Non-technical users can easily author, update, and refine their own checklists. This approach lowers the barrier to contributing by allowing anyone to adjust processes without developer involvement. This means that teams can quickly respond to changing needs, continually improve their checklists, and feel a sense of ownership over their processes.</p>
-<p>To demonstrate the solution, I’ve added a number of example schemas to the demo, ranging from the vital (<a href="https://www.who.int/docs/default-source/patient-safety/9789241598590-eng-checklist.pdf">WHO Surgical Safety Checklist</a>) to the sensible (A11y UI checklist) to the mundane (15-minute Kettlebell Workout).</p>
+<p>After some light familiarization with the <a href="https://rjsf-team.github.io/react-jsonschema-form/docs/">schema structure concepts</a>,  and even some assistance from your LLM of choice, a Non-technical users can easily author, update, and refine their own checklists in any text editor. This approach lowers the barrier to contributing by allowing anyone to adjust processes without developer involvement. This means that teams can quickly respond to changing needs, continually improve their checklists, and feel a sense of ownership over their processes.</p>
+<p>To demonstrate the solution, I’ve added a number of example schemas to the demo, ranging from the vital (<a href="https://www.who.int/docs/default-source/patient-safety/9789241598590-eng-checklist.pdf">WHO Surgical Safety Checklist</a>) to the sensible (A11y UI checklist) to the trivial (15-minute Kettlebell Workout).</p>
 <h2 id="potential-future-improvements" tabindex="-1">Potential Future Improvements <a class="c-header-anchor" href="#potential-future-improvements">#</a></h2>
 <ul>
 <li>Providing a visual form editor for JSON schemas would further lower the barrier to even less technical users.</li>
-<li>Supporting additional field types to allow users to record non-structured results content as comments, dates, and signatures, as well as media verifications such as photo, video, or audio recordings.</li>
+<li>Supporting additional field types to allow users to record non-structured results. For example, free-text comments, dates, and signatures, as well as upload media verifications (i.e. photo, video, or audio recordings).</li>
 <li>Allow users to define their scripts in a more visually readable format, such as YAML, which handles complex nested structures more cleanly than JSON, and automatically convert those schemas to JSON on the backend.</li>
+<li>Add adapters for common integrations to allow form data to be submitted and recorded in other tools.</li>
 </ul>
 <div class="u-bleed-container:x-small">
 <div class="u-border:device">
