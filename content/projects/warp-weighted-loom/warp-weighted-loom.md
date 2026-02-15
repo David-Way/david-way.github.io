@@ -3,7 +3,7 @@ title: Building a Viking loom
 subTitle: Designing and building a warp weighted loom suitable for a home use.
 description: Designing and building a warp weighted loom suitable for a home use.
 publish: true
-gridShape: box
+gridShape: tall
 order: 2
 thumbnail: warp-weighted-loom/images/weave.jpeg
 date: 2023-11-18
