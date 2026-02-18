@@ -235,3 +235,18 @@
 .u-flex-justify-content\:center {
 	justify-content: center !important;
 }
+
+@each $key, $value in variables.$break-points {
+	@media screen and (min-width: #{$value}) {
+		.u-hide\:#{$key}-up {
+			outline: pink;
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: #{$value - 1}) {
+		.u-hide\:#{$key}-down {
+			display: none;
+		}
+	}
+}

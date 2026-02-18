@@ -1,7 +1,7 @@
 ---
 title: Schema-driven checklists
 subTitle: Define dynamic and complex branching processes with minimal boilerplate.
-description: A checklist app, with sample dynamic, multi-step examples, where the form schema is defined in JSON.
+description: A checklist tool, with sample dynamic, multi-step examples, where the form schema is defined in JSON.
 publish: true
 gridShape: tall
 order: 1
@@ -90,7 +90,6 @@ RJSF allows you to define your own adapter templates and “widgets” to be use
 
 Combining the above parts achieves a maintainable, schema-driven system that transforms evolving, complex processes into validated, guided, and accessible workflows, reducing human error and developer burden while improving the user experience.
 
-
 <div class="u-bleed-container:x-small">
 
 <div class="u-border:device u-display:block" style="max-height: 720px;overflow: hidden;">
@@ -113,9 +112,9 @@ In summary, defining complex checklists forms in code is hard because:
 * Non-technical users struggle to author or debug it
 * There are very complex state, validation, and accessibility requirements for the form UI. You want to systemise and solve each requirement once, so you can reuse it.
 
-Things that are difficult to change impeding improvement, refinement and experimentation.
+Things that are difficult to change impede improvement, refinement and experimentation.
 
-This solution makes defining complex forms easy because conditional structures can be expressed declaratively. Updating the process becomes a schema “configuration” change rather than a React customisation or rewrite, saving development time. The data-based approach to the UI enables the application to enforce good form design principles or user experience guardrails, as well as make accessibility decisions. 
+This solution makes defining complex forms easy because conditional structures can be expressed declaratively. Updating the process becomes a schema “configuration” change rather than a React customisation or rewrite, saving development time. The data-based approach to the UI enables the application to enforce good form design principles or user experience guardrails, as well as make accessibility decisions and let the user focus on the content and structure.
 
 After some light familiarization with the [schema structure concepts](https://rjsf-team.github.io/react-jsonschema-form/docs/),  and even some assistance from your LLM of choice, a Non-technical users can easily author, update, and refine their own checklists in any text editor. This approach lowers the barrier to contributing by allowing anyone to adjust processes without developer involvement. This means that teams can quickly respond to changing needs, continually improve their checklists, and feel a sense of ownership over their processes.
 
@@ -137,5 +136,5 @@ To demonstrate the solution, I’ve added a number of example schemas to the dem
 </div>
 
 <figcaption>
-<h3> <a href="https://davidway.ie/checklist">Try out the Checklist demo yourself</a></h3>
+<h3><a href="https://davidway.ie/checklist">Try out the Checklist demo yourself</a></h3>
 </figcaption>
