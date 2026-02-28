@@ -19,6 +19,12 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("content/**/images/**/*");
 
+	eleventyConfig.addPassthroughCopy({
+		"node_modules/three/build/three.module.js": "/js/three.module.js",
+		"node_modules/three/examples/jsm/loaders/STLLoader.js": "/js/STLLoader.js",
+		"node_modules/three/examples/jsm/controls/OrbitControls.js": "js/OrbitControls.js",
+	});
+
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
@@ -134,9 +140,7 @@ export default function (eleventyConfig) {
 	});
 
 	eleventyConfig.addShortcode("describedlink", (label, href, description) => {
-		const uuid = `described-link-id-${
-			Date.now().toString(36) + Math.random().toString(36).substring(2)
-		}`;
+		const uuid = `described-link-id-${Date.now().toString(36) + Math.random().toString(36).substring(2)}`;
 		return `
 				<div class="c-described-link">
 					<a id="${uuid}" href="${href}" class="c-described-link__label">${label}</a>
@@ -146,9 +150,7 @@ export default function (eleventyConfig) {
 	});
 
 	eleventyConfig.addShortcode("checkbox", (label, description, checked) => {
-		const uuid = `checkbox-id-${
-			Date.now().toString(36) + Math.random().toString(36).substring(2)
-		}`;
+		const uuid = `checkbox-id-${Date.now().toString(36) + Math.random().toString(36).substring(2)}`;
 		return `
 				<div class="c-checkbox">
 					<label class="c-checkbox__label"${description ? ` aria-describedby="${uuid}"` : ""}>

@@ -6,6 +6,8 @@ publish: false
 gridShape: none
 order: 2
 date: 2023-06-01
+thumbnail: template/images/thumbnail.jpg
+needsModelViewer: false
 tags:
   - ux
   - a11y

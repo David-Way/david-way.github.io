@@ -6,6 +6,7 @@ publish: true
 gridShape: box
 order: 4
 thumbnail: hushup-cli/images/hushup-cli.png
+needsModelViewer: false
 date: 2021-10-03
 tags:
   - open source

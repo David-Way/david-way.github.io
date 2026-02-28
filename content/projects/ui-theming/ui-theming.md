@@ -6,6 +6,7 @@ publish: false
 gridShape: box
 order: 1
 thumbnail: ui-theming/images/preview.png
+needsModelViewer: false
 date: 2023-06-01
 tags:
   - design sprint
