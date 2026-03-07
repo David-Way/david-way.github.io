@@ -18,7 +18,8 @@ function initViewer(container) {
 	const renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setSize(width, height);
 	renderer.setClearColor(0xe0f0ff);
-	container.appendChild(renderer.domElement);
+	const canvas = renderer.domElement;
+	container.appendChild(canvas);
 
 	const controls = new OrbitControls(camera, renderer.domElement);
 	controls.autoRotate = true;
@@ -82,6 +83,8 @@ function initViewer(container) {
 
 	function animate() {
 		requestAnimationFrame(animate);
+		camera.aspect = canvas.clientWidth / canvas.clientHeight;
+		camera.updateProjectionMatrix();
 		controls.update();
 		renderer.render(scene, camera);
 	}
