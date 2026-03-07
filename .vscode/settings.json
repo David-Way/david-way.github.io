@@ -5,6 +5,7 @@
 		"callout",
 		"Deque",
 		"describedlink",
+		"eleventy",
 		"endblockquote",
 		"endinsettext",
 		"Flexbox",
@@ -13,6 +14,7 @@
 		"insettext",
 		"prettylights",
 		"Shortcode",
+		"stylesheet",
 		"xlarge",
 		"xsmall"
 	],
