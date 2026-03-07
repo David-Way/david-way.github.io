@@ -53,6 +53,7 @@
 		]
 	},
 	"dependencies": {
-		"@11ty/eleventy-upgrade-help": "^3.0.1"
+		"@11ty/eleventy-upgrade-help": "^3.0.1",
+		"three": "^0.183.2"
 	}
 }

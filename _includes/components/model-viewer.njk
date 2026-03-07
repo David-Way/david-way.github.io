@@ -1,0 +1,9 @@
+<div class="c-model-viewer" data-model="{{ modelViewer.modelPath }}"
+     data-width="{{ modelViewer.width | default('100%') }}" data-height="{{ modelViewer.height | default('400px') }}">
+</div>
+
+{% if modelViewer.description  %}
+<figure>
+     <p>{{ modelViewer.description }}</p>
+</figure>
+{% endif %}

@@ -6,6 +6,7 @@ publish: true
 gridShape: tall
 order: 2
 thumbnail: warp-weighted-loom/images/weave.jpeg
+needsModelViewer: false
 date: 2023-11-18
 tags:
   - woodwork

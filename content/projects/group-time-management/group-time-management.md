@@ -6,6 +6,7 @@ publish: true
 gridShape: tall
 order: 3
 thumbnail: group-time-management/images/time-timer.gif
+needsModelViewer: false
 date: 2021-02-15
 tags:
   - prototype
