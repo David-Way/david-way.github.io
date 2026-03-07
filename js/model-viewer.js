@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from '/js/three.module.js';
 import { OrbitControls } from '/js/OrbitControls.js';
 import { STLLoader } from "/js/STLLoader.js";
 
