@@ -1,5 +1,5 @@
+import * as THREE from 'three';
 import { OrbitControls } from '/js/OrbitControls.js';
-import * as THREE from "/js/three.module.js";
 import { STLLoader } from "/js/STLLoader.js";
 
 document.addEventListener("DOMContentLoaded", () => {
