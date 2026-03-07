@@ -13,7 +13,7 @@ function initViewer(container) {
 
 	const scene = new THREE.Scene();
 	const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-	camera.position.set(0, 0.5, 2); // slightly above and back
+	camera.position.set(0, 0.5, 2.5); // slightly above and back
 
 	const renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setSize(width, height);
