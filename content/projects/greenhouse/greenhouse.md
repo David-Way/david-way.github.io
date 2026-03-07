@@ -37,7 +37,7 @@ I considered using flame-treated wood and treating it myself. However, cedar soo
 
 For the window panels, polycarbonate/plexiglass appears to be commonly used in smaller commercially available greenhouses, the optimisation here seems to be for cost and safe deliver-ability but as those are not my primary goals as well as the fact that I find it doesn’t age very well, I chose to go with glass. Glass just looks better to me, will last longer (baring any accidental breakages) and the added weight will help make sure the structure won’t blow away.
 
-For protection, I chose Tung oil as it has a nice balance of properties. It does require multiple coats and yearly maintenance, but it’s food safe and doesn’t overly color the wood. Most pressure-treated woods intended for external use are generally considered food-safe these days, but I like the color and aesthetic of the cedar and tung oil combination over the sickly green tint you get from adding preservatives.
+For protection, I chose tung oil as it has a nice balance of properties. It does require multiple coats and yearly maintenance, but it’s food safe and doesn’t overly color the wood. Most pressure-treated woods intended for external use are generally considered food-safe these days, but I like the color and aesthetic of the cedar and tung oil combination over the sickly green tint you get from adding preservatives.
 
 ## Design & build
 
@@ -45,7 +45,7 @@ When designing a solution myself, I was able to adapt the proportions to the ava
 
 {% set modelViewer = {
   modelPath: "images/greenhouse-sketch.stl",
-  description: "A 3D model of a slim and tall greenhouse.",
+  description: "An interactive 3D model of a slim and tall greenhouse.",
   height: "620",
   width: "500"
 } %}
@@ -56,7 +56,7 @@ When designing a solution myself, I was able to adapt the proportions to the ava
 {% image "./images/greenhouse-drawing.png", "CAD drawings of the greenhouse" %}
 
 
-I added a top-hinged access panel that can be opened to varying degrees for adjustable ventilation. The doors are latched using small magnets at the top of each door frame. The frames that hold glass have a rabbet to hold the panes, which are siliconed in. 
+I added a top-hinged access panel that can be opened to varying degrees for adjustable ventilation. The doors are latched using small magnets at the top of each door frame. The frames that hold glass have a rabbet to hold the panes, which are held in with silicon. 
 
 
 {% image "./images/side.jpg", "The side frames" %}
@@ -81,7 +81,7 @@ Next, the doors are attached and held in place using magnets.
 
 {% image "./images/final.jpg", "Greenhouse finished" %}
 
-After 4-5 coats of oil, the frame is installed on it's base and the glass panels are siliconed in place.
+After 4-5 coats of oil, the frame is installed on it's base and the glass panels are held in place with silicon.
 
 {% image "./images/top-open.jpg", "Showing the hinged top frame" %}
 
