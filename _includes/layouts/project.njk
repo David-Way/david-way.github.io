@@ -29,5 +29,5 @@ layout: layouts/wide.njk
 {%- endif %}
 
 {% if needsModelViewer %}
-	<script type="module" src="/js/model-viewer.js"></script>
+	{% include "js/model-viewer.js" %}
 {% endif %}
