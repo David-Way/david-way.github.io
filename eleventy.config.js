@@ -20,7 +20,8 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("content/**/images/**/*");
 
 	eleventyConfig.addPassthroughCopy({
-		"node_modules/three/build/three.module.js": "/js/three.module.js",
+		"node_modules/three/build/three.module.min.js": "/js/three.module.min.js",
+		"node_modules/three/build/three.core.js": "/js/three.core.js",
 		"node_modules/three/examples/jsm/loaders/STLLoader.js": "/js/STLLoader.js",
 		"node_modules/three/examples/jsm/controls/OrbitControls.js": "js/OrbitControls.js",
 	});
