@@ -96,4 +96,4 @@ After 4-5 coats of oil, the frame is installed on it's base and the glass panels
 
 {% image "./images/in-the-sun.jpg", "A greenhouse tucked in a sunny corner of a well used garden" %}
 
-A well-suited, fit-for-purpose structure that our seedlings can now call their greenhouse, a green home.
+A well-suited, fit-for-purpose greenhouse. A place our seedlings can now call their greenhouse, a green home.
