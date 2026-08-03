@@ -28,7 +28,7 @@ Names in general are not so simple. Depending on culture and who is addressing w
 
 A first name might contain an honorific prefix the user squeezed in, or out of, the first name field. There are the common professional and academic titles, Dr., Prof., and Rev. In Japanese, [keigo](https://en.wikipedia.org/wiki/Honorific_speech_in_Japanese), adding prefixes for example o- (お〜) and go- (ご〜) are commonly used to convey respectful, humble, and polite relationships between the speaker and the named individual. The inclusion or exclusion of a prefix can be a sensitive subject for some. Understandable, perhaps, as they carry deep implications for topics such as identity, culture, gender, rank, age, respect, and career.
 
-Some middle names carry far more significance to some and should always be included with the first. Vietnamese names often have multiple given names, placed at the end, that work together as a compound. “Nguyễn Văn Minh” might be formally addressed by the entire last given name portion “Văn Minh,” not just “Minh” alone. In Arabic, for another example, “Ibn Battuta” literally means “Son of Battuta”, Battuta being his father’s name.
+Middle names carry far more significance to some and should always be included with the first. Vietnamese names often have multiple given names, placed at the end, that work together as a compound. “Nguyễn Văn Minh” might be formally addressed by the entire last given name portion “Văn Minh,” not just “Minh” alone. In Arabic, for another example, “Ibn Battuta” literally means “Son of Battuta”, Battuta being his father’s name.
 
 From a preference perspective, a person’s legal name might differ from how they would like to be addressed. A person’s first name might have formal, diminutive, and intimate variants depending on the social purpose or reflecting cultural attitudes toward privacy and hierarchy.
 
@@ -43,9 +43,11 @@ The ship wherein Theseus and the youth of Athens returned from Crete had thirty 
 {% endblockquote %}
  
 
-Most paradoxes rely on some hidden false assumption. Not a philosopher myself, but if you ask me, the one hidden in the above is that there never really was a thing, one definitive thing, called the “Ship of Theseus”. Instead, what there was was a rough group of atoms and molecules arranged in the shape of a ship, owned by the Greek hero Theseus. This blob of atoms was labeled the “Ship of Theseus”. In its whole (fictitious) existence, that collection of atoms never stopped or settled for a single moment in its endless sloughing off of old or accumulation of new parts. At the scale of atoms, splitters, nails, or beams of wood, the ship was never not changing its constituent parts.
+Most paradoxes rely on some hidden false assumption. I'm no philosopher myself, but I believe the one hidden in the above is that there never really was __a thing__, one definitive thing, called the “Ship of Theseus”. Instead, what there was was a rough group of atoms and molecules arranged in the shape of a ship, owned by the Greek hero Theseus.
 
-The point being that names and labels are not such simple things. When applied to an object, especially so when applied to a person.
+This blob of atoms was labeled the “Ship of Theseus”. In its whole (fictitious?) existence, that collection of atoms never stopped or settled for a single moment in its endless sloughing off of old or accumulation of new parts. At the scale of atoms, splinters, nails, or beams of wood, the ship was never not changing its constituent parts.
+
+The point being that names and labels are not such simple things. When applied to an object, especially so when applied to a person. What really matters is not any one strict standard or set of standards that can be applied to everyone. What seems to matter most is the users and holders of the name.
 
 The users of the label “Ship of Theseus”, those who found it useful to identify that general group of atoms with that particular name, are the reason the concept of the Ship of Theseus continued to exist, through its name.
 
