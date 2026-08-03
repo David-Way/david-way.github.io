@@ -10,14 +10,14 @@ jobs:
       matrix:
         node-version: ["24.11.0"]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - name: Install packages
-        run: npm ci
+        run: npm ciF
       - name: create .env file
         run: |
           touch .env
