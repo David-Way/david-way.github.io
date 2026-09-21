@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>First name, Last name</title>
-		<meta name="description" content="Ask what the user wants to be referred to as and give the context of where you’ll be using this information">
+		<title>Input character limits</title>
+		<meta name="description" content="Input elements should be permissive as possible, then guide them toward minimal compliance were necessary">
 		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❗</text></svg>">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="!important">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="!important">
@@ -60,60 +60,69 @@ Site manifesto:
 
 		<main id="skip">
 			
-<h1 style="view-transition-name: post-title-blog-first-name-last-name">First name, Last name</h1>
+<h1 style="view-transition-name: post-title-blog-input-character-counts-and-limits">Input character limits</h1>
 
 <ul class="c-post-meta-data">
-	<li class="c-post-meta-data__item--time"><time datetime="2026-08-03">03 August 2026</time></li>
+	<li class="c-post-meta-data__item--time"><time datetime="2026-09-21">21 September 2026</time></li>
 	<li class="c-post-meta-data__item"><a href="/tags/ux/" class="c-post-tag">ux</a>, </li>
-	<li class="c-post-meta-data__item"><a href="/tags/database-design/" class="c-post-tag">database design</a>, </li>
-	<li class="c-post-meta-data__item"><a href="/tags/forms/" class="c-post-tag">forms</a></li>
+	<li class="c-post-meta-data__item"><a href="/tags/design-pattern/" class="c-post-tag">design pattern</a>, </li>
+	<li class="c-post-meta-data__item"><a href="/tags/a11y/" class="c-post-tag">a11y</a>, </li>
+	<li class="c-post-meta-data__item"><a href="/tags/html/" class="c-post-tag">html</a></li>
 </ul>
 
 <p><strong>Summary</strong></p>
-<ol>
-<li>Name fields are culturally complex and not universally applicable.</li>
-<li>Assumptions about &quot;first&quot; and &quot;last&quot; names can misrepresent users preferences.</li>
-<li>User-centered approaches require asking for preferred names and context.</li>
-</ol>
-<p>Collecting separate data entry fields for first name and last name seems like such a simple and useful distinction. It’s such a ubiquitous convention you might never have thought much about it. However, it’s often a needlessly limiting approach and a clear case of a technology-specific decision, like database table design, leaking out into the user experience.</p>
-<p>There are, of course, useful reasons to want to capture name information in neat first name/last name distinctions. If you know the user’s first name, you can save a little space in that profile menu label. You can take a cordial, casual tone in your newsletter or that friendly “Welcome back Jane” heading. You might also want the user’s initials for a default avatar. There may be a legal requirement your product is obligated to meet.</p>
-<p>But what even is a “first” and “last” name, really? Does that concept always make sense considering how names are given, structured, and used across cultures, contexts, and continents…</p>
-<h2 id="does-first-name-mean-the-same-thing-to-everyone" tabindex="-1">Does first name mean the same thing to everyone? <a class="c-header-anchor" href="#does-first-name-mean-the-same-thing-to-everyone">#</a></h2>
-<p>Names in general are not so simple. Depending on culture and who is addressing whom, name structure and ordering vary. Depending on who you ask, the family name comes first. Some people have only one full name, multiple family names, and/or names that contain particles or connectors (for example Ní/O’ Neil or Da Vinci).</p>
-<p>A first name might contain an honorific prefix the user squeezed in, or out of, the first name field. There are the common professional and academic titles, Dr., Prof., and Rev. In Japanese, <a href="https://en.wikipedia.org/wiki/Honorific_speech_in_Japanese">keigo</a>, adding prefixes for example o- (お〜) and go- (ご〜) are commonly used to convey respectful, humble, and polite relationships between the speaker and the named individual. The inclusion or exclusion of a prefix can be a sensitive subject for some. Understandable, perhaps, as they carry deep implications for topics such as identity, culture, gender, rank, age, respect, and career.</p>
-<p>Middle names carry far more significance to some and should always be included with the first. Vietnamese names often have multiple given names, placed at the end, that work together as a compound. “Nguyễn Văn Minh” might be formally addressed by the entire last given name portion “Văn Minh,” not just “Minh” alone. In Arabic, for another example, “Ibn Battuta” literally means “Son of Battuta”, Battuta being his father’s name.</p>
-<p>From a preference perspective, a person’s legal name might differ from how they would like to be addressed. A person’s first name might have formal, diminutive, and intimate variants depending on the social purpose or reflecting cultural attitudes toward privacy and hierarchy.</p>
-<p>So, is there one answer to the question, “what is a first/last name”?</p>
-<h2 id="the-labels-we-call-names" tabindex="-1">The labels we call names <a class="c-header-anchor" href="#the-labels-we-call-names">#</a></h2>
-<p>The Ship of Theseus is a thought experiment or paradox, mostly about how identity relates to things over time. It speaks to the meaning of labels when the component parts of the named object change. Which parts are essential to the whole?</p>
-<p></p><blockquote class="c-block-quote" cite="https://en.wikipedia.org/wiki/Ship_of_Theseus">
-<p class="c-block-quote__content">
-The ship wherein Theseus and the youth of Athens returned from Crete had thirty oars, and was preserved by the Athenians down even to the time of Demetrius Phalereus, for they took away the old planks as they decayed, putting in new and strong timber in their places, insomuch that this ship became a standing example among the philosophers, for the logical question of things that grow; one side holding that the ship remained the same, and the other contending that it was not the same.</p>
-<p></p>
-					<footer class="c-block-quote__footer">— <cite>Plutarch, Life of Theseus 23.1</cite></footer>
-				</blockquote>
-<p>Most paradoxes rely on some hidden false assumption. I'm no philosopher myself, but I believe the one hidden in the above is that there never really was <strong>a thing</strong>, one definitive thing, called the “Ship of Theseus”. Instead, what there was was a rough group of atoms and molecules arranged in the shape of a ship, owned by the Greek hero Theseus.</p>
-<p>This blob of atoms was labeled the “Ship of Theseus”. In its whole (fictitious?) existence, that collection of atoms never stopped or settled for a single moment in its endless sloughing off of old or accumulation of new parts. At the scale of atoms, splinters, nails, or beams of wood, the ship was never not changing its constituent parts.</p>
-<p>The point being that names and labels are not such simple things. When applied to an object, especially so when applied to a person. What really matters is not any one strict standard or set of standards that can be applied to everyone. What seems to matter most is the users and holders of the name.</p>
-<p>The users of the label “Ship of Theseus”, those who found it useful to identify that general group of atoms with that particular name, are the reason the concept of the Ship of Theseus continued to exist, through its name.</p>
-<p>It is the users of language who create and maintain its meanings. And it’s the owner, the context, and users of a name that determine what exactly a first name is and if and when it fits in that first name field.</p>
-<h2 id="what-can-you-collect-instead" tabindex="-1">What can you collect instead? <a class="c-header-anchor" href="#what-can-you-collect-instead">#</a></h2>
-<p>Unless you’ve explicitly asked for a nickname, a full name, or a display name and explained why you’re collecting it in that format and how it will be used, there is no foolproof way of slicing up what information may collectively be submitted via a separate first and last name field as a shorthand way of referring to a person.</p>
-<p>But at least the solution is simple. Simpler than the Ship of Theseus.</p>
-<p>Consider explicitly designing your forms to use a single 'Full Name' field, which allows users to enter their name as they wish it to appear. For situations where a preferred or display name is important, provide an additional optional field labeled like 'Preferred Name', ‘Nickname’ or ‘Short name’. Don't forget to clarify how that name will be used, such as for communications or profile displays.</p>
+<ul>
+<li>Form design should prioritize user agency over database efficiency. Let users express themselves freely, be permissive as possible, then guide them toward minimal compliance were necessary.</li>
+<li>Don't put hard character limits on input files and text areas. Establish soft boundaries to respect the users workflow.</li>
+</ul>
+<p>When designing forms it can be easy to let the cold hard edges of the underlying technology poke out into the users experience.</p>
+<p>Forms are for collecting data and data is stored in database. Database table data types and and cell/column size limits are real constraints for designers to consider but they need not be surfaced in their rawest and unintuitive form directly to the user.</p>
+<p>Most development teams wouldn't think of asking a user for a date in an ISO date format or the number of passengers as an unsigned integer but there are other instances in the same category that do slip by as more acceptable or handled in less than graceful ways.</p>
+<p>The most common clash users have with technology limits in form design is the field size limit. Column limits are not something that can often be avoided entirely however how the interaction is handled and communicated is critical to avoid confusing and frustrating users or cluttering the UI.</p>
+<h2 id="what-to-do" tabindex="-1">What to do <a class="c-header-anchor" href="#what-to-do">#</a></h2>
+<p>How should you handle a requirement that exists for almost every field in your form but likely is rarely, if ever, encountered?</p>
+<p>Telling the user the maximum allowable string length for every field is not the best use of screen real estate or the cognitive bandwidth of the users.</p>
+<p>The best approach is to avoid visibly limiting character counts to very small numbers in general unless there is good reasoning to do so.</p>
+<p>Choose proportionate database cell sizes for your data that allows most of your users, remain unaware of the limit most of the time.</p>
+<h2 id="when-to-do-it" tabindex="-1">When to do it <a class="c-header-anchor" href="#when-to-do-it">#</a></h2>
+<p>There are less common occasions where you want to be explicit and upfront about size of the data you're requesting.</p>
+<p>Some valid reasons might include instances where you have repeatedly observed you users entering much more information than is required (though revising your form input design and label/hint/help content should be the first port of call), or it there is a legal reason, convention or regulatory requirements for a piece of data to remain under a certain number of characters.</p>
+<blockquote>
+<p><strong>Some valid examples</strong></p>
+<ul>
+<li>Valid email addresses are always less than  254 characters</li>
+<li>A valid SSN number is 9 digits long</li>
+<li>Any E.164-compliant international phone number cannot exceed 15 digits.</li>
+<li>Certain protocols have specific sizes associated with them, for example HL7/FHIR standards have values for patient name, Universal Service Identifier etc that are all limited to below &lt;251 characters.</li>
+</ul>
+</blockquote>
+<h2 id="how-to-do-it" tabindex="-1">How to do it <a class="c-header-anchor" href="#how-to-do-it">#</a></h2>
+<p>The default approach however, should allow any length to be entered into the field.</p>
+<p>When a large threshold is being approached or breached, now is the time to start communicating a fields limit and how the user can adapt their content to the requirements.</p>
+<p>It's important to think about any character count as a soft limit where users <em>may</em> enter more characters than required but are informed when they've entered too many and by how much they have exceeded the limit.</p>
+<p>This leniency allows users to over-type (some users look at the keyboard and don't realize a hard limit has been reached) or copy and paste in their full answers from elsewhere, without their content being silently truncated.</p>
+<p>Don't forget to validate the length on submission.</p>
+<p>The user is the free to use the text field/area to edit down their content to the required length.</p>
+<div class="u-bleed-container:medium">
+<iframe height="300" style="width: 100%;" scrolling="no" title="Input character counts and limits" src="https://codepen.io/editor/David-Way/embed/01a0c59b-1c41-7fbe-9a31-fc35de15d3b3?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true">
+  See the Pen <a href="https://codepen.io/editor/David-Way/pen/01a0c59b-1c41-7fbe-9a31-fc35de15d3b3">
+  Input character counts and limits</a> by David Way (<a href="https://codepen.io/David-Way">@David-Way</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+</div>
+<h2 id="benefits-of-this-approach" tabindex="-1">Benefits of this approach <a class="c-header-anchor" href="#benefits-of-this-approach">#</a></h2>
+<p>In the above you can see:</p>
+<ul>
+<li><strong>Clutter is minimized</strong> - State is communicated when necessary as the user approaches the threshold and again when above the threshold</li>
+<li><strong>User flow is supported</strong> - Users who type looking at the keyboard, or users performing data entry by copy/pasting content from elsewhere, can make adjustments to meet the length requirement without loosing work.</li>
+<li><strong>No silent failure mode</strong> - Breaches are not silently truncated, but instead can be soft enforced while interacting with the field or hard validated against on page submission.</li>
+</ul>
 
 <ul class="c-iterator-links">
 	<li class="c-iterator-links__link-item c-iterator-links__link-item--prev">
-		<a class="c-iterator-links__link" href="/blog/ux-of-toast-messages/">
+		<a class="c-iterator-links__link" href="/blog/first-name-last-name/">
 			<span class="c-iterator-links__link-label">Previous post</span>
-			The User Experience of Toast Messages
-		</a>
-	</li>
-	
-	<li class="c-iterator-links__link-item c-iterator-links__link-item--next">
-		<a class="c-iterator-links__link" href="/blog/input-character-counts-and-limits/">
-			<span class="c-iterator-links__link-label">Next post</span>
-			Input character limits
+			First name, Last name
 		</a>
 	</li>
 	
@@ -128,6 +137,6 @@ The ship wherein Theseus and the youth of Athens returned from Crete had thirty 
 
 			
 		</footer>
-		<!-- Current page: /blog/first-name-last-name/ -->
+		<!-- Current page: /blog/input-character-counts-and-limits/ -->
 	</body>
 </html>
