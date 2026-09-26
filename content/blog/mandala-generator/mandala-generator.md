@@ -3,7 +3,7 @@ title: "Mandala generator"
 description: Challenging UI side project
 publish: true
 date: 2021-01-02
-recommended: false,
+recommended: false
 tags:
   - prototype
   - side project

@@ -3,7 +3,7 @@ title: The User Experience of Disabled Buttons
 description: The button that wasn't there… When should you use a disabled button?
 publish: true
 date: 2021-10-11
-recommended: false,
+recommended: false
 tags:
   - ux
   - design pattern

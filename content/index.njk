@@ -4,10 +4,11 @@ eleventyNavigation:
   key: Home
   order: 1
 numberOfLatestPostsToShow: 5
+numberOfRecommendedPostsToShow: 3
 ---
 {% set postsCount = collections.posts | filterPublished | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | filterPublished | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -19,7 +20,13 @@ numberOfLatestPostsToShow: 5
 <p><a class="u-type:small" href="/blog/">View {% if morePosts != 1 %}all{% endif %} {{ morePosts }} other post{% if morePosts != 1 %}s{% endif %}</a></p>
 {% endif %}
 
-{# List every content page in the project #}
+<aside>
+	<h2>Worth a read</h2>
+	{% set recommendedPostslist = collections.posts | filterRecommended | filterPublished | head(-1 * numberOfRecommendedPostsToShow) %}
+	{% include "recommendedPostsList.njk" %}
+</aside>
+
+{# Example: List every content page in the project #}
 {#
 <ul>
 	{%- for entry in collections.all %}
@@ -27,3 +34,5 @@ numberOfLatestPostsToShow: 5
 	{%- endfor %}
 </ul>
 #}
+
+

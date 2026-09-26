@@ -3,7 +3,7 @@ title: Images from noise are noise
 description: How to spot if an image was diffused or imagined.
 publish: true
 date: 2025-12-03
-recommended: false,
+recommended: false
 tags:
   - ai
   - art

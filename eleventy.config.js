@@ -112,6 +112,12 @@ export default function (eleventyConfig) {
 		return values.filter((value) => value.data.publish);
 	});
 
+	// Filter to filter collections by an `publish` frontmatter property
+	eleventyConfig.addFilter("filterRecommended", (valuesToFilter) => {
+		const values = [...valuesToFilter];
+		return values.filter((value) => value.data.recommended);
+	});
+
 	eleventyConfig.addFilter("readingTime", (post) => {
 		const wordsPerMinute = 238; // Average reading speed
 		if (typeof post !== "string") {

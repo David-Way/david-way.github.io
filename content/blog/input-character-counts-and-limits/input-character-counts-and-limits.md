@@ -3,7 +3,7 @@ title: Input character limits
 description: Input elements should be permissive as possible, then guide them toward minimal compliance were necessary
 publish: true
 date: 2026-09-21
-recommended: false,
+recommended: false
 tags:
   - ux
   - design pattern

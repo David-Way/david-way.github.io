@@ -3,7 +3,7 @@ title: Every landing page, ever
 description: 
 publish: true
 date: 2023-02-14
-recommended: false,
+recommended: false
 tags:
   - product design
 ---

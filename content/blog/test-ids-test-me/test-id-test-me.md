@@ -3,7 +3,7 @@ title: These test IDs, they test me
 description: More robust, maintainable testing that helps strengthen product accessibility
 publish: true
 date: 2025-12-09
-recommended: false,
+recommended: false
 tags:
   - e2e testing
   - testing library
