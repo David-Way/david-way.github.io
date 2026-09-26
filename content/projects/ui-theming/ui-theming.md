@@ -221,7 +221,7 @@ Finally, once the issues have been resolved, Robert can copy a configuration cod
 - 🟧 It wasn't clear at what level we should give the developer access to the make changes
   - Design token layer - Design tokens are intuitive but still take time to understand their relationships and Changing the color on a per role basis still might not have the effect the user was intending or expecting.
   - Color palette layer that lies under the design tokens, would have taken even more work
-  - What ever level we exposed there were style elements achieved in previous customization concepts that would not have been achievable, for example a a customer used a branded header and a contrasting footer.
+  - What ever level we exposed there were style elements achieved in previous customization concepts that would not have been achievable, for example a customer used a branded header and a contrasting footer.
 - 🟥 There is a lot of hidden complexity in how the colors relate to each other and we weren't confident we could guarantee an accessible result can be achieved with any color they might want to use, or that experience wouldn't be frustrating to the developer. We're relying on the user to chose appropriate colors and apply them in appropriate locations, potentially resulting in a cascade of side effect issues for them. The accessibility guidance was helpful but still could required extra work for the developer to understand about color theory to resolve.
 
 With these things in mind we decide to run the design sprint.

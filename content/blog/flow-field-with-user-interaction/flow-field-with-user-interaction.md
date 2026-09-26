@@ -73,4 +73,4 @@ flowFieldEffectorCenterIndexNeighbors.forEach((neighborIndex) => {
 });
 ```
 
-This results in a an animation that interacts with the users input but in a smooth manner that fades away over time.
+This results in an animation that interacts with the users input but in a smooth manner that fades away over time.
