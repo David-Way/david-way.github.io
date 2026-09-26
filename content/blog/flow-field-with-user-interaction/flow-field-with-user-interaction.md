@@ -3,6 +3,7 @@ title: "Merging user input with random noise for smooth animation"
 description: User affected noise driven animation
 publish: true
 date: 2022-02-15
+recommended: false,
 tags:
   - canvas animation
   - side project

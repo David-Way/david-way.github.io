@@ -3,6 +3,7 @@ title: CSS strategy
 description: Thinking of styling with long-term vision in mind, rather than focusing solely on immediate effect.
 publish: true
 date: 2025-07-09
+recommended: false,
 tags:
   - css
   - web design

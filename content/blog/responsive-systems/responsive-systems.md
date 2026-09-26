@@ -3,6 +3,7 @@ title: Responsive design at scale; Responding to what?
 description: Responsive design 101 and 102.
 publish: true
 date: 2021-05-11
+recommended: false,
 tags:
   - a11y
   - responsive design

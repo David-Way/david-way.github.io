@@ -3,6 +3,7 @@ title: "First name, Last name"
 description: Ask what the user wants to be referred to as and give the context of where you’ll be using this information
 publish: true
 date: 2026-08-03
+recommended: false,
 tags:
   - ux
   - database design

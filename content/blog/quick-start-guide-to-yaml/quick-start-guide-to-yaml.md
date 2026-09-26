@@ -3,6 +3,7 @@ title: Yaml, a quick-start guide
 description: Learn the basics of writing serialisable data into Yaml files
 publish: true
 date: 2021-04-07
+recommended: false,
 tags:
   - guide
   - data-storage

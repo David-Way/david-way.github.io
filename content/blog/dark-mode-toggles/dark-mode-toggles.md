@@ -3,6 +3,7 @@ title: The theme toggle, an empty vanity
 description: The best tool might be no tool at all.
 publish: true
 date: 2023-02-10
+recommended: false,
 tags:
   - ui theming
   - I may be wrong but
