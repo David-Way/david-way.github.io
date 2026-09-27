@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # About Me
 
-I am a designer-maker from <del>Ireland</del> <del>Europe</del> Earth. I write stuff.
+I am a designer, developer and maker from <del>Ireland</del> <del>Europe</del> Earth. I write stuff.
 
 ## Links
 

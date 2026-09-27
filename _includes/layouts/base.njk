@@ -64,7 +64,9 @@ Site manifesto:
 	<body>
 		<header class="c-header">
 			<a href="#skip" class="u-visually-hidden">Skip to main content</a>
-			<a href="/" class="c-header__home-link">{{ metadata.title }}</a>
+
+			<a href="/" class="c-header__home-link u-hide:small-up">{{ metadata.author.initials }}</a>
+			<a href="/" class="c-header__home-link u-hide:small-down">{{ metadata.author.name }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav class="c-nav">
@@ -76,7 +78,7 @@ Site manifesto:
 		
 		<main id="skip">
 			{% if page.url == "/" %}
-				<h1>{{ title or metadata.title }}</h1>
+				<h1>Hello, I’m <a href="/about">{{ metadata.author.name }}</a></h1>
 			{% endif %}
 
 			{{ content | safe }}

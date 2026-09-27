@@ -4,7 +4,9 @@ eleventyNavigation:
   key: Blog
   order: 2
 ---
-<h1>Blog</h1>
+<h1>{{ metadata.title }}</h1>
+<p>A blog by {{ metadata.author.name }}</p>
 
+<h2>Posts</h2>
 {% set postslist = collections.posts | filterPublished %}
 {% include "postslist.njk" %}

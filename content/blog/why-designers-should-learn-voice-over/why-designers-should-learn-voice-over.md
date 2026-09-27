@@ -3,7 +3,7 @@ title: Why designers should learn VoiceOver
 description: Or at least one screen reading software.
 publish: true
 date: 2022-08-12
-recommended: false
+recommended: true
 tags:
   - ux
   - a11y
