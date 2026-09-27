@@ -3,6 +3,7 @@ title: The User Experience of Toast Messages
 description: The message out of view is a message out of mind
 publish: true
 date: 2026-07-14
+recommended: false
 tags:
   - ux
   - design pattern

@@ -3,6 +3,7 @@ title: Journey mapping in the Design Thinking Process
 description: Learn where journey maps fit into the design thinking process.
 publish: true
 date: 2021-03-31
+recommended: false
 tags:
   - design thinking
 ---

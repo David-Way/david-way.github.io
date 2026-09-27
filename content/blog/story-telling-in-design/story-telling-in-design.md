@@ -3,6 +3,7 @@ title: Telling stories to ourselves
 description: Storytelling in design, an unpleasant learning experience.
 publish: true
 date: 2023-01-28
+recommended: false
 tags:
   - design thinking
   - design research

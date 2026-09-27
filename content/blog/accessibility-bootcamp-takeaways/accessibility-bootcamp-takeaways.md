@@ -3,6 +3,7 @@ title: Accessibility boot camp takeaways
 description: Thoughts on how accessible mindset can enhance our product and team goals.
 publish: true
 date: 2024-11-02
+recommended: false
 tags:
   - a11y
   - design strategy

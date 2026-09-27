@@ -3,6 +3,7 @@ title: "Merging user input with random noise for smooth animation"
 description: User affected noise driven animation
 publish: true
 date: 2022-02-15
+recommended: false
 tags:
   - canvas animation
   - side project
@@ -73,4 +74,4 @@ flowFieldEffectorCenterIndexNeighbors.forEach((neighborIndex) => {
 });
 ```
 
-This results in a an animation that interacts with the users input but in a smooth manner that fades away over time.
+This results in an animation that interacts with the users input but in a smooth manner that fades away over time.
