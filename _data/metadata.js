@@ -6,6 +6,8 @@ export default {
 	favicon: "❗",
 	author: {
 		name: "David Way",
+		firstName: "David",
+		lastName: "Way",
 		initials: "DW",
 		email: "david_way@live.ie",
 		url: "https://david-way.github.io/about-me/",
