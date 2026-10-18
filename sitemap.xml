@@ -337,22 +337,22 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/ai/</loc>
-		<lastmod>2026-10-18</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/art/</loc>
-		<lastmod>2026-10-18</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/writing-exercise/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://david-way.github.io/tags/cpu/</loc>
+		<lastmod>2026-10-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/ai/</loc>
+		<lastmod>2026-10-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/art/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
 	
@@ -397,6 +397,11 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/responsive-design/</loc>
+		<lastmod>2026-10-18</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/testing/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
@@ -418,11 +423,6 @@
 	
 	<url>
 		<loc>https://david-way.github.io/tags/writing/</loc>
-		<lastmod>2026-10-18</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/responsive-design/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
 	
@@ -467,6 +467,16 @@
 	</url>
 	
 	<url>
+		<loc>https://david-way.github.io/tags/design-sprint/</loc>
+		<lastmod>2026-10-18</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://david-way.github.io/tags/time-management/</loc>
+		<lastmod>2026-10-18</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://david-way.github.io/tags/open-source/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
@@ -492,17 +502,7 @@
 	</url>
 	
 	<url>
-		<loc>https://david-way.github.io/tags/design-sprint/</loc>
-		<lastmod>2026-10-18</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://david-way.github.io/tags/css-custom-properties/</loc>
-		<lastmod>2026-10-18</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://david-way.github.io/tags/time-management/</loc>
 		<lastmod>2026-10-18</lastmod>
 	</url>
 </urlset>

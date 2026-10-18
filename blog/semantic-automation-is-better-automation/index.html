@@ -88,7 +88,7 @@ Site manifesto:
 <p>But first, some key concepts before we look at those tools.</p>
 <p>Semantic means meaning. What does ‘meaning’ mean in the context of web development, exactly? Let’s look at a typical web page and the DOM that underlies it.</p>
 <p>This is the main dashboard page of the connectivity platform, Tailscale. Squint your eyes and have a glance about it. What visual constructs can you identify on this page?</p>
-<p>![[Admin Console - Machines.png]]</p>
+<p><picture><source type="image/avif" srcset="/img/52VCNKNGwl-3840.avif 3840w"><source type="image/webp" srcset="/img/52VCNKNGwl-3840.webp 3840w"><img alt="Tailscale admin console dashboard showing a list of machines" loading="lazy" decoding="async" src="/img/52VCNKNGwl-3840.png" width="3840" height="2600"></picture></p>
 <p>Web conventions and constructs like lists, cards, buttons, and links identify themselves as we study a page. They all have distinct, ingrained affordances that visually convey their purpose. In good design, these affordances are hard to miss but also, ideally, so obvious they’re almost invisible.</p>
 <ul>
 <li><strong>Headings</strong>, signifying the next section of a page, distinguish themselves from other body and secondary copy by being large, bold text with spacing that relates them more to the content they title than the preceding content of other sections.</li>
@@ -196,11 +196,11 @@ Site manifesto:
 <p>In the unique button label example above, let’s look at why that matters. One tool VoiceOver users have access to is Rotor control.</p>
 <p>How to Navigate your iPhone or iPad with VoiceOver | Apple Support</p>
 <figure class="u-bleed-container:medium">
-	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-	<figcaption>
-		<p>How to Navigate your iPhone or iPad with VoiceOver | Apple Support</p>
-		<a href="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0">Source: YouTube</a>
-	</figcaption>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+  <figcaption>
+    <p>How to Navigate your iPhone or iPad with VoiceOver | Apple Support</p>
+    <a href="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0">Source: YouTube</a>
+  </figcaption>
 </figure>
 <p>The above video demonstrates the existence and experience of the underlying content, how it informed the users, how it needed to be unique to be useful (regions, update controls linking to the objects they control, table rows helping with repeated non-distinct content), and highlighted that this content is accessible to a piece of software, so it is programmatically available.</p>
 <p>This reinforces that, for accessible websites, meaningful structural or interaction information conveyed visually through typesetting, color, layout, containment, division, and repetition (the design intention) must be represented programmatically in the DOM.</p>
@@ -220,9 +220,9 @@ Site manifesto:
 <p>The <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree">Accessibility Tree panel</a> is in your browser’s development tools.</p>
 <p>The content displayed here is derived from the DOM content and the accessibility API. It’s nested in a similar way to the DOM tree. Its usefulness comes from the way it filters out all information that does not relate to the page’s semantics.</p>
 <p>Take a look at this second example page.</p>
-<p>![[example-team-dashboard.jpg]]</p>
+<p><picture><source type="image/avif" srcset="/img/mEimc0j8Ju-1440.avif 1440w"><source type="image/webp" srcset="/img/mEimc0j8Ju-1440.webp 1440w"><img alt="Example dashboard page with a header section and a side navigation, showing different page regions for Perfomance, active projects, team activity an an activity timeline" loading="lazy" decoding="async" src="/img/mEimc0j8Ju-1440.jpeg" width="1440" height="1150"></picture></p>
 <p>Here’s an example of the accessibility tree for the above dashboard.</p>
-<p>![[accessibility-tree-panel-screenshot.jpg]]</p>
+<p><picture><source type="image/avif" srcset="/img/vj03_MAkyP-605.avif 605w"><source type="image/webp" srcset="/img/vj03_MAkyP-605.webp 605w"><img alt="Example accessibilty tree showing the same header section and a side navigation, and the different page regions for Perfomance, active projects, team activity an an activity timeline" loading="lazy" decoding="async" src="/img/vj03_MAkyP-605.jpeg" width="605" height="615"></picture></p>
 <p>What are you seeing here? Can you see how the underlying DOM and the accessibility tree derived from it relate to the visual elements rendered on the page? I hope you find it less overwhelming than staring into the void of the equivalent DOM tree for the same page.</p>
 <p>Each node and leaf in the tree relates to elements and their attributes in the DOM tree from the perspective of what matters for content, role, and state to an Assistive Technology (AT) device, for example, a screen reader.</p>
 <p>Look at the page structure, and you’ll see how it maps to visible regions. A banner at the top contains the page heading, action buttons, and a hidden skip navigation link. The main region contains even more named generic regions with their own contents.</p>
@@ -279,10 +279,12 @@ Site manifesto:
 </ol>
 <p>This priority order reinforces meaningful UI-element targeting and guides us toward more meaningful tests. I’ve seen how this approach begins to train the QA team to start asking your developers questions like “Why isn’t this element using a correct role that matches what it looks like?”, “Shouldn’t this element be inside a named region?” or “Can we make the label on this control more unique and descriptive?”.</p>
 <p>Before you know it, you’ve accidentally improved the experience for assistive technology users, made broken tests easier to reason about and debug, and strengthened the robustness of your automated tests.</p>
-<h1 id="references" tabindex="-1">References <a class="c-header-anchor" href="#references">#</a></h1>
-<p><a href="https://testing-library.com/docs/queries/about/">About Queries | Testing Library</a><br>
-<a href="https://www.davidway.ie/blog/test-ids-test-me/test-id-test-me/">These test IDs, they test me</a><br>
-<a href="https://www.davidway.ie/blog/how-to-get-started-with-voice-over/">VoiceOver Screen reader, a quick start guide</a></p>
+<h2 id="references" tabindex="-1">References <a class="c-header-anchor" href="#references">#</a></h2>
+<ul>
+<li><a href="https://testing-library.com/docs/queries/about/">About Queries | Testing Library</a></li>
+<li><a href="https://www.davidway.ie/blog/test-ids-test-me/test-id-test-me/">These test IDs, they test me</a></li>
+<li><a href="https://www.davidway.ie/blog/how-to-get-started-with-voice-over/">VoiceOver Screen reader, a quick start guide</a></li>
+</ul>
 
 <ul class="c-iterator-links">
 	<li class="c-iterator-links__link-item c-iterator-links__link-item--prev">
