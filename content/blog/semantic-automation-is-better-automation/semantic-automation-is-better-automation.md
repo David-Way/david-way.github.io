@@ -33,7 +33,7 @@ Semantic means meaning. What does ‘meaning’ mean in the context of web devel
 
 This is the main dashboard page of the connectivity platform, Tailscale. Squint your eyes and have a glance about it. What visual constructs can you identify on this page?
 
-![[Admin Console - Machines.png]]
+{% image "./images/Admin Console - Machines.png", "Tailscale admin console dashboard showing a list of machines" %}
 
 Web conventions and constructs like lists, cards, buttons, and links identify themselves as we study a page. They all have distinct, ingrained affordances that visually convey their purpose. In good design, these affordances are hard to miss but also, ideally, so obvious they’re almost invisible.
 
@@ -173,11 +173,13 @@ In the unique button label example above, let’s look at why that matters. One 
 How to Navigate your iPhone or iPad with VoiceOver | Apple Support
 
 <figure class="u-bleed-container:medium">
-	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<figcaption>
-		<p>How to Navigate your iPhone or iPad with VoiceOver | Apple Support</p>
-		<a href="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0">Source: YouTube</a>
-	</figcaption>
+
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <figcaption>
+    <p>How to Navigate your iPhone or iPad with VoiceOver | Apple Support</p>
+    <a href="https://www.youtube-nocookie.com/embed/ROIe49kXOc8?si=UkwEBJijWhhgAUA0">Source: YouTube</a>
+  </figcaption>
 </figure>
 
 The above video demonstrates the existence and experience of the underlying content, how it informed the users, how it needed to be unique to be useful (regions, update controls linking to the objects they control, table rows helping with repeated non-distinct content), and highlighted that this content is accessible to a piece of software, so it is programmatically available.
@@ -210,11 +212,12 @@ The content displayed here is derived from the DOM content and the accessibility
 
 Take a look at this second example page.
 
-![[example-team-dashboard.jpg]]
+{% image "./images/example-team-dashboard.jpg", "Example dashboard page with a header section and a side navigation, showing different page regions for Perfomance, active projects, team activity an an activity timeline" %}
 
 Here’s an example of the accessibility tree for the above dashboard.
 
-![[accessibility-tree-panel-screenshot.jpg]]
+{% image "./images/accessibility-tree-panel-screenshot.jpg", "Example accessibilty tree showing the same header section and a side navigation, and the different page regions for Perfomance, active projects, team activity an an activity timeline" %}
+
 
 What are you seeing here? Can you see how the underlying DOM and the accessibility tree derived from it relate to the visual elements rendered on the page? I hope you find it less overwhelming than staring into the void of the equivalent DOM tree for the same page.
 
@@ -296,8 +299,8 @@ This priority order reinforces meaningful UI-element targeting and guides us tow
 
 Before you know it, you’ve accidentally improved the experience for assistive technology users, made broken tests easier to reason about and debug, and strengthened the robustness of your automated tests.
 
-# References
+## References
 
-[About Queries | Testing Library](https://testing-library.com/docs/queries/about/)  
-[These test IDs, they test me](https://www.davidway.ie/blog/test-ids-test-me/test-id-test-me/)  
-[VoiceOver Screen reader, a quick start guide](https://www.davidway.ie/blog/how-to-get-started-with-voice-over/)
+- [About Queries | Testing Library](https://testing-library.com/docs/queries/about/)  
+- [These test IDs, they test me](https://www.davidway.ie/blog/test-ids-test-me/test-id-test-me/)  
+- [VoiceOver Screen reader, a quick start guide](https://www.davidway.ie/blog/how-to-get-started-with-voice-over/)
