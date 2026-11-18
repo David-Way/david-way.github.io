@@ -85,7 +85,7 @@ export default function Button(){
 
 ### Utility class
 
-If you're adjusting how multiple components arrange between themselves in a simple non-dynamic way or applying a highly repetitive and generalizable single value (e.g. adjusting spacing between static components). This approach helps reduce CSS bloat (drying out you spacing styles) and encourages consistency.
+If you're adjusting how multiple components arrange between themselves in a simple non-dynamic way or applying a highly repetitive and generalizable single value (e.g. adjusting spacing between static components). This approach helps reduce CSS bloat (drying out your spacing styles) and encourages consistency.
 
 ```jsx
 <div className="u-padding-block-start:medium">
@@ -101,7 +101,7 @@ When you need to manage the arrangement and spacing of multiple components, espe
 
 ```jsx
 <Stack spacing="medium" align="center" justify="flex-start" as="ul">
-  {listItems.map(listItem => (<ListItem>{listItem}</ListItem>))}
+  {listItems.map(listItem => (<ListItem key={listItem.id}>{listItem.content}</ListItem>))}
 </Stack>
 ```
 

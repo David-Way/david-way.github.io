@@ -7,7 +7,7 @@ layout: layouts/base.njk
 <h1 style="view-transition-name: post-title-{{ page.url | slugify }}">{{ title }}</h1>
 
 <ul class="c-post-meta-data">
-	<li class="c-post-meta-data__item--time"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	<li class="c-post-meta-data__item--time"><time style="view-transition-name: post-date-{{ post.url | slugify }}" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li class="c-post-meta-data__item"><a href="{{ tagUrl }}" class="c-post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
